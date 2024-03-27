@@ -382,13 +382,13 @@
         var gitalk = new Gitalk({
             clientID: '37ee8c40b7ca3e86b759',
             clientSecret: 'c8c64963d407476ae805880a7bcffb64816e5ca6',
-            repo: 'blogcomment.github.io',
+            repo: 'ShengLin1001.github.io',
             owner: 'ShengLin1001',
             admin: ['ShengLin1001'],
             id: decodeURI(location.pathname),
-            distractionFreeMode: 'false',
+            distractionFreeMode: 'true',
             language: 'zh-cn',
-            perPage: parseInt('20',10)
+            perPage: parseInt('10',10)
         })
         gitalk.render('comments')
     })
@@ -820,6 +820,14 @@
 
     /* 背景图样式 */
     
+    #post {
+        background: url(/img/metal.png);
+    }
+    
+    
+    #post .index {
+        background: url(/img/metal.png);
+    }
     
 
 
