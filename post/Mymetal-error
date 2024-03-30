@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Diary - How to do my research | Please be chilling out</title>
-  <meta name="keywords" content=" Thinking - Diary ">
-  <meta name="description" content="Diary - How to do my research | Please be chilling out">
+  <title>Mymetal - error | Please be chilling out</title>
+  <meta name="keywords" content=" Developing - Mymetal ">
+  <meta name="description" content="Mymetal - error | Please be chilling out">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="He knows most who speaks least.  大智若愚  Updated time: 03&#x2F;30 2024. About MymetalPlease read this page first, here are the install methods using python supported by some dependent packages. It’s a p">
 <meta property="og:type" content="article">
@@ -467,13 +467,11 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-Diary - How to do my research" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-Mymetal-error" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">Diary - How to do my research</h1>
+        <h1 class="article-title">Mymetal - error</h1>
     
     <div class="article-meta">
-        
-        <span class="top"><a>置顶</a></span>
         
         
         
@@ -481,9 +479,9 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="Thinking">Thinking</a> > 
+            <a  data-rel="Developing">Developing</a> > 
             
-            <a  data-rel="Thinking&lt;---&gt;Diary">Diary</a>
+            <a  data-rel="Developing&lt;---&gt;Mymetal">Mymetal</a>
             
         </span>
         
@@ -491,19 +489,19 @@
         <span class="tag">
             <i class="iconfont icon-tag"></i>
             
-            <a class="color2">Thinking - Diary</a>
+            <a class="color1">Developing - Mymetal</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2024-03-29 18:10:59'>2024-03-28 13:30</time>
+            Created At : <time class="date" title='Updated At: 2024-03-30 03:31:44'>2024-03-30 01:44</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:286</span>
+        <span>Count:80</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -533,7 +531,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Main-focus"><span class="toc-text">Main focus</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#At-the-Everyday-my-work-included-%E2%80%A6"><span class="toc-text">At the Everyday my work included …</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Where-are-my-gotten-resource-in"><span class="toc-text">Where are my gotten resource in</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#How-to-construct-this-blog-website"><span class="toc-text">How to construct this blog website</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Experience-Please-you-and-me-%E2%80%A6"><span class="toc-text">Experience, Please you and me …</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Some-fixing-error-and-unfilled-code"><span class="toc-text">Some fixing error and unfilled code</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#when-i-run-the-test-post-py-i-found-the-output-file-has-been-generated-in-the-root-directory-of-pjvasp-package"><span class="toc-text">when i run the test-post&#x2F;*.py, i found the output file has been generated in the root directory of pjvasp_package</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -549,63 +547,19 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p align="center"><strong><em>世界很喧闹，我不慌，不忙，不焦虑。<em></strong></p>
+        <p align="center"><strong><em>Time flies.<em></strong></p>
 
-<p align="center"><strong><em>The world is noisy and I'm not flustered, busy or anxious.<em></strong></p>
+<p align="center"><strong><em>光阴似箭<em></strong></p>
 
-<p><strong>Updated time: 03&#x2F;29. 2024</strong></p>
-<h2 id="Main-focus"><a href="#Main-focus" class="headerlink" title="Main focus"></a>Main focus</h2><p>To integrating everything that I’m interested in.</p>
-<p>I want to be a man of</p>
-<ul>
-<li><input disabled="" type="checkbox"> kind-hearted </li>
-<li><input disabled="" type="checkbox"> love life</li>
-<li><input disabled="" type="checkbox"> familiar with the computer material science, practical and theoretical</li>
-<li><input disabled="" type="checkbox"> keep developing English</li>
-</ul>
-<h2 id="At-the-Everyday-my-work-included-…"><a href="#At-the-Everyday-my-work-included-…" class="headerlink" title="At the Everyday my work included …"></a>At the Everyday my work included …</h2><ul>
-<li>Read the literary</li>
-<li><strong>Be focus on my main work !</strong><ul>
-<li>Research (VASP, Lammps, Python, ASE, Mymetal)</li>
-<li>Temporary work</li>
-</ul>
-</li>
-<li>English (5 words, movie, blibli, Youtube, BBC news, dictionary)</li>
-<li>Read the book<ul>
-<li>固体物理导论</li>
-<li>材料科学基础</li>
-<li>Some</li>
-</ul>
-</li>
-<li>Use google Todo list</li>
-<li>Practice (混元功法, 八部金刚经)</li>
-</ul>
-<h2 id="Where-are-my-gotten-resource-in"><a href="#Where-are-my-gotten-resource-in" class="headerlink" title="Where are my gotten resource in"></a>Where are my gotten resource in</h2><ul>
-<li>Book, literary: Endnote</li>
-<li>My code, package Mymetal: Github</li>
-<li>My notes, summary literary: Github</li>
-<li>Website: Edge favorite</li>
-<li><strong>WeChat: didn’t be categoried</strong></li>
-<li>Instal package: hard disk, Baidu cloud</li>
-<li>the calculation: Supercomputer, disk</li>
-<li>Zhihu, 计算化学公社: favorite and my texts</li>
-<li><strong>Group meeting: paper notebook</strong></li>
-<li><strong>lecture resource, class: disk</strong></li>
-<li>Book, movie, English, some instal package: Baidu cloud</li>
-<li>My undergraduate note: Onenote, 印记云笔记, screenshot</li>
-</ul>
-<h2 id="How-to-construct-this-blog-website"><a href="#How-to-construct-this-blog-website" class="headerlink" title="How to construct this blog website"></a>How to construct this blog website</h2><ul>
-<li>for some lived article, resource, I should give a list about them</li>
-<li>for ZhiHu, I should export the .md text file</li>
-<li>for WeiXin, I should deal with it</li>
-<li>for New resource, I should write it in this blog website</li>
-</ul>
-<p>Briefly, I’ll write any thing among the next many years</p>
-<h2 id="Experience-Please-you-and-me-…"><a href="#Experience-Please-you-and-me-…" class="headerlink" title="Experience, Please you and me …"></a>Experience, Please you and me …</h2><ul>
-<li><strong>Don’t be a perfectionist.</strong></li>
-<li>It’s often the last key that opens the door.</li>
-<li>Physical fitness is the birthright of the revolution.</li>
-<li><strong>Don’t procrastinate.</strong></li>
-</ul>
+<p><strong>Updated time: 03&#x2F;30 2024.</strong></p>
+<h2 id="Some-fixing-error-and-unfilled-code"><a href="#Some-fixing-error-and-unfilled-code" class="headerlink" title="Some fixing error and unfilled code"></a>Some fixing error and unfilled code</h2><h3 id="when-i-run-the-test-post-py-i-found-the-output-file-has-been-generated-in-the-root-directory-of-pjvasp-package"><a href="#when-i-run-the-test-post-py-i-found-the-output-file-has-been-generated-in-the-root-directory-of-pjvasp-package" class="headerlink" title="when i run the test-post&#x2F;*.py, i found the output file has been generated in the root directory of pjvasp_package"></a>when i run the test-post&#x2F;*.py, i found the output file has been generated in the root directory of pjvasp_package</h3><p>we should add flowing python commands</p>
+<pre><code class="shell">import os
+# get the path of those script
+script_dir = os.path.dirname(__file__)
+# set the working path
+os.chdir(script_dir)
+</code></pre>
+<p>Ok, avoid to use it in root directory. To be safe, use it in user file.</p>
 
       
        <hr><span style="font-style: italic;color: gray;"> Please indicate the source when reprinting. Please verify the citation sources in the article and point out any errors or unclear expressions. </span>
