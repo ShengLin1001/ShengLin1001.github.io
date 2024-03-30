@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>tools - summary</title>
+      <link href="/Software/tools/tools-summary/"/>
+      <url>/Software/tools/tools-summary/</url>
+      
+        <content type="html"><![CDATA[<p align="center"><strong><em>Knowledge starts with practice.<em></strong></p><p align="center"><strong><em>实践出真知<em></strong></p><p><strong>Updated time: 03&#x2F;30 2024.</strong></p><h2 id="Write-the-first"><a href="#Write-the-first" class="headerlink" title="Write the first"></a>Write the first</h2><p>It’s for add some interesting tools that I interested in but not used.</p><p>Not only software, also some GitHub stars.</p><h2 id="Interesting-Tools-see-Endnote-DFT-HCP-Au-Tools"><a href="#Interesting-Tools-see-Endnote-DFT-HCP-Au-Tools" class="headerlink" title="Interesting Tools (see Endnote: DFT-HCP-Au/Tools)"></a>Interesting Tools (see <code>Endnote: DFT-HCP-Au/Tools</code>)</h2><h3 id="ASE"><a href="#ASE" class="headerlink" title="ASE"></a>ASE</h3><ul><li><p><strong>Article:</strong> The atomic simulation environment-a Python library for working with atoms (see <code>Endnote</code>)</p></li><li><p><strong>Website:</strong> <a href="https://wiki.fysik.dtu.dk/ase/index.html">ASE</a></p></li></ul><h3 id="Spglib"><a href="#Spglib" class="headerlink" title="Spglib"></a>Spglib</h3><ul><li><strong>Article:</strong> Spglib: a software library for crystal symmetry search (see <code>Endnote</code>)</li><li><strong>Functions:</strong><ul><li>Could convert between primitive &lt;&lt;&#x3D;&#x3D;&gt;&gt; conventional cell</li></ul></li></ul><h3 id="SeeK-path"><a href="#SeeK-path" class="headerlink" title="SeeK-path"></a>SeeK-path</h3><ul><li><strong>Article:</strong> Band structure diagram paths based on crystallography (see <code>Endnote</code>)</li><li><strong>Functions:</strong><ul><li>the k-path finder and visualizer</li></ul></li></ul><h3 id="VASPKIT"><a href="#VASPKIT" class="headerlink" title="VASPKIT"></a>VASPKIT</h3><ul><li><strong>Article:</strong> VASPKIT: A user-friendly interface facilitating high-throughput computing and analysis using VASP code (see <code>Endnote</code>)</li></ul><h3 id="ElasTool-update-to-3-0"><a href="#ElasTool-update-to-3-0" class="headerlink" title="ElasTool (update to 3.0)"></a>ElasTool (update to 3.0)</h3><ul><li><p><strong>Article:</strong></p><ul><li>ElasTool: An automated toolkit for elastic constants calculation (see <code>Endnote</code>)</li><li>ELASTOOL V3.0: Efficient computational and visualization toolkit for elastic and mechanical properties of materials (see <code>Endnote</code>)</li></ul></li><li><p><strong>Source code:</strong> <a href="https://github.com/gmp007/elastool">GitHub</a></p></li><li><p><strong>Description:</strong> <a href="https://mp.weixin.qq.com/s/29rqYa3k6iQjcHXwe3KOwA">WeiXin</a></p></li></ul><h3 id="Automatic-Flow-AFLOW-ACONVASP"><a href="#Automatic-Flow-AFLOW-ACONVASP" class="headerlink" title="Automatic Flow, AFLOW&#x2F;ACONVASP"></a>Automatic Flow, AFLOW&#x2F;ACONVASP</h3><ul><li><strong>Article:</strong> High-throughput electronic band structure calculations: Challenges and tools (see <code>Endnote</code>)</li><li><strong>Function:</strong><ul><li>The article give some example of momentum space for lots of bravais lattice.</li></ul></li></ul><h3 id="NLMD"><a href="#NLMD" class="headerlink" title="NLMD"></a>NLMD</h3><ul><li><strong>Article:</strong> MLMD: a programming-free AI platform to predict and design materials (see <code>Endnote</code>)</li><li><strong>Source code:</strong> <ul><li><a href="https://github.com/Jiaxuan-Ma/MLMD">NLMD</a> </li><li><a href="https://github.com/Bin-Cao/Bgolearn">Bgolearn</a> - Active learning package</li></ul></li><li><strong>Description:</strong> <a href="https://mp.weixin.qq.com/s/xvtH0k1GKPQspNP2CLR6fg">WeiXin</a></li></ul><h3 id="SurFlow"><a href="#SurFlow" class="headerlink" title="SurFlow"></a>SurFlow</h3><ul><li><strong>Article:</strong> SurfFlow: High-throughput surface energy calculations for arbitrary crystals (see <code>Endnote</code>)</li><li><strong>Source code:</strong> <a href="https://github.com/ShengLin1001/surfflow">GitHub</a></li><li><strong>Description:</strong> <a href="https://mp.weixin.qq.com/s/LbEcw69Cm3sFEZvF7P4afQ">WeiXin</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> Software </category>
+          
+          <category> tools </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Software - tools </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Mymetal - error</title>
       <link href="/Developing/Mymetal/Mymetal-error/"/>
       <url>/Developing/Mymetal/Mymetal-error/</url>
@@ -89,7 +116,7 @@
       <link href="/Thinking/Diary/Diary-I-want-to-do-now-keep-updating/"/>
       <url>/Thinking/Diary/Diary-I-want-to-do-now-keep-updating/</url>
       
-        <content type="html"><![CDATA[<p align="center"><strong><em>Life is a long relay race, sometimes leading, sometimes lagging behind, no matter how it ends, just enjoy the process!<em></strong></p><p align="center"><strong><em>人生是一场漫长的接力赛，有时领先，有时落后，不管结局怎样，享受过程就好！<em></strong></p><p><strong>Updated time: 03&#x2F;29 2024.</strong></p><h2 id="03-29-2024"><a href="#03-29-2024" class="headerlink" title="03&#x2F;29 2024"></a>03&#x2F;29 2024</h2><p>I’ll add the content below ASAP :</p><ul><li>some tools</li><li>some my zhihu text</li><li>deal with Wechat text</li><li>Theoretical website resource</li><li>Developing package mymetal</li></ul>]]></content>
+        <content type="html"><![CDATA[<p align="center"><strong><em>Life is a long relay race, sometimes leading, sometimes lagging behind, no matter how it ends, just enjoy the process!<em></strong></p><p align="center"><strong><em>人生是一场漫长的接力赛，有时领先，有时落后，不管结局怎样，享受过程就好！<em></strong></p><p><strong>Updated time: 03&#x2F;30 2024.</strong></p><h2 id="03-30-2024"><a href="#03-30-2024" class="headerlink" title="03&#x2F;30 2024."></a>03&#x2F;30 2024.</h2><p>I’ll add the content below ASAP :</p><ul><li>My summary about some useful function website, Github, unit convert website, special website about some specified function to <code>Other people blog - My summary</code></li><li>Note other blog is about my experience, but the below blog’ll included all content like other people’s summary blog</li><li>Create a blog to add everything I am interested in</li><li>The literary on WeiXin could be added the category <code>Summary/Literary/skimming or intensive reading</code>, and we need to create some literary tag</li><li>Add some VASP theoretical like some classical literatures to <code>Software/VASP/theory</code></li></ul><h2 id="03-29-2024"><a href="#03-29-2024" class="headerlink" title="03&#x2F;29 2024."></a>03&#x2F;29 2024.</h2><p>I’ll add the content below ASAP :</p><ul><li>some tools &#x3D;&gt; Done</li><li>some my zhihu text &#x3D;&gt; 0%</li><li>deal with Wechat text &#x3D;&gt; 0%</li><li>Theoretical website resource &#x3D;&gt; 100%</li><li>Developing package mymetal &#x3D;&gt; Done</li></ul>]]></content>
       
       
       <categories>
