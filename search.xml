@@ -4,6 +4,62 @@
   
     
     <entry>
+      <title>Other people blog - My summary</title>
+      <link href="/Summary/Other-people-blog/Other-people-blog-My-summary/"/>
+      <url>/Summary/Other-people-blog/Other-people-blog-My-summary/</url>
+      
+        <content type="html"><![CDATA[<p align="center"><strong><em>After all, tomorrow is another day!<em></strong></p><p align="center"><strong><em>不管怎样, 明天是崭新的一天!<em></strong></p><p><strong>Updated time: 03&#x2F;30 2024.</strong></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Summary </category>
+          
+          <category> Other_people_blog </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Summary-Other_people_blog </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>VASP - Theory - Classical literatures</title>
+      <link href="/Software/VASP/Theory/VASP-Theory-Classical-literatures/"/>
+      <url>/Software/VASP/Theory/VASP-Theory-Classical-literatures/</url>
+      
+        <content type="html"><![CDATA[<p align="center"><strong><em>A man can do no more than he can.<em></strong></p><p align="center"><strong><em>量力而行<em></strong></p><p><strong>Updated time: 03&#x2F;30 2024.</strong></p><h2 id="Write-at-first"><a href="#Write-at-first" class="headerlink" title="Write at first"></a><strong>Write</strong> at first</h2><p>It’s a blog about the theoretical background of VASP or any DFT software.</p><p>The resource has below ways:</p><ul><li>classical literature (high impact factor)</li><li>VASP-Wiki</li><li>some professional books have been categorized as <a href="https://shenglin1001.github.io/Theory/Quantum-mechanics/Quantum-mechanics-some-website-and-book/"><code>Theory/Quantum mechanics/some websites and books</code></a> </li><li>some literatures maybe not so classical, but could help me understand the flowchart of DFT calculation</li><li>other resource from other people’s blog or websites (see &#96;&#96;)</li></ul><h2 id="The-classical-literature-see-Endnote-DFT-HCP-Au-DFT-classical"><a href="#The-classical-literature-see-Endnote-DFT-HCP-Au-DFT-classical" class="headerlink" title="The classical literature (see Endnote: DFT-HCP-Au/DFT classical)"></a>The classical literature (see <code>Endnote: DFT-HCP-Au/DFT classical</code>)</h2><ol><li><p>   Kresse G, Hafner J. <strong>AB-INITIO MOLECULAR-DYNAMICS FOR OPEN-SHELL TRANSITION-METALS</strong>. Physical Review B 1993, 48(17): 13115-13118.</p></li><li><p>   Kresse G, Furthmuller J. <strong>Efficiency of ab-initio total energy calculations for metals and semiconductors using a plane-wave basis set.</strong> Computational Materials Science 1996, 6(1): 15-50.  <strong><font color='red'>(#plane-wave-basis-set)</font></strong></p></li><li><p>   Kresse G, Furthmuller J. <strong>Efficient iterative schemes for ab initio total-energy calculations using a plane-wave basis set.</strong> Physical Review B 1996, 54(16): 11169-11186.   <strong><font color='red'>(#MP-K-Points)</font></strong></p></li><li><p>   Kresse G, Joubert D. <strong>From ultrasoft pseudopotentials to the projector augmented-wave method</strong>. Physical Review B 1999, 59(3): 1758-1775.  <strong><font color='red'>(#PAW)</font></strong></p></li><li><p>   Perdew JP, Burke K, Ernzerhof M. <strong>Generalized gradient approximation made simple</strong> (vol 77, pg 3865, 1996). Physical Review Letters 1997, 78(7): 1396-1396.  <strong><font color='red'>(#GGA-functional #PBE)</font></strong></p></li><li><p>   Heyd J, Scuseria GE, Ernzerhof M. <strong>Hybrid functionals based on a screened Coulomb potential.</strong> Journal of Chemical Physics 2003, 118(18): 8207-8215. <strong><font color='red'>(# Hybrid-functional)</font></strong></p></li><li><p>   Blöchl PE, Först CJ, Schimpl J. <strong>Projector augmented wave method:: <i>ab initio</i> molecular dynamics with full wave functions</strong>. Bulletin of Materials Science 2003, 26(1): 33-41. <strong><font color='red'>(#PAW)</font></strong></p></li><li><p>   Blochl PE. <strong>PROJECTOR AUGMENTED-WAVE METHOD</strong>. Physical Review B 1994, 50(24): 17953-17979.  <strong><font color='red'>(#PAW)</font></strong></p></li><li><p>   Kohn W, Sham LJ. <strong>Self-Consistent Equations Including Exchange and Correlation Effects</strong>. Physical Review 1965, 140(4A): A1133-A1138.</p></li><li><p>   Monkhorst HJ, Pack JD. <strong>SPECIAL POINTS FOR BRILLOUIN-ZONE INTEGRATIONS</strong>. Physical Review B 1976, 13(12): 5188-5192. <strong><font color='red'>(#MP-methods)</font></strong></p></li></ol><h2 id="VASP-Wiki"><a href="#VASP-Wiki" class="headerlink" title="VASP-Wiki"></a>VASP-Wiki</h2><ul><li><a href="https://www.vasp.at/wiki/index.php/Category:Exchange-correlation_functionals">Exchange-correlation functionals</a></li></ul><h2 id="professional-books"><a href="#professional-books" class="headerlink" title="professional books"></a>professional books</h2><p>See <a href="https://shenglin1001.github.io/Theory/Quantum-mechanics/Quantum-mechanics-some-website-and-book/"><code>Theory/Quantum mechanics/some websites and books</code></a> </p><h2 id="Other-literatures"><a href="#Other-literatures" class="headerlink" title="Other literatures"></a>Other literatures</h2><ol><li><p>Hafner J. <strong>Ab-initio simulations of materials using VASP: Density-functional theory and beyond</strong>. J Comput Chem 2008, 29(13): 2044-2078.</p></li><li><p>Grimme S. <strong>Density functional theory with London dispersion corrections</strong>. WIREs Computational Molecular Science 2011, 1(2): 211-228.</p></li><li><p>Perdew JP, Ruzsinszky A, Csonka GI, et al. <strong>Restoring the Density-Gradient Expansion for Exchange in Solids and Surface</strong>s. Physical Review Letters 2008, 100(13).</p></li></ol><h2 id="Other-resource"><a href="#Other-resource" class="headerlink" title="Other resource"></a>Other resource</h2><p>see <a href="https://shenglin1001.github.io/Summary/Other-people-blog/Other-people-blog-My-summary/"><code>Summary/other_people_blog/my_summary</code></a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Software </category>
+          
+          <category> VASP </category>
+          
+          <category> Theory </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Software-VASP-Theory </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>tools - summary</title>
       <link href="/Software/tools/tools-summary/"/>
       <url>/Software/tools/tools-summary/</url>
@@ -22,7 +78,7 @@
       
         <tags>
             
-            <tag> Software - tools </tag>
+            <tag> Software-tools </tag>
             
         </tags>
       
@@ -49,7 +105,7 @@
       
         <tags>
             
-            <tag> Developing - Mymetal </tag>
+            <tag> Developing-Mymetal </tag>
             
         </tags>
       
@@ -76,7 +132,7 @@
       
         <tags>
             
-            <tag> Developing - Mymetal </tag>
+            <tag> Developing-Mymetal </tag>
             
         </tags>
       
@@ -103,7 +159,7 @@
       
         <tags>
             
-            <tag> Theory - Quantum mechanics </tag>
+            <tag> Theory-Quantum_mechanics </tag>
             
         </tags>
       
@@ -116,7 +172,7 @@
       <link href="/Thinking/Diary/Diary-I-want-to-do-now-keep-updating/"/>
       <url>/Thinking/Diary/Diary-I-want-to-do-now-keep-updating/</url>
       
-        <content type="html"><![CDATA[<p align="center"><strong><em>Life is a long relay race, sometimes leading, sometimes lagging behind, no matter how it ends, just enjoy the process!<em></strong></p><p align="center"><strong><em>人生是一场漫长的接力赛，有时领先，有时落后，不管结局怎样，享受过程就好！<em></strong></p><p><strong>Updated time: 03&#x2F;30 2024.</strong></p><h2 id="03-30-2024"><a href="#03-30-2024" class="headerlink" title="03&#x2F;30 2024."></a>03&#x2F;30 2024.</h2><p>I’ll add the content below ASAP :</p><ul><li>My summary about some useful function website, Github, unit convert website, special website about some specified function to <code>Other people blog - My summary</code></li><li>Note other blog is about my experience, but the below blog’ll included all content like other people’s summary blog</li><li>Create a blog to add everything I am interested in</li><li>The literary on WeiXin could be added the category <code>Summary/Literary/skimming or intensive reading</code>, and we need to create some literary tag</li><li>Add some VASP theoretical like some classical literatures to <code>Software/VASP/theory</code></li></ul><h2 id="03-29-2024"><a href="#03-29-2024" class="headerlink" title="03&#x2F;29 2024."></a>03&#x2F;29 2024.</h2><p>I’ll add the content below ASAP :</p><ul><li>some tools &#x3D;&gt; Done</li><li>some my zhihu text &#x3D;&gt; 0%</li><li>deal with Wechat text &#x3D;&gt; 0%</li><li>Theoretical website resource &#x3D;&gt; 100%</li><li>Developing package mymetal &#x3D;&gt; Done</li></ul>]]></content>
+        <content type="html"><![CDATA[<p align="center"><strong><em>Life is a long relay race, sometimes leading, sometimes lagging behind, no matter how it ends, just enjoy the process!<em></strong></p><p align="center"><strong><em>人生是一场漫长的接力赛，有时领先，有时落后，不管结局怎样，享受过程就好！<em></strong></p><p><strong>Updated time: 03&#x2F;30 2024.</strong></p><h2 id="03-30-2024"><a href="#03-30-2024" class="headerlink" title="03&#x2F;30 2024."></a>03&#x2F;30 2024.</h2><p>I’ll add the content below ASAP :</p><ul><li>My summary about some useful function website, Github, unit convert website, special website about some specified function to <code>Other people blog - My summary</code></li><li>Note other blog is about my experience, but the below blog’ll included all content like other people’s summary blog</li><li>Create a blog to add everything I am interested in</li><li>The literary on WeiXin could be added the category <code>Summary/Literary/skimming or intensive reading</code>, and we need to create some literary tag</li><li><font color='cornflowerblue'>Add some VASP theoretical like some classical literatures to <code>Software/VASP/theory</code> &#x3D;&gt; Done</font></li></ul><p>I’ll do some work about my scientific research:</p><ul><li>find a website&#x2F;notebook that could execute the DFT calculation from the first step.</li><li>sbatch some jobs of the structure optimization for the primitive cell of the bulk HCP&#x2F;FCC gold.</li><li>generate the heterostructures using my package</li></ul><h2 id="03-29-2024"><a href="#03-29-2024" class="headerlink" title="03&#x2F;29 2024."></a>03&#x2F;29 2024.</h2><p>I’ll add the content below ASAP :</p><ul><li><font color='cornflowerblue'>some tools &#x3D;&gt; Done</font></li><li><font color='red'>some my zhihu text &#x3D;&gt; 0%</font></li><li><font color='red'>deal with Wechat text &#x3D;&gt; 0%</font></li><li><font color='cornflowerblue'>Theoretical website resource &#x3D;&gt; Done</font></li><li><font color='cornflowerblue'>Developing package mymetal &#x3D;&gt; Done</font></li></ul>]]></content>
       
       
       <categories>
@@ -130,9 +186,9 @@
       
         <tags>
             
-            <tag> Thinking - Diary </tag>
+            <tag> Thinking-Diary </tag>
             
-            <tag> Thinking - Idea </tag>
+            <tag> Thinking-Idea </tag>
             
         </tags>
       
@@ -145,7 +201,7 @@
       <link href="/Summary/Other-people-blog/Other-people-blog-computational-material-science/"/>
       <url>/Summary/Other-people-blog/Other-people-blog-computational-material-science/</url>
       
-        <content type="html"><![CDATA[<p align="center"><strong><em>Learn from others to refine oneself<em></strong></p><p align="center"><strong><em>他山之石，可以攻玉<em></strong></p><p><em><strong>Updated time: 03&#x2F;29 2024.</strong></em></p><h1 id="The-famous-experts’-website"><a href="#The-famous-experts’-website" class="headerlink" title="The famous experts’ website"></a>The famous experts’ website</h1><h2 id="Official-website"><a href="#Official-website" class="headerlink" title="Official website"></a>Official website</h2><ul><li><a href="https://www.chemie.uni-bonn.de/grimme/de/grimme">Prof. Dr. Stefan Grimme</a></li><li><a href="https://cmp.univie.ac.at/people/professors/georg-kresse/">Prof. Dr. Georg Kresse</a></li><li><a href="https://people.epfl.ch/william.curtin/?lang=en">Prof. Dr. William Curtin</a></li></ul><h2 id="Summary-weblogs"><a href="#Summary-weblogs" class="headerlink" title="Summary weblogs"></a>Summary weblogs</h2><ul><li><a href="https://blog.shishiruqi.com/2019/05/01/resources/">世事如棋</a></li><li><a href="https://www.bigbrosci.com/">大师兄 - Learn VASP the hard way</a><ul><li>包含一部分表面弛豫的知识</li></ul></li><li>学术之友<ul><li><a href="https://zhuanlan.zhihu.com/p/62573921">学术之友以及其它公众号理论计算经验贴收集(长期更新)</a></li><li><a href="https://zhuanlan.zhihu.com/p/62864134">Some Useful Scripts From GitHub (Updated)</a></li><li><a href="https://zhuanlan.zhihu.com/p/651210002">网上磁性优质视频和文字教程汇总</a></li><li><a href="https://zhuanlan.zhihu.com/p/80717032">GitHub上机器学习、正则表达式、VIM等学习资料</a></li><li><a href="https://zhuanlan.zhihu.com/p/74686906">以最便宜的方式学会第一性原理计算(免费和收费系列集锦)</a></li></ul></li><li><a href="https://www.vasp.at/wiki/index.php/Welcome">How to study VASP</a></li><li><strong><a href="https://www.bilibili.com/read/cv5372020/?spm_id_from=333.999.0.0">啦啦黑还黑</a></strong></li></ul><h2 id="columns"><a href="#columns" class="headerlink" title="columns"></a>columns</h2><ul><li><a href="https://www.zhihu.com/people/obaica/columns">学术之友</a></li><li><a href="https://www.zhihu.com/column/c_1680331980414226432">固体物理&amp;量子化学&amp;DFT my column</a> 😊</li></ul><h2 id="Other-people’s-blog-except-below-mentioned-bloger"><a href="#Other-people’s-blog-except-below-mentioned-bloger" class="headerlink" title="Other people’s blog (except below mentioned bloger)"></a>Other people’s blog (except below mentioned bloger)</h2><ul><li><a href="http://sobereva.com/">卢天</a></li><li><a href="http://staff.ustc.edu.cn/~zqj/">郑奇靖</a><ul><li>PPT of lecture: Solid State Physics A</li><li>How to Plot the First Brillouin Zone</li><li>Band Unfolding Tutorial</li></ul></li></ul><h1 id="Useful-using-website"><a href="#Useful-using-website" class="headerlink" title="Useful using website"></a>Useful using website</h1><h2 id="Todo-list"><a href="#Todo-list" class="headerlink" title="Todo list"></a>Todo list</h2><ul><li><a href="https://workona.com/0/">workona</a></li></ul><h2 id="Computational-material-science"><a href="#Computational-material-science" class="headerlink" title="Computational material science"></a>Computational material science</h2><ul><li><p><a href="http://bbs.keinsci.com/forum.php">计算化学公社</a></p></li><li><p><a href="http://bbs.vaspkit.cn/">vaspkit forum</a></p></li><li><p><a href="https://legacy.materialsproject.org/">materials project</a></p></li><li><p>some QQ group and webchat (计算凝聚态物理)</p></li></ul>]]></content>
+        <content type="html"><![CDATA[<p align="center"><strong><em>Learn from others to refine oneself<em></strong></p><p align="center"><strong><em>他山之石，可以攻玉<em></strong></p><p><em><strong>Updated time: 03&#x2F;29 2024.</strong></em></p><h1 id="The-famous-experts’-website"><a href="#The-famous-experts’-website" class="headerlink" title="The famous experts’ website"></a>The famous experts’ website</h1><h2 id="Official-website"><a href="#Official-website" class="headerlink" title="Official website"></a>Official website</h2><ul><li><a href="https://www.chemie.uni-bonn.de/grimme/de/grimme">Prof. Dr. Stefan Grimme</a></li><li><a href="https://cmp.univie.ac.at/people/professors/georg-kresse/">Prof. Dr. Georg Kresse</a></li><li><a href="https://people.epfl.ch/william.curtin/?lang=en">Prof. Dr. William Curtin</a></li></ul><h2 id="Summary-weblogs"><a href="#Summary-weblogs" class="headerlink" title="Summary weblogs"></a>Summary weblogs</h2><ul><li><a href="https://blog.shishiruqi.com/2019/05/01/resources/">世事如棋</a></li><li><a href="https://www.bigbrosci.com/">大师兄 - Learn VASP the hard way</a><ul><li>包含一部分表面弛豫的知识</li></ul></li><li>学术之友<ul><li><a href="https://zhuanlan.zhihu.com/p/62573921">学术之友以及其它公众号理论计算经验贴收集(长期更新)</a></li><li><a href="https://zhuanlan.zhihu.com/p/62864134">Some Useful Scripts From GitHub (Updated)</a></li><li><a href="https://zhuanlan.zhihu.com/p/651210002">网上磁性优质视频和文字教程汇总</a></li><li><a href="https://zhuanlan.zhihu.com/p/80717032">GitHub上机器学习、正则表达式、VIM等学习资料</a></li><li><a href="https://zhuanlan.zhihu.com/p/74686906">以最便宜的方式学会第一性原理计算(免费和收费系列集锦)</a></li></ul></li><li><a href="https://www.vasp.at/wiki/index.php/Welcome">How to study VASP</a></li><li><strong><a href="https://www.bilibili.com/read/cv5372020/?spm_id_from=333.999.0.0">啦啦黑还黑</a></strong></li></ul><h2 id="columns"><a href="#columns" class="headerlink" title="columns"></a>columns</h2><ul><li><a href="https://www.zhihu.com/people/obaica/columns">学术之友</a></li><li><a href="https://www.zhihu.com/column/c_1680331980414226432">固体物理&amp;量子化学&amp;DFT my column</a> 😊</li></ul><h2 id="Other-people’s-blog-except-below-mentioned-bloger"><a href="#Other-people’s-blog-except-below-mentioned-bloger" class="headerlink" title="Other people’s blog (except below mentioned bloger)"></a>Other people’s blog (except below mentioned bloger)</h2><ul><li><a href="http://sobereva.com/">卢天</a></li><li><a href="http://staff.ustc.edu.cn/~zqj/">郑奇靖</a><ul><li>PPT of lecture: Solid State Physics A</li><li>How to Plot the First Brillouin Zone</li><li>Band Unfolding Tutorial</li></ul></li></ul><h1 id="Useful-using-website"><a href="#Useful-using-website" class="headerlink" title="Useful using website"></a>Useful using website</h1><h2 id="Todo-list"><a href="#Todo-list" class="headerlink" title="Todo list"></a>Todo list</h2><ul><li><a href="https://workona.com/0/">workona</a></li></ul><h2 id="Computational-material-science"><a href="#Computational-material-science" class="headerlink" title="Computational material science"></a>Computational material science</h2><ul><li><p><a href="http://bbs.keinsci.com/forum.php">计算化学公社</a></p></li><li><p><a href="http://bbs.vaspkit.cn/">vaspkit forum</a></p></li><li><p><a href="https://legacy.materialsproject.org/">materials project</a></p></li><li><p>some QQ group and webchat (计算凝聚态物理, DFT 计算杂谈, ferroelectrics, 研之成理, 学术之友, 深度势能, 力学人)</p></li></ul>]]></content>
       
       
       <categories>
@@ -159,7 +215,7 @@
       
         <tags>
             
-            <tag> Summary - Other people blog </tag>
+            <tag> Summary-Other_people_blog </tag>
             
         </tags>
       
@@ -186,7 +242,7 @@
       
         <tags>
             
-            <tag> Thinking - Diary </tag>
+            <tag> Thinking-Diary </tag>
             
         </tags>
       
@@ -213,7 +269,7 @@
       
         <tags>
             
-            <tag> Thinking - Diary </tag>
+            <tag> Thinking-Diary </tag>
             
         </tags>
       
