@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Mymetal - error | Please be chilling out</title>
-  <meta name="keywords" content=" Developing-Mymetal ">
-  <meta name="description" content="Mymetal - error | Please be chilling out">
+  <title>Lammps - RDF of annealed SiO2 using VMD | Please be chilling out</title>
+  <meta name="keywords" content=" Software-Lammps ">
+  <meta name="description" content="Lammps - RDF of annealed SiO2 using VMD | Please be chilling out">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="About this WeBlog我是一名 2022 级在读研究生（力学 &#x2F; 机器学习）。本博客创建于 2024.3 ，为了整合记录读研以来所有的知识积累（知乎，哔哩哔哩，公众号，博客，网站，书籍）。 目前我对微观尺度下金属领域的相变机制很感兴趣。如果大家对我的研究领域感兴趣，欢迎发邮件给我，共同进步。😃 使用软件包括：Python，VASP，Lammps Python 包：ASE，m">
 <meta property="og:type" content="website">
@@ -625,9 +625,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-Developing/Mymetal-error" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-Software/Lammps-RDF-of-annealed-SiO2-using-VMD" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">Mymetal - error</h1>
+        <h1 class="article-title">Lammps - RDF of annealed SiO2 using VMD</h1>
     
     <div class="article-meta">
         
@@ -637,9 +637,9 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="Developing">Developing</a> > 
+            <a  data-rel="Software">Software</a> > 
             
-            <a  data-rel="Developing&lt;---&gt;Mymetal">Mymetal</a>
+            <a  data-rel="Software&lt;---&gt;Lammps">Lammps</a>
             
         </span>
         
@@ -647,19 +647,19 @@
         <span class="tag">
             <i class="iconfont icon-tag"></i>
             
-            <a class="color4">Developing-Mymetal</a>
+            <a class="color1">Software-Lammps</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2024-03-30 17:41:53'>2024-03-30 01:44</time>
+            Created At : <time class="date" title='Updated At: 2024-03-31 15:33:42'>2022-04-05 20:09</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:80</span>
+        <span>Count:156</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -689,7 +689,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Some-fixing-error-and-unfilled-code"><span class="toc-text">Some fixing error and unfilled code</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#when-i-run-the-test-post-py-i-found-the-output-file-has-been-generated-in-the-root-directory-of-pjvasp-package"><span class="toc-text">when i run the test-post&#x2F;*.py, i found the output file has been generated in the root directory of pjvasp_package</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#VMD-%E7%94%9F%E6%88%90-lammps-data"><span class="toc-text">VMD 生成 lammps data</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#VMD%E7%94%9F%E6%88%90-RDF-lammpstrj-native-dump-id-type-x-y-z"><span class="toc-text">VMD生成 RDF lammpstrj native dump id type x y z</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Rerun-command-output-RDF"><span class="toc-text">Rerun command - output RDF</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -705,19 +705,48 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p align="center"><strong><em>Time flies.<em></strong></p>
+        <p align="center"><strong><em>Every little helps.<em></strong></p>
 
-<p align="center"><strong><em>光阴似箭<em></strong></p>
+<p align="center"><strong><em>积少成多<em></strong></p>
 
-<p><strong>Updated time: 03&#x2F;30 2024.</strong></p>
-<h2 id="Some-fixing-error-and-unfilled-code"><a href="#Some-fixing-error-and-unfilled-code" class="headerlink" title="Some fixing error and unfilled code"></a>Some fixing error and unfilled code</h2><h3 id="when-i-run-the-test-post-py-i-found-the-output-file-has-been-generated-in-the-root-directory-of-pjvasp-package"><a href="#when-i-run-the-test-post-py-i-found-the-output-file-has-been-generated-in-the-root-directory-of-pjvasp-package" class="headerlink" title="when i run the test-post&#x2F;*.py, i found the output file has been generated in the root directory of pjvasp_package"></a>when i run the test-post&#x2F;*.py, i found the output file has been generated in the root directory of pjvasp_package</h3><p>we should add flowing python commands</p>
-<pre><code class="shell">import os
-# get the path of those script
-script_dir = os.path.dirname(__file__)
-# set the working path
-os.chdir(script_dir)
+<p><strong>Updated time: 04&#x2F;05 2022.</strong></p>
+<p><strong><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/493516974">原文章链接</a></strong></p>
+<h2 id="VMD-生成-lammps-data"><a href="#VMD-生成-lammps-data" class="headerlink" title="VMD 生成 lammps data"></a>VMD 生成 lammps data</h2><ol>
+<li><p>material_studio 生成cif文件，扩胞</p>
+</li>
+<li><p>VESTA，删除镜像原子_delete_bonds，export_data生成 xyz 文件</p>
+</li>
+<li><p>VMD，管理员运行</p>
+</li>
+</ol>
+<pre><code class="bash">pbc set &#123;a b c 90 90 90&#125;
+pbc box
+pbc box -shiftcenterrel &#123; 0 0.5 0&#125;          #平移，0 &lt; num &lt; 1
+topo writelammpsdata *.data atomic          #生成在根目录,extension_TK censole
 </code></pre>
-<p>Ok, avoid to use it in root directory. To be safe, use it in user file.</p>
+<ol start="4">
+<li>OVITO检查</li>
+</ol>
+<h2 id="VMD生成-RDF-lammpstrj-native-dump-id-type-x-y-z"><a href="#VMD生成-RDF-lammpstrj-native-dump-id-type-x-y-z" class="headerlink" title="VMD生成 RDF lammpstrj native dump id type x y z"></a>VMD生成 RDF lammpstrj native dump id type x y z</h2><ol>
+<li>import_molecular</li>
+</ol>
+<p><img src="/Lammps-RDF-of-annealed-SiO2-using-VMD/1.png"></p>
+<p><img src="/Lammps-RDF-of-annealed-SiO2-using-VMD/2.png"></p>
+<ol start="2">
+<li>生成盒子</li>
+</ol>
+<pre><code class="text">pbc set &#123;&#125;
+pbc box
+</code></pre>
+<p><img src="/Lammps-RDF-of-annealed-SiO2-using-VMD/3.png"></p>
+<p><img src="/Lammps-RDF-of-annealed-SiO2-using-VMD/4.png"></p>
+<ol start="3">
+<li>extension_analysis_RDF</li>
+</ol>
+<p><img src="/Lammps-RDF-of-annealed-SiO2-using-VMD/5.png"></p>
+<p><img src="/Lammps-RDF-of-annealed-SiO2-using-VMD/6.png"></p>
+<h2 id="Rerun-command-output-RDF"><a href="#Rerun-command-output-RDF" class="headerlink" title="Rerun command - output RDF"></a>Rerun command - output RDF</h2><p>运行成功，但计算错误，都为0。不知道是为什么？</p>
+<p><strong>Attachment:</strong> 我只找到了这一个给出了<a target="_blank" rel="noopener" href="https://jpharvey.ca/2020/05/27/tricks-of-the-trade-radial-distribution-function-rdf-with-lammps/">rerun算例</a></p>
 
       
        <hr><span style="font-style: italic;color: gray;"> Please indicate the source when reprinting. Please verify the citation sources in the article and point out any errors or unclear expressions. </span>

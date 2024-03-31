@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Mymetal - error | Please be chilling out</title>
-  <meta name="keywords" content=" Developing-Mymetal ">
-  <meta name="description" content="Mymetal - error | Please be chilling out">
+  <title>Lammps - Add new pair style | Please be chilling out</title>
+  <meta name="keywords" content=" Software-Lammps ">
+  <meta name="description" content="Lammps - Add new pair style | Please be chilling out">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="About this WeBlog我是一名 2022 级在读研究生（力学 &#x2F; 机器学习）。本博客创建于 2024.3 ，为了整合记录读研以来所有的知识积累（知乎，哔哩哔哩，公众号，博客，网站，书籍）。 目前我对微观尺度下金属领域的相变机制很感兴趣。如果大家对我的研究领域感兴趣，欢迎发邮件给我，共同进步。😃 使用软件包括：Python，VASP，Lammps Python 包：ASE，m">
 <meta property="og:type" content="website">
@@ -625,9 +625,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-Developing/Mymetal-error" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-Software/Lammps-Add-new-pair-style" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">Mymetal - error</h1>
+        <h1 class="article-title">Lammps - Add new pair style</h1>
     
     <div class="article-meta">
         
@@ -637,9 +637,9 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="Developing">Developing</a> > 
+            <a  data-rel="Software">Software</a> > 
             
-            <a  data-rel="Developing&lt;---&gt;Mymetal">Mymetal</a>
+            <a  data-rel="Software&lt;---&gt;Lammps">Lammps</a>
             
         </span>
         
@@ -647,19 +647,19 @@
         <span class="tag">
             <i class="iconfont icon-tag"></i>
             
-            <a class="color4">Developing-Mymetal</a>
+            <a class="color1">Software-Lammps</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2024-03-30 17:41:53'>2024-03-30 01:44</time>
+            Created At : <time class="date" title='Updated At: 2024-03-31 15:55:04'>2022-04-16 19:20</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:80</span>
+        <span>Count:155</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -689,7 +689,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Some-fixing-error-and-unfilled-code"><span class="toc-text">Some fixing error and unfilled code</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#when-i-run-the-test-post-py-i-found-the-output-file-has-been-generated-in-the-root-directory-of-pjvasp-package"><span class="toc-text">when i run the test-post&#x2F;*.py, i found the output file has been generated in the root directory of pjvasp_package</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD%E5%8E%8B%E7%BC%A9%E5%8C%85"><span class="toc-text">下载压缩包</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9B%E5%85%A5lammps-src%E6%96%87%E4%BB%B6%E4%B8%8B"><span class="toc-text">进入lammps&#x2F;src文件下</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BC%96%E8%AF%91"><span class="toc-text">编译</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Noted"><span class="toc-text">Noted:</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -705,19 +705,34 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p align="center"><strong><em>Time flies.<em></strong></p>
+        <p align="center"><strong><em>Books and friends should be few butgood.<em></strong></p>
 
-<p align="center"><strong><em>光阴似箭<em></strong></p>
-
-<p><strong>Updated time: 03&#x2F;30 2024.</strong></p>
-<h2 id="Some-fixing-error-and-unfilled-code"><a href="#Some-fixing-error-and-unfilled-code" class="headerlink" title="Some fixing error and unfilled code"></a>Some fixing error and unfilled code</h2><h3 id="when-i-run-the-test-post-py-i-found-the-output-file-has-been-generated-in-the-root-directory-of-pjvasp-package"><a href="#when-i-run-the-test-post-py-i-found-the-output-file-has-been-generated-in-the-root-directory-of-pjvasp-package" class="headerlink" title="when i run the test-post&#x2F;*.py, i found the output file has been generated in the root directory of pjvasp_package"></a>when i run the test-post&#x2F;*.py, i found the output file has been generated in the root directory of pjvasp_package</h3><p>we should add flowing python commands</p>
-<pre><code class="shell">import os
-# get the path of those script
-script_dir = os.path.dirname(__file__)
-# set the working path
-os.chdir(script_dir)
+<p><strong>Updated time: 04&#x2F;16 2022.</strong></p>
+<p><strong>感谢<a href="https://link.zhihu.com/?target=https://github.com/by-student-2017">github用户</a></strong></p>
+<p>以 MOS<sub>2</sub> 的 rebo 势函数为例 (<strong>DOI:<a href="https://link.zhihu.com/?target=https://journals.aps.org/prb/abstract/10.1103/PhysRevB.79.245110">10.1103&#x2F;PhysRevB.79.245110</a></strong>)</p>
+<p><strong>Source code:</strong> <a href="https://link.zhihu.com/?target=https://github.com/by-student-2017/lammps_MoS_REBO%23run-easy-method-elastic-at-any-temperature">GitHub</a></p>
+<h2 id="下载压缩包"><a href="#下载压缩包" class="headerlink" title="下载压缩包"></a>下载压缩包</h2><p><img src="/Lammps-Add-new-pair-style/1.png" alt="1"></p>
+<p><img src="/Lammps-Add-new-pair-style/2.png" alt="2"></p>
+<h2 id="进入lammps-src文件下"><a href="#进入lammps-src文件下" class="headerlink" title="进入lammps/src文件下"></a>进入<code>lammps/src</code>文件下</h2><p>将<code>.cpp .h</code>文件拷到<code>src</code>下</p>
+<p>修改<code>style_pair.h</code>添加</p>
+<pre><code class="text">#include &quot;pair_rebomos.h&quot;
 </code></pre>
-<p>Ok, avoid to use it in root directory. To be safe, use it in user file.</p>
+<p>修改<code>makefile.list </code>添加</p>
+<p><img src="/Lammps-Add-new-pair-style/3.png" alt="3"></p>
+<h2 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h2><p><code>src</code>目录下输入</p>
+<pre><code class="text">make mpi -j8
+</code></pre>
+<p>将生成的<code>lmp_mpi</code>替换掉原先的执行脚本</p>
+<h2 id="Noted"><a href="#Noted" class="headerlink" title="Noted:"></a>Noted:</h2><ul>
+<li><p>我的虚拟机原先就装上lammps了</p>
+</li>
+<li><p>编译部分可参照原先的编译过程替换</p>
+</li>
+<li><p>推荐安装教程 (<a href="https://link.zhihu.com/?target=https://www.bilibili.com/video/BV1oZ4y1s7eK?spm_id_from=333.880.my_history.page.click">failure address</a>)</p>
+</li>
+<li><p>推荐一本学习lammps源代码的书籍<a target="_blank" rel="noopener" href="https://www.zhihu.com/people/lijichen365/columns">ROY KID</a> 大佬<a href="https://link.zhihu.com/?target=https://github.com/Roy-Kid/extending-lammps-zh">写的</a></p>
+</li>
+</ul>
 
       
        <hr><span style="font-style: italic;color: gray;"> Please indicate the source when reprinting. Please verify the citation sources in the article and point out any errors or unclear expressions. </span>
