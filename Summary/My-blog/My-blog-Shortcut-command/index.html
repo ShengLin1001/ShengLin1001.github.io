@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>ASE - How to generate surface | Please be chilling out</title>
-  <meta name="keywords" content=" Software-ASE ">
-  <meta name="description" content="ASE - How to generate surface | Please be chilling out">
+  <title>My blog - Shortcut command | Please be chilling out</title>
+  <meta name="keywords" content=" Summary-My_blog ">
+  <meta name="description" content="My blog - Shortcut command | Please be chilling out">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="About this WeBlog我是一名 2022 级在读研究生（力学 &#x2F; 机器学习）。本博客创建于 2024.3 ，为了整合记录读研以来所有的知识积累（知乎，哔哩哔哩，公众号，博客，网站，书籍）。 目前我对微观尺度下金属领域的相变机制很感兴趣。如果大家对我的研究领域感兴趣，欢迎发邮件给我，共同进步。😃 使用软件包括：Python，VASP，Lammps Python 包：ASE，m">
 <meta property="og:type" content="website">
@@ -856,11 +856,13 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-Software/ASE-How-to-generate-surface" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-Summary/My-blog-Shortcut-command" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">ASE - How to generate surface</h1>
+        <h1 class="article-title">My blog - Shortcut command</h1>
     
     <div class="article-meta">
+        
+        <span class="top"><a>置顶</a></span>
         
         
         
@@ -868,9 +870,9 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="Software">Software</a> > 
+            <a  data-rel="Summary">Summary</a> > 
             
-            <a  data-rel="Software&lt;---&gt;ASE">ASE</a>
+            <a  data-rel="Summary&lt;---&gt;My_blog">My_blog</a>
             
         </span>
         
@@ -878,19 +880,19 @@
         <span class="tag">
             <i class="iconfont icon-tag"></i>
             
-            <a class="color3">Software-ASE</a>
+            <a class="color1">Summary-My_blog</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2024-04-01 00:10:16'>2024-01-19 12:13</time>
+            Created At : <time class="date" title='Updated At: 2024-04-01 01:54:19'>2024-01-23 01:33</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:1.5k</span>
+        <span>Count:167</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -920,7 +922,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Ref"><span class="toc-text">Ref</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2%E7%9A%84%E8%AF%9D"><span class="toc-text">写在前面的话</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-ASE-%E4%B8%AD%E7%9A%84-surface"><span class="toc-text">1. ASE 中的 surface</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E4%BE%8B%E5%AD%90-%EF%BC%88Ref-1-%EF%BC%89"><span class="toc-text">2. 一个简单的例子 （Ref [1]）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-manual-%E4%B8%AD%E7%9A%84-%E7%90%86%E8%AE%BA-ref-3"><span class="toc-text">3. manual 中的 理论 [ref 3]</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-%E5%AE%9E%E7%A9%BA%E9%97%B4%E6%8F%8F%E8%BF%B0"><span class="toc-text">3.1 实空间描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-%E5%80%92%E7%A9%BA%E9%97%B4%E6%8F%8F%E8%BF%B0"><span class="toc-text">3.2 倒空间描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-%E7%A1%AE%E5%AE%9A%E9%9D%A2%E5%86%85%E5%9F%BA%E7%9F%A2%E9%87%8F"><span class="toc-text">3.3 确定面内基矢量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-%E7%A1%AE%E5%AE%9A-v3"><span class="toc-text">3.4 确定 v3</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-%E4%BB%A3%E7%A0%81%E4%B8%AD%E7%9A%84%E5%AE%9E%E7%8E%B0"><span class="toc-text">3.5 代码中的实现</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-Spglib-%E5%AF%BB%E6%89%BE%E5%8E%9F%E8%83%9E-ref-2"><span class="toc-text">4 Spglib 寻找原胞 (ref 2)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E8%AE%BE%E5%AE%9A%E5%AF%86%E6%8E%92%E9%9D%A2%E5%B1%82%E6%95%B0"><span class="toc-text">5. 设定密排面层数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%99%E5%9C%A8%E6%9C%80%E5%90%8E%E7%9A%84%E8%AF%9D"><span class="toc-text">写在最后的话</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#VS-code"><span class="toc-text">VS code</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#OUTLOOK"><span class="toc-text">OUTLOOK</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux"><span class="toc-text">Linux</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#grep"><span class="toc-text">grep</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#To-see"><span class="toc-text">To see</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#write-to-file"><span class="toc-text">write to file</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#chmod-command"><span class="toc-text">chmod command</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#delete-or-add-something-on-file"><span class="toc-text">delete or add something on file</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -936,212 +938,54 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p align="center"><strong><em>No cross, no crown.<em></strong></p>
+        <p align="center"><strong><em>Justice has long arms.<em></strong></p>
 
-<p align="center"><strong><em>不经历风雨，怎么见彩虹<em></strong></p>
+<p align="center"><strong><em>天网恢恢, 疏而不漏<em></strong></p>
 
-<p><strong>Updated time: 01&#x2F;19 2024.</strong></p>
-<h2 id="Ref"><a href="#Ref" class="headerlink" title="Ref"></a>Ref</h2><ol>
-<li><p><a href="https://link.zhihu.com/?target=https://wiki.fysik.dtu.dk/ase/ase/build/surface.html%23surfaces">Surfaces — ASE documentation (dtu.dk)</a></p>
-</li>
-<li><p><a href="https://link.zhihu.com/?target=https://spglib.readthedocs.io/en/latest/definition.html">Definitions and conventions — Spglib v2.3.0</a></p>
-</li>
-<li><p>Theory and implementation behind: Universal surface creation - smallest unitcell Bjarke Brink Buus, Jakob Howalt &amp; Thomas Bligaard August 2, 2019</p>
-</li>
-<li><p><a href="https://link.zhihu.com/?target=http://bbs.vaspkit.cn/forum.php?mod=viewthread&tid=54%23:~:text=VASPKIT%E9%A6%96%E5%85%88%E8%B0%83%E7%94%A8spglib%E5%AF%BB%E6%89%BE%E5%88%B0%E6%A0%87%E5%87%86%E7%9A%84%E6%83%AF%E7%94%A8%E6%99%B6%E8%83%9E%EF%BC%8C%E7%84%B6%E5%90%8E%E5%9F%BA%E4%BA%8E%E6%96%87%E7%8C%AEComputational%20Materials%20Science%20128%20(2017)%20140%E2%80%93184%E4%B8%AD%E7%9A%84%E8%A1%A83%E6%89%80%E7%BB%99%E5%87%BA%E7%9A%84%E5%8F%98%E6%8D%A2%E7%9F%A9%E9%98%B5P%EF%BC%8C%E9%80%9A%E8%BF%87%E5%85%AC%E5%BC%8F%E5%8E%9F%E8%83%9E%E5%9F%BA%E7%9F%A2%20(ap,,bp,%20cp)=%E6%99%B6%E8%83%9E%E5%9F%BA%E7%9F%A2%20(ac,%20bc,%20cc)*P%E5%BE%97%E5%88%B0%E5%8E%9F%E8%83%9E%EF%BC%88%E5%8F%82%E8%80%83%20https://spglib.github.io/spglib/definition.html%20%EF%BC%89%E3%80%82">vaspkit得到标准化原胞基矢和pymatgen得到标准化原胞基矢差异 - VASPKIT使用相关 - VASPKIT论坛 - VASPKIT</a></p>
-</li>
-</ol>
-<h2 id="写在前面的话"><a href="#写在前面的话" class="headerlink" title="写在前面的话"></a>写在前面的话</h2><p>我复现的是关于薄膜的单轴，双轴拉伸。本来想基于 ASE 的 Atoms 创建一个子类 Films，但是我不太能理清其中的继承关系，做到一半发现有部分函数调用失败，于是还是归为 Atoms 类。</p>
-<h2 id="1-ASE-中的-surface"><a href="#1-ASE-中的-surface" class="headerlink" title="1. ASE 中的 surface"></a>1. ASE 中的 surface</h2><p>参考 [1]，ASE 中的 surface 包括 common surface 和 non-common surface。为了使得理解的更为透彻，也方便后面的修改，这里我主要了解的是 non-common surface 的理论介绍和源代码。</p>
-<p><img src="/images/ASE-How-to-generate-surface/1.png" alt="ase.build.surface"></p>
-<p>对于参数的理解有，<strong>lattice 不能是原胞，必须是 conventional cell</strong>; indices 的单位是 (a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>), 而不是 (x,y,z); periodic 只决定 z 方向， xy 自动设为 True; layers 是指 layer of slab。<strong>在我的修改中，我想指定金属密排面的层数，以及生成的 film 是原胞</strong>。</p>
-<h2 id="2-一个简单的例子-（Ref-1-）"><a href="#2-一个简单的例子-（Ref-1-）" class="headerlink" title="2. 一个简单的例子 （Ref [1]）"></a>2. 一个简单的例子 （Ref [1]）</h2><p>可以看到这个方法的强大之处在于，我们可以任意指定一个 conventional cell，就可以创建出任意晶向的切面。</p>
-<p>从这个例子可以得到：</p>
-<pre><code class="python3">s3.center(vacuum=10, axis=2)
+<p><strong>Updated time: 01&#x2F;23 2024.</strong></p>
+<h2 id="VS-code"><a href="#VS-code" class="headerlink" title="VS code"></a>VS code</h2><pre><code class="bash">Shift whole left: shift + Tab
+           Right: Tab
+
+Batch annotation: Ctrl + K + C
+          Cancel： Ctrl + K + U
+
+COMMAND: Ctrl + Shift + P
 </code></pre>
-<p>设定的真空层厚度是可多次变化的，不会累积。</p>
-<p>以及源代码中应该考虑到 surface 必然是要加真空层的，所以如果 <code>vacuum = 0</code>, 那么可以看到上下表面的原子紧挨着上下边界。如果 replicate z, 就会发现原子重叠了。</p>
-<pre><code class="python3">a = 4.0
-Pt3Rh = Atoms(&#39;Pt3Rh&#39;,
-              scaled_positions=[(0, 0, 0),
-                                (0.5, 0.5, 0),
-                                (0.5, 0, 0.5),
-                                (0, 0.5, 0.5)],
-              cell=[a, a, a],
-              pbc=True)
-s3 = surface(Pt3Rh, (2, 1, 1), 9)
-s3.center(vacuum=10, axis=2)
-
-Pt3Rh.set_chemical_symbols(&#39;PtRhPt2&#39;)
-s4 = surface(Pt3Rh, (2, 1, 1), 9)
-s4.center(vacuum=10, axis=2)
+<h2 id="OUTLOOK"><a href="#OUTLOOK" class="headerlink" title="OUTLOOK"></a>OUTLOOK</h2><pre><code class="bash">Emoij: Windows + Dot
 </code></pre>
-<p><img src="/images/ASE-How-to-generate-surface/2.png" alt="s3, s4"></p>
-<h2 id="3-manual-中的-理论-ref-3"><a href="#3-manual-中的-理论-ref-3" class="headerlink" title="3. manual 中的 理论 [ref 3]"></a>3. manual 中的 理论 [ref 3]</h2><h3 id="3-1-实空间描述"><a href="#3-1-实空间描述" class="headerlink" title="3.1 实空间描述"></a>3.1 实空间描述</h3><p>晶面指数 (h k l)，与 （a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>）轴交叉于 (1&#x2F;h·a<sub>1</sub>, 1&#x2F;k·a<sub>2</sub>, 1&#x2F;l·a<sub>3</sub>)</p>
-<h3 id="3-2-倒空间描述"><a href="#3-2-倒空间描述" class="headerlink" title="3.2 倒空间描述"></a>3.2 倒空间描述</h3><p>晶面法向量 n &#x3D; h·b<sub>1</sub> + k·b<sub>2</sub> + l·b<sub>3</sub></p>
-<p><img src="/images/ASE-How-to-generate-surface/3.png" alt="面内基矢量的表示"></p>
-<h3 id="3-3-确定面内基矢量"><a href="#3-3-确定面内基矢量" class="headerlink" title="3.3 确定面内基矢量"></a>3.3 确定面内基矢量</h3><p>两个基矢量的叉乘应最小，基于此去求解</p>
-<p><img src="/images/ASE-How-to-generate-surface/4.png"></p>
-<p><img src="/images/ASE-How-to-generate-surface/5.png"></p>
-<h3 id="3-4-确定-v3"><a href="#3-4-确定-v3" class="headerlink" title="3.4 确定 v3"></a>3.4 确定 v<sub>3</sub></h3><p><img src="/images/ASE-How-to-generate-surface/6.png"></p>
-<h3 id="3-5-代码中的实现"><a href="#3-5-代码中的实现" class="headerlink" title="3.5 代码中的实现"></a>3.5 代码中的实现</h3><p><img src="/images/ASE-How-to-generate-surface/7.png"></p>
-<p><img src="/images/ASE-How-to-generate-surface/8.png"></p>
-<h2 id="4-Spglib-寻找原胞-ref-2"><a href="#4-Spglib-寻找原胞-ref-2" class="headerlink" title="4 Spglib 寻找原胞 (ref 2)"></a>4 Spglib 寻找原胞 (ref 2)</h2><p>ref [2] 中有关于寻找原胞的逻辑，先寻找对称性，然后进行转换&#x2F;旋转操作。</p>
-<pre><code class="text">import spglib
+<h2 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h2><h3 id="grep"><a href="#grep" class="headerlink" title="grep"></a>grep</h3><pre><code class="bash">% grep
+% what line up and after around the line contained &#39;format&#39;
+grep -A 6 -B 6 &#39;format&#39; file
 
-lattice = [[5.0759761474456697, 5.0759761474456697, 0],
-           [-2.8280307701821314, 2.8280307701821314, 0],
-           [0, 0, 8.57154746]]
-points = [[0.0, 0.84688439, 0.1203133],
-          [0.0, 0.65311561, 0.6203133],
-          [0.0, 0.34688439, 0.3796867],
-          [0.0, 0.15311561, 0.8796867],
-          [0.5, 0.34688439, 0.1203133],
-          [0.5, 0.15311561, 0.6203133],
-          [0.5, 0.84688439, 0.3796867],
-          [0.5, 0.65311561, 0.8796867]]
-numbers = [8,] * len(points)
-cell = (lattice, points, numbers)
-primitive_cell = spglib.standardize_cell(cell, to_primitive=1, no_idealize=1)
-print(primitive_cell[0])
 </code></pre>
-<p><strong>However using<code>standardize_cell</code>, distortion is not removed for the distorted crystal structure.</strong></p>
-<p><strong>由此可见，需要从 Atom 中按照格式输入到函数中。</strong></p>
-<pre><code class="text">import spglib
-# find primitive cell using spglib
-def my_find_prim(atoms: Atoms = None) -&gt; Atoms:
-    # Convert to a format suitable for spglib
-    lattice = array(atoms.get_cell())
-    points = array(atoms.get_scaled_positions())
-    numbers = array(atoms.get_atomic_numbers())
-    pbc = array(atoms.get_pbc())
-    cell = (lattice, points, numbers)
-
-    primitive_cell = spglib.standardize_cell(cell, to_primitive=1, no_idealize=1)
-
-    # print(primitive_cell)
-    # primitive_symbols = [chemical_symbols[number] for number in primitive_cell[2]]
-
-    # Convert the spglib output back to an ASE Atoms object
-    primitive_atoms = Atoms(numbers = primitive_cell[2],
-                            scaled_positions = primitive_cell[1],
-                            cell = primitive_cell[0],
-                            pbc=pbc)
-    return primitive_atoms
+<h3 id="To-see"><a href="#To-see" class="headerlink" title="To see"></a>To see</h3><pre><code class="bash">% to see
+diff file1 file2
+more sub.vasp
+cat sub.vasp
+% to see the line number
+cat -n filename.txt
 </code></pre>
-<h2 id="5-设定密排面层数"><a href="#5-设定密排面层数" class="headerlink" title="5. 设定密排面层数"></a>5. 设定密排面层数</h2><p>我的想法是我先生成 <code>1 layer_slab</code>，通过寻找原胞得到这一层slab中有多少原子 <code>num_per_slab</code>，然后除以（预先设定的）一层密排面中有多少高度不一致的原子 <code>number_per_layer</code>（例如 <code>FCC，HCP</code> 都为1，二硫化钼为3），得到该创建几层<code>slab，num_rep_z</code></p>
-<pre><code class="python3"># find number of atoms per slab
-def my_find_num_per_slab(my_bulk: Atoms = None,
-                         slice_plane:  tuple[int] = (0, 0, 1),
-                         my_tol: float = 1e-6,          
-                         my_periodic: bool = False,
-                         number_per_layer: float = None) -&gt; float:
-    my_one_slab = surface(my_bulk, slice_plane , 1, vacuum = 20, tol=my_tol, periodic=my_periodic)
-    prim_one_slab = my_find_prim(my_one_slab)
-    atom_number_per_slab = len(prim_one_slab.get_positions())
-    layer_number_per_slab = atom_number_per_slab/number_per_layer
-    return layer_number_per_slab
-    
+<h3 id="write-to-file"><a href="#write-to-file" class="headerlink" title="write to file"></a>write to file</h3><pre><code class="bash">%create a file
+cat &gt; file.txt
+Ctrl + D
+% write content
+echo &#39; &#39; &gt;  file.txt
+         &gt;&gt;              % append
 </code></pre>
-<p>主函数</p>
-<pre><code class="python3">from numpy import sqrt, ndarray, array, int32
-from os    import makedirs, path
-from inspect import stack
-from ase.cell import Cell
-from ase.symbols import Symbols
-import numpy as np
-
-from ase import Atoms
-from ase.data import chemical_symbols
-from ase.build import bulk, surface
-from ase.io import write
-from ase.visualize import view
-from ase.io.vasp import _symbol_count_from_symbols, _write_symbol_count
-from ase.utils import reader, writer
-
-import re
-from pathlib import Path
-from typing import List, Optional, TextIO, Tuple
-import spglib
-
-def generate_film(   symbols: str = None,                 # str
-                structure: str = None,              # str
-                num_layers: int = None,            # int
-                replic_z: int = None,              # int
-                my_vacuum: float = None,           # float
-                slice_plane: tuple[int] = (0, 0, 1),  # Tuple of ints
-                my_tol: float = 1e-6,              # float
-                my_periodic: bool = False,          # bool
-                a_fcc: float = 2.95*sqrt(2.0),     # float
-                a_hcp: float = 2.95,               # float
-                my_covera: float = sqrt(8.0/3.0),  # float
-                move_atom: list = [0.1, 0.1, 0.0],
-                number_per_layer: float = 1.0
-                ) :
-    # parameters : 1-8 line: general setting
-    #              9 10-11 line: fcc, hcp parameters
-    # when we use surface() function, my_bulk must be a conventional cell, not a primitive cell, so set cubic=True
-
-    if structure == &#39;fcc&#39;:
-        my_bulk = bulk(symbols, structure, a=a_fcc, cubic=True)
-    elif structure == &#39;hcp&#39;:
-        my_bulk = bulk(symbols, structure, a = a_hcp, covera = my_covera, cubic=True)
-    else:
-        raise ValueError(&#39;%s is an invalid structure&#39; % structure)
-    
-    layer_number_per_slab = my_find_num_per_slab(my_bulk, slice_plane, my_tol, my_periodic, number_per_layer)
-    # print(&#39;layer_number_per_slab: %s&#39; % layer_number_per_slab)
-
-    if num_layers:
-        num_rep_z = int(num_layers/layer_number_per_slab)
-    elif replic_z:
-        num_rep_z = replic_z
-    else:
-        raise ValueError(&#39;%s or %s is an invalid value&#39; % num_layers % num_rep_z)
-
-    # print(&#39;rep_z: %s&#39; %num_rep_z)
-    my_slab = surface(my_bulk, slice_plane , num_rep_z, vacuum = my_vacuum, tol=my_tol, periodic=my_periodic)
-    my_slab = my_find_prim(my_slab)
-
-    move_atoms(my_slab, move_atom)
-    my_slab.wrap()
-    return my_slab
-
-
-# move atoms
-def move_atoms(atoms: Atoms = None,
-               translate_matrix: ndarray = array([0.1, 0.1, 0.0])) -&gt; Atoms :
-    scaled = atoms.get_scaled_positions()
-    scaled += translate_matrix
-    atoms.set_scaled_positions(scaled)
-    atoms.wrap()
-    return atoms
-   
-# find primitive cell using spglib
-def my_find_prim(atoms: Atoms = None) -&gt; Atoms:
-# Convert to a format suitable for spglib
-lattice = array(atoms.get_cell())
-points = array(atoms.get_scaled_positions())
-numbers = array(atoms.get_atomic_numbers())
-pbc = array(atoms.get_pbc())
-cell = (lattice, points, numbers)
-
-primitive_cell = spglib.standardize_cell(cell, to_primitive=1, no_idealize=1)
-# Convert the spglib output back to an ASE Atoms object
-primitive_atoms = Atoms(numbers = primitive_cell[2],
-scaled_positions = primitive_cell[1],
-cell = primitive_cell[0],
-pbc=pbc)
-return primitive_atoms
+<h3 id="chmod-command"><a href="#chmod-command" class="headerlink" title="chmod command"></a>chmod command</h3><pre><code class="bash">% for run script
+chmod u+x sub.vasp
 </code></pre>
-<p>至此，我想要的功能都实现了。</p>
-<h2 id="写在最后的话"><a href="#写在最后的话" class="headerlink" title="写在最后的话"></a>写在最后的话</h2><p><strong>未解决的问题</strong></p>
-<ol>
-<li>我其实搞不懂这个surface函数究竟是怎么转出来的，当我没有添加得到原胞的功能时，FCC {111} 1 层slab里有一层密排面，4个原子。FCC {100} 1 层slab里有两层原子面，4个原子。</li>
-</ol>
-<pre><code class="python3">film = generate_film(symbols = &#39;Au&#39;, structure = &#39;fcc&#39;, num_layers = 1, my_vacuum = 20, slice_plane = (1 0 0) or (1,1,1), a_fcc = 2.95*sqrt(2.0))
+<h3 id="delete-or-add-something-on-file"><a href="#delete-or-add-something-on-file" class="headerlink" title="delete or add something on file"></a>delete or add something on file</h3><pre><code class="bash">% delete specified line of the file
+sed -i &#39;10, 20d&#39; filename.txt
+
+% cat command
+a = &#39;$(cat POSCAR)&#39;
+echo &#39;$a&#39;
+
+% add file to another file
+sed -i &#39;N r tmp_file&#39; filename.txt
+% N - line
 </code></pre>
-<p>正是因为没搞懂，所以为了实现设定原子密排面数量，我采用了上述转换。</p>
 
       
        <hr><span style="font-style: italic;color: gray;"> Please indicate the source when reprinting. Please verify the citation sources in the article and point out any errors or unclear expressions. </span>
