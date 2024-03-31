@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>test.md</title>
+      <link href="/Thinking/Diary/test-md/"/>
+      <url>/Thinking/Diary/test-md/</url>
+      
+        <content type="html"><![CDATA[<p align="center"><strong><em>竹杖芒鞋轻胜马，谁怕？一蓑烟雨任平生。<em></em></em></strong></p><p align="center"><strong><em>Chill out<em></em></em></strong></p><p><strong>Updated time: 03&#x2F;30 2024.</strong></p><p><img src="/images/1.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Thinking </category>
+          
+          <category> Diary </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Thinking-Diary </tag>
+            
+            <tag> Thinking-Idea </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Other people blog - My summary</title>
       <link href="/Summary/Other-people-blog/Other-people-blog-My-summary/"/>
       <url>/Summary/Other-people-blog/Other-people-blog-My-summary/</url>
