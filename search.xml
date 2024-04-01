@@ -60,9 +60,9 @@
     
     
     <entry>
-      <title>tools - Summary</title>
-      <link href="/Software/tools/tools-Summary/"/>
-      <url>/Software/tools/tools-Summary/</url>
+      <title>Tool - Summary</title>
+      <link href="/Software/Tool/Tool-My-Summary/"/>
+      <url>/Software/Tool/Tool-My-Summary/</url>
       
         <content type="html"><![CDATA[<p align="center"><strong><em>Knowledge starts with practice.<em></strong></p><p align="center"><strong><em>实践出真知<em></strong></p><p><strong>Updated time: 03&#x2F;30 2024.</strong></p><h2 id="Write-the-first"><a href="#Write-the-first" class="headerlink" title="Write the first"></a>Write the first</h2><p>It’s for add some interesting tools that I interested in but not used.</p><p>Not only software, also some GitHub stars.</p><h2 id="Interesting-Tools-see-Endnote-DFT-HCP-Au-Tools"><a href="#Interesting-Tools-see-Endnote-DFT-HCP-Au-Tools" class="headerlink" title="Interesting Tools (see Endnote: DFT-HCP-Au/Tools)"></a>Interesting Tools (see <code>Endnote: DFT-HCP-Au/Tools</code>)</h2><h3 id="ASE"><a href="#ASE" class="headerlink" title="ASE"></a>ASE</h3><ul><li><p><strong>Article:</strong> The atomic simulation environment-a Python library for working with atoms (see <code>Endnote</code>)</p></li><li><p><strong>Website:</strong> <a href="https://wiki.fysik.dtu.dk/ase/index.html">ASE</a></p></li></ul><h3 id="Spglib"><a href="#Spglib" class="headerlink" title="Spglib"></a>Spglib</h3><ul><li><strong>Article:</strong> Spglib: a software library for crystal symmetry search (see <code>Endnote</code>)</li><li><strong>Functions:</strong><ul><li>Could convert between primitive &lt;&lt;&#x3D;&#x3D;&gt;&gt; conventional cell</li></ul></li></ul><h3 id="SeeK-path"><a href="#SeeK-path" class="headerlink" title="SeeK-path"></a>SeeK-path</h3><ul><li><strong>Article:</strong> Band structure diagram paths based on crystallography (see <code>Endnote</code>)</li><li><strong>Functions:</strong><ul><li>the k-path finder and visualizer</li></ul></li></ul><h3 id="VASPKIT"><a href="#VASPKIT" class="headerlink" title="VASPKIT"></a>VASPKIT</h3><ul><li><strong>Article:</strong> VASPKIT: A user-friendly interface facilitating high-throughput computing and analysis using VASP code (see <code>Endnote</code>)</li></ul><h3 id="ElasTool-update-to-3-0"><a href="#ElasTool-update-to-3-0" class="headerlink" title="ElasTool (update to 3.0)"></a>ElasTool (update to 3.0)</h3><ul><li><p><strong>Article:</strong></p><ul><li>ElasTool: An automated toolkit for elastic constants calculation (see <code>Endnote</code>)</li><li>ELASTOOL V3.0: Efficient computational and visualization toolkit for elastic and mechanical properties of materials (see <code>Endnote</code>)</li></ul></li><li><p><strong>Source code:</strong> <a href="https://github.com/gmp007/elastool">GitHub</a></p></li><li><p><strong>Description:</strong> <a href="https://mp.weixin.qq.com/s/29rqYa3k6iQjcHXwe3KOwA">WeiXin</a></p></li></ul><h3 id="Automatic-Flow-AFLOW-ACONVASP"><a href="#Automatic-Flow-AFLOW-ACONVASP" class="headerlink" title="Automatic Flow, AFLOW&#x2F;ACONVASP"></a>Automatic Flow, AFLOW&#x2F;ACONVASP</h3><ul><li><strong>Article:</strong> High-throughput electronic band structure calculations: Challenges and tools (see <code>Endnote</code>)</li><li><strong>Function:</strong><ul><li>The article give some example of momentum space for lots of bravais lattice.</li></ul></li></ul><h3 id="NLMD"><a href="#NLMD" class="headerlink" title="NLMD"></a>NLMD</h3><ul><li><strong>Article:</strong> MLMD: a programming-free AI platform to predict and design materials (see <code>Endnote</code>)</li><li><strong>Source code:</strong> <ul><li><a href="https://github.com/Jiaxuan-Ma/MLMD">NLMD</a> </li><li><a href="https://github.com/Bin-Cao/Bgolearn">Bgolearn</a> - Active learning package</li></ul></li><li><strong>Description:</strong> <a href="https://mp.weixin.qq.com/s/xvtH0k1GKPQspNP2CLR6fg">WeiXin</a></li></ul><h3 id="SurFlow"><a href="#SurFlow" class="headerlink" title="SurFlow"></a>SurFlow</h3><ul><li><strong>Article:</strong> SurfFlow: High-throughput surface energy calculations for arbitrary crystals (see <code>Endnote</code>)</li><li><strong>Source code:</strong> <a href="https://github.com/ShengLin1001/surfflow">GitHub</a></li><li><strong>Description:</strong> <a href="https://mp.weixin.qq.com/s/LbEcw69Cm3sFEZvF7P4afQ">WeiXin</a></li></ul>]]></content>
       
@@ -71,14 +71,14 @@
           
           <category> Software </category>
           
-          <category> tools </category>
+          <category> Tool </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Software-tools </tag>
+            <tag> Software-Tool </tag>
             
         </tags>
       
@@ -87,11 +87,11 @@
     
     
     <entry>
-      <title>Mymetal - work log</title>
-      <link href="/Developing/Mymetal/Mymetal-log/"/>
-      <url>/Developing/Mymetal/Mymetal-log/</url>
+      <title>Mymetal - error</title>
+      <link href="/Developing/Mymetal/Mymetal-error/"/>
+      <url>/Developing/Mymetal/Mymetal-error/</url>
       
-        <content type="html"><![CDATA[<p align="center"><strong><em>He knows most who speaks least.<em></strong></p><p align="center"><strong><em>大智若愚<em></strong></p><p><strong>Updated time: 03&#x2F;30 2024.</strong></p><h2 id="About-Mymetal"><a href="#About-Mymetal" class="headerlink" title="About Mymetal"></a>About Mymetal</h2><p>Please read <a href="https://github.com/ShengLin1001/pjvasp_package/blob/main/README.md">this page</a> first, here are the install methods using python supported by some dependent packages.</p><p>It’s a package for DFT calculations specially of thin metal film supported or not.</p><h2 id="Focus-on-some-functions"><a href="#Focus-on-some-functions" class="headerlink" title="Focus on some functions"></a>Focus on some functions</h2><p>The initial reason of constructing this package is better understanding the DFT or VASP, and how to generate the irreducible K-points.</p><p>To solve this question, we need to …</p><ul><li><p>convert from real space to momentum &#x2F; reciprocal space (has been done using Matlab)</p></li><li><p>generate reducible K-points (has been done using Matlab)</p></li><li><p>identify the symmetry of model</p></li><li><p>generate irreducible K-points</p></li></ul><p>And then, I should use python to execute postprocess for output file.</p><p>Based on the below reason, the main function is (although not be fully developed):</p><ul><li><p>preprocess</p><ul><li><p>film</p><ul><li>generate film</li><li>unixial &#x2F; bixial stretch film </li><li>add hydroxylated atoms: OH, H, any molecular</li><li>construct the heterostructure</li></ul></li><li><p>universal</p><ul><li>convert model : primitive cell &lt;&lt;&#x3D;&#x3D;&gt;&gt; conventional cell</li></ul></li></ul></li><li><p>postprocess: grep something from OUTCAR</p></li></ul><h2 id="Some-fixing-error-and-unfilled-code"><a href="#Some-fixing-error-and-unfilled-code" class="headerlink" title="Some fixing error and unfilled code"></a>Some fixing error and unfilled code</h2><p>fixing error please see <a href="">another blog</a> <code>Mymetal/error</code>.</p><h3 id="unfilled-code"><a href="#unfilled-code" class="headerlink" title="unfilled code"></a>unfilled code</h3><pre><code class="shell">root/create_package.py generate the structure of packagebuild/extrfilm.pyuniversal/printafter.py</code></pre><h2 id="Work-logs"><a href="#Work-logs" class="headerlink" title="Work logs"></a>Work logs</h2><h3 id="before-03-30-2024"><a href="#before-03-30-2024" class="headerlink" title="before 03&#x2F;30 2024."></a>before 03&#x2F;30 2024.</h3><ul><li>add functions (<code>hydroxylated / stretch/ post</code>) and text them, success! Congratulations!</li><li>Next: <ul><li>add function to <a href="http://staff.ustc.edu.cn/~zqj/posts/howto-plot-brillouin-zone/">plot the FBZ</a></li><li>search for the heterostructure contained film and substrate</li><li>compared add_hydroxylated function and <a href="https://wiki.fysik.dtu.dk/ase/tutorials/db/db.html">add_adsorbate</a> function, maybe we can combine them to achieve the goal that adsorb the molecular to substrate. Now we only could adsorb H atom to them.</li></ul></li></ul>]]></content>
+        <content type="html"><![CDATA[<p align="center"><strong><em>Time flies.<em></strong></p><p align="center"><strong><em>光阴似箭<em></strong></p><p><strong>Updated time: 03&#x2F;30 2024.</strong></p><h2 id="Some-fixing-error-and-unfilled-code"><a href="#Some-fixing-error-and-unfilled-code" class="headerlink" title="Some fixing error and unfilled code"></a>Some fixing error and unfilled code</h2><h3 id="when-i-run-the-test-post-py-i-found-the-output-file-has-been-generated-in-the-root-directory-of-pjvasp-package"><a href="#when-i-run-the-test-post-py-i-found-the-output-file-has-been-generated-in-the-root-directory-of-pjvasp-package" class="headerlink" title="when i run the test-post&#x2F;*.py, i found the output file has been generated in the root directory of pjvasp_package"></a>when i run the test-post&#x2F;*.py, i found the output file has been generated in the root directory of pjvasp_package</h3><p>we should add flowing python commands</p><pre><code class="shell">import os# get the path of those scriptscript_dir = os.path.dirname(__file__)# set the working pathos.chdir(script_dir)</code></pre><p>Ok, avoid to use it in root directory. To be safe, use it in user file.</p>]]></content>
       
       
       <categories>
@@ -114,11 +114,11 @@
     
     
     <entry>
-      <title>Mymetal - error</title>
-      <link href="/Developing/Mymetal/Mymetal-error/"/>
-      <url>/Developing/Mymetal/Mymetal-error/</url>
+      <title>Mymetal - work log</title>
+      <link href="/Developing/Mymetal/Mymetal-log/"/>
+      <url>/Developing/Mymetal/Mymetal-log/</url>
       
-        <content type="html"><![CDATA[<p align="center"><strong><em>Time flies.<em></strong></p><p align="center"><strong><em>光阴似箭<em></strong></p><p><strong>Updated time: 03&#x2F;30 2024.</strong></p><h2 id="Some-fixing-error-and-unfilled-code"><a href="#Some-fixing-error-and-unfilled-code" class="headerlink" title="Some fixing error and unfilled code"></a>Some fixing error and unfilled code</h2><h3 id="when-i-run-the-test-post-py-i-found-the-output-file-has-been-generated-in-the-root-directory-of-pjvasp-package"><a href="#when-i-run-the-test-post-py-i-found-the-output-file-has-been-generated-in-the-root-directory-of-pjvasp-package" class="headerlink" title="when i run the test-post&#x2F;*.py, i found the output file has been generated in the root directory of pjvasp_package"></a>when i run the test-post&#x2F;*.py, i found the output file has been generated in the root directory of pjvasp_package</h3><p>we should add flowing python commands</p><pre><code class="shell">import os# get the path of those scriptscript_dir = os.path.dirname(__file__)# set the working pathos.chdir(script_dir)</code></pre><p>Ok, avoid to use it in root directory. To be safe, use it in user file.</p>]]></content>
+        <content type="html"><![CDATA[<p align="center"><strong><em>He knows most who speaks least.<em></strong></p><p align="center"><strong><em>大智若愚<em></strong></p><p><strong>Updated time: 03&#x2F;30 2024.</strong></p><h2 id="About-Mymetal"><a href="#About-Mymetal" class="headerlink" title="About Mymetal"></a>About Mymetal</h2><p>Please read <a href="https://github.com/ShengLin1001/pjvasp_package/blob/main/README.md">this page</a> first, here are the install methods using python supported by some dependent packages.</p><p>It’s a package for DFT calculations specially of thin metal film supported or not.</p><h2 id="Focus-on-some-functions"><a href="#Focus-on-some-functions" class="headerlink" title="Focus on some functions"></a>Focus on some functions</h2><p>The initial reason of constructing this package is better understanding the DFT or VASP, and how to generate the irreducible K-points.</p><p>To solve this question, we need to …</p><ul><li><p>convert from real space to momentum &#x2F; reciprocal space (has been done using Matlab)</p></li><li><p>generate reducible K-points (has been done using Matlab)</p></li><li><p>identify the symmetry of model</p></li><li><p>generate irreducible K-points</p></li></ul><p>And then, I should use python to execute postprocess for output file.</p><p>Based on the below reason, the main function is (although not be fully developed):</p><ul><li><p>preprocess</p><ul><li><p>film</p><ul><li>generate film</li><li>unixial &#x2F; bixial stretch film </li><li>add hydroxylated atoms: OH, H, any molecular</li><li>construct the heterostructure</li></ul></li><li><p>universal</p><ul><li>convert model : primitive cell &lt;&lt;&#x3D;&#x3D;&gt;&gt; conventional cell</li></ul></li></ul></li><li><p>postprocess: grep something from OUTCAR</p></li></ul><h2 id="Some-fixing-error-and-unfilled-code"><a href="#Some-fixing-error-and-unfilled-code" class="headerlink" title="Some fixing error and unfilled code"></a>Some fixing error and unfilled code</h2><p>fixing error please see <a href="">another blog</a> <code>Mymetal/error</code>.</p><h3 id="unfilled-code"><a href="#unfilled-code" class="headerlink" title="unfilled code"></a>unfilled code</h3><pre><code class="shell">root/create_package.py generate the structure of packagebuild/extrfilm.pyuniversal/printafter.py</code></pre><h2 id="Work-logs"><a href="#Work-logs" class="headerlink" title="Work logs"></a>Work logs</h2><h3 id="before-03-30-2024"><a href="#before-03-30-2024" class="headerlink" title="before 03&#x2F;30 2024."></a>before 03&#x2F;30 2024.</h3><ul><li>add functions (<code>hydroxylated / stretch/ post</code>) and text them, success! Congratulations!</li><li>Next: <ul><li>add function to <a href="http://staff.ustc.edu.cn/~zqj/posts/howto-plot-brillouin-zone/">plot the FBZ</a></li><li>search for the heterostructure contained film and substrate</li><li>compared add_hydroxylated function and <a href="https://wiki.fysik.dtu.dk/ase/tutorials/db/db.html">add_adsorbate</a> function, maybe we can combine them to achieve the goal that adsorb the molecular to substrate. Now we only could adsorb H atom to them.</li></ul></li></ul>]]></content>
       
       
       <categories>
@@ -334,9 +334,9 @@
     
     
     <entry>
-      <title>tools - Proxy problem of copilot</title>
-      <link href="/Software/tools/tools-Proxy-problem-of-copilot/"/>
-      <url>/Software/tools/tools-Proxy-problem-of-copilot/</url>
+      <title>Tool - Proxy problem of copilot</title>
+      <link href="/Software/Tool/Tool-Proxy-problem-of-copilot/"/>
+      <url>/Software/Tool/Tool-Proxy-problem-of-copilot/</url>
       
         <content type="html"><![CDATA[<p align="center"><strong><em>Children are what the mothers are.<em></strong></p><p align="center"><strong><em>耳濡目染<em></strong></p><p><strong>Updated time: 01&#x2F;23 2024.</strong></p><h2 id="Ref"><a href="#Ref" class="headerlink" title="Ref:"></a>Ref:</h2><ol><li><p><a href="http://link.zhihu.com/?target=https://blog.csdn.net/m0_57236802/article/details/132169445">怎么让vscode走代理？_vscode 设置代理-CSDN博客</a></p></li><li><p><a href="http://link.zhihu.com/?target=https://cloud.tencent.com/developer/article/2351073">在 Visual Studio Code (VS Code) 中设置-腾讯云开发者社区-腾讯云 (tencent.com)</a></p></li></ol><h2 id="error"><a href="#error" class="headerlink" title="error"></a>error</h2><p>Github 学生身份验证以后可以免费使用 copilot 插件。</p><p>在 vs code 上安装插件并登录以后，显示 error</p><pre><code class="bash">Extension activation failed: &quot;At this time, Copilot is not available in your location. You are currently logged in as XXX.&quot;</code></pre><h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>网络原因，中国和俄罗斯都被ban了。首先外部 vpn 软件已经连上了，然后还得设置vs code内部的代理。</p><pre><code class="bash"> Now, It works. #First, •Press Win + I to open Settings.•Go to Network &amp; Internet &gt; Proxy.•If you&#39;re using a manual proxy, it will be listed here.Address is 127.0.0.1, port is 7890#Second,Configure Proxy in VS Code:•Open Visual Studio Code.•Go to Settings (File &gt; Preferences &gt; Settings or Ctrl + ,).•Search for proxy.•In the HTTP Proxy setting, input https://127.0.0.1:7890 •Set HTTP Proxy Support to override.#After restarting the software, the extension works!</code></pre><h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p><code>ctrl+I</code> 开启插件，这样才能自动补全。</p>]]></content>
       
@@ -345,14 +345,14 @@
           
           <category> Software </category>
           
-          <category> tools </category>
+          <category> Tool </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Software-tools </tag>
+            <tag> Software-Tool </tag>
             
         </tags>
       
