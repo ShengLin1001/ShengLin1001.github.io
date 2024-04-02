@@ -6,12 +6,12 @@
   <meta name="keywords" content=" Program-Python ">
   <meta name="description" content="Python - DFT calculation 2 - Introduction of Kspace | Please be chilling out">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="About this WeBlog我是一名 2022 级在读研究生（力学 &#x2F; 机器学习）。本博客创建于 2024.3 ，为了整合记录读研以来所有的知识积累（知乎，哔哩哔哩，公众号，博客，网站，书籍）。 目前我对微观尺度下金属领域的相变机制很感兴趣。如果大家对我的研究领域感兴趣，欢迎发邮件给我，共同进步。😃 使用软件包括：Python，VASP，Lammps Python 包：ASE，m">
+<meta name="description" content="About this WeBlog我是一名 2022 级在读研究生（力学 &#x2F; 机器学习）。本博客创建于 2024.3 ，为了整合记录读研以来所有的知识积累（知乎，哔哩哔哩，公众号，博客，网站，书籍）。 目前我对微观尺度下金属领域的相变机制很感兴趣。如果大家对我的研究领域感兴趣，欢迎发邮件给我，共同进步。😃 使用软件包括：Python，VASP，Lammps Python 包：ASE，mymeta">
 <meta property="og:type" content="website">
 <meta property="og:title" content="about">
 <meta property="og:url" content="https://shenglin1001.github.io/about/">
 <meta property="og:site_name" content="Please be chilling out">
-<meta property="og:description" content="About this WeBlog我是一名 2022 级在读研究生（力学 &#x2F; 机器学习）。本博客创建于 2024.3 ，为了整合记录读研以来所有的知识积累（知乎，哔哩哔哩，公众号，博客，网站，书籍）。 目前我对微观尺度下金属领域的相变机制很感兴趣。如果大家对我的研究领域感兴趣，欢迎发邮件给我，共同进步。😃 使用软件包括：Python，VASP，Lammps Python 包：ASE，m">
+<meta property="og:description" content="About this WeBlog我是一名 2022 级在读研究生（力学 &#x2F; 机器学习）。本博客创建于 2024.3 ，为了整合记录读研以来所有的知识积累（知乎，哔哩哔哩，公众号，博客，网站，书籍）。 目前我对微观尺度下金属领域的相变机制很感兴趣。如果大家对我的研究领域感兴趣，欢迎发邮件给我，共同进步。😃 使用软件包括：Python，VASP，Lammps Python 包：ASE，mymeta">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-03-30T01:20:39.000Z">
 <meta property="article:modified_time" content="2024-03-30T01:29:12.874Z">
@@ -492,8 +492,8 @@
         
     </div>
 </div>
-<input type="hidden" id="yelog_site_posts_number" value="25">
-<input type="hidden" id="yelog_site_word_count" value="11.6k">
+<input type="hidden" id="yelog_site_posts_number" value="27">
+<input type="hidden" id="yelog_site_word_count" value="11.7k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -695,6 +695,24 @@
         </a>
         
         
+        <a  class="All Theory Quantum_mechanics "
+           href="/Theory/Quantum-mechanics/Quantum-mechanics-Density-functional-theory/"
+           data-tag="Theory-Quantum_mechanics"
+           data-author="" >
+            <span class="post-title" title="Quantum mechanics - Density functional theory">Quantum mechanics - Density functional theory</span>
+            <span class="post-date" title="2024-04-01 15:16:03">2024/04/01</span>
+        </a>
+        
+        
+        <a  class="All Theory Quantum_mechanics "
+           href="/Theory/Quantum-mechanics/Quantum-mechanics-The-Feynman-lectures-on-physics-1/"
+           data-tag="Theory-Quantum_mechanics"
+           data-author="" >
+            <span class="post-title" title="Quantum mechanics - The Feynman lectures on physics 1">Quantum mechanics - The Feynman lectures on physics 1</span>
+            <span class="post-date" title="2024-04-01 14:43:03">2024/04/01</span>
+        </a>
+        
+        
         <a  class="All Developing Mymetal "
            href="/Developing/Mymetal/Mymetal-log/"
            data-tag="Developing-Mymetal"
@@ -890,7 +908,7 @@
     </div>
     <div class="article-meta">
         
-        <span>Count:1.4k</span>
+        <span>Count:1.3k</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -940,36 +958,36 @@
 
 <p align="center"><strong><em>酒好不怕巷子深<em></strong></p>
 
-<p><strong>Updated time: 11&#x2F;21 2023.</strong></p>
+<p><strong>Updated time: 11/21 2023.</strong></p>
 <h1 id="K-空间是什么"><a href="#K-空间是什么" class="headerlink" title="K 空间是什么"></a>K 空间是什么</h1><h2 id="Ref：Highlight-为本文主要参考"><a href="#Ref：Highlight-为本文主要参考" class="headerlink" title="Ref：Highlight 为本文主要参考"></a>Ref：Highlight 为本文主要参考</h2><ol>
-<li><p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/629415616">(20 </a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/629415616">封私信 </a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/629415616">&#x2F; 64 </a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/629415616">条消息</a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/629415616">) </a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/629415616">怎么理解</a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/629415616">k</a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/629415616">空间的</a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/629415616">k</a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/629415616">呢？有什么物理意义？ </a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/629415616">- </a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/629415616">知乎 </a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/629415616">(zhihu.com</a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/629415616">)</a></p>
+<li><p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/629415616">(20 </a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/629415616">封私信 </a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/629415616">/ 64 </a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/629415616">条消息</a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/629415616">) </a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/629415616">怎么理解</a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/629415616">k</a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/629415616">空间的</a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/629415616">k</a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/629415616">呢？有什么物理意义？ </a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/629415616">- </a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/629415616">知乎 </a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/629415616">(zhihu.com</a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/629415616">)</a></p>
 </li>
-<li><p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/38580805">(20 </a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/38580805">封私信 </a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/38580805">&#x2F; 64 </a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/38580805">条消息</a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/38580805">) </a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/38580805">如何理解</a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/38580805">K</a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/38580805">空间和半导体能带图？ </a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/38580805">- </a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/38580805">知乎 </a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/38580805">(zhihu.com)</a></p>
+<li><p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/38580805">(20 </a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/38580805">封私信 </a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/38580805">/ 64 </a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/38580805">条消息</a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/38580805">) </a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/38580805">如何理解</a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/38580805">K</a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/38580805">空间和半导体能带图？ </a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/38580805">- </a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/38580805">知乎 </a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/38580805">(zhihu.com)</a></p>
 </li>
 <li><p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/99671920">了不起的</a><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/99671920">K</a><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/99671920">空间 </a><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/99671920">- </a><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/99671920">知乎 </a><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/99671920">(zhihu.com)</a></p>
 </li>
-<li><p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/24074053?sort=created">(20 </a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/24074053?sort=created">封私信 </a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/24074053?sort=created">&#x2F; 64 </a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/24074053?sort=created">条消息</a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/24074053?sort=created">) </a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/24074053?sort=created">如何形象地理解固体物理中的 </a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/24074053?sort=created">k </a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/24074053?sort=created">空间？ </a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/24074053?sort=created">- </a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/24074053?sort=created">知乎 </a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/24074053?sort=created">(zhihu.com)</a></p>
+<li><p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/24074053?sort=created">(20 </a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/24074053?sort=created">封私信 </a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/24074053?sort=created">/ 64 </a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/24074053?sort=created">条消息</a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/24074053?sort=created">) </a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/24074053?sort=created">如何形象地理解固体物理中的 </a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/24074053?sort=created">k </a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/24074053?sort=created">空间？ </a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/24074053?sort=created">- </a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/24074053?sort=created">知乎 </a><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/24074053?sort=created">(zhihu.com)</a></p>
 </li>
 <li><p><strong><a target="_blank" rel="noopener" href="https://www.zhihu.com/tardis/zm/art/24242724?source_id=1005">晶体结构</a><a target="_blank" rel="noopener" href="https://www.zhihu.com/tardis/zm/art/24242724?source_id=1005">5——</a><a target="_blank" rel="noopener" href="https://www.zhihu.com/tardis/zm/art/24242724?source_id=1005">倒格子 布里渊区 </a><a target="_blank" rel="noopener" href="https://www.zhihu.com/tardis/zm/art/24242724?source_id=1005">(zhihu.com)</a></strong></p>
 </li>
-<li><p><strong><a href="https://link.zhihu.com/?target=https://zh.wikipedia.org/wiki/%E5%B8%83%E9%87%8C%E6%B8%8A%E5%8C%BA">布里渊区 </a><a href="https://link.zhihu.com/?target=https://zh.wikipedia.org/wiki/%E5%B8%83%E9%87%8C%E6%B8%8A%E5%8C%BA">- </a><a href="https://link.zhihu.com/?target=https://zh.wikipedia.org/wiki/%E5%B8%83%E9%87%8C%E6%B8%8A%E5%8C%BA">维基百科，自由的百科全书 </a><a href="https://link.zhihu.com/?target=https://zh.wikipedia.org/wiki/%E5%B8%83%E9%87%8C%E6%B8%8A%E5%8C%BA">(wikipedia.org)</a></strong></p>
+<li><p><strong><a href="https://link.zhihu.com/?target=https%3A//zh.wikipedia.org/wiki/%E5%B8%83%E9%87%8C%E6%B8%8A%E5%8C%BA">布里渊区 </a><a href="https://link.zhihu.com/?target=https%3A//zh.wikipedia.org/wiki/%E5%B8%83%E9%87%8C%E6%B8%8A%E5%8C%BA">- </a><a href="https://link.zhihu.com/?target=https%3A//zh.wikipedia.org/wiki/%E5%B8%83%E9%87%8C%E6%B8%8A%E5%8C%BA">维基百科，自由的百科全书 </a><a href="https://link.zhihu.com/?target=https%3A//zh.wikipedia.org/wiki/%E5%B8%83%E9%87%8C%E6%B8%8A%E5%8C%BA">(wikipedia.org)</a></strong></p>
 </li>
-<li><p><strong><a href="https://link.zhihu.com/?target=https://zh.wikipedia.org/wiki/%E4%BD%8D%E7%BD%AE%E7%A9%BA%E9%97%B4%E4%B8%8E%E5%8A%A8%E9%87%8F%E7%A9%BA%E9%97%B4">位置空间与动量空间 </a><a href="https://link.zhihu.com/?target=https://zh.wikipedia.org/wiki/%E4%BD%8D%E7%BD%AE%E7%A9%BA%E9%97%B4%E4%B8%8E%E5%8A%A8%E9%87%8F%E7%A9%BA%E9%97%B4">- </a><a href="https://link.zhihu.com/?target=https://zh.wikipedia.org/wiki/%E4%BD%8D%E7%BD%AE%E7%A9%BA%E9%97%B4%E4%B8%8E%E5%8A%A8%E9%87%8F%E7%A9%BA%E9%97%B4">维基百科，自由的百科全书 </a><a href="https://link.zhihu.com/?target=https://zh.wikipedia.org/wiki/%E4%BD%8D%E7%BD%AE%E7%A9%BA%E9%97%B4%E4%B8%8E%E5%8A%A8%E9%87%8F%E7%A9%BA%E9%97%B4">(wikipedia.org)</a></strong></p>
+<li><p><strong><a href="https://link.zhihu.com/?target=https%3A//zh.wikipedia.org/wiki/%E4%BD%8D%E7%BD%AE%E7%A9%BA%E9%97%B4%E4%B8%8E%E5%8A%A8%E9%87%8F%E7%A9%BA%E9%97%B4">位置空间与动量空间 </a><a href="https://link.zhihu.com/?target=https%3A//zh.wikipedia.org/wiki/%E4%BD%8D%E7%BD%AE%E7%A9%BA%E9%97%B4%E4%B8%8E%E5%8A%A8%E9%87%8F%E7%A9%BA%E9%97%B4">- </a><a href="https://link.zhihu.com/?target=https%3A//zh.wikipedia.org/wiki/%E4%BD%8D%E7%BD%AE%E7%A9%BA%E9%97%B4%E4%B8%8E%E5%8A%A8%E9%87%8F%E7%A9%BA%E9%97%B4">维基百科，自由的百科全书 </a><a href="https://link.zhihu.com/?target=https%3A//zh.wikipedia.org/wiki/%E4%BD%8D%E7%BD%AE%E7%A9%BA%E9%97%B4%E4%B8%8E%E5%8A%A8%E9%87%8F%E7%A9%BA%E9%97%B4">(wikipedia.org)</a></strong></p>
 </li>
-<li><p><strong><a href="https://link.zhihu.com/?target=https://zh.wikipedia.org/wiki/%E5%80%92%E6%98%93%E7%82%B9%E9%98%B5">倒易点阵 </a><a href="https://link.zhihu.com/?target=https://zh.wikipedia.org/wiki/%E5%80%92%E6%98%93%E7%82%B9%E9%98%B5">- </a><a href="https://link.zhihu.com/?target=https://zh.wikipedia.org/wiki/%E5%80%92%E6%98%93%E7%82%B9%E9%98%B5">维基百科，自由的百科全书 </a><a href="https://link.zhihu.com/?target=https://zh.wikipedia.org/wiki/%E5%80%92%E6%98%93%E7%82%B9%E9%98%B5">(wikipedia.org</a><a href="https://link.zhihu.com/?target=https://zh.wikipedia.org/wiki/%E5%80%92%E6%98%93%E7%82%B9%E9%98%B5">)</a></strong></p>
+<li><p><strong><a href="https://link.zhihu.com/?target=https%3A//zh.wikipedia.org/wiki/%E5%80%92%E6%98%93%E7%82%B9%E9%98%B5">倒易点阵 </a><a href="https://link.zhihu.com/?target=https%3A//zh.wikipedia.org/wiki/%E5%80%92%E6%98%93%E7%82%B9%E9%98%B5">- </a><a href="https://link.zhihu.com/?target=https%3A//zh.wikipedia.org/wiki/%E5%80%92%E6%98%93%E7%82%B9%E9%98%B5">维基百科，自由的百科全书 </a><a href="https://link.zhihu.com/?target=https%3A//zh.wikipedia.org/wiki/%E5%80%92%E6%98%93%E7%82%B9%E9%98%B5">(wikipedia.org</a><a href="https://link.zhihu.com/?target=https%3A//zh.wikipedia.org/wiki/%E5%80%92%E6%98%93%E7%82%B9%E9%98%B5">)</a></strong></p>
 </li>
-<li><p><strong><a href="https://link.zhihu.com/?target=https://zh.wikipedia.org/wiki/%E5%B8%83%E6%B4%9B%E8%B5%AB%E6%B3%A2">布洛赫波 </a><a href="https://link.zhihu.com/?target=https://zh.wikipedia.org/wiki/%E5%B8%83%E6%B4%9B%E8%B5%AB%E6%B3%A2">- </a><a href="https://link.zhihu.com/?target=https://zh.wikipedia.org/wiki/%E5%B8%83%E6%B4%9B%E8%B5%AB%E6%B3%A2">维基百科，自由的百科全书 </a><a href="https://link.zhihu.com/?target=https://zh.wikipedia.org/wiki/%E5%B8%83%E6%B4%9B%E8%B5%AB%E6%B3%A2">(wikipedia.org)</a></strong></p>
+<li><p><strong><a href="https://link.zhihu.com/?target=https%3A//zh.wikipedia.org/wiki/%E5%B8%83%E6%B4%9B%E8%B5%AB%E6%B3%A2">布洛赫波 </a><a href="https://link.zhihu.com/?target=https%3A//zh.wikipedia.org/wiki/%E5%B8%83%E6%B4%9B%E8%B5%AB%E6%B3%A2">- </a><a href="https://link.zhihu.com/?target=https%3A//zh.wikipedia.org/wiki/%E5%B8%83%E6%B4%9B%E8%B5%AB%E6%B3%A2">维基百科，自由的百科全书 </a><a href="https://link.zhihu.com/?target=https%3A//zh.wikipedia.org/wiki/%E5%B8%83%E6%B4%9B%E8%B5%AB%E6%B3%A2">(wikipedia.org)</a></strong></p>
 </li>
-<li><p><strong><a href="https://link.zhihu.com/?target=https://zh.wikipedia.org/wiki/K%C2%B7p%E5%BE%AE%E6%89%B0%E8%AE%BA">K·p</a><a href="https://link.zhihu.com/?target=https://zh.wikipedia.org/wiki/K%C2%B7p%E5%BE%AE%E6%89%B0%E8%AE%BA">微扰论 </a><a href="https://link.zhihu.com/?target=https://zh.wikipedia.org/wiki/K%C2%B7p%E5%BE%AE%E6%89%B0%E8%AE%BA">- </a><a href="https://link.zhihu.com/?target=https://zh.wikipedia.org/wiki/K%C2%B7p%E5%BE%AE%E6%89%B0%E8%AE%BA">维基百科，自由的百科全书 </a><a href="https://link.zhihu.com/?target=https://zh.wikipedia.org/wiki/K%C2%B7p%E5%BE%AE%E6%89%B0%E8%AE%BA">(wikipedia.org</a></strong></p>
+<li><p><strong><a href="https://link.zhihu.com/?target=https%3A//zh.wikipedia.org/wiki/K%C2%B7p%E5%BE%AE%E6%89%B0%E8%AE%BA">K·p</a><a href="https://link.zhihu.com/?target=https%3A//zh.wikipedia.org/wiki/K%C2%B7p%E5%BE%AE%E6%89%B0%E8%AE%BA">微扰论 </a><a href="https://link.zhihu.com/?target=https%3A//zh.wikipedia.org/wiki/K%C2%B7p%E5%BE%AE%E6%89%B0%E8%AE%BA">- </a><a href="https://link.zhihu.com/?target=https%3A//zh.wikipedia.org/wiki/K%C2%B7p%E5%BE%AE%E6%89%B0%E8%AE%BA">维基百科，自由的百科全书 </a><a href="https://link.zhihu.com/?target=https%3A//zh.wikipedia.org/wiki/K%C2%B7p%E5%BE%AE%E6%89%B0%E8%AE%BA">(wikipedia.org</a></strong></p>
 </li>
-<li><p><strong><a href="https://link.zhihu.com/?target=https://zh.wikipedia.org/wiki/%E5%B8%83%E6%8B%89%E6%A0%BC%E5%AE%9A%E5%BE%8B%23%E5%B8%83%E6%8B%89%E6%A0%BC%E6%A2%9D%E4%BB%B6">布拉格定律 - 维基百科，自由的百科全书 (wikipedia.org)</a></strong></p>
+<li><p><strong><a href="https://link.zhihu.com/?target=https%3A//zh.wikipedia.org/wiki/%E5%B8%83%E6%8B%89%E6%A0%BC%E5%AE%9A%E5%BE%8B%23%E5%B8%83%E6%8B%89%E6%A0%BC%E6%A2%9D%E4%BB%B6">布拉格定律 - 维基百科，自由的百科全书 (wikipedia.org)</a></strong></p>
 </li>
 </ol>
 <h2 id="1-一张二维衍射图"><a href="#1-一张二维衍射图" class="headerlink" title="1. 一张二维衍射图"></a>1. 一张二维衍射图</h2><p><img src="/images/Python-DFT-calculation-2-Introduction-of-Kspace/1.png" alt="正、倒易晶格对比"></p>
 <ul>
 <li><p>二维晶格中，正、倒易基矢量互相垂直。三维晶格，只有正晶格基矢量互为垂直，才满足上述关系。</p>
 </li>
-<li><p>倒易矢量方向垂直于晶格面—-沿晶格间距方向，大小与间距成反比，见节2。d<sub>1</sub>&gt;d<sub>2</sub>&#x3D;d<sub>3</sub>，所以g<sub>2</sub>&#x3D;g<sub>3</sub>&gt;g<sub>1</sub> 。</p>
+<li><p>倒易矢量方向垂直于晶格面——沿晶格间距方向，大小与间距成反比，见节2。d<sub>1</sub>&gt;d<sub>2</sub>=d<sub>3</sub>，所以g<sub>2</sub>=g<sub>3</sub>&gt;g<sub>1</sub> 。</p>
 </li>
 <li><p>倒易空间中 g<sub>1</sub> 方向为1系列点，对应晶格间距为 d<sub>1</sub>, 2·d<sub>1</sub>, 3·d<sub>1</sub>…的波矢都在第一布里渊区中。这也是我们为什么这么关心第一布里渊区的原因。</p>
 </li>
@@ -989,7 +1007,7 @@
 <p>类似于时域和频域的对偶，傅里叶变换可以从位置空间描述到动量描述的转换。类比于角频率之于时间 t，k 可以视为系统空间上的频率。我的理解是对于不同的晶格类型，有不同的满足布洛赫衍射的波矢，由此将波矢作为该晶格类型的一种描述。类似的频域分析也是，找到共振频率，进而分析。</p>
 <p>我还联想到的是波粒二象性，光既不是粒子也不是波，但他有两种属性，都是实验测得的。而原子经典意义上是一个粒子，但在原子与原子的联系中又有波的性质，例如相互作用力。世界上的相互作用都是波性质的体现，因为两个原子不会紧密的接触在一起（除了密排金属），通过相互作用互相排斥或吸引。而密排金属并不是没有相互作用，恰恰相反，不然他们为啥会吸引在一起呢。只是能量最低的结构，以及能垒高低不同而已。经典力学是个宏观的概念，在原子尺度，他可以解释一些弹性阶段的事，比如将两个原子近似为弹簧连接，但远离平衡状态的现象却没法很好的解释。任何一种理论都有其特定的局限性。我觉得密度泛函理论是很普适的，也只是因为我没接触到更本征的领域而已。</p>
 <h2 id="4-布里渊区"><a href="#4-布里渊区" class="headerlink" title="4. 布里渊区"></a>4. 布里渊区</h2><p><img src="/images/Python-DFT-calculation-2-Introduction-of-Kspace/8.png" alt="二维正方形，密排晶格对应的倒格子"></p>
-<p>第一布里渊区在<a href="https://link.zhihu.com/?target=https://zh.wikipedia.org/wiki/%E5%87%A0%E4%BD%95">几何</a>上与<a href="https://link.zhihu.com/?target=https://zh.wikipedia.org/wiki/%E5%B8%83%E6%8B%89%E8%8F%B2%E7%82%B9%E9%98%B5">布拉菲点阵</a>中的<a href="https://link.zhihu.com/?target=https://zh.wikipedia.org/wiki/%E7%BB%B4%E6%A0%BC%E7%BA%B3-%E8%B5%9B%E5%85%B9%E5%8E%9F%E8%83%9E">维格纳-赛兹原胞</a>类似。</p>
+<p>第一布里渊区在<a href="https://link.zhihu.com/?target=https%3A//zh.wikipedia.org/wiki/%E5%87%A0%E4%BD%95">几何</a>上与<a href="https://link.zhihu.com/?target=https%3A//zh.wikipedia.org/wiki/%E5%B8%83%E6%8B%89%E8%8F%B2%E7%82%B9%E9%98%B5">布拉菲点阵</a>中的<a href="https://link.zhihu.com/?target=https%3A//zh.wikipedia.org/wiki/%E7%BB%B4%E6%A0%BC%E7%BA%B3-%E8%B5%9B%E5%85%B9%E5%8E%9F%E8%83%9E">维格纳-赛兹原胞</a>类似。</p>
 <p><img src="/images/Python-DFT-calculation-2-Introduction-of-Kspace/9.png" alt="正、倒易晶格关系"></p>
 <p><img src="/images/Python-DFT-calculation-2-Introduction-of-Kspace/10.png" alt="布里渊和布里渊区，哈哈"></p>
 <p><img src="/images/Python-DFT-calculation-2-Introduction-of-Kspace/11.png" alt="参考8"></p>
