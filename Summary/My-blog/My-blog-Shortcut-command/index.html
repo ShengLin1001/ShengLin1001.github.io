@@ -714,19 +714,19 @@
         
         
         <a  class="All Developing Mymetal "
-           href="/Developing/Mymetal/Mymetal-log/"
+           href="/Developing/Mymetal/Mymetal-error/"
            data-tag="Developing-Mymetal"
            data-author="" >
-            <span class="post-title" title="Mymetal - work log">Mymetal - work log</span>
+            <span class="post-title" title="Mymetal - error">Mymetal - error</span>
             <span class="post-date" title="2024-03-30 01:44:55">2024/03/30</span>
         </a>
         
         
         <a  class="All Developing Mymetal "
-           href="/Developing/Mymetal/Mymetal-error/"
+           href="/Developing/Mymetal/Mymetal-log/"
            data-tag="Developing-Mymetal"
            data-author="" >
-            <span class="post-title" title="Mymetal - error">Mymetal - error</span>
+            <span class="post-title" title="Mymetal - work log">Mymetal - work log</span>
             <span class="post-date" title="2024-03-30 01:44:55">2024/03/30</span>
         </a>
         
@@ -905,12 +905,12 @@
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2024-04-01 01:54:19'>2024-01-23 01:33</time>
+            Created At : <time class="date" title='Updated At: 2024-04-05 22:58:29'>2024-01-23 01:33</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:166</span>
+        <span>Count:185</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -940,7 +940,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#VS-code"><span class="toc-text">VS code</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#OUTLOOK"><span class="toc-text">OUTLOOK</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux"><span class="toc-text">Linux</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#grep"><span class="toc-text">grep</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#To-see"><span class="toc-text">To see</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#write-to-file"><span class="toc-text">write to file</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#chmod-command"><span class="toc-text">chmod command</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#delete-or-add-something-on-file"><span class="toc-text">delete or add something on file</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#VS-code"><span class="toc-text">VS code</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#OUTLOOK"><span class="toc-text">OUTLOOK</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux"><span class="toc-text">Linux</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#grep"><span class="toc-text">grep</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#To-see"><span class="toc-text">To see</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#write-to-file"><span class="toc-text">write to file</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#chmod-command"><span class="toc-text">chmod command</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#delete-or-add-something-on-file"><span class="toc-text">delete or add something on file</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Unzip-command"><span class="toc-text">Unzip command</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -1002,6 +1002,15 @@ echo &#39;$a&#39;
 % add file to another file
 sed -i &#39;N r tmp_file&#39; filename.txt
 % N - line
+
+% delete file
+rm -f /../../*.log
+
+% delete directory
+rm -rf /root/log/game
+</code></pre>
+<h3 id="Unzip-command"><a href="#Unzip-command" class="headerlink" title="Unzip command"></a>Unzip command</h3><pre><code class="lang-bash">unzip .../*.zip
+tar -zxvf .../*.tar.gz
 </code></pre>
 
       
