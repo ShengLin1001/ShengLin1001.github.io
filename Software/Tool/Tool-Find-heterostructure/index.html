@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Diary - Past and future | Please be chilling out</title>
-  <meta name="keywords" content=" Thinking-Diary ">
-  <meta name="description" content="Diary - Past and future | Please be chilling out">
+  <title>Tool - Find heterostructure | Please be chilling out</title>
+  <meta name="keywords" content=" Software-Tool ">
+  <meta name="description" content="Tool - Find heterostructure | Please be chilling out">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="About this WeBlog我是一名 2022 级在读研究生（力学 &#x2F; 机器学习）。本博客创建于 2024.3 ，为了整合记录读研以来所有的知识积累（知乎，哔哩哔哩，公众号，博客，网站，书籍）。 目前我对微观尺度下金属领域的相变机制很感兴趣。如果大家对我的研究领域感兴趣，欢迎发邮件给我，共同进步。😃 使用软件包括：Python，VASP，Lammps Python 包：ASE，mymeta">
 <meta property="og:type" content="website">
@@ -883,9 +883,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-Thinking/Diary-Past-and-future" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-Software/Tool-Find-heterostructure" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">Diary - Past and future</h1>
+        <h1 class="article-title">Tool - Find heterostructure</h1>
     
     <div class="article-meta">
         
@@ -895,9 +895,9 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="Thinking">Thinking</a> > 
+            <a  data-rel="Software">Software</a> > 
             
-            <a  data-rel="Thinking&lt;---&gt;Diary">Diary</a>
+            <a  data-rel="Software&lt;---&gt;Tool">Tool</a>
             
         </span>
         
@@ -905,19 +905,19 @@
         <span class="tag">
             <i class="iconfont icon-tag"></i>
             
-            <a class="color5">Thinking-Diary</a>
+            <a class="color4">Software-Tool</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2024-03-31 22:53:44'>2023-12-29 05:08</time>
+            Created At : <time class="date" title='Updated At: 2024-04-07 01:07:36'>2024-04-07 00:36</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:805</span>
+        <span>Count:145</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -947,7 +947,7 @@
     
     <div class="toc-ref">
     
-        
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Find-the-heterostructure"><span class="toc-text">Find the heterostructure</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Tools"><span class="toc-text">Tools</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#VASPKIT-First-Cup"><span class="toc-text">VASPKIT First-Cup</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Dependency"><span class="toc-text">Dependency</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Error"><span class="toc-text">Error</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Parameters"><span class="toc-text">Parameters</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Further-thinking"><span class="toc-text">Further thinking</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -963,52 +963,33 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p align="center"><strong><em>Birds of a feather flock together.<em></strong></p>
+        <p align="center"><strong><em>Please the eye and plague the heart<em></strong></p>
 
-<p align="center"><strong><em>物以类聚, 人以群分<em></strong></p>
+<p align="center"><strong><em>贪图-时快活, 必然留下隐患<em></strong></p>
 
-<p><strong>Updated time: 12/29 2023.</strong></p>
-<p><strong>科研向：</strong></p>
-<p><strong><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/49608607/answer/3270260357">(22 封私信) 有哪些东西是你读博士以后才懂的？ - 知乎 (zhihu.com)</a></strong></p>
-<p><strong><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/626639333/answer/3257413306">(22 封私信) 博士生第一年怎么度过? - 知乎 (zhihu.com)</a></strong></p>
-<hr>
-<p>从本科毕业，到研究生入学已经过了一年半。</p>
-<p>两相比较，相差太大了。研究生更倾向于是一份事业，本科时我常常钻个角落独自写题，大有一股管他春夏与秋冬，独坐小楼成一统的气魄。</p>
-<p>入学一年半，总感觉自己现在抗打击，反PUA 的能力越来越强 😂</p>
-<p>尤其是二年级我出国，又觉得之前在生活方面太亏待自己了，哈哈哈。或许这样说不合适，但是我确实在一个非常卷的环境时，即便休息也是非常焦虑的。而这所谓科研与生活的平衡我也在努力探索。</p>
-<p>写在最前面的话，我想用一句什么名言开头，但又不想起高调。</p>
-<p>专栏的初心是我总在知乎上刷到很多有用的科研经历帖，但却缺少记录。</p>
-<p>所以，我想在此记录一些别人提到的科研经验，以及一些我的小情绪。</p>
-<p>当然，我还想抱怨两句老板。首先他在工资方面从不亏待我，但是在科研方面，由于他不是做模拟的，至今也没有给我一个明确的课题。当然，我还是得自己加把劲，不能啥都指望老板。</p>
-<p>另外，我还觉得老板对我的科研想法不够尊重，因为对于实验现象我有一些理解，和他说了并不受重视，但现在的情况却和我的预期相符。当然这是别人的课题，我只是参与，受不受重视也无所谓，他也不会改。但我觉得这原本是科研的讨论，但他却没能听懂我的想法，让我觉得是我人微言轻了。</p>
-<p>下面想列一些我能想到的读研tip</p>
-<ol>
-<li><p>把科研当作一份工作来做，回归生活的本质才是人生的意义。</p>
-</li>
-<li><p>正确认识自身的科研实力，把姿态放低，把预期降低。</p>
-</li>
-<li><p>绝对不要完美主义，适度的偷懒是生活的调味剂。科研这件事上，快反而会慢，慢反而会快。</p>
-</li>
-<li><p>对于科研，我是有一点望而生畏的。科研没有那么神秘，这个世界就是一大堆人搭的草台班子。</p>
-</li>
-<li><p>尽快出文章，少做横向。不能全听导师的，一开始得自己想办法合作或者自己弄点课题做。</p>
-</li>
-<li><p>少玩手机，多科研。科研是需要有效的时间来做“冷板凳”的，要想有所成就，首先就需要保证充足或大量的时间。</p>
-</li>
-<li><p>与他人交流</p>
-</li>
-<li><p>勇于展示自己的工作</p>
-</li>
-<li><p>不要总拿自己和他人比较，每个人的志向和time zone 不同</p>
-</li>
-<li><p>君子慎独</p>
-</li>
+<p><strong>Updated time: 03/30 2024.</strong></p>
+<h2 id="Find-the-heterostructure"><a href="#Find-the-heterostructure" class="headerlink" title="Find the heterostructure"></a>Find the heterostructure</h2><h3 id="Tools"><a href="#Tools" class="headerlink" title="Tools"></a>Tools</h3><p>see <code>Tool - Summary</code></p>
+<h3 id="VASPKIT-First-Cup"><a href="#VASPKIT-First-Cup" class="headerlink" title="VASPKIT First-Cup"></a>VASPKIT First-Cup</h3><p>Because I want to fix the lattice constant of substrates, the VASPKIT couldn’t meet this requirement.</p>
+<p>The code of The <a target="_blank" rel="noopener" href="https://github.com/vaspkit/1st_VASPKIT_CUP">First Prize - LUOJUN</a> maybe could do it.</p>
+<h4 id="Dependency"><a href="#Dependency" class="headerlink" title="Dependency"></a>Dependency</h4><ol>
+<li>VASPKIT = 0.73</li>
+<li>Python3</li>
+<li>some python packages</li>
 </ol>
-<p align="center"><strong><em>最后，送给所有读博人一句共勉的话：<em></strong></p>
-
-<hr>
-<p align="center"><strong><em>“决心要行的路，怎能没有暴风拦路，前进吧，诸位！”<em></strong></p>
-
+<h4 id="Error"><a href="#Error" class="headerlink" title="Error"></a>Error</h4><ol>
+<li>VASPKIT must ~0.73, because the bash  command has run <code>VASPKIT 406</code>.  This command is <code>406 Converte POSCAR to other format -&gt; POSCAR -&gt; 4061 POSCAR with Cartesian Coordinates</code> in 0.73 version, but has been changed now.</li>
+</ol>
+<p><img src="/images/Tool-Find-heterostructure/1.png" alt="406"></p>
+<ol>
+<li>The POSCAR can’t has <code>0.00000000</code> direct coordinate, if it has, this procedure will output some unexpected value errors.</li>
+</ol>
+<p><img src="/images/Tool-Find-heterostructure/2.png" alt="0 value error"></p>
+<p><img src="/images/Tool-Find-heterostructure/3.png" alt="build.py"></p>
+<h4 id="Parameters"><a href="#Parameters" class="headerlink" title="Parameters"></a>Parameters</h4><ol>
+<li>v is controlling the shifting basic vector, maybe could be using to <strong>search more heterostructures</strong>.</li>
+</ol>
+<p><img src="/images/Tool-Find-heterostructure/4.png" alt="find_hetero.py"></p>
+<h3 id="Further-thinking"><a href="#Further-thinking" class="headerlink" title="Further thinking"></a>Further thinking</h3><p><strong><a target="_blank" rel="noopener" href="https://cmdlab.github.io/Hetero2d/html/index.html#">Het2D</a> maybe useful!</strong></p>
 
       
        <hr><span style="font-style: italic;color: gray;"> Please indicate the source when reprinting. Please verify the citation sources in the article and point out any errors or unclear expressions. </span>

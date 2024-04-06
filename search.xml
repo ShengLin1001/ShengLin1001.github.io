@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Tool - Find heterostructure</title>
+      <link href="/Software/Tool/Tool-Find-heterostructure/"/>
+      <url>/Software/Tool/Tool-Find-heterostructure/</url>
+      
+        <content type="html"><![CDATA[<p align="center"><strong><em>Please the eye and plague the heart<em></strong></p><p align="center"><strong><em>贪图-时快活, 必然留下隐患<em></strong></p><p><strong>Updated time: 03/30 2024.</strong></p><h2 id="Find-the-heterostructure"><a href="#Find-the-heterostructure" class="headerlink" title="Find the heterostructure"></a>Find the heterostructure</h2><h3 id="Tools"><a href="#Tools" class="headerlink" title="Tools"></a>Tools</h3><p>see <code>Tool - Summary</code></p><h3 id="VASPKIT-First-Cup"><a href="#VASPKIT-First-Cup" class="headerlink" title="VASPKIT First-Cup"></a>VASPKIT First-Cup</h3><p>Because I want to fix the lattice constant of substrates, the VASPKIT couldn’t meet this requirement.</p><p>The code of The <a href="https://github.com/vaspkit/1st_VASPKIT_CUP">First Prize - LUOJUN</a> maybe could do it.</p><h4 id="Dependency"><a href="#Dependency" class="headerlink" title="Dependency"></a>Dependency</h4><ol><li>VASPKIT = 0.73</li><li>Python3</li><li>some python packages</li></ol><h4 id="Error"><a href="#Error" class="headerlink" title="Error"></a>Error</h4><ol><li>VASPKIT must ~0.73, because the bash  command has run <code>VASPKIT 406</code>.  This command is <code>406 Converte POSCAR to other format -&gt; POSCAR -&gt; 4061 POSCAR with Cartesian Coordinates</code> in 0.73 version, but has been changed now.</li></ol><p><img src="/images/Tool-Find-heterostructure/1.png" alt="406"></p><ol><li>The POSCAR can’t has <code>0.00000000</code> direct coordinate, if it has, this procedure will output some unexpected value errors.</li></ol><p><img src="/images/Tool-Find-heterostructure/2.png" alt="0 value error"></p><p><img src="/images/Tool-Find-heterostructure/3.png" alt="build.py"></p><h4 id="Parameters"><a href="#Parameters" class="headerlink" title="Parameters"></a>Parameters</h4><ol><li>v is controlling the shifting basic vector, maybe could be using to <strong>search more heterostructures</strong>.</li></ol><p><img src="/images/Tool-Find-heterostructure/4.png" alt="find_hetero.py"></p><h3 id="Further-thinking"><a href="#Further-thinking" class="headerlink" title="Further thinking"></a>Further thinking</h3><p><strong><a href="https://cmdlab.github.io/Hetero2d/html/index.html#">Het2D</a> maybe useful!</strong></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Software </category>
+          
+          <category> Tool </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Software-Tool </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Quantum mechanics - Density functional theory</title>
       <link href="/Theory/Quantum-mechanics/Quantum-mechanics-Density-functional-theory/"/>
       <url>/Theory/Quantum-mechanics/Quantum-mechanics-Density-functional-theory/</url>
