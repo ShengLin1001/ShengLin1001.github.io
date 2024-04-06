@@ -493,7 +493,7 @@
     </div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="28">
-<input type="hidden" id="yelog_site_word_count" value="12k">
+<input type="hidden" id="yelog_site_word_count" value="12.1k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -912,12 +912,12 @@
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2024-04-07 01:07:36'>2024-04-07 00:36</time>
+            Created At : <time class="date" title='Updated At: 2024-04-07 01:21:48'>2024-04-07 00:36</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:145</span>
+        <span>Count:217</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -947,7 +947,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Find-the-heterostructure"><span class="toc-text">Find the heterostructure</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Tools"><span class="toc-text">Tools</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#VASPKIT-First-Cup"><span class="toc-text">VASPKIT First-Cup</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Dependency"><span class="toc-text">Dependency</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Error"><span class="toc-text">Error</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Parameters"><span class="toc-text">Parameters</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Further-thinking"><span class="toc-text">Further thinking</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Find-the-heterostructure"><span class="toc-text">Find the heterostructure</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Tools"><span class="toc-text">Tools</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#VASPKIT"><span class="toc-text">VASPKIT</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#VASPKIT-First-Cup"><span class="toc-text">VASPKIT First-Cup</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Dependency"><span class="toc-text">Dependency</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Error"><span class="toc-text">Error</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Parameters"><span class="toc-text">Parameters</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Further-thinking"><span class="toc-text">Further thinking</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -967,8 +967,13 @@
 
 <p align="center"><strong><em>贪图-时快活, 必然留下隐患<em></strong></p>
 
-<p><strong>Updated time: 03/30 2024.</strong></p>
+<p><strong>Updated time: 04/07 2024.</strong></p>
 <h2 id="Find-the-heterostructure"><a href="#Find-the-heterostructure" class="headerlink" title="Find the heterostructure"></a>Find the heterostructure</h2><h3 id="Tools"><a href="#Tools" class="headerlink" title="Tools"></a>Tools</h3><p>see <code>Tool - Summary</code></p>
+<h3 id="VASPKIT"><a href="#VASPKIT" class="headerlink" title="VASPKIT"></a>VASPKIT</h3><p>When I use VASPKIT to generate a heterostructure, I found some interesting thing.</p>
+<ol>
+<li>VASPKIT can’t fix the lattice constant of uper or lower material.</li>
+<li>I found over-distorted material in some model of extremely small angle, causing lose its original lattice information like HCP/FCC/… I think it’s because the VASPKIT didn’t set a tolerance of angle mismatch, and it has important influence in this extremely small angle model.</li>
+</ol>
 <h3 id="VASPKIT-First-Cup"><a href="#VASPKIT-First-Cup" class="headerlink" title="VASPKIT First-Cup"></a>VASPKIT First-Cup</h3><p>Because I want to fix the lattice constant of substrates, the VASPKIT couldn’t meet this requirement.</p>
 <p>The code of The <a target="_blank" rel="noopener" href="https://github.com/vaspkit/1st_VASPKIT_CUP">First Prize - LUOJUN</a> maybe could do it.</p>
 <h4 id="Dependency"><a href="#Dependency" class="headerlink" title="Dependency"></a>Dependency</h4><ol>
