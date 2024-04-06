@@ -6,18 +6,21 @@
   <meta name="keywords" content=" Software-Tool ">
   <meta name="description" content="Tool - Summary | Please be chilling out">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="About this WeBlog我是一名 2022 级在读研究生（力学 &#x2F; 机器学习）。本博客创建于 2024.3 ，为了整合记录读研以来所有的知识积累（知乎，哔哩哔哩，公众号，博客，网站，书籍）。 目前我对微观尺度下金属领域的相变机制很感兴趣。如果大家对我的研究领域感兴趣，欢迎发邮件给我，共同进步。😃 使用软件包括：Python，VASP，Lammps Python 包：ASE，mymeta">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="https://shenglin1001.github.io/about/">
+<meta name="description" content="Birds of a feather flock together.  物以类聚, 鸟以群分。  Updated time: 04&#x2F;01 2024. 04&#x2F;01&#x2F;20240. Preface Reading list Focus solely on one DFT method suitable for solids and spatially extended materials, namely">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Quantum mechanics - Density functional theory">
+<meta property="og:url" content="https://shenglin1001.github.io/Theory/Quantum-mechanics/Quantum-mechanics-Density-functional-theory/">
 <meta property="og:site_name" content="Please be chilling out">
-<meta property="og:description" content="About this WeBlog我是一名 2022 级在读研究生（力学 &#x2F; 机器学习）。本博客创建于 2024.3 ，为了整合记录读研以来所有的知识积累（知乎，哔哩哔哩，公众号，博客，网站，书籍）。 目前我对微观尺度下金属领域的相变机制很感兴趣。如果大家对我的研究领域感兴趣，欢迎发邮件给我，共同进步。😃 使用软件包括：Python，VASP，Lammps Python 包：ASE，mymeta">
+<meta property="og:description" content="Birds of a feather flock together.  物以类聚, 鸟以群分。  Updated time: 04&#x2F;01 2024. 04&#x2F;01&#x2F;20240. Preface Reading list Focus solely on one DFT method suitable for solids and spatially extended materials, namely">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-03-30T01:20:39.000Z">
-<meta property="article:modified_time" content="2024-03-30T01:29:12.874Z">
+<meta property="og:image" content="https://shenglin1001.github.io/images/Quantum-mechanics-Density-functional-theory/1.png">
+<meta property="og:image" content="https://shenglin1001.github.io/images/Quantum-mechanics-Density-functional-theory/2.png">
+<meta property="article:published_time" content="2024-04-01T12:16:03.000Z">
+<meta property="article:modified_time" content="2024-04-02T00:02:21.206Z">
 <meta property="article:author" content="Louis">
-<meta property="article:tag" content="material science">
+<meta property="article:tag" content="Theory-Quantum_mechanics">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://shenglin1001.github.io/images/Quantum-mechanics-Density-functional-theory/1.png">
 
 
 <link rel="icon" href="/img/avatar.jpg">
@@ -714,19 +717,19 @@
         
         
         <a  class="All Developing Mymetal "
-           href="/Developing/Mymetal/Mymetal-log/"
+           href="/Developing/Mymetal/Mymetal-error/"
            data-tag="Developing-Mymetal"
            data-author="" >
-            <span class="post-title" title="Mymetal - work log">Mymetal - work log</span>
+            <span class="post-title" title="Mymetal - error">Mymetal - error</span>
             <span class="post-date" title="2024-03-30 01:44:55">2024/03/30</span>
         </a>
         
         
         <a  class="All Developing Mymetal "
-           href="/Developing/Mymetal/Mymetal-error/"
+           href="/Developing/Mymetal/Mymetal-log/"
            data-tag="Developing-Mymetal"
            data-author="" >
-            <span class="post-title" title="Mymetal - error">Mymetal - error</span>
+            <span class="post-title" title="Mymetal - work log">Mymetal - work log</span>
             <span class="post-date" title="2024-03-30 01:44:55">2024/03/30</span>
         </a>
         
@@ -905,12 +908,12 @@
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2024-04-01 03:00:07'>2024-03-30 13:29</time>
+            Created At : <time class="date" title='Updated At: 2024-04-06 20:56:59'>2024-03-30 13:29</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:232</span>
+        <span>Count:285</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -940,7 +943,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Write-the-first"><span class="toc-text">Write the first</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Interesting-Tools-see-Endnote-DFT-HCP-Au-Tools"><span class="toc-text">Interesting Tools (see Endnote: DFT-HCP-Au&#x2F;Tools)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#ASE"><span class="toc-text">ASE</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Spglib"><span class="toc-text">Spglib</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SeeK-path"><span class="toc-text">SeeK-path</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#VASPKIT"><span class="toc-text">VASPKIT</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ElasTool-update-to-3-0"><span class="toc-text">ElasTool (update to 3.0)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Automatic-Flow-AFLOW-ACONVASP"><span class="toc-text">Automatic Flow, AFLOW&#x2F;ACONVASP</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#NLMD"><span class="toc-text">NLMD</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SurFlow"><span class="toc-text">SurFlow</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Write-the-first"><span class="toc-text">Write the first</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Interesting-Tools-see-Endnote-DFT-HCP-Au-Tools"><span class="toc-text">Interesting Tools (see Endnote: DFT-HCP-Au&#x2F;Tools)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#ASE"><span class="toc-text">ASE</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Spglib"><span class="toc-text">Spglib</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SeeK-path"><span class="toc-text">SeeK-path</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#VASPKIT"><span class="toc-text">VASPKIT</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ElasTool-update-to-3-0"><span class="toc-text">ElasTool (update to 3.0)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Automatic-Flow-AFLOW-ACONVASP"><span class="toc-text">Automatic Flow, AFLOW&#x2F;ACONVASP</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#NLMD"><span class="toc-text">NLMD</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SurFlow"><span class="toc-text">SurFlow</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Building-heterostructure"><span class="toc-text">Building heterostructure</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Hetbuilder-I-still-can%E2%80%99t-run"><span class="toc-text">Hetbuilder (I still can’t run)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Hetero2D"><span class="toc-text">Hetero2D</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#VASPKIT-CUP"><span class="toc-text">VASPKIT_CUP</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -1017,6 +1020,25 @@
 <li><strong>Article:</strong> SurfFlow: High-throughput surface energy calculations for arbitrary crystals (see <code>Endnote</code>)</li>
 <li><strong>Source code:</strong> <a target="_blank" rel="noopener" href="https://github.com/ShengLin1001/surfflow">GitHub</a></li>
 <li><strong>Description:</strong> <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/LbEcw69Cm3sFEZvF7P4afQ">WeiXin</a></li>
+</ul>
+<h2 id="Building-heterostructure"><a href="#Building-heterostructure" class="headerlink" title="Building heterostructure"></a>Building heterostructure</h2><h3 id="Hetbuilder-I-still-can’t-run"><a href="#Hetbuilder-I-still-can’t-run" class="headerlink" title="Hetbuilder (I still can’t run)"></a>Hetbuilder (I still can’t run)</h3><ul>
+<li><p><strong>Algorithm:</strong> <strong>Coincidence lattices</strong></p>
+</li>
+<li><p><strong>Source code:</strong> <a target="_blank" rel="noopener" href="https://github.com/romankempt/hetbuilder">Github</a></p>
+</li>
+<li><p><strong>Document:</strong> <a target="_blank" rel="noopener" href="https://hetbuilder.readthedocs.io/en/latest/index.html">Page</a></p>
+</li>
+</ul>
+<h3 id="Hetero2D"><a href="#Hetero2D" class="headerlink" title="Hetero2D"></a>Hetero2D</h3><ul>
+<li><strong>Article:</strong> Computational synthesis of 2D materials: A high-throughput approach to materials design (see <code>Endnote</code>)</li>
+<li><strong>Source code:</strong> <a target="_blank" rel="noopener" href="https://github.com/cmdlab/Hetero2d">Github</a></li>
+<li><p><strong>Document:</strong> <a target="_blank" rel="noopener" href="https://cmdlab.github.io/Hetero2d/html/index.html">Page</a></p>
+</li>
+<li><p><strong>Description:</strong> low-lattice mismatched hetero-structures for arbitrary 2D materials and substrate surfaces</p>
+</li>
+</ul>
+<h3 id="VASPKIT-CUP"><a href="#VASPKIT-CUP" class="headerlink" title="VASPKIT_CUP"></a>VASPKIT_CUP</h3><ul>
+<li><strong>Source code:</strong> <a target="_blank" rel="noopener" href="https://github.com/vaspkit/1st_VASPKIT_CUP">Github</a></li>
 </ul>
 
       
