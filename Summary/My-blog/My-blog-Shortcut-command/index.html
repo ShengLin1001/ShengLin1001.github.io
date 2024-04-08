@@ -493,7 +493,7 @@
     </div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="28">
-<input type="hidden" id="yelog_site_word_count" value="12.4k">
+<input type="hidden" id="yelog_site_word_count" value="12.9k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -914,12 +914,12 @@
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2024-04-08 19:16:33'>2024-01-23 01:33</time>
+            Created At : <time class="date" title='Updated At: 2024-04-09 00:38:56'>2024-01-23 01:33</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:251</span>
+        <span>Count:756</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -949,7 +949,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#VS-code"><span class="toc-text">VS code</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#OUTLOOK"><span class="toc-text">OUTLOOK</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Anaconda"><span class="toc-text">Anaconda</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux"><span class="toc-text">Linux</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#grep"><span class="toc-text">grep</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#To-see"><span class="toc-text">To see</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#write-to-file"><span class="toc-text">write to file</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#chmod-command"><span class="toc-text">chmod command</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#delete-or-add-something-on-file"><span class="toc-text">delete or add something on file</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Unzip-command"><span class="toc-text">Unzip command</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#cp-command"><span class="toc-text">cp command</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#mv-command"><span class="toc-text">mv command</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#For-internet"><span class="toc-text">For internet</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#VS-code"><span class="toc-text">VS code</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#OUTLOOK"><span class="toc-text">OUTLOOK</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Anaconda"><span class="toc-text">Anaconda</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux"><span class="toc-text">Linux</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#grep"><span class="toc-text">grep</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#To-see"><span class="toc-text">To see</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#write-to-file"><span class="toc-text">write to file</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#chmod-command"><span class="toc-text">chmod command</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#delete-or-add-something-on-file"><span class="toc-text">delete or add something on file</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Unzip-command"><span class="toc-text">Unzip command</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#cp-command"><span class="toc-text">cp command</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#mv-command"><span class="toc-text">mv command</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#For-internet"><span class="toc-text">For internet</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Git"><span class="toc-text">Git</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#alias"><span class="toc-text">alias</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -1040,6 +1040,69 @@ sudo systemctl restart networking
 % if down, set up
 sudo ip link set ens33 up
 sudo dhclient ens33
+</code></pre>
+<h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><pre><code class="lang-bash"># 配置Git用户信息
+git config --global user.name &quot;Your Name&quot;  # 设置全局用户名
+git config --global user.email &quot;youremail@example.com&quot;  # 设置全局邮箱地址
+# SSH to cennected between git and github
+
+# 初始化一个新的Git仓库
+git init  # 在当前目录初始化新的Git仓库
+
+# 克隆一个现有的仓库
+git clone https://github.com/username/repository.git  # 克隆远程仓库到本地
+
+# 查看状态
+git status  # 查看当前工作目录和暂存区的状态
+
+# 添加和提交更改
+git add .  # 将所有修改和新文件添加到暂存区
+git commit -m &quot;Commit message&quot;  # 提交暂存区到仓库区
+
+# 推送更改到远程仓库
+git push origin main  # 将本地的更改推送到远程仓库的main分支
+
+# 更新你的本地仓库
+git pull origin main  # 从远程仓库的main分支拉取最新更改并合并到本地
+
+# 分支操作
+git branch branchname  # 创建一个新分支
+git checkout branchname  # 切换到指定分支
+git merge branchname  # 将指定分支合并到当前分支
+
+# 查看提交历史
+git log  # 查看提交历史记录
+</code></pre>
+<h3 id="alias"><a href="#alias" class="headerlink" title="alias"></a>alias</h3><pre><code class="lang-bash"># see alias
+git config --get-regexp alias
+
+# 设置 &#39;co&#39; 为 &#39;checkout&#39; 的别名 git co branch-name
+git config --global alias.co checkout
+
+# 设置 &#39;br&#39; 为 &#39;branch&#39; 的别名
+git config --global alias.br branch
+
+# 设置 &#39;ci&#39; 为 &#39;commit&#39; 的别名
+git config --global alias.ci commit
+
+# 设置 &#39;st&#39; 为 &#39;status&#39; 的别名
+git config --global alias.st status
+
+# 设置 &#39;lg&#39; 为更美观的日志输出格式
+git config --global alias.lg &quot;log --graph --pretty=format:&#39;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset&#39; --abbrev-commit&quot;
+
+# 设置 &#39;unstage&#39; 作为撤销暂存的别名
+git config --global alias.unstage &#39;reset HEAD --&#39;
+
+# 设置 &#39;last&#39; 为查看最后一次提交的别名
+git config --global alias.last &#39;log -1 HEAD&#39;
+
+# git ac &quot;&quot;
+git config --global alias.ac &#39;!git add -A &amp;&amp; git commit -m&#39;
+
+# push and pull on main
+git config --global alias.push &#39;push origin main&#39;
+git config --global alias.pull &#39;pull origin main&#39;
 </code></pre>
 
       
