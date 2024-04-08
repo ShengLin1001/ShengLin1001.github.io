@@ -493,7 +493,7 @@
     </div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="28">
-<input type="hidden" id="yelog_site_word_count" value="12.3k">
+<input type="hidden" id="yelog_site_word_count" value="12.4k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -912,12 +912,12 @@
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2024-04-07 18:16:38'>2024-04-07 00:36</time>
+            Created At : <time class="date" title='Updated At: 2024-04-08 15:07:35'>2024-04-07 00:36</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:276</span>
+        <span>Count:351</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -947,7 +947,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Find-the-heterostructure"><span class="toc-text">Find the heterostructure</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Tools"><span class="toc-text">Tools</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#VASPKIT"><span class="toc-text">VASPKIT</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#VASPKIT-First-Cup"><span class="toc-text">VASPKIT First-Cup</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Dependency"><span class="toc-text">Dependency</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Error"><span class="toc-text">Error</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Parameters"><span class="toc-text">Parameters</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Hetbuilder"><span class="toc-text">Hetbuilder</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Further-thinking"><span class="toc-text">Further thinking</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Find-the-heterostructure"><span class="toc-text">Find the heterostructure</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Tools"><span class="toc-text">Tools</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Some-talks-advices"><span class="toc-text">Some talks &#x2F; advices</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ASE-Pymatgen"><span class="toc-text">ASE&#x2F;Pymatgen</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#VASPKIT"><span class="toc-text">VASPKIT</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#VASPKIT-First-Cup"><span class="toc-text">VASPKIT First-Cup</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Dependency"><span class="toc-text">Dependency</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Error"><span class="toc-text">Error</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Parameters"><span class="toc-text">Parameters</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Hetbuilder"><span class="toc-text">Hetbuilder</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Next-step"><span class="toc-text">Next step</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Further-thinking"><span class="toc-text">Further thinking</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -969,9 +969,15 @@
 
 <p><strong>Updated time: 04/07 2024.</strong></p>
 <h2 id="Find-the-heterostructure"><a href="#Find-the-heterostructure" class="headerlink" title="Find the heterostructure"></a>Find the heterostructure</h2><h3 id="Tools"><a href="#Tools" class="headerlink" title="Tools"></a>Tools</h3><p>see <code>Tool - Summary</code></p>
+<h3 id="Some-talks-advices"><a href="#Some-talks-advices" class="headerlink" title="Some talks / advices"></a>Some talks / advices</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/ShengLin1001/PJ-advanced-reasearch/issues/1">Issue</a></li>
+</ul>
+<h3 id="ASE-Pymatgen"><a href="#ASE-Pymatgen" class="headerlink" title="ASE/Pymatgen"></a>ASE/Pymatgen</h3><ul>
+<li>stack/interface function - only used for some similar structure (lattice type, constant, orientation), but could found a minimal force on the interface with specified interlayer space</li>
+</ul>
 <h3 id="VASPKIT"><a href="#VASPKIT" class="headerlink" title="VASPKIT"></a>VASPKIT</h3><p>When I use VASPKIT to generate a heterostructure, I found some interesting thing.</p>
 <ol>
-<li>VASPKIT can’t fix the lattice constant of uper or lower material.</li>
+<li>VASPKIT can’t fix the lattice constant of upper or lower material.</li>
 <li>I found over-distorted material in some model of extremely small angle, causing lose its original lattice information like HCP/FCC/… I think it’s because the VASPKIT didn’t set a tolerance of angle mismatch, and it has important influence in this extremely small angle model.</li>
 </ol>
 <h3 id="VASPKIT-First-Cup"><a href="#VASPKIT-First-Cup" class="headerlink" title="VASPKIT First-Cup"></a>VASPKIT First-Cup</h3><p>Because I want to fix the lattice constant of substrates, the VASPKIT couldn’t meet this requirement.</p>
@@ -1005,7 +1011,15 @@ git clone https://github.com/hongyi-zhao/hetbuilder.git &amp;&amp; cd hetbuilder
 pip install -r requirements.txt
 pip install .
 </code></pre>
-<h3 id="Further-thinking"><a href="#Further-thinking" class="headerlink" title="Further thinking"></a>Further thinking</h3><p><strong><a target="_blank" rel="noopener" href="https://cmdlab.github.io/Hetero2d/html/index.html#">Het2D</a> maybe useful!</strong></p>
+<p>The <a target="_blank" rel="noopener" href="https://hetbuilder.readthedocs.io/en/latest/implementation.html">Coincidence lattices</a> theory maybe too strict for high mismatched film/substrate system to search a minimal configuration (like vaspkit, ~45 atoms).</p>
+<p>The most output has &gt; 200 atoms, although we enlarge the t parameter - space in Angstrom unit.</p>
+<h3 id="Next-step"><a href="#Next-step" class="headerlink" title="Next step"></a>Next step</h3><p><img src="/images/Tool-Find-heterostructure/5.png" alt="next..."></p>
+<h3 id="Further-thinking"><a href="#Further-thinking" class="headerlink" title="Further thinking"></a>Further thinking</h3><ul>
+<li><p><strong><a target="_blank" rel="noopener" href="https://cmdlab.github.io/Hetero2d/html/index.html#">Het2D</a> maybe useful!</strong></p>
+</li>
+<li><p><strong><a target="_blank" rel="noopener" href="https://github.com/nmdl-mizo/interface_master">interface_master</a></strong></p>
+</li>
+</ul>
 
       
        <hr><span style="font-style: italic;color: gray;"> Please indicate the source when reprinting. Please verify the citation sources in the article and point out any errors or unclear expressions. </span>
