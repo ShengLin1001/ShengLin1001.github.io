@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>VASP - Special functions - fix basic vector | Please be chilling out</title>
-  <meta name="keywords" content=" Software-VASP-Special_functions ">
-  <meta name="description" content="VASP - Special functions - fix basic vector | Please be chilling out">
+  <title>Diary - Log | Please be chilling out</title>
+  <meta name="keywords" content=" Thinking-Diary ">
+  <meta name="description" content="Diary - Log | Please be chilling out">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="About this WeBlog我是一名 2022 级在读研究生（力学 &#x2F; 机器学习）。本博客创建于 2024.3 ，为了整合记录读研以来所有的知识积累（知乎，哔哩哔哩，公众号，博客，网站，书籍）。 目前我对微观尺度下金属领域的相变机制很感兴趣。如果大家对我的研究领域感兴趣，欢迎发邮件给我，共同进步。😃 使用软件包括：Python，VASP，Lammps Python 包：ASE，mymeta">
 <meta property="og:type" content="website">
@@ -892,11 +892,13 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-Software/VASP-Special-functions-fix-basic-vector" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-Thinking/Diary-Log" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">VASP - Special functions - fix basic vector</h1>
+        <h1 class="article-title">Diary - Log</h1>
     
     <div class="article-meta">
+        
+        <span class="top"><a>置顶</a></span>
         
         
         
@@ -904,11 +906,9 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="Software">Software</a> > 
+            <a  data-rel="Thinking">Thinking</a> > 
             
-            <a  data-rel="Software&lt;---&gt;VASP">VASP</a> > 
-            
-            <a  data-rel="Software&lt;---&gt;VASP&lt;---&gt;Special_functions">Special_functions</a>
+            <a  data-rel="Thinking&lt;---&gt;Diary">Diary</a>
             
         </span>
         
@@ -916,19 +916,19 @@
         <span class="tag">
             <i class="iconfont icon-tag"></i>
             
-            <a class="color2">Software-VASP-Special_functions</a>
+            <a class="color5">Thinking-Diary</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2024-04-01 00:38:42'>2024-01-24 18:57</time>
+            Created At : <time class="date" title='Updated At: 2024-04-10 00:34:35'>2024-04-10 00:31</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:1.4k</span>
+        <span>Count:15</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -958,7 +958,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Ref"><span class="toc-text">Ref</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%9B%BA%E5%AE%9A%E5%9F%BA%E7%9F%A2%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="toc-text">1. 固定基矢的作用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E6%95%B0%E5%AD%A6%E6%8F%8F%E8%BF%B0%E4%BB%A5%E5%8F%8A%E5%9B%BA%E5%AE%9A%E5%9F%BA%E7%9F%A2%E6%96%B9%E5%90%91"><span class="toc-text">2. 数学描述以及固定基矢方向</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E6%93%8D%E4%BD%9C%E4%B8%AD%E7%9A%84%E8%AF%AF%E5%8C%BA"><span class="toc-text">3. 操作中的误区</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E5%9B%BA%E5%AE%9A%E5%9F%BA%E7%9F%A2%E7%9A%84%E4%BD%9C%E7%94%A8%E5%AF%B9%E8%B1%A1"><span class="toc-text">4. 固定基矢的作用对象</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-%E6%AD%A3%E4%BA%A4%E6%99%B6%E7%B3%BB"><span class="toc-text">4.1 正交晶系</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-%E5%8D%95%E6%96%9C%E6%99%B6%E7%B3%BB"><span class="toc-text">4.2 单斜晶系</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3-%E4%B8%89%E6%96%9C%E6%99%B6%E7%B3%BB"><span class="toc-text">4.3 三斜晶系</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-VASP-6-LATTICE-CONSTRAINTS-Command"><span class="toc-text">5. VASP 6 - LATTICE_CONSTRAINTS Command</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E8%AE%BA"><span class="toc-text">结论</span></a></li></ol>
+        
     
 <style>
     .left-col .switch-btn,
@@ -974,152 +974,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p align="center"><strong><em>A word spoken is past recalling.<em></strong></p>
+        <p align="center"><strong><em>Four eyes see more than two.<em></strong></p>
 
-<p align="center"><strong><em>一言既出, 驷马难追<em></strong></p>
+<p align="center"><strong><em>集思广益<em></strong></p>
 
-<p><strong>Updated time: 01/30 2024.</strong></p>
-<h2 id="Ref"><a href="#Ref" class="headerlink" title="Ref"></a>Ref</h2><ol>
-<li><p><a href="https://link.zhihu.com/?target=https%3A//mp.weixin.qq.com/s/fkoqZisI2mPTha0WfxhcLg">VASP固定基矢优化结构最新方法更新 (qq.com)</a></p>
-</li>
-<li><p><a href="https://link.zhihu.com/?target=http%3A//blog.wangruixing.cn/2019/05/05/constr/">http://blog.wangruixing.cn/2019/05/05/constr/</a></p>
-</li>
-<li><p>固定晶格部分无缺大师兄贡献：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/34750103">https://zhuanlan.zhihu.com/p/34750103</a></p>
-</li>
-<li><p><a href="https://link.zhihu.com/?target=https%3A//github.com/Chengcheng-Xiao/VASP_OPT_AXIS">https://github.com/Chengcheng-Xiao/VASP_OPT_AXIS</a></p>
-</li>
-<li><p><a href="https://link.zhihu.com/?target=http%3A//bbs.keinsci.com/thread-9494-1-1.html">VASP 固定基矢优化结构方法 - 第一性原理 (First Principle) - 计算化学公社 (keinsci.com)</a></p>
-</li>
-<li><p><a href="https://link.zhihu.com/?target=https%3A//blog.shishiruqi.com//2019/05/05/constr/">VASP固定基矢优化结构方法 | 世事如棋 (shishiruqi.com)</a></p>
-</li>
-<li><p><a href="https://link.zhihu.com/?target=https%3A//www.vasp.at/wiki/index.php/Cd_Si_volume_relaxation">Cd Si volume relaxation - VASP Wiki</a></p>
-</li>
-<li><a href="https://link.zhihu.com/?target=https%3A//www.vasp.at/wiki/index.php/LATTICE_CONSTRAINTS">LATTICE_CONSTRAINTS - VASP Wiki</a></li>
-</ol>
-<h2 id="1-固定基矢的作用"><a href="#1-固定基矢的作用" class="headerlink" title="1. 固定基矢的作用"></a>1. 固定基矢的作用</h2><p>对于二维材料，薄膜材料，乃至块体材料的拉伸/压缩模拟中，施加指定应变的基矢方向需要固定，同时由于泊松效应，其他方向的cell长度也会发生相应改变。</p>
-<p>除了固定基矢长度的作用外，某些情况下也可以固定基矢方向。</p>
-<p><img src="/images/VASP-Special-functions-fix-basic-vector/1.png" alt="Ref 3 Fixing specific stress tensor element(s)"></p>
-<h2 id="2-数学描述以及固定基矢方向"><a href="#2-数学描述以及固定基矢方向" class="headerlink" title="2. 数学描述以及固定基矢方向"></a>2. 数学描述以及固定基矢方向</h2><p><code>/src/constr_cell_relax.F source code</code></p>
-<pre><code class="lang-bash">!-----------------------------------------------------------------------
-!
-! At present, VASP does not allow to relax the cellshape selectively
-! i.e. for instance only cell relaxation in x direction.
-! To be more precisse, this behaviour can not be achived via the INCAR
-! or POSCAR file.
-! However, it is possible to set selected components of the stress tensor
-! to zero.
-! The most conveninent position to do this is the routines 
-! CONSTR_CELL_RELAX  (constraint cell relaxation).
-! FCELL contains the forces on the basis vectors.
-! These forces are used to modify the basis vectors according
-! to the following equations:
-!
-!      A_OLD(1:3,1:3)=A(1:3,1:3) ! F90 style 
-!      DO J=1,3
-!      DO I=1,3
-!      DO K=1,3
-!        A(I,J)=A(I,J) + FCELL(I,K)*A_OLD(K,J)*STEP_SIZE
-!      ENDDO
-!      ENDDO
-!      ENDDO
-! where A holds the basis vectors (in cartesian coordinates).
-!
-!-----------------------------------------------------------------------
-
-      SUBROUTINE CONSTR_CELL_RELAX(FCELL)
-      USE prec
-      REAL(q) FCELL(3,3)
-
-!     just one simple example
-!     relaxation in x directions only
-!      SAVE=FCELL(1,1)
-!      FCELL=0   ! F90 style: set the whole array to zero
-!      FCELL(1,1)=SAVE
-!     relaxation in z direction only
-!      SAVE=FCELL(3,3)
-!      FCELL=0   ! F90 style: set the whole array to zero
-!      FCELL(3,3)=SAVE
-</code></pre>
-<p><img src="/images/VASP-Special-functions-fix-basic-vector/2.png" alt="知乎评论区，找不到出处了，我觉得这里的矩阵表示有错误，这只是变化值"></p>
-<p>在源代码中交代的很清楚，cell的更新是通过下列循环完成的。FCELL和上图中的F是一样的，只是一个是左乘，一个右乘。</p>
-<pre><code class="lang-bash">!      A_OLD(1:3,1:3)=A(1:3,1:3) ! F90 style 
-!      DO J=1,3
-!      DO I=1,3
-!      DO K=1,3
-!        A(I,J)=A(I,J) + FCELL(I,K)*A_OLD(K,J)*STEP_SIZE
-!      ENDDO
-!      ENDDO
-!      ENDDO
-</code></pre>
-<p>从一开始的只能对正交盒子固定基矢，扩展到单斜盒子固定基矢，再到对三斜盒子固定方向（<strong>Ref 5 Theta-Al<sub>2</sub>O<sub>3</sub>的优化</strong>）</p>
-<h2 id="3-操作中的误区"><a href="#3-操作中的误区" class="headerlink" title="3. 操作中的误区"></a>3. 操作中的误区</h2><p>对于 Ref 3 中 Fixing specific stress tensor element(s) 方法重新对 VASP 编译</p>
-<pre><code class="lang-bash">cd to_vasp_root_directory
-cp path/stress_relax_finner.patch ./
-patch -p0 &lt; stress_relax_finner.patch
-
-module load mpi/intel/17.0.7-thc
-#module load intel/17.0.7-thc
-
-cp arch/makefile.include.linux_intel  ./makefile.include
-make std
-</code></pre>
-<p>对于VASP官网例子测试 <strong>Ref 6</strong></p>
-<pre><code class="lang-bash">POSCAR cell
-5.5
- 0.0    0.5     0.5
- 0.5    0.0     0.5
- 0.5    0.5     0.0
-
-CONTCAR-000000000
-   5.50000000000000     
-     0.0000000000000000    0.5000000000000000    0.5000000000000000
-     0.5000000000000000    0.0000000000000000    0.5000000000000000
-     0.5000000000000000    0.5000000000000000    0.0000000000000000
-
-CONTCAR-100010000
-   5.50000000000000     
-     0.0000000000000000    0.4958558152381574    0.5000000000000000
-     0.4958558152381574    0.0000000000000000    0.5000000000000000
-     0.4958558152381574    0.4958558152381574    0.0000000000000000
-
-CONTCAR-110110000
-   5.50000000000000     
-     0.0000000000000000    0.4958559358684163    0.5000000000000000
-     0.4958559358684163    0.0000000000000000    0.5000000000000000
-     0.4958559358684163    0.4958559358684163    0.0000000000000000
-
-CONTCAR - turn off IOPTCELL tag
-   5.50000000000000     
-     0.0000000000000000    0.4971253367745418    0.4971253367745418
-     0.4971253367745418    0.0000000000000000    0.4971253367745418
-     0.4971253367745418    0.4971253367745418   -0.0000000000000000
-</code></pre>
-<p>算到这里我觉得很奇怪，因为 manual 中写到</p>
-<pre><code class="lang-bash">IOPTCELL = xx yx zx xy yy zy xz yz zz
-for example:
-
-IOPTCELL = 1 1 0 1 1 0 0 0 0
-will relax the xx, xy, yx and yy components of the stress tensor, while keeping the other components fixed (to zero).
-</code></pre>
-<p>我以为对应某个分量的值设为0，那 cell 中这部分便被固定住了。但这是错误的！cell的更新是一个矩阵运算，不存在点乘。首先 POSCAR 给出的是正交晶系，但基矢并不是 conventional cell 的常规写法。接下来，即使我们设定</p>
-<p><code>100010000 =》 FCELL = [[1 0 0] [0 1 0] [0 0 0]]</code>，经过 <code>FCELL[i, k]·A_OLD[k, j]</code> 的遍历几乎所有的元素都发生了改变。</p>
-<p><strong>误区的核心在于：没有理解了矩阵运算</strong></p>
-<p>当然，我还关闭对称性算了一下，我以为是对称性和IOPTCELL造成的约束冗余。</p>
-<h2 id="4-固定基矢的作用对象"><a href="#4-固定基矢的作用对象" class="headerlink" title="4. 固定基矢的作用对象"></a>4. 固定基矢的作用对象</h2><h3 id="4-1-正交晶系"><a href="#4-1-正交晶系" class="headerlink" title="4.1 正交晶系"></a>4.1 正交晶系</h3><p><code>A = [[a 0 0] [0 b 0 ] [0 0 c] ]</code></p>
-<p>可以实现固定任意基矢，也可以固定基矢的方向优化。</p>
-<p>对于 A ，第一行对应 a<sub>1</sub>, 二 a<sub>2</sub>, 三 a<sub>3</sub>。以对 a<sub>1</sub> 操作为例， 固定该基矢，则 FCELL 的第一行为 <code>[ 0 0 0]</code> 。固定基矢的方向优化 <code>[1 0 0]</code></p>
-<h3 id="4-2-单斜晶系"><a href="#4-2-单斜晶系" class="headerlink" title="4.2 单斜晶系"></a>4.2 单斜晶系</h3><p><code>A = [[a 0 0] [b1 b2 0 ] [0 0 c] ]</code></p>
-<p>可以实现固定任意基矢, 可以对 <code>a, c</code> 轴固定基矢方向优化，<code>b</code> 轴可以固定在 xy 平面内。</p>
-<p><code>a c</code> 轴同上。<code>b</code> 轴固定基矢，<code>[0 0 0]</code>, 固定方向优化 <code>[1 1 0]</code></p>
-<h3 id="4-3-三斜晶系"><a href="#4-3-三斜晶系" class="headerlink" title="4.3 三斜晶系"></a>4.3 三斜晶系</h3><p><code>A = [[a 0 0] [b1 b2 0] [c1 c2 c3]]</code></p>
-<p><code>a b</code> 轴同上，<code>c</code> 轴固定基矢，<code>[0 0 0]</code>，没法固定方向。</p>
-<h2 id="5-VASP-6-LATTICE-CONSTRAINTS-Command"><a href="#5-VASP-6-LATTICE-CONSTRAINTS-Command" class="headerlink" title="5. VASP 6 - LATTICE_CONSTRAINTS Command"></a>5. VASP 6 - LATTICE_CONSTRAINTS Command</h2><pre><code class="lang-text">Mind: LATTICE_CONSTRAINTS in combination with IBRION=1,2 is available from VASP 6.5.0.
-</code></pre>
-<p><code>LATTICE_CONSTRAINTS TAG</code> 可用于MD 模拟和静态弛豫。尤其适用于液体以及二维材料的计算。</p>
-<p>但是我没有 6.5.0 版本的VASP，所以没有进行测试。</p>
-<p><img src="/images/VASP-Special-functions-fix-basic-vector/3.png" alt=""></p>
-<h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p>manual 中写的是对的，确实只要设为 1 这个地方就会被优化，设为 0 就会固定。关键在于，A 的形式是否和这里的一致以及，不是因为我们设为 0 而固定，而是得通过矩阵运算检验。例如对于单斜晶系 b 轴，设 <code>[0, 1, 0]</code>, b<sub>1</sub> 仍会被优化</p>
-<p>这是我的粗略见解，肯定有疏漏之处。</p>
+<p><strong>Updated time: 04/10 2024.</strong></p>
 
       
        <hr><span style="font-style: italic;color: gray;"> Please indicate the source when reprinting. Please verify the citation sources in the article and point out any errors or unclear expressions. </span>

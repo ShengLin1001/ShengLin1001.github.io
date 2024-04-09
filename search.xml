@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Diary - Log</title>
+      <link href="/Thinking/Diary/Diary-Log/"/>
+      <url>/Thinking/Diary/Diary-Log/</url>
+      
+        <content type="html"><![CDATA[<p align="center"><strong><em>Four eyes see more than two.<em></strong></p><p align="center"><strong><em>集思广益<em></strong></p><p><strong>Updated time: 04/10 2024.</strong></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Thinking </category>
+          
+          <category> Diary </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Thinking-Diary </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Tool - Find heterostructure</title>
       <link href="/Software/Tool/Tool-Find-heterostructure/"/>
       <url>/Software/Tool/Tool-Find-heterostructure/</url>
