@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>VASP - VTheory - Influence of cell</title>
+      <link href="/Software/VASP/VTheory/VASP-VTheory-Influence-of-cell/"/>
+      <url>/Software/VASP/VTheory/VASP-VTheory-Influence-of-cell/</url>
+      
+        <content type="html"><![CDATA[<p align="center"><strong><em>Patience is the best remedy<em></strong></p><p align="center"><strong><em>忍耐是良药<em></strong></p><p><strong>Updated time: 04/10 2024.</strong></p><h2 id="Write-at-first"><a href="#Write-at-first" class="headerlink" title="Write at first"></a><strong>Write</strong> at first</h2><p><strong>Does the type of cell we calculated influence the results ?</strong></p><p><img src="/images/VASP-VTheory-Influence-of-cell/1.png" alt="many types of graphene lattice" style="zoom: 50%;" /></p><ul><li>对于石墨烯六角晶格，我们计算的结构是否影响最后的结果，相同的k点设置以及收敛参数等设置。</li><li>取不同的基矢，会影响相关的倒易空间基矢，进而影响倒易空间的k点采样，那这是不是意味着影响了最后的结果呢</li></ul><h2 id="A-good-answer-easyunfold"><a href="#A-good-answer-easyunfold" class="headerlink" title="A good answer: easyunfold"></a>A good answer: <a href="https://github.com/SMTG-Bham/easyunfold/issues/48#issuecomment-2041299435">easyunfold</a></h2><p><img src="/images/VASP-VTheory-Influence-of-cell/2.png" alt="question"></p><p><img src="/images/VASP-VTheory-Influence-of-cell/3.png" alt="answer"></p><h2 id="Talking"><a href="#Talking" class="headerlink" title="Talking"></a>Talking</h2><p>体系不变，不影响体系性质，激发态，基态，都不变。只有很小的差异。因为k点路径不同了，得对应上去。比较不同k点路径没什么意义啊。但物理属性不会有什么变化。</p><p>就说你这个体系只要没有变化，你选择什么样的晶格基矢，这个选择有无穷多种，你选择什么样的，它不会影响这个体系的物理性质。横看成岭侧成峰，不管怎么看还是那个山，它这个东西不会影响它这个这个。本身的客观属性的。但是你看当你选择不同的格子的时候，你倒易空间这些点呢，这些路径啊，就不是那个标准的选择高对称点的那个东西了。你怎么跟人家那标准的那些东西去对应上，比如说大家都用的那个路径，你用的另一个路径，你这事儿你怎么对应上去呢。通常的一个标准的一个路径选择，然后你搞了一个很怪的路径，你这路径不同，自然这个结果没法儿直接比较呀，你必须把它推换算到同一个路径上，你这个事儿才能比。</p><p>怎么从一个不同的路径上，直接的结果上互相转换呢？这事儿不是那么简单的呀，对不对，你没有整体的一个布里渊区波函数的一个信息，你不能从一个路径来推测到另一个路径的事儿啊，这玩意儿我感觉不好搞啊。</p><p>但是你排除我上面说的这些因素之外是吧，因为你考察能带这个事儿的话，比如说你是考察的那个高对称线啊，就高对称点直接连线的一些特性。但是你考察这个整体的布里渊区的话，整体这个结构的话，它必然是没有什么区别的。你不管采用什么样的格儿，它肯定都是一样的。但是问题是你选择不同的这个晶格基矢的时候，你得到布里渊区的形状会变化。这个变化了之后，你如何在这个变化之间把它们那个在不同的布里渊区，你这个这个路径跟那个选择的路径怎么对应上这个事儿。是吧，这这这事儿是一个很复杂的关系，因因为这个事儿不好搞对应，所以一般人没有这搞那么怪的根儿，对不对，那不就自己找麻烦嘛。</p><p>就就是说你看它那它那布里渊区是由于这个道格是道格是道格空间的里头的一个一个这个构造，然后它道格，它是基于道格的话，就是说它跟这个时空间的那个那个那个约包选择形状有关，你在时空间你你可以选择不同的约包形状，然后你可以构造不同的道义空间里头的布列区形状。但是一般说，要是没有人去去构造成特别怪异的，不列举形状，你看人都是构造的那个怎么样，尽量的这个这个对称是吧，怎么样，对这美观都是那么构造的呀，是吧，你整特别怪的一个玩意儿，那这东西就是说是。你你性质不会有变化的是吧，都是一个东西性质怎么变，但是你搞的这个挂的这个事儿的一个一个就是形状比较奇怪的这个东西的这样的属性，怎么跟人家标准那个那个选择形状那个属性去。对应上，这个对应应该是一个很复杂的函数儿，这函数儿不好找呀，问题是甚至都没有函数儿，可能得算或者怎么着，是吧，怎么搞搞搞过去，这这东西成为这个复杂的。</p><p>对，就是进一步说是你看这物理的体系的属性，有些是体系的总能量相关导出来的属性，有些是体系的特定的一些一些位置什么导出来的属性，那你选择不同的晶胞基矢的时候儿，形状儿不同，很可能会对某些特殊的位置上的一些得出来的东西有影响，但是整体性质的东西不会有影响的。</p><h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><ul><li>体系不变，晶格怎么选都不会影响整体性质。虽然布里渊区会变，但对于整体布里渊区的性质不会变。</li><li>不同选取方式下，可能不是一个高对称点路径，那该怎么和标准的对应上，所以没有人选特别怪的晶胞。</li><li>物体属性有的是总能量相关导出的属性，有的是一些特定位置相关的属性。那选择不同的晶胞就只会影响某些特定位置相关量的属性，不会影响整体性质。</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> Software </category>
+          
+          <category> VASP </category>
+          
+          <category> VTheory </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Software-VASP-VTheory </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Diary - Log</title>
       <link href="/Thinking/Diary/Diary-Log/"/>
       <url>/Thinking/Diary/Diary-Log/</url>
@@ -195,11 +224,11 @@
     
     
     <entry>
-      <title>Mymetal - work log</title>
-      <link href="/Developing/Mymetal/Mymetal-log/"/>
-      <url>/Developing/Mymetal/Mymetal-log/</url>
+      <title>Mymetal - error</title>
+      <link href="/Developing/Mymetal/Mymetal-error/"/>
+      <url>/Developing/Mymetal/Mymetal-error/</url>
       
-        <content type="html"><![CDATA[<p align="center"><strong><em>He knows most who speaks least.<em></strong></p><p align="center"><strong><em>大智若愚<em></strong></p><p><strong>Updated time: 03/30 2024.</strong></p><h2 id="About-Mymetal"><a href="#About-Mymetal" class="headerlink" title="About Mymetal"></a>About Mymetal</h2><p>Please read <a href="https://github.com/ShengLin1001/pjvasp_package/blob/main/README.md">this page</a> first, here are the install methods using python supported by some dependent packages.</p><p>It’s a package for DFT calculations specially of thin metal film supported or not.</p><h2 id="Focus-on-some-functions"><a href="#Focus-on-some-functions" class="headerlink" title="Focus on some functions"></a>Focus on some functions</h2><p>The initial reason of constructing this package is better understanding the DFT or VASP, and how to generate the irreducible K-points.</p><p>To solve this question, we need to …</p><ul><li><p>convert from real space to momentum / reciprocal space (has been done using Matlab)</p></li><li><p>generate reducible K-points (has been done using Matlab)</p></li><li>identify the symmetry of model</li><li>generate irreducible K-points</li></ul><p>And then, I should use python to execute postprocess for output file.</p><p>Based on the below reason, the main function is (although not be fully developed):</p><ul><li><p>preprocess</p><ul><li><p>film</p><ul><li>generate film</li><li>unixial / bixial stretch film </li><li>add hydroxylated atoms: OH, H, any molecular</li><li>construct the heterostructure</li></ul></li><li><p>universal</p><ul><li>convert model : primitive cell &lt;&lt;==&gt;&gt; conventional cell</li></ul></li></ul></li><li><p>postprocess: grep something from OUTCAR</p></li></ul><h2 id="Some-fixing-error-and-unfilled-code"><a href="#Some-fixing-error-and-unfilled-code" class="headerlink" title="Some fixing error and unfilled code"></a>Some fixing error and unfilled code</h2><p>fixing error please see <a href="">another blog</a> <code>Mymetal/error</code>.</p><h3 id="unfilled-code"><a href="#unfilled-code" class="headerlink" title="unfilled code"></a>unfilled code</h3><pre><code class="lang-shell">root/create_package.py generate the structure of packagebuild/extrfilm.pyuniversal/printafter.py</code></pre><h2 id="Work-logs"><a href="#Work-logs" class="headerlink" title="Work logs"></a>Work logs</h2><h3 id="before-03-30-2024"><a href="#before-03-30-2024" class="headerlink" title="before 03/30 2024."></a>before 03/30 2024.</h3><ul><li>add functions (<code>hydroxylated / stretch/ post</code>) and text them, success! Congratulations!</li><li>Next: <ul><li>add function to <a href="http://staff.ustc.edu.cn/~zqj/posts/howto-plot-brillouin-zone/">plot the FBZ</a></li><li>search for the heterostructure contained film and substrate</li><li>compared add_hydroxylated function and <a href="https://wiki.fysik.dtu.dk/ase/tutorials/db/db.html">add_adsorbate</a> function, maybe we can combine them to achieve the goal that adsorb the molecular to substrate. Now we only could adsorb H atom to them.</li></ul></li></ul><h3 id="04-02-2024"><a href="#04-02-2024" class="headerlink" title="04/02 2024."></a>04/02 2024.</h3><ul><li>Please add the Pymatgen package</li></ul>]]></content>
+        <content type="html"><![CDATA[<p align="center"><strong><em>Time flies.<em></strong></p><p align="center"><strong><em>光阴似箭<em></strong></p><p><strong>Updated time: 03/30 2024.</strong></p><h2 id="Some-fixing-error-and-unfilled-code"><a href="#Some-fixing-error-and-unfilled-code" class="headerlink" title="Some fixing error and unfilled code"></a>Some fixing error and unfilled code</h2><h3 id="when-i-run-the-test-post-py-i-found-the-output-file-has-been-generated-in-the-root-directory-of-pjvasp-package"><a href="#when-i-run-the-test-post-py-i-found-the-output-file-has-been-generated-in-the-root-directory-of-pjvasp-package" class="headerlink" title="when i run the test-post/*.py, i found the output file has been generated in the root directory of pjvasp_package"></a>when i run the test-post/*.py, i found the output file has been generated in the root directory of pjvasp_package</h3><p>we should add flowing python commands</p><pre><code class="lang-shell">import os# get the path of those scriptscript_dir = os.path.dirname(__file__)# set the working pathos.chdir(script_dir)</code></pre><p>Ok, avoid to use it in root directory. To be safe, use it in user file.</p>]]></content>
       
       
       <categories>
@@ -222,11 +251,11 @@
     
     
     <entry>
-      <title>Mymetal - error</title>
-      <link href="/Developing/Mymetal/Mymetal-error/"/>
-      <url>/Developing/Mymetal/Mymetal-error/</url>
+      <title>Mymetal - work log</title>
+      <link href="/Developing/Mymetal/Mymetal-log/"/>
+      <url>/Developing/Mymetal/Mymetal-log/</url>
       
-        <content type="html"><![CDATA[<p align="center"><strong><em>Time flies.<em></strong></p><p align="center"><strong><em>光阴似箭<em></strong></p><p><strong>Updated time: 03/30 2024.</strong></p><h2 id="Some-fixing-error-and-unfilled-code"><a href="#Some-fixing-error-and-unfilled-code" class="headerlink" title="Some fixing error and unfilled code"></a>Some fixing error and unfilled code</h2><h3 id="when-i-run-the-test-post-py-i-found-the-output-file-has-been-generated-in-the-root-directory-of-pjvasp-package"><a href="#when-i-run-the-test-post-py-i-found-the-output-file-has-been-generated-in-the-root-directory-of-pjvasp-package" class="headerlink" title="when i run the test-post/*.py, i found the output file has been generated in the root directory of pjvasp_package"></a>when i run the test-post/*.py, i found the output file has been generated in the root directory of pjvasp_package</h3><p>we should add flowing python commands</p><pre><code class="lang-shell">import os# get the path of those scriptscript_dir = os.path.dirname(__file__)# set the working pathos.chdir(script_dir)</code></pre><p>Ok, avoid to use it in root directory. To be safe, use it in user file.</p>]]></content>
+        <content type="html"><![CDATA[<p align="center"><strong><em>He knows most who speaks least.<em></strong></p><p align="center"><strong><em>大智若愚<em></strong></p><p><strong>Updated time: 03/30 2024.</strong></p><h2 id="About-Mymetal"><a href="#About-Mymetal" class="headerlink" title="About Mymetal"></a>About Mymetal</h2><p>Please read <a href="https://github.com/ShengLin1001/pjvasp_package/blob/main/README.md">this page</a> first, here are the install methods using python supported by some dependent packages.</p><p>It’s a package for DFT calculations specially of thin metal film supported or not.</p><h2 id="Focus-on-some-functions"><a href="#Focus-on-some-functions" class="headerlink" title="Focus on some functions"></a>Focus on some functions</h2><p>The initial reason of constructing this package is better understanding the DFT or VASP, and how to generate the irreducible K-points.</p><p>To solve this question, we need to …</p><ul><li><p>convert from real space to momentum / reciprocal space (has been done using Matlab)</p></li><li><p>generate reducible K-points (has been done using Matlab)</p></li><li>identify the symmetry of model</li><li>generate irreducible K-points</li></ul><p>And then, I should use python to execute postprocess for output file.</p><p>Based on the below reason, the main function is (although not be fully developed):</p><ul><li><p>preprocess</p><ul><li><p>film</p><ul><li>generate film</li><li>unixial / bixial stretch film </li><li>add hydroxylated atoms: OH, H, any molecular</li><li>construct the heterostructure</li></ul></li><li><p>universal</p><ul><li>convert model : primitive cell &lt;&lt;==&gt;&gt; conventional cell</li></ul></li></ul></li><li><p>postprocess: grep something from OUTCAR</p></li></ul><h2 id="Some-fixing-error-and-unfilled-code"><a href="#Some-fixing-error-and-unfilled-code" class="headerlink" title="Some fixing error and unfilled code"></a>Some fixing error and unfilled code</h2><p>fixing error please see <a href="">another blog</a> <code>Mymetal/error</code>.</p><h3 id="unfilled-code"><a href="#unfilled-code" class="headerlink" title="unfilled code"></a>unfilled code</h3><pre><code class="lang-shell">root/create_package.py generate the structure of packagebuild/extrfilm.pyuniversal/printafter.py</code></pre><h2 id="Work-logs"><a href="#Work-logs" class="headerlink" title="Work logs"></a>Work logs</h2><h3 id="before-03-30-2024"><a href="#before-03-30-2024" class="headerlink" title="before 03/30 2024."></a>before 03/30 2024.</h3><ul><li>add functions (<code>hydroxylated / stretch/ post</code>) and text them, success! Congratulations!</li><li>Next: <ul><li>add function to <a href="http://staff.ustc.edu.cn/~zqj/posts/howto-plot-brillouin-zone/">plot the FBZ</a></li><li>search for the heterostructure contained film and substrate</li><li>compared add_hydroxylated function and <a href="https://wiki.fysik.dtu.dk/ase/tutorials/db/db.html">add_adsorbate</a> function, maybe we can combine them to achieve the goal that adsorb the molecular to substrate. Now we only could adsorb H atom to them.</li></ul></li></ul><h3 id="04-02-2024"><a href="#04-02-2024" class="headerlink" title="04/02 2024."></a>04/02 2024.</h3><ul><li>Please add the Pymatgen package</li></ul>]]></content>
       
       
       <categories>
