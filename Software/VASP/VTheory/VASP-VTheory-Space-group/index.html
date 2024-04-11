@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>ASE - generate POSCAR | Please be chilling out</title>
-  <meta name="keywords" content=" Software-ASE ">
-  <meta name="description" content="ASE - generate POSCAR | Please be chilling out">
+  <title>VASP - VTheory - Space group | Please be chilling out</title>
+  <meta name="keywords" content=" Software-VASP-VTheory ">
+  <meta name="description" content="VASP - VTheory - Space group | Please be chilling out">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="About this WeBlog我是一名 2022 级在读研究生（力学 &#x2F; 机器学习）。本博客创建于 2024.3 ，为了整合记录读研以来所有的知识积累（知乎，哔哩哔哩，公众号，博客，网站，书籍）。 目前我对微观尺度下金属领域的相变机制很感兴趣。如果大家对我的研究领域感兴趣，欢迎发邮件给我，共同进步。😃 使用软件包括：Python，VASP，Lammps Python 包：ASE，mymeta">
 <meta property="og:type" content="website">
@@ -910,9 +910,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-Software/ASE-generate-POSCAR" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-Software/VASP-VTheory-Space-group" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">ASE - generate POSCAR</h1>
+        <h1 class="article-title">VASP - VTheory - Space group</h1>
     
     <div class="article-meta">
         
@@ -924,7 +924,9 @@
             
             <a  data-rel="Software">Software</a> > 
             
-            <a  data-rel="Software&lt;---&gt;ASE">ASE</a>
+            <a  data-rel="Software&lt;---&gt;VASP">VASP</a> > 
+            
+            <a  data-rel="Software&lt;---&gt;VASP&lt;---&gt;VTheory">VTheory</a>
             
         </span>
         
@@ -932,19 +934,19 @@
         <span class="tag">
             <i class="iconfont icon-tag"></i>
             
-            <a class="color3">Software-ASE</a>
+            <a class="color2">Software-VASP-VTheory</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2024-03-31 22:33:01'>2023-12-14 23:51</time>
+            Created At : <time class="date" title='Updated At: 2024-04-12 02:35:21'>2024-04-10 13:52</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:342</span>
+        <span>Count:2.5k</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -974,7 +976,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Generating-the-POSCAR-file-of-gold-with-hcp-and-fcc-structures"><span class="toc-text">Generating the POSCAR file of gold with hcp and fcc structures</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Reference-Surfaces-%E2%80%94-ASE-documentation-dtu-dk"><span class="toc-text">Reference: Surfaces — ASE documentation (dtu.dk)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Define-the-lattice-parameters-for-hcp-structure"><span class="toc-text">Define the lattice parameters for hcp structure</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Define-the-lattice-parameters-for-fcc-structure"><span class="toc-text">Define the lattice parameters for fcc structure</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Questions"><span class="toc-text">Questions</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Write-at-first"><span class="toc-text">Write at first</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Talking"><span class="toc-text">Talking</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CrystKit"><span class="toc-text">CrystKit</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -990,58 +992,36 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p align="center"><strong><em>Art is long, but life is short.<em></strong></p>
+        <p align="center"><strong><em>A still tongue makes a wise head<em></strong></p>
 
-<p align="center"><strong><em>人生有限, 学问无涯<em></strong></p>
+<p align="center"><strong><em>寡言者智<em></strong></p>
 
-<p><strong>Updated time: 12/24 2023.</strong></p>
-<h1 id="Generating-the-POSCAR-file-of-gold-with-hcp-and-fcc-structures"><a href="#Generating-the-POSCAR-file-of-gold-with-hcp-and-fcc-structures" class="headerlink" title="Generating the POSCAR file of gold with hcp and fcc structures"></a>Generating the POSCAR file of gold with hcp and fcc structures</h1><p><strong>Noted that:</strong> bulk and 12-layer closed-packaged plane</p>
-<p><strong>INPUT:</strong> a, num_layers, Miller index of fcc and hcp</p>
-<p><strong>OUTPUT:</strong> POSCAR_gold_fcc, POSCAR_gold_hcp</p>
-<h2 id="Reference-Surfaces-—-ASE-documentation-dtu-dk"><a href="#Reference-Surfaces-—-ASE-documentation-dtu-dk" class="headerlink" title="Reference: Surfaces — ASE documentation (dtu.dk)"></a>Reference: Surfaces — ASE documentation (dtu.dk)</h2><pre><code class="lang-bash">from numpy import sqrt
-from ase import Atoms
-from ase.build import bulk, fcc111, surface
-from ase.io import write
-from ase.visualize import view
-</code></pre>
-<h2 id="Define-the-lattice-parameters-for-hcp-structure"><a href="#Define-the-lattice-parameters-for-hcp-structure" class="headerlink" title="Define the lattice parameters for hcp structure"></a>Define the lattice parameters for hcp structure</h2><pre><code class="lang-bash">## Function: 
-## INPUT :   a, num_layers, Miller index of fcc and hcp
-## OUTPUT:   POSCAR_gold_fcc, POSCAR_gold_hcp
-# Define the lattice parameters for hcp structure
-a = 2.95  # lattice constant
-# Create an bulk hcp structure for gold
-Goldbulk_hcp = bulk(&#39;Au&#39;, &#39;hcp&#39;, a=a, covera=sqrt(8.0/3.0))
-# slice
-# Set the number of layers to 12
-num_layers = 12
-num_rep_z = int(num_layers/len(Goldbulk_hcp.numbers))
-gold_hcp = surface(Goldbulk_hcp, (0,0,1), num_rep_z)
-gold_hcp.center(vacuum=20, axis=2)
-# print(Goldbulk_hcp)
-# print(gold_hcp)
-# Write POSCAR file using the ase write function
-write(&#39;POSCAR_gold_hcp&#39;, gold_hcp, format=&#39;vasp&#39;, direct=True, vasp5=True)
-# gold_hcp.edit()
-view(gold_hcp)
-</code></pre>
-<h2 id="Define-the-lattice-parameters-for-fcc-structure"><a href="#Define-the-lattice-parameters-for-fcc-structure" class="headerlink" title="Define the lattice parameters for fcc structure"></a>Define the lattice parameters for fcc structure</h2><pre><code class="lang-bash">## no INPUT
-Goldbulk_fcc = bulk(&#39;Au&#39;, &#39;fcc&#39;, a=a*sqrt(2.0))
-
-num_rep_z = int(num_layers/len(Goldbulk_fcc.numbers))
-gold_fcc = surface(Goldbulk_fcc, (1, 1, 1), num_rep_z)
-gold_fcc.center(vacuum=20, axis=2)
-
-# print(Goldbulk_fcc)
-# print(gold_fcc)
-# Write POSCAR file using the ase write function
-write(&#39;POSCAR_gold_fcc&#39;, gold_fcc, format=&#39;vasp&#39;, direct=True, vasp5=True)
-# gold_fcc.edit()
-view(gold_fcc)
-</code></pre>
-<h2 id="Questions"><a href="#Questions" class="headerlink" title="Questions"></a>Questions</h2><ul>
-<li>ASE 中，surface 和 cut 的区别？（只有我一个人觉得 ASE 的 manual 很乱吗）</li>
-<li>surface method 返回值离面方向 lengths of basis vector 为 0 . 所以必须加真空层，显示就正常了。</li>
-<li>ASE 还能生成别的输入文件吗？INCAR, KPOINTS。但是感觉这不是ASE的强项</li>
+<p><strong>Updated time: 04/10 2024.</strong></p>
+<h2 id="Write-at-first"><a href="#Write-at-first" class="headerlink" title="Write at first"></a><strong>Write</strong> at first</h2><p>空间群论。当 hetbuilder 创建一系列异质结构之后，需要进行去重。这其中应用了空间群论（空间群同构，结构等价）的识别。</p>
+<h2 id="Talking"><a href="#Talking" class="headerlink" title="Talking"></a>Talking</h2><p>判断两个空间结构等价：</p>
+<ul>
+<li>空间群等价（现成算法）</li>
+<li>其中A结构的单元运用空间群的操作变换，能对应到B结构的原子上（实数有误差，pymatgen - structure matcher, hetbuilder - xcontop中用的另一个）</li>
+</ul>
+<p>structure - 算法复杂，没有考虑手性同构，确定不出来仿射类， 219 种</p>
+<p>xcontop - 230 种，确定出仿射类</p>
+<p>旋转（保守/不保守，真/伪，行列式 1/-1）</p>
+<p>旋转不影响体积，行列式绝对值等于 1.</p>
+<p>把三维空间里面的空间群，你分成230种类型的时候，这两个空间群之间如果是同构的，他们之间的这个旋转关系。它的行列式必须等于一，而不能等于负一的，如果他们要是通过一个负一的行列式去联系起来的，那么这个时候儿他们是一种手性同构的关系，在230种空间群里头有11对儿这样的。满足这种关系的手性同构。</p>
+<p>那个手性同构呢，和空间反演有非常密切的关系，你应该知道时间繁衍啊，空间繁衍呢，是在实时空间上和时间上对应的，对类似的一种概念</p>
+<p>电子自旋。拓扑材料，这些和这个时间，空间反演都有非常密切的关系。</p>
+<p>1957年，诺贝尔物理学奖那个杨振宁和李正道那个解决的那个弱相弱对称相互作用下宇称不守恒，这个就和空间反演有非常密切的关系。</p>
+<p>群论里头最重要的一个领域，就是叫做群的表示理论，在量子力学里面叫表象，表象理论和表象变换。你在什么样的表象下是吧，去研究你这个群的对称性。它确定你的各种不同的这个，你的符号体系啊，你的所用的这个书写形式等等啊，但这个它涉及到一个你用什么样的表象，一般说我们说这个表示在矢量空间上去表出，这个时候就产生了矩阵表示。有了矩阵表示，然后你才能用线性代数去解决这个相关问题，但是对于线性代数去表出一个群的各种操作的时候，这个时候呢基不唯一，是基变换问题。基变换属于表象变换的一种特例。</p>
+<p>空间群就是说一般意义上的空间群，晶体学里面的空间群属于一般意义上的空间群的一个子群。这空间群属于欧几里的群的一个子群。欧几里群，属于仿射群的一个子群。然后这个经济学设计的这个群，跟一般意义上群论，这复杂性跟人家比又差的远。有空间国际晶体学会的空间群啊，国际晶体学表儿。因为刚才说基矢不唯一嘛，你总得确定一系列标准的，就是认为的惯用的基。惯用约胞，通常的布里渊区，就是这个背景下的一套规范。</p>
+<p>spglib 不是从算群论的严格算法实现的，而是查表，数据库，经过一个数据上的速归计算，确定基，和标准的基比较。</p>
+<p>现在关于空间群的大多的操作，基本上说是基于查表儿来实现的，没有说从纯群论意义上说去。从计算的角度讲计算群论。在纯群计算，群论的意义上去解这些问题，还是需要很多数学方面。而现在晶体学，一般说这个晶体学毕竟是搞物理的人，他不是搞数学的。这搞物理的人注重应用。你给几套标准的基，就好用的基，说是形状规则的。我不是前几天给你说你整那奇里古怪的形状干啥，就是这原因呢。因为他这个晶体学标准的基里头选择出来的，这这一这些标准基都是ABC，这个差的不是太多，你看是吧，都是这么搞出来的呀，这是大家眼里公识找出来的一套。公认的标准啊，是这么个理儿，并不是说你找那不行，你奇里奇形怪状的都行啊，它没有问题的，但是人家标准儿找出来这些就是大家觉得好看的，一般认为公公认是是标准级的，不是这么找法，你找那个就好像在眼里，就在别人眼里，就就觉得你这个离经太道了，知道吧。</p>
+<p>两个同构的空间群之间，联系他们的是一个仿射变换。空业群本身的操作，是一个欧几里得群上的一个离散子群的变换。而空间群之间的同构变换，是一个仿射变换。</p>
+<p>这个这个定理呢，叫做<strong>毕博巴赫</strong>啊，毕博巴赫定理属于这个希尔伯特23个数学问题的第18个问题当中的一部分，在100多年前从理论上就已经被解决了，但是在计算机里面真正把这个空间群枚举出来。是啊，三四十年前的事情啊。</p>
+<p>就是把空业工业空业群230种，最初是从数学上解决出来的。从数学上解决之后，这是三维，但是到四维的时候，这个事儿就不好解决了。一直到1970年左右，然后在计算机里头才把这个事儿做了出来，大概到目前为止，就做到六维，四维的时候有4783个防设备，然后到五维和六维啊，那就更多更多了，三维的时候一般说是230种，对于一般的空间群，就是三维空间的晶体的一个研究就基本上够了，但是对于单晶啊，多晶准晶，这有时候就这一类的事儿啊，可能有时候需要用到更高维的空间群来刻画。</p>
+<p>那你要是了解群表示论的话，你就知道那个空间群啊，空间群本身的表示啊，就是那些矩阵都是有理数儿。就是说，你要是选择约包，那你这个上边儿就是纯有理数儿。那你要选择笛卡尔系的表示，会出现一些无理数儿。但是但是它这些无理数儿也都是很简单的，因为刚才说了这个它的旋转12346这几种旋转啊，只有这几种转轴儿的情况。所以说他那个，有理数无理数的情况，哎，是非常的简单也是根号三啥的，根号二啥的这这一类的情况。但是如果你这个基，是非常复杂的一种基的时候，那你这个表示也变得很复杂。他这个表示的这个数儿，它不是说任意的无理数儿的，它它是无理数儿当中，哎，非常特殊的一一类数儿，叫做分约数儿，看这个事儿就能搞定它。但是我这是说这个空间群本身的表示，但是你涉及到这个啊，晶胞结构里头这个原子的这个位置的时候，这有两码事儿，这个原子位置它可是实数儿啊，它可是任意实数儿。就是说你只要求出两个空间群之间的同构关系之后，然后你再在这个基础上把分数坐标，把这个原子的分数坐标搞出来，然后。在计算这个原子的啊，晶胞里头，每个原子的分数坐标之间的这个对应关系，但是这个分数坐标它也不是简单的数儿，它可能是很复杂的，就是一系列的实数儿啊，你看那 vasp POSCAR 里头那结构都是精确到小数点儿以后很多位的，它这个就有一个问题啊，就是说你这个精度是吧，你考虑不同精度的时候。当你考虑，不同精度的时候儿，你得到这个空间的结构它不一样，你知道吧，这是个这是个很麻烦的问题啊，这事儿，你这这事儿我就说是很深奥的，就是说在群论里头啊，真正你要把一个群确定了，这东西他他用的时候必须是。精确啊，这个数儿在群论里头是，就是现在就目前来说，计算群论，从计算机里头研究群论，以非常精确的数儿来研究群论，只有到分元域上，这个是啊，就没有到实数上搞个群，这个事儿不存在的。在计算机里头，就是说从实际工程当中的应用科学研究当中的实际材料问题研究，你看这里头用空间群，然后然后他这里头很多坐标，VASP 计算要用实数，但是他这个实数对应出来那个群,不是计算意义上的精确群论.这这是一个很麻烦的问题，就是在浮点儿数范围内研究群啊，是一个这个非常复杂的问题。</p>
+<p>所以说 spglib 那种操作那种事情，它是个查表儿，它是个查数据库，它不是严格意义上的群论的啊，这个on the fly啊，这样的方式去基于群论的严格算法来实现了这个群的很多事儿，它不是。他就是查个表儿啊，这么搞的，所以你给他一个比较怪的基，他都搞不了。</p>
+<h2 id="CrystKit"><a href="#CrystKit" class="headerlink" title="CrystKit"></a>CrystKit</h2><ul>
+<li>ref literature: Enantiomorphism of crystallographic groups in higher dimensions with results in dimensions up to 6 (<code>see Endnote/tools</code>)</li>
 </ul>
 
       
