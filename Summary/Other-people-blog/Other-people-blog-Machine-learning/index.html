@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Python - DFT calculation 3 - Generate Kpoints | Please be chilling out</title>
-  <meta name="keywords" content=" Program-Python ">
-  <meta name="description" content="Python - DFT calculation 3 - Generate Kpoints | Please be chilling out">
+  <title>Other people blog - Machine learning | Please be chilling out</title>
+  <meta name="keywords" content=" Summary-Other_people_blog ">
+  <meta name="description" content="Other people blog - Machine learning | Please be chilling out">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="About this WeBlog我是一名 2022 级在读研究生（力学 &#x2F; 机器学习）。本博客创建于 2024.3 ，为了整合记录读研以来所有的知识积累（知乎，哔哩哔哩，公众号，博客，网站，书籍）。 目前我对微观尺度下金属领域的相变机制很感兴趣。如果大家对我的研究领域感兴趣，欢迎发邮件给我，共同进步。😃 使用软件包括：Python，VASP，Lammps Python 包：ASE，mymeta">
 <meta property="og:type" content="website">
@@ -1007,9 +1007,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-Program/Python-DFT-calculation-3-Generate-Kpoints" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-Summary/Other-people-blog-Machine-learning" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">Python - DFT calculation 3 - Generate Kpoints</h1>
+        <h1 class="article-title">Other people blog - Machine learning</h1>
     
     <div class="article-meta">
         
@@ -1019,9 +1019,9 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="Program">Program</a> > 
+            <a  data-rel="Summary">Summary</a> > 
             
-            <a  data-rel="Program&lt;---&gt;Python">Python</a>
+            <a  data-rel="Summary&lt;---&gt;Other_people_blog">Other_people_blog</a>
             
         </span>
         
@@ -1029,19 +1029,19 @@
         <span class="tag">
             <i class="iconfont icon-tag"></i>
             
-            <a class="color5">Program-Python</a>
+            <a class="color1">Summary-Other_people_blog</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2024-03-31 22:21:01'>2023-11-23 17:28</time>
+            Created At : <time class="date" title='Updated At: 2024-04-29 20:47:54'>2024-04-29 13:00</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:1.2k</span>
+        <span>Count:80</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -1071,7 +1071,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Ref"><span class="toc-text">Ref</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#0-Introduction"><span class="toc-text">0. Introduction</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-A-general-problem-is-how-to-generate-K-mesh-in-VASP-software"><span class="toc-text">1. A general problem is how to generate K-mesh in VASP software</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-0-reciprocal-vector-is-strange"><span class="toc-text">1.0 reciprocal vector is strange</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-Irreducible-k-points"><span class="toc-text">1.1 Irreducible k-points</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Constructing-of-the-k-space"><span class="toc-text">2. Constructing of the k-space</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-Generating-K-mesh"><span class="toc-text">3. Generating K-mesh</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-Resulting-from-symmetry"><span class="toc-text">4. Resulting from symmetry</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-SeekPath-A-useful-tool-to-visualize-the-Brillouin-zone-of-any-crystals"><span class="toc-text">5. SeekPath: A useful tool to visualize the Brillouin zone of any crystals.</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-An-interesting-literature-about-high-symmetry-points-path"><span class="toc-text">6. An interesting literature about high-symmetry points&#x2F;path.</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#At-the-end"><span class="toc-text">At the end</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#0-Outline"><span class="toc-text">0. Outline</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-Theory"><span class="toc-text">1. Theory</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Lecture"><span class="toc-text">2. Lecture</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-Python-amp-amp-Tools"><span class="toc-text">3. Python &amp;&amp; Tools</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -1087,196 +1087,24 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p align="center"><strong><em>Provide for a rainy day.<em></strong></p>
+        <p align="center"><strong><em>Content is better than riches.<em></strong></p>
 
-<p align="center"><strong><em>未雨绸缪<em></strong></p>
+<p align="center"><strong><em>知足者常乐<em></strong></p>
 
-<p><strong>Updated time: 11/23 2023.</strong></p>
-<h2 id="Ref"><a href="#Ref" class="headerlink" title="Ref"></a>Ref</h2><ol>
-<li><p><a href="https://link.zhihu.com/?target=https%3A//en.wikipedia.org/wiki/Brillouin_zone"><strong>wikipedia</strong></a></p>
-</li>
-<li><p><a href="https://link.zhihu.com/?target=https%3A//lampx.tugraz.at/~hadley/ss1/bzones/hexagonal.php">The first Brillouin zone of a (simple) hexagonal lattice</a> (<strong>I thought it provided wrong messages</strong>)</p>
-</li>
-<li><p><a href="https://link.zhihu.com/?target=https%3A//www.materialscloud.org/work/tools/seekpath"><strong>Materials Cloud</strong></a></p>
-</li>
-<li><p><strong>doi: 10.1016/j.commatsci.2010.05.010</strong></p>
-</li>
-</ol>
-<h2 id="0-Introduction"><a href="#0-Introduction" class="headerlink" title="0. Introduction"></a>0. Introduction</h2><p><strong>Analysis procedure:</strong> POSCAR ==&gt;&gt; Reciprocal vector/ K-space ==&gt;&gt; K-mesh</p>
-<p><strong>Note:</strong> The key discussion is the different K-mesh between primitive cell and conventional cell</p>
-<h2 id="1-A-general-problem-is-how-to-generate-K-mesh-in-VASP-software"><a href="#1-A-general-problem-is-how-to-generate-K-mesh-in-VASP-software" class="headerlink" title="1. A general problem is how to generate K-mesh in VASP software"></a>1. A general problem is how to generate K-mesh in VASP software</h2><p>I got an OUTCAR file, but I couldn’t understand all the meaning of it.</p>
-<h3 id="1-0-reciprocal-vector-is-strange"><a href="#1-0-reciprocal-vector-is-strange" class="headerlink" title="1.0 reciprocal vector is strange"></a>1.0 reciprocal vector is strange</h3><p><img src="/images/Python-DFT-calculation-3-Generate-Kpoints/1.png" alt="my OUTCAR"></p>
-<p>why it is? How to calculate it?</p>
-<h3 id="1-1-Irreducible-k-points"><a href="#1-1-Irreducible-k-points" class="headerlink" title="1.1 Irreducible k-points"></a>1.1 Irreducible k-points</h3><p><img src="/images/Python-DFT-calculation-3-Generate-Kpoints/2.png" alt="my OUTCAR"></p>
-<p>In my POSCAR, there are two primitive cells along a<sub>1</sub>. But in reciprocal space, the k-points along the b1 direction are almost irreducible, and those along the b<sub>2</sub> direction are reduced.</p>
-<p>Why? I try to solve it by using <strong>Matlab</strong>.</p>
-<h2 id="2-Constructing-of-the-k-space"><a href="#2-Constructing-of-the-k-space" class="headerlink" title="2. Constructing of the k-space"></a>2. Constructing of the k-space</h2><pre><code class="lang-matlab">clear
-clc
-</code></pre>
-<p>Public symbol</p>
-<pre><code class="lang-matlab">% 指定要生成的感叹号符号的数量
-numExclamationPoints = 20;
-numNotPoints = 40;
-% 使用循环生成感叹号符号
-exclamationString = &#39;&#39;;
-for i = 1:numExclamationPoints
-    exclamationString = [exclamationString &#39;!&#39;];
-end
-% 使用循环生成分割线符号
-noteString = &#39;&#39;;
-for i = 1:numNotPoints
-    noteString = [noteString &#39;-&#39;];
-end
-</code></pre>
-<p>Now, <strong>Calculating of reciprocal vectors and its length</strong></p>
-<pre><code class="lang-matlab">% 输入：正晶格基矢量矩阵 A
-% 输出：包含倒晶格基矢量的矩阵 B, 长度 lengths
-
-%% 功能
-% 1. 从正晶格到倒易晶格
-% 2. 手动输入基矢量矩阵，并检查基矢量独立性
-
-%% 未完成功能
-% 1. 输入格式多样，
-
-% 从用户获取正晶格基矢量,并检查基矢量的独立性
-prompt = &quot;Please input the matix of direct-vector (row by row):\n&quot; + ...
-         &quot;Please don&#39;t forget character []\n&quot;;
-while true
-    disp(noteString)
-    A = input(prompt);
-    % 检查基矢量的线性独立性
-    if det(A) &lt; 3
-        disp(exclamationString);
-        disp(&#39;The base vector is dependent&#39;);
-        disp(noteString)
-    else
-        disp(&#39;The base vector is independent&#39;);
-        disp(&#39;Direct vector&#39;)
-        disp(A)
-        disp(noteString)
-        break; % 如果矢量是线性独立的，退出循环
-    end
-end
-
-
-% 1. 计算正晶格的体积
-V = det(A);
-
-% 2. 计算倒晶格基矢量矩阵，矢量定义和矩阵求逆,两种单位1/Angstron,2*pi/Angstron
-%    A*B&#39;=2*pi*I; B=2*pi*inv(A)&#39;
-%    注意 B 矩阵的转置
-% % B = zeros(3, 3);
-% % for i = 1:3
-% %     B(i, :) = (2*pi/V) * cross(A(mod(i,3)+1, :), A(mod(i+1,3)+1, :));
-% % end
-B1 = 2*pi*inv(A)&#39;;
-B2 = inv(A)&#39;
-
-% 使用norm函数计算每一行矢量的长度
-lengths_B1 = zeros(1, size(B1, 1));
-lengths_B2 = zeros(1, size(B2, 1));
-for i = 1:size(B1, 1)
-    lengths_B1(i) = norm(B1(i, :));
-end
-for i = 1:size(B2, 1)
-    lengths_B2(i) = norm(B2(i, :));
-end
-
-% 3. 验证是否为对角矩阵 2*pi，这也是前面为什么可以求逆
-disp(noteString)
-disp(&quot;Please check it if it&#39;s a diagonal matrix&quot;)
-disp(&quot;units:Angstron X 1/Angstron&quot;)
-disp(B1*A&#39;)
-disp(noteString)
-disp(&quot;units:Angstron X 2*pi/Angstron&quot;)
-disp(B2*A&#39;)
-disp(noteString)
-
-% 得到的矩阵 B 就是包含倒晶格基矢量的矩阵
-disp(noteString)
-disp(&#39;Reciprocal vectors (units:1/Angstron):&#39;)
-disp(B1)
-disp(&#39;The length of Rec-Vectors&#39;)
-disp(lengths_B1)
-disp(noteString)
-disp(&quot;Reciprocal vectors (units:2*pi/Angstron):&quot;)
-disp(B2)
-disp(&#39;The length of Rec-Vectors&#39;)
-disp(lengths_B2)
-disp(noteString)
-</code></pre>
-<p>The matrix of the reciprocal vector has two equivalent definitions, vector operations and matrix transformations. The latter is recommended, <code>B = inv(A)&#39;</code>or <code>B = 2·pi·inv(A)&#39;</code>, depending on units (<code>2·pi·1/Angstron or 1/Angstron</code>).</p>
-<p><img src="/images/Python-DFT-calculation-3-Generate-Kpoints/3.png" alt="The results are the same as those of OUTCAR"></p>
-<h2 id="3-Generating-K-mesh"><a href="#3-Generating-K-mesh" class="headerlink" title="3. Generating K-mesh"></a>3. Generating K-mesh</h2><p>First, we must know the definition of the first Brillouin zone, <code>[-0.5, -0.5, -0.5]</code> to <code>[0.5, 0.5, 0.5]</code> in the units scale.</p>
-<p>Second, we need to transform from k-points resolved values to the density of k-mesh.</p>
-<p>Third, if we want to get a gamma-centered k-mesh, just shift the center to the gamma point <code>[0, 0, 0]</code>. Obviously, the number along the 3-direction should be odd.</p>
-<p><strong>Obatian Gamma-centered K-mesh</strong></p>
-<pre><code class="lang-matlab">% Input: KPT-Resolved Value (e.g., 0.04, in unit of 2*PI/Angstrom)
-% Output: The matrix of kpoints
-
-%% 功能
-% 1. 输入两种 KPR value, 并检查格式
-% 2. 分割中心对称网格,如果是偶数则加一
-
-
-% 从用户获取网格精度
-prompt = [&#39;Please input the KPT-Resolved Value (e.g., 0.01 &lt; 0.04 &lt; 0.06, in unit of 2*PI/Angstrom):\n&#39; ...
-    &#39;Please input the KPT-Resolved Value (e.g., 10 &lt; 25 &lt; 100, in unit of 1/Angstrom):\n&#39;];
-temp = 0;
-while true
-    temp = input(prompt);
-    % 检查基矢量的线性独立性
-    if (temp &lt; 0.06) &amp;&amp; (temp &gt; 0.01)
-        disp(&#39;The KPR value is reasonable&#39;);
-        disp(&#39;KPR value&#39;)
-        kpr = 1.0/temp
-        disp(kpr)
-        break;
-    elseif temp &lt; 100 &amp;&amp; temp &gt; 10
-        disp(&#39;The KPR value is reasonable&#39;);
-        disp(&#39;KPR value&#39;)
-        kpr = temp
-        disp(kpr)
-        break; % 如果矢量是线性独立的，退出循环
-    else
-        disp(exclamationString);
-        disp(&#39;The kpr value is too high or too low!&#39;);
-    end
-end
-</code></pre>
-<p>Obviously, the number along the 3-direction should be odd.</p>
-<pre><code class="lang-matlab">N = round(max(1,lengths_B1/(2*pi/kpr)));
-N = N + ~mod(N,2)
-</code></pre>
-<p>The results are <code>[3 9 1]</code> , but in OUTCAR, the irreducible points are <code>14 (2+4*3)</code>. The k-points along b<sub>2</sub> is reduced!</p>
-<h2 id="4-Resulting-from-symmetry"><a href="#4-Resulting-from-symmetry" class="headerlink" title="4. Resulting from symmetry"></a>4. Resulting from symmetry</h2><p>b<sub>01</sub>, b<sub>02</sub>, b<sub>03</sub> is reciprocal basis vector of the primitive cell.</p>
-<p>b<sub>11</sub>, b<sub>12</sub>, b<sub>13</sub> is reciprocal basis vector of the conventional cell.</p>
-<p>a<sub>01</sub>…</p>
-<p>a<sub>11</sub>…</p>
-<p>a<sub>11</sub> = 2·a<sub>01</sub>, a<sub>12</sub> = a<sub>02</sub>, a<sub>13</sub> = a<sub>03</sub>.</p>
-<p>so, b<sub>11</sub> = 0.5·b<sub>01</sub>, b<sub>12</sub> = b<sub>02</sub>, b<sub>13</sub> = b<sub>03</sub>.</p>
-<p>Then, the symmetry along the b<sub>11</sub> direction is broken. Those along other direction is reserved.</p>
-<p><img src="/images/Python-DFT-calculation-3-Generate-Kpoints/4.png" alt="Reciprocal and direct space"></p>
-<p><img src="/images/Python-DFT-calculation-3-Generate-Kpoints/5.png" alt="Hand drawn"></p>
-<p><img src="/images/Python-DFT-calculation-3-Generate-Kpoints/6.png" alt="chatgpt"></p>
-<p><img src="/images/Python-DFT-calculation-3-Generate-Kpoints/7.png" alt="chatgpt"></p>
-<h2 id="5-SeekPath-A-useful-tool-to-visualize-the-Brillouin-zone-of-any-crystals"><a href="#5-SeekPath-A-useful-tool-to-visualize-the-Brillouin-zone-of-any-crystals" class="headerlink" title="5. SeekPath: A useful tool to visualize the Brillouin zone of any crystals."></a>5. SeekPath: A useful tool to visualize the Brillouin zone of any crystals.</h2><p>Even then, it could be used to find a primitive cell!</p>
-<p><img src="/images/Python-DFT-calculation-3-Generate-Kpoints/8.png" alt="Important note"></p>
-<p><img src="/images/Python-DFT-calculation-3-Generate-Kpoints/9.png" alt="How to cite and python libray"></p>
-<h2 id="6-An-interesting-literature-about-high-symmetry-points-path"><a href="#6-An-interesting-literature-about-high-symmetry-points-path" class="headerlink" title="6. An interesting literature about high-symmetry points/path."></a>6. An interesting literature about high-symmetry points/path.</h2><p><img src="/images/Python-DFT-calculation-3-Generate-Kpoints/10.png" alt="Fig.2"></p>
-<p>They draw some brillouin zone of many lattices. It’s interesting.</p>
-<h2 id="At-the-end"><a href="#At-the-end" class="headerlink" title="At the end"></a>At the end</h2><ul>
-<li><p><strong>Solved:</strong></p>
+<p><strong><em>Updated time: 04/29 2024.</em></strong></p>
+<h2 id="0-Outline"><a href="#0-Outline" class="headerlink" title="0. Outline"></a>0. Outline</h2><p>To summary some useful text on Wechat, Zhihu, Github, or any other source about <strong>Machine learning</strong></p>
 <ul>
-<li>Matlab code, Done</li>
-<li>Generating reducible K-points, Done</li>
+<li>Machine learning<ul>
+<li>theory</li>
+<li>lecture</li>
+<li>python &amp;&amp; tools</li>
 </ul>
 </li>
-<li><p><strong>Not solved:</strong></p>
-<ul>
-<li>Generating irreducible K-points</li>
 </ul>
+<h2 id="1-Theory"><a href="#1-Theory" class="headerlink" title="1. Theory"></a>1. Theory</h2><h2 id="2-Lecture"><a href="#2-Lecture" class="headerlink" title="2. Lecture"></a>2. Lecture</h2><h2 id="3-Python-amp-amp-Tools"><a href="#3-Python-amp-amp-Tools" class="headerlink" title="3. Python &amp;&amp; Tools"></a>3. Python &amp;&amp; Tools</h2><ul>
+<li><p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/x-gmGJx-hM_LsJD-Ivy0qQ">2023年发表一篇机器学习+材料的npj Computational Materials需要哪些基本功 (qq.com)</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/RcpZip6WssRZUpA34W9UBA">微信公众平台 (qq.com)</a></p>
 </li>
 </ul>
 
