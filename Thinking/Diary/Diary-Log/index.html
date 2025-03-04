@@ -538,7 +538,7 @@
     </div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="44">
-<input type="hidden" id="yelog_site_word_count" value="33.7k">
+<input type="hidden" id="yelog_site_word_count" value="34.3k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -920,19 +920,19 @@
         
         
         <a  class="All Developing Mymetal "
-           href="/Developing/Mymetal/Mymetal-error/"
+           href="/Developing/Mymetal/Mymetal-log/"
            data-tag="Developing-Mymetal"
            data-author="" >
-            <span class="post-title" title="Mymetal - error">Mymetal - error</span>
+            <span class="post-title" title="Mymetal - work log">Mymetal - work log</span>
             <span class="post-date" title="2024-03-30 01:44:55">2024/03/30</span>
         </a>
         
         
         <a  class="All Developing Mymetal "
-           href="/Developing/Mymetal/Mymetal-log/"
+           href="/Developing/Mymetal/Mymetal-error/"
            data-tag="Developing-Mymetal"
            data-author="" >
-            <span class="post-title" title="Mymetal - work log">Mymetal - work log</span>
+            <span class="post-title" title="Mymetal - error">Mymetal - error</span>
             <span class="post-date" title="2024-03-30 01:44:55">2024/03/30</span>
         </a>
         
@@ -1111,12 +1111,12 @@
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2025-02-01 15:15:26'>2024-04-10 00:31</time>
+            Created At : <time class="date" title='Updated At: 2025-02-28 15:36:26'>2024-04-10 00:31</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:1.8k</span>
+        <span>Count:2.1k</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -1155,8 +1155,33 @@
 
 <p align="center"><strong><em>集思广益<em></strong></p>
 
-<p><strong>Updated time: 02/01 2025.</strong></p>
+<p><strong>Updated time: 02/28 2025.</strong></p>
 <h1 id="For-storing-recording-my-voice"><a href="#For-storing-recording-my-voice" class="headerlink" title="For storing, recording my voice"></a>For storing, recording my voice</h1><h2 id="2025"><a href="#2025" class="headerlink" title="2025"></a>2025</h2><h3 id="January"><a href="#January" class="headerlink" title="January"></a>January</h3><ul>
+<li><p><strong>2025.02.28</strong></p>
+<p>进一步修复了<code>general_font()</code>无法修改已生成图像中线条/legend/grid的bug</p>
+<p>将phonopy计算得到的free_energy除以原胞中的原子数，这样才可以将FCC和HCP相互比较</p>
+<p>新增<code>general_add_vlines_hlines()</code>使得添加辅助线更方便</p>
+<p>修复了<code>general_modify_ploted_figure()</code>函数对没有line label但是有legend的二次绘制，并与没有legend没有label的band plot区分开来</p>
+<p>初步发现，增加热校正以后，bulk 相 HCP仍然比FCC能量高</p>
+<p>-ICOHP的计算完成了，但是并不像预期那样，需要进一步的分析</p>
+</li>
+<li><p><strong>2025.02.26</strong></p>
+<p>计算了bulk FCC/HCP的声子谱</p>
+<p>完善了<code>general_modify_ploted_figure()</code>函数，新增了修改颜色的功能（三种方案，color_list，渐近色，cmap），新增了针对能带图的修改<code>general_modify_band_plot()</code></p>
+<p>修复了<code>general_font()</code>无法修改已生成图像中字体的bug</p>
+<p>修复了改变颜色后，legend不同步变化的问题。将<code>general_modify_legend()</code>的调用移动到了<code>savefig()</code>之前</p>
+<p>复制了<code>pymatgen.util.plotting.py</code>以供学习，其中<code>prettry_plot()</code>函数的定义挺有意思的</p>
+</li>
+<li><p><strong>2025.02.24</strong></p>
+<p>尝试了DFPT计算声子谱，计算速度太慢，不支持并行</p>
+<p>调研了实验方法测量金薄膜残余应力，都不太适合</p>
+</li>
+<li><p><strong>2025.02.13</strong></p>
+<p>画了相变应力引入的示意图</p>
+<p>修改了figure的配色</p>
+<p>完成了results部分的成稿</p>
+<p>看了金属物理学的位错章节的前几节</p>
+</li>
 <li><p><strong>2025.02.01</strong></p>
 <p>处理了微信消息</p>
 </li>
