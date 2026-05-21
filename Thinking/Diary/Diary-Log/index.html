@@ -1,0 +1,1832 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Diary - Log | Please be chilling out</title>
+  <meta name="keywords" content=" Thinking-Diary ">
+  <meta name="description" content="Diary - Log | Please be chilling out">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="About this WeBlog我是一名 2022 级在读研究生（力学 &#x2F; 机器学习）。本博客创建于 2024.3 ，为了整合记录读研以来所有的知识积累（知乎，哔哩哔哩，公众号，博客，网站，书籍）。 目前我对微观尺度下金属领域的相变机制&#x2F;位错演化很感兴趣。如果大家对我的研究领域感兴趣，欢迎发邮件给我，共同进步。😃 使用软件包括：Python，VASP，Lammps Pyth">
+<meta property="og:type" content="website">
+<meta property="og:title" content="about">
+<meta property="og:url" content="https://shenglin1001.github.io/about/">
+<meta property="og:site_name" content="Please be chilling out">
+<meta property="og:description" content="About this WeBlog我是一名 2022 级在读研究生（力学 &#x2F; 机器学习）。本博客创建于 2024.3 ，为了整合记录读研以来所有的知识积累（知乎，哔哩哔哩，公众号，博客，网站，书籍）。 目前我对微观尺度下金属领域的相变机制&#x2F;位错演化很感兴趣。如果大家对我的研究领域感兴趣，欢迎发邮件给我，共同进步。😃 使用软件包括：Python，VASP，Lammps Pyth">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-03-30T01:20:39.000Z">
+<meta property="article:modified_time" content="2024-06-21T02:16:33.835Z">
+<meta property="article:author" content="Louis">
+<meta property="article:tag" content="material science">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css" rel="stylesheet">
+<link href="//cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 7.1.1"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="false" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/avatar.jpg"/>
+</a>
+<div class="author">
+    <span>Louis</span>
+</div>
+
+<div class="icon">
+    
+        
+            <a title="github"
+               href="https://github.com/ShengLin1001"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="zhihu"
+               href="https://www.zhihu.com/people/bas-58"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-zhihu"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="email"
+               href="mailto:12324025@zju.edu.cn"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-email"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="qq"
+               href="http://wpa.qq.com/msgrd?v=3&uin=1770861169&site=qq&menu=yes"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-qq"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+</div>
+
+
+
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="All">All
+            
+        </div>
+    </li>
+    
+        
+            
+                
+    <li>
+        <div data-rel="Thinking">
+            <i class="fold iconfont icon-right"></i>
+            Thinking
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Thinking&lt;---&gt;Diary">
+            
+            Diary
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Thinking&lt;---&gt;Idea">
+            
+            Idea
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="Summary">
+            <i class="fold iconfont icon-right"></i>
+            Summary
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Summary&lt;---&gt;My_blog">
+            
+            My_blog
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Summary&lt;---&gt;Other_people_blog">
+            
+            Other_people_blog
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="Software">
+            <i class="fold iconfont icon-right"></i>
+            Software
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;VASP">
+            <i class="fold iconfont icon-right"></i>
+            VASP
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;VASP&lt;---&gt;Special_functions">
+            
+            Special_functions
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;VASP&lt;---&gt;VTheory">
+            
+            VTheory
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;ASE">
+            
+            ASE
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;Lammps">
+            
+            Lammps
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;P4VASP">
+            
+            P4VASP
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;Pymatgen">
+            
+            Pymatgen
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;Tool">
+            
+            Tool
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="Program">
+            <i class="fold iconfont icon-right"></i>
+            Program
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Program&lt;---&gt;Python">
+            
+            Python
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="Developing">
+            <i class="fold iconfont icon-right"></i>
+            Developing
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Developing&lt;---&gt;Install">
+            
+            Install
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Developing&lt;---&gt;Mymetal">
+            
+            Mymetal
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="Theory">
+            <i class="fold iconfont icon-right"></i>
+            Theory
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Theory&lt;---&gt;Quantum_mechanics">
+            
+            Quantum_mechanics
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="Writing">
+            <i class="fold iconfont icon-right"></i>
+            Writing
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Writing&lt;---&gt;Academic">
+            
+            Academic
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+            
+            
+            
+    </div>
+    <div>
+        
+            <a class="about  hasFriend  site_url"
+               
+               href="/about">About</a>
+        
+        <a style="width: 50%"
+                
+                                           class="friends">Friends</a>
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="49">
+<input type="hidden" id="yelog_site_word_count" value="33.4k">
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        Links
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="https://blog.shishiruqi.com/">啦啦黑还黑</a></li>
+            
+            <li><a target="_blank" href="https://www.bigbrosci.com/">大师兄</a></li>
+            
+            <li><a target="_blank" href="http://sobereva.com/">卢天</a></li>
+            
+            <li><a target="_blank" href="http://staff.ustc.edu.cn/~zqj/">郑奇靖</a></li>
+            
+            <li><a target="_blank" href="https://www.zhihu.com/people/obaica/columns">学术之友</a></li>
+            
+            <li><a target="_blank" href="https://www.zhihu.com/column/c_1680331980414226432">我的专栏</a></li>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索"></i>
+            <div class="right-title">All</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" autocomplete="off"/>
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Developing-Install</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Developing-Mymetal</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Program-Python</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Software-ASE</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Software-Lammps</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Software-P4VASP</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Software-Pymatgen</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Software-Tool</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Software-VASP-Special_functions</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Software-VASP-VTheory</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Summary-My_blog</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Summary-Other_people_blog</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Theory-Quantum_mechanics</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Thinking-Diary</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Thinking-Idea</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Writing-Academic</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <div id="local-search-result">
+
+    </div>
+    
+    <nav id="title-list-nav">
+        
+        
+        <a id="top" class="All Summary My_blog "
+           href="/Summary/My-blog/My-blog-Literature-summary/"
+           data-tag="Summary-My_blog"
+           data-author="" >
+            <span class="post-title" title="My blog - Literature summary">My blog - Literature summary</span>
+            <span class="post-date" title="2024-09-10 21:55:00">2024/09/10</span>
+        </a>
+        
+        
+        <a id="top" class="All Summary My_blog "
+           href="/Summary/My-blog/My-blog-Technology-summary/"
+           data-tag="Summary-My_blog"
+           data-author="" >
+            <span class="post-title" title="My blog - Technology summary">My blog - Technology summary</span>
+            <span class="post-date" title="2024-09-10 21:50:00">2024/09/10</span>
+        </a>
+        
+        
+        <a id="top" class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-Log/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - Log">Diary - Log</span>
+            <span class="post-date" title="2024-04-10 00:31:48">2024/04/10</span>
+        </a>
+        
+        
+        <a id="top" class="All Summary My_blog "
+           href="/Summary/My-blog/My-blog-My-summary/"
+           data-tag="Summary-My_blog"
+           data-author="" >
+            <span class="post-title" title="My blog - My summary">My blog - My summary</span>
+            <span class="post-date" title="2024-03-30 17:46:59">2024/03/30</span>
+        </a>
+        
+        
+        <a id="top" class="All Software VASP VTheory "
+           href="/Software/VASP/VTheory/VASP-VTheory-Classical-literatures/"
+           data-tag="Software-VASP-VTheory"
+           data-author="" >
+            <span class="post-title" title="VASP - VTheory - Classical literatures">VASP - VTheory - Classical literatures</span>
+            <span class="post-date" title="2024-03-30 16:00:07">2024/03/30</span>
+        </a>
+        
+        
+        <a id="top" class="All Software Tool "
+           href="/Software/Tool/Tool-My-Summary/"
+           data-tag="Software-Tool"
+           data-author="" >
+            <span class="post-title" title="Tool - Summary">Tool - Summary</span>
+            <span class="post-date" title="2024-03-30 13:29:09">2024/03/30</span>
+        </a>
+        
+        
+        <a id="top" class="All Theory Quantum_mechanics "
+           href="/Theory/Quantum-mechanics/Quantum-mechanics-some-website-and-book/"
+           data-tag="Theory-Quantum_mechanics"
+           data-author="" >
+            <span class="post-title" title="Quantum mechanics - some websites and books">Quantum mechanics - some websites and books</span>
+            <span class="post-date" title="2024-03-29 21:31:42">2024/03/29</span>
+        </a>
+        
+        
+        <a id="top" class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-I-want-to-do-now-keep-updating/"
+           data-tag="Thinking-Diary,Thinking-Idea"
+           data-author="" >
+            <span class="post-title" title="Diary - I want to do now (keep updating)">Diary - I want to do now (keep updating)</span>
+            <span class="post-date" title="2024-03-29 18:17:26">2024/03/29</span>
+        </a>
+        
+        
+        <a id="top" class="All Summary Other_people_blog "
+           href="/Summary/Other-people-blog/Other-people-blog-computational-material-science/"
+           data-tag="Summary-Other_people_blog"
+           data-author="" >
+            <span class="post-title" title="Other people blog - computational material science">Other people blog - computational material science</span>
+            <span class="post-date" title="2024-03-29 18:16:05">2024/03/29</span>
+        </a>
+        
+        
+        <a id="top" class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-How-to-do-my-research/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - How to do my research">Diary - How to do my research</span>
+            <span class="post-date" title="2024-03-28 13:30:54">2024/03/28</span>
+        </a>
+        
+        
+        <a id="top" class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-Writing-at-first/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - Writing at first">Diary - Writing at first</span>
+            <span class="post-date" title="2024-03-25 22:00:04">2024/03/25</span>
+        </a>
+        
+        
+        <a id="top" class="All Summary My_blog "
+           href="/Summary/My-blog/My-blog-Shortcut-command/"
+           data-tag="Summary-My_blog"
+           data-author="" >
+            <span class="post-title" title="My blog - Shortcut command">My blog - Shortcut command</span>
+            <span class="post-date" title="2024-01-23 01:33:00">2024/01/23</span>
+        </a>
+        
+        
+        <a  class="All Writing Academic "
+           href="/Writing/Academic/Research-literature/"
+           data-tag="Writing-Academic"
+           data-author="" >
+            <span class="post-title" title="Academic - Notes">Academic - Notes</span>
+            <span class="post-date" title="2026-04-13 11:35:00">2026/04/13</span>
+        </a>
+        
+        
+        <a  class="All Writing Academic "
+           href="/Writing/Academic/Academic-Notes/"
+           data-tag="Writing-Academic"
+           data-author="" >
+            <span class="post-title" title="Academic - Notes">Academic - Notes</span>
+            <span class="post-date" title="2026-04-01 17:30:00">2026/04/01</span>
+        </a>
+        
+        
+        <a  class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-2026/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - 2026">Diary - 2026</span>
+            <span class="post-date" title="2026-01-13 19:58:00">2026/01/13</span>
+        </a>
+        
+        
+        <a  class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-Plans/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - Plans">Diary - Plans</span>
+            <span class="post-date" title="2025-11-05 09:14:00">2025/11/05</span>
+        </a>
+        
+        
+        <a  class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-2025/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - 2025">Diary - 2025</span>
+            <span class="post-date" title="2025-03-04 21:13:00">2025/03/04</span>
+        </a>
+        
+        
+        <a  class="All Summary Other_people_blog "
+           href="/Summary/Other-people-blog/Other-people-blog-Metals/"
+           data-tag="Summary-Other_people_blog"
+           data-author="" >
+            <span class="post-title" title="Other people blog - Metals">Other people blog - Metals</span>
+            <span class="post-date" title="2024-12-18 09:58:00">2024/12/18</span>
+        </a>
+        
+        
+        <a  class="All Theory Quantum_mechanics "
+           href="/Theory/Quantum-mechanics/Quantum-mechanics-Atomic-orbital/"
+           data-tag="Theory-Quantum_mechanics"
+           data-author="" >
+            <span class="post-title" title="Quantum mechanics - Atomic orbital">Quantum mechanics - Atomic orbital</span>
+            <span class="post-date" title="2024-11-21 14:55:00">2024/11/21</span>
+        </a>
+        
+        
+        <a  class="All Software Pymatgen "
+           href="/Software/Pymatgen/Pymatgen-Calculation-parameters/"
+           data-tag="Software-Pymatgen"
+           data-author="" >
+            <span class="post-title" title="Pymatgen - Calculation parameters">Pymatgen - Calculation parameters</span>
+            <span class="post-date" title="2024-06-24 19:17:00">2024/06/24</span>
+        </a>
+        
+        
+        <a  class="All Developing Mymetal "
+           href="/Developing/Mymetal/Mymetal-Lattice-mismatch/"
+           data-tag="Developing-Mymetal"
+           data-author="" >
+            <span class="post-title" title="Mymetal - Lattice mismatch">Mymetal - Lattice mismatch</span>
+            <span class="post-date" title="2024-06-08 15:30:00">2024/06/08</span>
+        </a>
+        
+        
+        <a  class="All Summary Other_people_blog "
+           href="/Summary/Other-people-blog/Other-people-blog-Machine-learning/"
+           data-tag="Summary-Other_people_blog"
+           data-author="" >
+            <span class="post-title" title="Other people blog - Machine learning">Other people blog - Machine learning</span>
+            <span class="post-date" title="2024-04-29 13:00:00">2024/04/29</span>
+        </a>
+        
+        
+        <a  class="All Developing Install "
+           href="/Developing/Install/Install-Software/"
+           data-tag="Developing-Install"
+           data-author="" >
+            <span class="post-title" title="Install - Software">Install - Software</span>
+            <span class="post-date" title="2024-04-23 10:22:00">2024/04/23</span>
+        </a>
+        
+        
+        <a  class="All Summary Other_people_blog "
+           href="/Summary/Other-people-blog/Other-people-blog-Mechanics/"
+           data-tag="Summary-Other_people_blog"
+           data-author="" >
+            <span class="post-title" title="Other people blog - Mechanics">Other people blog - Mechanics</span>
+            <span class="post-date" title="2024-04-22 05:05:00">2024/04/22</span>
+        </a>
+        
+        
+        <a  class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-2024/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - 2024">Diary - 2024</span>
+            <span class="post-date" title="2024-04-22 04:52:00">2024/04/22</span>
+        </a>
+        
+        
+        <a  class="All Summary Other_people_blog "
+           href="/Summary/Other-people-blog/Other-people-blog-on-the-way-of%20doctor/"
+           data-tag="Summary-Other_people_blog"
+           data-author="" >
+            <span class="post-title" title="Other people blog - on the way of doctor">Other people blog - on the way of doctor</span>
+            <span class="post-date" title="2024-04-20 04:26:00">2024/04/20</span>
+        </a>
+        
+        
+        <a  class="All Summary Other_people_blog "
+           href="/Summary/Other-people-blog/Other-people-blog-DFT/"
+           data-tag="Summary-Other_people_blog"
+           data-author="" >
+            <span class="post-title" title="Other people blog - DFT">Other people blog - DFT</span>
+            <span class="post-date" title="2024-04-20 03:00:00">2024/04/20</span>
+        </a>
+        
+        
+        <a  class="All Thinking Idea "
+           href="/Thinking/Idea/Idea-Next-paper/"
+           data-tag="Thinking-Idea"
+           data-author="" >
+            <span class="post-title" title="Idea - Next paper">Idea - Next paper</span>
+            <span class="post-date" title="2024-04-12 05:34:00">2024/04/12</span>
+        </a>
+        
+        
+        <a  class="All Software VASP VTheory "
+           href="/Software/VASP/VTheory/VASP-VTheory-Space-group/"
+           data-tag="Software-VASP-VTheory"
+           data-author="" >
+            <span class="post-title" title="VASP - VTheory - Space group">VASP - VTheory - Space group</span>
+            <span class="post-date" title="2024-04-10 13:52:00">2024/04/10</span>
+        </a>
+        
+        
+        <a  class="All Software VASP VTheory "
+           href="/Software/VASP/VTheory/VASP-VTheory-Influence-of-cell/"
+           data-tag="Software-VASP-VTheory"
+           data-author="" >
+            <span class="post-title" title="VASP - VTheory - Influence of cell">VASP - VTheory - Influence of cell</span>
+            <span class="post-date" title="2024-04-10 01:19:00">2024/04/10</span>
+        </a>
+        
+        
+        <a  class="All Software Tool "
+           href="/Software/Tool/Tool-Find-heterostructure/"
+           data-tag="Software-Tool"
+           data-author="" >
+            <span class="post-title" title="Tool - Find heterostructure">Tool - Find heterostructure</span>
+            <span class="post-date" title="2024-04-07 00:36:38">2024/04/07</span>
+        </a>
+        
+        
+        <a  class="All Theory Quantum_mechanics "
+           href="/Theory/Quantum-mechanics/Quantum-mechanics-Density-functional-theory/"
+           data-tag="Theory-Quantum_mechanics"
+           data-author="" >
+            <span class="post-title" title="Quantum mechanics - Density functional theory">Quantum mechanics - Density functional theory</span>
+            <span class="post-date" title="2024-04-01 15:16:03">2024/04/01</span>
+        </a>
+        
+        
+        <a  class="All Theory Quantum_mechanics "
+           href="/Theory/Quantum-mechanics/Quantum-mechanics-The-Feynman-lectures-on-physics-1/"
+           data-tag="Theory-Quantum_mechanics"
+           data-author="" >
+            <span class="post-title" title="Quantum mechanics - The Feynman lectures on physics 1">Quantum mechanics - The Feynman lectures on physics 1</span>
+            <span class="post-date" title="2024-04-01 14:43:03">2024/04/01</span>
+        </a>
+        
+        
+        <a  class="All Developing Mymetal "
+           href="/Developing/Mymetal/Mymetal-error/"
+           data-tag="Developing-Mymetal"
+           data-author="" >
+            <span class="post-title" title="Mymetal - error">Mymetal - error</span>
+            <span class="post-date" title="2024-03-30 01:44:55">2024/03/30</span>
+        </a>
+        
+        
+        <a  class="All Developing Mymetal "
+           href="/Developing/Mymetal/Mymetal-log/"
+           data-tag="Developing-Mymetal"
+           data-author="" >
+            <span class="post-title" title="Mymetal - work log">Mymetal - work log</span>
+            <span class="post-date" title="2024-03-30 01:44:55">2024/03/30</span>
+        </a>
+        
+        
+        <a  class="All Software P4VASP "
+           href="/Software/P4VASP/P4VASP-install/"
+           data-tag="Software-P4VASP"
+           data-author="" >
+            <span class="post-title" title="P4VASP - Install">P4VASP - Install</span>
+            <span class="post-date" title="2024-03-25 14:33:00">2024/03/25</span>
+        </a>
+        
+        
+        <a  class="All Software VASP Special_functions "
+           href="/Software/VASP/Special-functions/VASP-Special-functions-fix-basic-vector/"
+           data-tag="Software-VASP-Special_functions"
+           data-author="" >
+            <span class="post-title" title="VASP - Special functions - fix basic vector">VASP - Special functions - fix basic vector</span>
+            <span class="post-date" title="2024-01-24 18:57:00">2024/01/24</span>
+        </a>
+        
+        
+        <a  class="All Software Tool "
+           href="/Software/Tool/Tool-Proxy-problem-of-copilot/"
+           data-tag="Software-Tool"
+           data-author="" >
+            <span class="post-title" title="Tool - Proxy problem of copilot">Tool - Proxy problem of copilot</span>
+            <span class="post-date" title="2024-01-23 02:54:00">2024/01/23</span>
+        </a>
+        
+        
+        <a  class="All Software ASE "
+           href="/Software/ASE/ASE-How-to-generate-surface/"
+           data-tag="Software-ASE"
+           data-author="" >
+            <span class="post-title" title="ASE - How to generate surface">ASE - How to generate surface</span>
+            <span class="post-date" title="2024-01-19 12:13:00">2024/01/19</span>
+        </a>
+        
+        
+        <a  class="All Software ASE "
+           href="/Software/ASE/ASE-Modify-the-source-code-of-Write-function/"
+           data-tag="Software-ASE"
+           data-author="" >
+            <span class="post-title" title="ASE - Modify the source code of Write function">ASE - Modify the source code of Write function</span>
+            <span class="post-date" title="2024-01-18 07:01:00">2024/01/18</span>
+        </a>
+        
+        
+        <a  class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-Past-and-future/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - Past and future">Diary - Past and future</span>
+            <span class="post-date" title="2023-12-29 05:08:00">2023/12/29</span>
+        </a>
+        
+        
+        <a  class="All Software ASE "
+           href="/Software/ASE/ASE-generate-POSCAR/"
+           data-tag="Software-ASE"
+           data-author="" >
+            <span class="post-title" title="ASE - generate POSCAR">ASE - generate POSCAR</span>
+            <span class="post-date" title="2023-12-14 23:51:00">2023/12/14</span>
+        </a>
+        
+        
+        <a  class="All Program Python "
+           href="/Program/Python/Python-DFT-calculation-3-Generate-Kpoints/"
+           data-tag="Program-Python"
+           data-author="" >
+            <span class="post-title" title="Python - DFT calculation 3 - Generate Kpoints">Python - DFT calculation 3 - Generate Kpoints</span>
+            <span class="post-date" title="2023-11-23 17:28:00">2023/11/23</span>
+        </a>
+        
+        
+        <a  class="All Program Python "
+           href="/Program/Python/Python-DFT-calculation-2-Introduction-of-Kspace/"
+           data-tag="Program-Python"
+           data-author="" >
+            <span class="post-title" title="Python - DFT calculation 2 - Introduction of Kspace">Python - DFT calculation 2 - Introduction of Kspace</span>
+            <span class="post-date" title="2023-11-21 23:26:00">2023/11/21</span>
+        </a>
+        
+        
+        <a  class="All Program Python "
+           href="/Program/Python/Python-DFT-calculation-1-Solve-the-one-dimensional-Schrodinger-equation/"
+           data-tag="Program-Python"
+           data-author="" >
+            <span class="post-title" title="Python - DFT calculation 1 - Solve the one dimensional Schrodinger equation">Python - DFT calculation 1 - Solve the one dimensional Schrodinger equation</span>
+            <span class="post-date" title="2023-08-30 16:36:00">2023/08/30</span>
+        </a>
+        
+        
+        <a  class="All Software Lammps "
+           href="/Software/Lammps/Lammps-Reinstall/"
+           data-tag="Software-Lammps"
+           data-author="" >
+            <span class="post-title" title="Lammps - Reinstall">Lammps - Reinstall</span>
+            <span class="post-date" title="2022-11-25 11:56:00">2022/11/25</span>
+        </a>
+        
+        
+        <a  class="All Software Lammps "
+           href="/Software/Lammps/Lammps-SW-mod-potential-of-MoS2/"
+           data-tag="Software-Lammps"
+           data-author="" >
+            <span class="post-title" title="Lammps - SW mod potential of MoS2">Lammps - SW mod potential of MoS2</span>
+            <span class="post-date" title="2022-04-19 17:46:00">2022/04/19</span>
+        </a>
+        
+        
+        <a  class="All Software Lammps "
+           href="/Software/Lammps/Lammps-Add-new-pair-style/"
+           data-tag="Software-Lammps"
+           data-author="" >
+            <span class="post-title" title="Lammps - Add new pair style">Lammps - Add new pair style</span>
+            <span class="post-date" title="2022-04-16 19:20:00">2022/04/16</span>
+        </a>
+        
+        
+        <a  class="All Software Lammps "
+           href="/Software/Lammps/Lammps-RDF-of-annealed-SiO2-using-VMD/"
+           data-tag="Software-Lammps"
+           data-author="" >
+            <span class="post-title" title="Lammps - RDF of annealed SiO2 using VMD">Lammps - RDF of annealed SiO2 using VMD</span>
+            <span class="post-date" title="2022-04-05 20:09:00">2022/04/05</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-Thinking/Diary-Log" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">Diary - Log</h1>
+    
+    <div class="article-meta">
+        
+        <span class="top"><a>置顶</a></span>
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="Thinking">Thinking</a> > 
+            
+            <a  data-rel="Thinking&lt;---&gt;Diary">Diary</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color5">Thinking-Diary</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            Created At : <time class="date" title='Updated At: 2026-05-21 16:10:31'>2024-04-10 00:31</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>Count:6</span>
+        
+        
+        <span id="busuanzi_container_page_pv">
+            Views 👀 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-5 i,
+    .toc-level-5 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="653556d4146bc11724ee0b75e33939c5c5d9733dc15d6cbfa500630d8dc70432">854f3c2ab23829a1f0914184ee1beb6c8f7fd98794ecf11dbb9719370c1c1153c70dd90dc12f5c706db4093cafc031212ac6701a8aa7c20c13f6649542a5725e334f8d24d1f1be4174b0e6d7a62786b8d572d66447757f0a1e76529f4efc3233b0177009611423c1ed1e9ac5d39c4ab165ba2daf0773cfe763c436f016074c0a141434d3c964833348bfb2876845c97f8fbd57edf1ac79a16426d17b9b531b197f441edf21892f7d26ea71c2b234eb3888be07bb4ababb2c08a987d227df758bea1530e61f9fb7cb0480cf5ff1df0fa2ea416d5f16c7516f05e337fbea14dac3fa7d7273d78994d08cb9d89c93a621fc476239104316e9309ceaffd707192a285eca851c3f6e7302366892717cabbe76cdfab18b655bc1e044b49b05a5254c212149f8ec27ad94c2721862e17276b8546cad4dd569137d26188a726b3a245aa99c5da08116c3a423f43ee6a963db824f674ced6f04d5e3a656c9484efbd9650cb50cf14ca64c00bccb0ecf0edb3f134079f2361d500af39d723e58fb9b441f5df9c30b4dcab48689c3b01595e51555a9dbd5c6c04de088e2084c5c0adbb10f0aa115a500bd056361b303635948841d662954bf1352f98d65b3e30ca5e30a41a73b7ae95448f999bec62ab9438db594f1560d611f78ce603e87a4948abae1349170b3ab6fddd0e7c4b77e283785bb46f060e5ac2e35921fd05f3cc311e7549ce93e777e93d0862a83e612df0ea48fb48c4e7ee61b97acd3dd92e01a626a20e32ea697e599f6c9943475db5fdd2d59830d6dab678134414ae6df19526a7d9cbb6e93dda6c09c2a892cdd0b374a5aafe87d23047c52e7bd3c860b7c7b85685d8238a76b7dbc52bdddeb7a1bd6caeb0b41489bc773bb37fde9e696c567e50e2b721f176550c149b6bcdf37331dbc44ec188d32fb2e24650ec9d3e3ed937d7e4751c58fe0c18d569d9cf6f8dc9a30420008ad92550b7e06d663028f569aacf2a0442cddc7d09acb725e2a9cba1b62bebd8b4bec9cde6ee538421fdc60fd1c0cb24c297106bb8f771f96f14525cdc3857645fc93e90fb8e111540030d494dc07817251706f5999ccb89e521725cbce91dc8f9fa32154bc7204d36369061954ca4958393bfef339cd9939dce0505b4c6447c35e94d4dc2513b585b64e7b55846e1dae9dff3c357427872349c3ba12fd2778c34995f273c36bb937e1197ae9f9a9c5a431b8bd84b0ecbfb6c151f1c97da453743461a2a6e2dd447aedac4e1c2578a6cd2391b08e1fba0b34848d792c1db9d04480de27dd54e8011b08bd998e479da212fac982267e4ceb1bce1a002c93604b7e0d9909d812d90234700341a6b3b4c74fe61cdcd2b473c6c63ca497bb29caa78bca2c413a7fbcf3907cd274261a79170ed3cb89e46c716c465e14ca7308c6536552634c0fd4038ae53b3044775a0abf91716de8e19e6b0da4eec03abdd7561b1b28eb10424541498829762e2259c268a99e157219ad720f50cd72fa6e39ac88daac0b1314cb6b946452cfa5a1a4948423a8d7647a94be28b28f5d1caee9d82e50ee9bfaaf1c8bf32b53c9bcf204034a16db93b12cc76204e22663bec8c42e7393feb5a7c3cb670181fd718903fc4d2c6b0c772fefa5f400d106f933076f73e0e60316904915ae40360998a1c99d1c86ad88183e1ecadb2492ba278af076e4e728e0ebdf3697239360462ebb4d3ff75ed9cbf5788cc130f0c28f3d4368b61d8a4cb6ce47dd6e8429114e7a558c64f278f7b58596171c1a546218ec52ce7078b6466189585b41831483b6ddabf67eee81ab52b00ca89d3a640a43d04eba5e88531abfbb54207f0b09db3abd98ee5b2458ebc42783b42f563389225fa5ddeb26c95eff344b207a815b82c1d92cba840754720e79c7a42eae910e9f172de4dbd7feee7387b5877243a5cd8835bdf2f75a5156b61833acdddad7eb0029f8b793a2910b1fe7f4b98e46e4d53778b28d41c1a61d8190c37188f143404a1c60f0e4a4e03e665de14d80a03d553f833bde7bf3dfd2e0b82f519fdfbda5ac887dd66f94ea8104bf1ca87334799ad58d22bc1079a427d89b221a10e8789eac3a9223cd9e8d1d9937fa58d82dc164309b0515e3acfc391ac55b89c97ff7dfc3526522351ce3f73570d9baa9b0486cdc5317d2b7ad4f7cd1f92db1d220f3685e6f173fdb0ac1563a9248fbdf727e1fcdc03026a53fb4c61ed68283fa1ac71c058e17b1db99ef30306c9a039b2fd332d6f31aefd53d531ee2ea9e9e887a46644e06294f78899ed64197bdda567c666b527822c17d29a89fba6d42e4a47f271b5b97d3415ee4ca75eff1b306633ab55d2e78b1c29a86a7229ba3443545e3c280828751ed189a04a39a6f9dbe8055c861818cc52999a90090825dcee25ae37687b301d65bb06013d928d720a8362ae02a1053ab7c7fca5df85ea88b97e676ebbe7f7bfb05671ca824f73678e95eab2b8b340c102476bba35d5a46a605c0c18b2b5c07c4951bf38e3567997abd6368395afdfe6b2fb9634a43e830e9f4842e8aa906f1bb249d7a9704b63538dc642eb19c8ef71c90e2ec56acc6ccaa76bbb12be937c2a4c25bb4944037444b25b83f13944634e1d61a3ffba4a410a6ce9dff9838a7ad4126b0da3e2aa93207bfc39f1e71937218dda0d6a26afd7768a9a4168381407c81bd9657effd0472450fbc290f2a505dfb7a1a0b53907edd2392d0d8a84121536b7483d0bd7fdb4a89538ad758dd7ea3adccf487cc1859b3bdcfa2fab632a6c6723c98bd1ddcd0d71e04bc032bdb79bb454918c994b633ff16a5153cfdd7d220db05d2098dfe3801d9e47cfd91a1f749a6b2cf864487532d3a1e71d080818aa4942f808b46775c1550a4f54669b2118496b423ca1bc14e69dfb851062d839b58509a5c664006ecb33c052bfc9c430e66cca729faaa1fd4e0c1c23d640e42a0642c4064505e3a5991394f680ab43c46803ef4e14e7217c3a268add27d78c0de161c37a1ffc5a7a3a302e39352938e54dc9ff8c3761c2dc7a869f12d8bfab8aeda239496e3919bfd7146a75a702202f36f7d72ded3acd47f3532788d9c26a7fe5d1c6b2a22b4b3f61fc083f7b5ee1c1ed26a71212624d5ba45f40234f6904cf61efd9bea39863c3b4d919618183e50c90a30983e842a5a573ada5145d9f76ebf291a3255818ccf724adb1fde7cd9a042fdcc7110cd3ac6595347b5ca4870a289b14bcf276c03d5f0eb9165a05eb079324cccc5214adf5e3fe881ee84a39b0a0f0515803004a87a34ef5a309f168820e1b6e75674b4ec7de470ad6bb8d8a313d93c87171bb5193b16f9766c93d940c70e9cd8100b04770593b6ae84a077845020eddbc5aff60e45aec0da8e2b244bbcce5c5b309af34ea09425ec5fe9074471a67fb720b4bc3427abe4d6621087a4a12e2b2b712d21085873a888afb387614db0bedb7fde37c39ce5b75349f8749f546e2539538bd3cb4a0360e06c00c75239b9366f94baed05d1c87b8c69b7d0b12e5bd8067dc0f4b00ba33c64592e511fd6ba2e340fdef7b782d9829093ee616d0778672a2599e60f0982e6573e2fd23278b35fc4c49d92da50b3201c8eec8221f9a20dbc789fb74a19a269dcb167f7651e36dfc53777d5eef4ccc33784c538c2522add6c44a839d8f7c2ead216d2715eac74ad136bbb880a1c5400be5cd2f9f1b0bfd0d85e1648662d3c55a818216f1caf4d3174e808c7c9db0dfb8b411c253b5bc8d7c65f40bc682b60cef7d0fde84391b73040337fe5ca277a5032c32c8f72ff8f3ad7e8994c4fa5037614fe2813422d7334b4b9efc9cc6c22a90a879c1fb4d2f556cfc37cbe6c7b5739cd05b9303109526346b331da07dc56faf9b9ab5a20fb4d1aa8ba9b12ae0c038b471345d45f52860590fc270af3203f26475bad7def5f97f7d6e3b2b7d4b680ebada6bc00edd7247ad5f35da840e070b7ea047a00f5d362d7be60f8db72ab3b35b77a51cbda9f083918ea1c76403934ef9136824c9d23d5af8028344e3a31bdf2f0be99c8752b7c04ac09d7e4405fe3324ecc843fa09fcc15b9bccbdc1083aad4b1d366e3489509783c76e6ec184ea2e3a133132dc8b8b7a4b5d5ff63050be22feb3163a057247d2adeaa87beefd97d4b2215a2685b55ba304762470458ff9e4754206d46db096328ffb2b4b51b8365c061ce6e2834b541b800ace488ffc0591a9acea1debc85f81185700c23c8e68515f6c918b33fd97b276072b3f48292e58ff3089ab1a5aabf322088b7230c6bbd828c86a52cd0aca1bea775a1b9660dc3e7ad5bfc01ca0b3b8b2e0a7107a70f3880502555aba35c3cf4ea50097807939e725b718e6f81863bedeefc72ec7f66d00dd8c04909042c5d72bcb59495cdc3358ca91df699e1012c20286ed2a37c03ebea95dd3859e28a46e82736755405ed01d05a54d17d993bfdd9ca747de7b12a788a349a607858c68ea495102e7670c3600e343974560a42aafd0abaa9cd8a1131e852dd3c5a1e71b69854638ba1986e7a092facdb990174368ec0eedac20e14c861160c4f53ceb0d6e372eaa58fea77417731fd51be9e372ef64bf72dee4ae14600ff4cd4a649a0e6551a21cd32695b94c21fbb805bb35a936bc4d113b1ab52cbb0bc06a3e3022a4f1872e80285e5fb08b602cf260a6288df3d097d07e1dc0c670c4cb10ac07b04423e94a376ed60a116113b073b25039937a97c7b875a6009a0adcb4600fd5a5530df8d50ded15e25a3ffd6fbd3c37ec2ed9d01c63950ded34b89886e91cf4c15a6d1af6388c8b75ec3398ea5ba8c18867b103f9acf7a629fa73a4bcdb8c6f53a33b2ff74d5f65b8bc5554d08cad333f514f40cc87d62b63283a63b4b8bd626a342cc57d71b272f9567d0e56ee01bc85f25f42f493ff8f76bcda2588a578ab8bf71fc20c5e3c16a62b1997056cd191c0db7b47bc2ed8bc9f2a8f102e91ceb92d3b93976dab3218dfb677819e372e9c039826b083b1598ba7b7da59e9f6baa19771a9bdc1489b6153d9077cf1c7cbee346f5222b0b4856b4c4bdc30fdfec0273663c2a59968a28cb702f3988364269e4aea687d8e04b6d23337f1ffbd152764f7140913925c781802c4ede70202722da89988ee53712985d122f260c36c7545189426a722b6f22889019ce0eb4defe79da848144dab37736cba130e8afdaa1fa160d0026e68c3f5fe8d5d84066dda028ec6d86b25d71e3deb73676397affc0fc38bbe5f3807610cf1c4e4643100832bb00d77881c37f9ae698a9ac3f246fff29ced8d73f7ddcc3c2357f77ba1edb3c6e5fbb48e6bbb7b111b3348dac788a197d69460a2d8de11227555ba602336ebdec7a64a071e4a7e254b75eabef239eee82972d8def7d6f17793a8f1d60348ad505ccbb17f95b00fc4a479307bc1a787f9d64c7a212e75e1dca5e4b22de3c289ad2f49dd336c6aaaa1bb7c5c1b6a0179b79038d2c602becda96b9cf2cdcd6b7444d1b2a3dfd820d969bcb4ce09af860c4b453e658a9b10cf6ca4347770e0ed2e9a2b0f4530ec9fd4696d899aece0f652926ed84165ffecfb666c65492888735a664838ee7a6069702301ed3dee3cac1c8e40b5db879a471d91111c749f552255463d35c9e8ef7ca7bbbfe23e52be0486abf01a3bb3e929015dc09eac5286830e7a7feb610e54dad20d7403e25b0cce8ebb7d10f2bf7cbe2104265bd86bab5be5a85eb47bd5f2b819548f24b3d28830468ee00ad4cceb47214dd4b0f3a18186cd2561744b1c88988c10bffb2cd5873ded3898409e2c8b54943d9cd7e0d723db7b5f13496ca07deaf31e1334b4259f4367e7f4f04295d77c4a3b68df3429023d7074eff37ba1f4e56c2b46593d4262c6e3b26c971e9cb3c56bb4a30411fb4a637678612b9fcc2e32fe57358ce27858edcfca61ff4f94cac1248c34d527acb68dcba26006e8c94c46f5a158353eea459ffae75b0faf3707064c015d4b9264300c31054fbfaeb0eb2737e4a2e6c4232a7736832ea88f03070cf2f2813048cda94b951c31d0fa9a674e610ceb6de5de093948ada8bdd9450f52b6991185d0d80d159a6f34a46be408c71d3eb5a593e01ac488630a7ade5eace6bd8433946ccd69885d7f5e45f1ad6e25d1037128e1f73752c71867c20bbe78a6b6e0ac1467181bc4ae6f3c27e9b1e1f92e63cf641c28b4f624aee74445449588a92dec281e7eafbdb96b677328e5a6c73b2ba5a6ca1353e14f8e28b96973fb9e4e6757dfe94f9ff1d489925f78f0cbcb6af5ed6c27e40e3fba2c01f830342109a02e027ab9f2feab550097db3b137e343638b95df28cda558b137c800e44c8530eef9c3ac82126e76c06a7f9705b58f356c6e12653694689a98522b54848a41a4b4e21175273e38849ab8a54c13dd859f25dd48c8e15aacfcd3f261340ed637f22d5b8c65bcf9401cdc4c54c3b995a83c5589e7014537fec333acd9f5597fd2792d3d97cc66eaa3ef4b5027bbba8902b691208130352f715068a1fafe70d735947ceae049f84f44a535d43d7cf28538355172ab29af35267e3eb12dcbfd1617acf17c8a2d34b0f71231b00cbdf11e788571e689de5e556e4c2c58bc32bd8e06ca01c7cb2dfcada7b2dab78f31cc6d590e1f15c27d0827cf941226161ea4233ed56a9c76c26483a2da0b0cd498bf0813c2f746c681afb670cd049c7022a1f9700444eb9c6177a9e77d9b489bd01d850d21d03229b09084c5397477629ff19a9d7f5ebc1737013c2ef38e670f96ccd4766e02e571e572dec21de71f0762b10334af29a21273b0c9900bfbb1134c2342d08da6a0611c077587fa216e4cbd01adc39e294596bc9a153999059b6ae4086f049ee5037b8ff672e53d5016adfccdb757672bd5e6914f27176c14ffbe16cba7005d219a746bd0270935df0c6b7a43d22ffa0e7dbfd4ecd7de31f234c1e3c570edb30e5bd0fe71f10b2e461ea865ba2425279c39329fdd12ff8ec9b054023e16cacbcf67b9add4846f775ec9a5cc726145a60b91dde3694f3f1361c52a55533ca9ed9cb1e5a6f70ab908d7790fd9505480b8617bdf299391720094b90342465cc722b1d9404da1da588b6834b833d24a12d2ec9536113f42266f02aafaa7912b6ed1d556fddb773fd00d157f09a9a690cf0b1564da6ddfa64cb4d40422337d9a6dbd975a50712d5c20fed6cef8833b06dd263f68faee19bde315b2c24b926746bcc275ff216e59c0e347a38743b0b0b9016c2c940dd751cfdd757b4790d6596bd2481400cb4bd697222f8de3145da2546f0ab961259c66ced25411422b0231b3145af8dadc8a44b14175b0fd0031cdd62007f111be6d69cba1114bfaa1e7ed6a188fea4774baccbacc193495d15fe8515afc4bb20636ff5a291417108f44bf3600cd9da09660b3538f8dd7128d34a14decff7d66d76fe3d3a3ecc078130cee8d0fdc5318a0a254c839a49b05aa98393e48e7e71763de3c79e77acda18b91f0a00cc657110cc9706989508f38e047910ba1fc48ad38e2598281184b67ab742349af0f8e412293be4bfc43d595169f650968243acf71b0bb85e59608dc93fd324ffd5b16bd74abcf4a96c83eb9716b5b23fcd0852612b2608d437aa82c4d760781746eda5abb99ed1b619adfe6dc45a19b7336df364548eb83147680cea9d3e4629088496d48cc0ec501a7be180c3bae7e99e3d8d6440acd926414aebb436baf90cc0c02d84a29d9808cbaebb163e1239b86e17bb0bfe5b92685950a33afc08ebee9066025de5bc5e5e7202ace36266ffdbd88604d525dfb8eb0e556fca0c39737ee613d9ac8d8b7045884e729d6a8cc0c2fba2edd6d62e5a168b1cf1ecb9d6a1e112cf9296212a656202d67db565010629fbc7d3155acfa43aca02ca59104eefc60d2db29e0d91ea4b911bafcf4fcaa5e084ee88ff97cc385e088fcd3a909722d92d43666222c683f34c3a57bdbb1372f0b351b64d1aa944535b06bdaf10b7d113c832be85819650ae63f6dd9621db04de8f63b1181893893ccece39ef2982c70daef36711a6b6beb6399e06f900fa1e58ee3bf5f678ff9b497c9addb0e5cc5af76c0c37e6beebb39847cc58706cf9d31676a9580256a49de49f4938c4b0853778a67d60152050f6b7ee30b3393569fd0843cd54a0619b158c2014e7bf943bad69357390fa9697b030c09e5ce81aaa21bfeabd34c87df1cb25d4654c69fced8e7322e19d5753723029c538cf1cec99781ecb9c1384e9f640f37ab17229c597aab3e0fd137632d861bbc4f6de980a5cb100eb950754420994c5445e0f600bd65fc98c69726b3990f62d4379c985d439192bc083a7d3edbaac7eca9b38cd474ba0332e0d1bd6756d4cd498c3d2cad4755e3f0a40ff6d60622b177c41bca51df937ba5151844df0ebc073793b50c7dd1b4c2f570900c456a19d519f135c5623e6c1cb7b0e60f0e85910a9c45c30c6dcae1943524b4dbdc6eb502463a9df6bc2cf56e7335067bf1998c55d8d3f43838531189cfbf2b00428a81df70b0cbab719180b535dd8458bbfe8a91048454e92ba29443dcf08e9a0c56584778e9b8bc4ceeacf67a79d49c6d38494668752621b0f4de3f87dc352ebf1f1c539b0ef1d0ebd7b86c140b8fa66bcd67d0d2e360ccd997552353ba2eae448bba5871ae99e9af1e4c47c9291267f5cf3cbd3bcd04fec1e1c0338ba5ce4a7eaa9ae8a015fec7ce53fb82cc3175c4733e09be1a47ca6bec4a38b22821a7523405140cb215f6ebcd9343b2899a6cc5a52ee8b2d906108941f3150285ecfab5ada04aae075d53d0f081d27183636828a0df564a35a278219910c9c804e96327b749725e3e827ad127a6c9e6d7972bd79d932b2cb75cd176dc9f5b7e59fd6ca79304dc42be8e958e036edce56eec29ab232480dc93e925f088d10d2f68f633fa63d2671692fc803102d8b2c70881593a4e7bc585c9a4ff0c643ebb5d8b2884533d5bb19647260f58ba679352695a08feab2895b37e221ca7afe61e61bbb50970bd9bef53e39f34671bc0dfb85e9cdf3ffb6b7cab90c76e45ad2c532ab26245a031f7191b440b3098c54c9642e22a6f0db591b3901c8924839a89efe536d4aad450ebefd435cef47bd92a07676f15449d1a1d216b0820fd4c5def1a83a4e81a7e90eff09812c152b005c2e39b4f78207cc28703de32acf1532c833f631f874405cd0476dbe598803880b3e41d2dc7ed4a566c51acd20c2000d9e2b2465d01e309d78aae4b396c365608c175984346dbf6fbb5327abaa5a9ad1cb69d7ea77943a25f47eb214e140a092eebba40dffe7b6b376ae047d9db70b947bcdc855c3147da82f3c1317be083e7ce63a99ac8e49d32bf70d77dc041ae1fdd65527455619905002582a149eda1324d62404775d5b71f34b6a6de2a02688bc9029d32eef0ba84a863d4d577e4c821a12359a427323b27346aa286c139c371baae64d3daba3ab9cf2d14a51e02689abcb342006cd50a9e4cbc3ba7e2127ef82fb70e951e9a3c97f006bbef1a9c203a18962dd552f21eb129fe266df61e073a9d20c7d501d204c5b4bc8d62f39ecc1964ea22d8b8f2acca76dee7510bc75bf369f76f8b13b306e9e227afaa3e56e0176a864e961797cdd33a1742830baa7efba61979a75b1f2f27cee3452fffa0f682e298211d9ffd8b8d3ca2f0f5eaf49242ec2c3ded99a1df4b583531424dfc7d3c500c9e0028bf05c273125eebdb3296583f2745e840e328ba0aa35f1fd1fe9600e5041cd0bc7201b3b7c02ec1556f67d4567b77aaf2224beb457383ba5885962a01d4833b31b85ea5b99ba271219448854011bc6bca46f95d3e2fafec3aa3730d81bdf7e3c41b42c9774ade328539a7887748c1e1fe122167aae8b63c56ec7dabbdbd875040775b9df69df87f3cd9606c2fcfdaf19b827cb6b3088b7f4f4d5451bed79ab692929af5aa4aab2a0b2de0c28af9bdf617e5d1a31c155de9a3aa20500bafe52857dc738b919f9ea06e1a8f53d51ee8df59e380411b7a17182020d93edfe7f0d19734cf5dd369535d2842bfc7c7358d2f10f7f7cdb383a4aa97af63fa955b4272a70c0b4f5fc3d16881c70ab3ceb73c35737e613d806f263cba6551b9b1a04b8c74d973106515bb4128861ebdd952d9664f20b165285b5bdd8d59a489c00e5c5de828c6ab0e74daa952378530ae484482736de230e8e19797d54ed53b62895b847b1a5a74d1b28b77f3ad675d5839df4e565e72d0a7f0a3e2ab86095616442fd4af4137db1d6802f31539d42e5831ef9641157f7a46cb6535b20873e8ed20da605f609a854d8c669503bfe0b319cfb373d58f723195e52ae3abef83dc555433358911e67eeac0284cd7e68ff350a7b8c650fd8a4e6dce768ed8d8d4a0d79334ccf1a643599b4d551d800f805174688cf1a3bbc6f35a44a82c61ab80acfa8b04601b1c6226069bf3eccdd35439f8b061a45a9658ad7ee5f3ba94e0736be585713bd665ebfa17a608d85e1e0cc1986a97c339e889a93d61102e2f30e067ba88746a288fcf77cc41ae22167199299d992387ad2c9e2b8ebdce5fa243663f0a632c688caf8eda9a5e3c11f65481f54ab3c90f52f058cb7fb2473d796db830129e8e2e355f8d6c4a27190812c298d1621b3bfb6e5d5f4eafd0758ef3a117a58ad21294f29254f62c1a1c7f7051c5129f7c2c384da4a8bb32c6e0b4f3f662dddda6f258271a0dcb9dcafedc27b5580b9f1ab838d1efc37d25143266417c999cb85aeae93013f2a9fb71067366a57d9f92a6d20d2909c2ae7dc00ed82ca8a8def678695895f0a0758ce0966ce38c70b15834da9b8a62aac61d6f0dd666ea2279c9f56ea4240f75311eb63b968fe35574d22366132313d7cff3799a613352f7dfd51db9ca8d1652db6723511250bc8efed8b26309e6d9df64a1e980da574d54097f63aaf9019e991f4f5c229dd1efa23da8a8d60b0eda9c49ec3647365c2cccdc8ffd727ec1b0b94435573c6f055eedb10454e21b6d1fb45ba6403b4e1cf5c0b66458e23522f4ab83c321a0e027c77dbab44c6c30f9a8fd59a7efc7bbba4b2055a27cc4ebe9ab7842758cad16ce4bf3f2380256abe604f393c450fe559be9556f69ae3fa00ae8d5a38dca17cb999fcaa3e709238bd1be861c5d297a8b7069a037a6c0d4402ac600f9b0eb39dc2ff34a1a4b05a9ab268a37ad37cb5b9396e9f818bb41863e8117f0d70308c0b1c9c3047279ad3ad4b1065e5fd819ba14fe11deb5bc432ce6ea87609e80e6b8d30f03b97e45e46fe2d819b1e574fa81a6fd5978f8cdc0e2615871c056d58b06d771c0c8c3418ca91ef1a1bc4131fa0118bafa0ec00013ee54d340ba91c20ced2f7b7023df3ede24c91be8e7796e2c548ef5b291554c0c1a03c51ad2ae4f63487ae6725a243dfad0d850a646b80fa7f4c9928c4a0477967aa914ab4b07f5a8e0725a7d7f75c152e0a9649ec62e9397a926e92c64acd95cf0de12bd1ae40a7466812aa6fd92a21f10b7c86e51e9ed22808d2db345bc5e9f733e7d36c442228a662580c3c0178bae0bbddb2e55cdcb17229153ddeb9985e4a2fb69dde83a99cead6fdc278b7ec5467f24a68e0ce5eb6fe376603d6c2efe918d906ef6c7c9f18cf3beac3a5ac61b326b46e347a60433cd47fb3951ad6c4ef0f6cb7d53c839421b4298da83e7b434cb17baaeb1687ecae66bf69d836e8164b0cb4250a06d481e67badbe5eb1bc7c315b4377910da1f50a61f387597bc5da8b96e1c260e81be64c7ee4aa19c89ee3a8a90248d574d3f9e7abae080de8d91d81e92c2518a8571a5a305cbd1d43b84865491cafa52c28d0f3f08b89c22ff0d41c25ce674e49c9d96fd4f0bc22feca4774e197f1385e0fac6c40cedfbac81bcdae1307632b5465618a4d512c044b465b02f732680a5590460d29f4134db0e351df7a246c83ae6eee976c2f97f870ac01c476aa9586db244f38b5c9d7a8ac46911cd58d98f47682ce7f766c9c49eea269165e8945b445818aff06f963bfd1043085b083a77ad9ea459f42f22628f8811fd89905f17d7c83a98aeaed66c4a9ba7c1cb5fcb374faf5409d3ed33255435b5383d6b42441cb236210557801aa3c6e910127419e28ef3f698827e0b3f0ef772049c00e397190d6e898834591d1fece6d3e0c309683b3137c059a6cc15c75bd4f15ffc9cf102804e183095246c2c9cf400d0a861ef3c49cb92591cebb74ef1ff783f28e8d5fb2a8dca134473ba2178770f747316b600bb9ea7b6bb5656c6636a1d4efa829a64ccff3241c54f91dc3c94dd6449b2c250eb74c27fdded75189e8a2fc144fee1bf0ccf8256c9ec26a809444a26cc17ead738671f3c3b40e518cc86c403f50ad44799c142784b59023bf456ec7565ff6bb8dc991af53a2634832b65e7dc0ca116ae1d86d9beb2dedb2e7416ae71c2599a7b3ceb58664610011f38d02af369b30db7b5046d5566d578cc54d2b206af850b21f213654279524752838fe84d2e3394b98119df41c812d4af7796ba061a7bd9bcb8351d4c521ab718d68de52f718c4941baf89b74739049662bd215c500b31431e6b8499a2ffcfeeaa4901f17bece22eab54628a44b13f6051093430d612dac663287450f2f6761281244207014b48695fe7aa02efd8b07ec380c1d4382e8758f55887a677bb6554ac9e125b2448d37127692db903c145cb704b6ea289f456d18338bf5ee759df239ec37bf873300f7d3779d32aa44b7c3029f1bddd54f71f7a85652dda8f269c920d633ccbdf0b56753221c4eb153de38540bc2dad47ad507401948784f1b3358d19b213c89095c4b798f0adb59edc7ef646d147f799107bbcd1f4bf4bea56466cb1f62b8aaca721ef4f5f5dee0ec728644e6eaf2880ecc98c44d757149dd4c961994b921a3df74a729355db4a5ed1a65bdfef4bc8d210f6b9066c5f44548e7d81ffae38c73eda0017a917dd979b8064a5d10de862ccbf51e7319f1fd3a4542ad26117e27a5ce7ed3c90053c425cee3e2fbc8f2a5c4396e5afd3dfb23bb7cdb50b6c9f245cbf407f19c78be6b7116a3c5d190ca8e0bf6f9d3a54de61070b7c210fd5e8b1a4862de09e0b7b3fe806d4a41c1e98ef7e450d92aa11cf149d8776eab72ba89e1d48fc81fd7d4550daf6f587bb9cb023e9b200f3a7069f5f6c876ac7b6171303f5f93f687b8b511af9cfb18316a7aaabecc3e3babbd1234300e65ff4f4ef3da091eb465d4412f5b2d7a850e530b40cb2b159b8f76db2674433d21f4561e184f258c3997c3d2ec1d2684bf76380afa3c56b8f740e38e9c234bd83074f6c3cf79e2a0bc797b05395e7e6d48bb078cf43a44d8bc4edc1881ce85439cf613f0ec7a9a4b1c75f78931e0ef00e10f8002311e9db2691490c41208a9d156198b903ac60f3de58093ac6d830e8c388726b0211d80d6a42782b14072d33fead4c6de1c7558e543c8c5eae9d562760108b133dae60e0d95857f33005d33933e86ed936a9f130b5b51d18864f7bb0d1bf1af6718b9a0864734e2533dd7c301e20fc2431a6dc282fb2a35e7a772e0ddeae62cb72c536011df2255dad020bbf8266ee5abfc57be918c4991751223e403eef9306c8519da7cbb0c13f99563b732ded5569020b8bee3dae338550f07069d5bc140dc01127b55c70523c83832764af8262711fbe0904a32887d7c465af4e864ba86d1f4d96aa308d075c94e8b42f529085626f715cf99ec23fd6e7ab947f3af54eee26216512e3ce5abe3ddef3ab3db9a893a67f87e9e6cabc78a7d1c9495f773e3dc23bc9f63534ae7b25a154714aee0d8c773c6a7020a12ca57a5693ce40d3bdb4bf00be0d806a76f2293bcd1f0c50f164ffe61f61103288ff3294cd7498c0d314f9301c2fc7d8f9fc34edd564e2a070fc46fa2d61477ffc915c130d1cbea5618e7860930edddcb026645c5ec8c9e4a665d4e446db4018d4f6b503fe49d004a2bd20c69e773f93b15ba64089f30165da955cd50177f0ef440c371d3a5ed978ea40c9d70b186376289df8c2cfef477b4c1dd6cfe8fc1a65a0bcb7cdd4c528f9269c10206666e1cf65b2f5fc1b2a5a180db9a90b794424679448f20a96a2713687d1519226aefc5f168cd084015907bf7dcec948e1694b92d61a52ecd4421cb349f84ee0ff86c405a82dbe2fdd950fe8bd6f693273cc7803a914d062728212993661a6617173f6224d095740e59bf6c08e0f74413d4916e54a29eb35a0ac414603e64d20a29b2f30a9c446dfdcb4ab5a09c598b759fa9cf1a35d4dbae70b02eef4174780606bf8a32553e798c97b1150741ded8ce2330c3f600bd1f0cabf0bf3e34557e316c8c4491469474bb343a89a39b80c12985a60975b0574287fc5bb80a6ab2ebb63fe8e9a25e442d007ceec0cee16925c985e6e7b4f85b02cdde078029cb385340713b2640560eaad71011c9fec5d1fdef1e4c69d485d664e5ca1728a634a937345b66bd6bcf53874b18e225798ab3da4195a96db84fa8eb626dc858d2266b65f72d26e58181101fac15f14245e0864ad90019d2c39feb2f719404c3e105b7245830d51fc8cd6a97bf8238c26759b81f971e0146f6436b45fa63fecdbc92f673d0e772ee8a0dc19180a21fee2bb3d869b1864529079554cdd2137e2d0e2b89d0142b22cd913f2f9a15283a29d16b2a1fa8575bc6503ea54ae9f42fa9bfa37d08df495eca807ecd5128bd1333f8e6c8c8f7e8a10c199c8b24fef20d818626d2144f07d2f692e3fef2e8ee85a6d7d020635c81e686c42aabe23795403a42d0b79b865a0ad9fb73985ab8ad989cb88b5b78963fcd73b4964a4e74579e3546ed785f3c8efa044b9b070124faa920d73e91b4ab861e385aedd28a6f07338f51fe4b5db1d3cbac5f818435b83acdf5a2ed5dfe246412310ae04859fea2e369a00d1a3fa806fb23544ccad51b3de84e34d5dde507dba2f9ce1d8b4988d22be88425f7eb5e90324a520ba5e3310b209a44ecd251e82bbe0d269494a0a8c502fec8199b1fa8189d089e4ab1953291388dbaa7c631e59a6533129ed04b11d6449fe400e5aa77dd570d141783b20675f9733e20bd86e332b87a0ca6d054cc3432a4ee667040c27f497a85825e4ad6103bbc92e91ad4048027bf0cb41f910870181cd1d62c5b00d309eb148f489ee7a296501dd7c5eb06d4d1ed25e1881710a6f2274cb048a8c1e74eb6cfc1182ed0b8fe900dee30d1b42452be1baaf596fef3fc465130dc8852ceaeb180a5bceec88b7d6b6394fb6bb160dae634e2f933d6b9e2859e6fabf4958b9ae48140a0a2ce96500ae2f52aee5f5e64050042d3d3a9e43d12a5e5f1c0f547845319adc7c324f9778301dcb599b172743cbe5c0de3a87de8af2661c7cf112740ac8271b795cf78abb52191441543c6879d8060130d6c67bed0200b37e4e56ecc067b7adbc04b7bdfdc5e39bc592c57bab1905720865e85b91ff70e9cd3d889c62a38ce5d6a740aeab0408f9e858731eb5776f9bed37a3ab11f9bbf77486756c89526293022b07de087b6fe5b7543b5c4f1735edc50693ab3589ea6dff1c35242ab7bca8ac7460f7bf0b53f780365e880ecb58654d0f4c527598043b4682a4b0e20a8adf20c6f253ceaab21d1bf9757dd15d8a37442c13b4d4bf843c718e7e99fa0d909b77f7b49431e92e7336fcc80e0b74ae2368b8c1aa292bf71d560088618a2d234f847bf4becddb688451cd2c3ad30e0713220210d58de0165cda846330dda721a20d46cdec3e4825bae29d214f33e20dbb061d226b74e3e836c8adcce43b2432bea73bc58c5ac8a79a8bea2ec303b2bacf0e25b5835a1676fe273a18718c4f6f4e3a5a2467e3c36b7e64da3efbb803a92f664e0068bdc3061e6234edcf6a2455040bbadc53e2432311cb217681f2dd10e3e5c1602fad6b0c24ecdf5dbf6f7bcf4fb95ec48402ced5e5de3a7e84511a774de06200e82940c515550775a41b42987fb19baebe46318faf275e0b796d5dbf6c67e8a0eb2840419cdf90f7cc70ec5f7f5e49b13a10ec1dbb6d72b267821bcd08e0aa229a65cb9a95067db039656546afa097f9b80770cb8219e0cb6fdbafcfaa3c7b641b5f178fcd5e27c876e041d8c0f0e21bd1432e2d87c2b82e5b321deb13a908fdfce7335375490bf037b2aeb375baa5c3f5c6deb8f0254c46efc24c3e1508e2861a75415e8f1184fa43a7ce49b82e3fb84f92c7575575e8f707daa90ec9fffa84a8d6a621f67493f2a4eb0159ac7589f5be3d39e77a51ed4c30cc1af5843873be28f6cb63b6f8928261a8dd73f221a9a48b372b9ba984927255819f3fe190db1091cd6eb1e4ee07558ba845bac120234e3dbd4f2c637fc87b74149804ebbe00c27891f1f531bd03e9842f1fd09c276df107fcd7324088d47a089f1986a76aa18f526e4a63992e8d98cea6e0da404d0c930ed254543bc5ccdc6a4d4fff47fd0c091dc76b36bc67ab79d4d57bad897d5c72f43a4c0f3263dbe6908e386ea78cbcf9f15b421bc4d08dc8813d2ba192ee99a99ae1577be813b89a7a3946ac1cafaecaabad07af6662f7af5d346e44bfa319f5d680a7f99179227f70a58cdcd917a299d4f80855c45a2bc7ef27211360de687079d73b0ec5c0e6d292d1273d7a18fc780d78fbb14c4b0999664c597373d38c15a4d05e77f38624cae114c9a3e781869b56a211c0af75eae7913230eab59a6e0f1ca463419d6e945d28042384ebdcccd3031713b65e559686cded1925e64eebaec322a737206daf375b41ed0f3b7373939a56decec50af69c7c5cc536a7955b00f349ba08abfd5b9e4ee9bec57e9697617048abcf747a7c272f32069b453abcb6e0315b6b8158ab7ff7bea544612a393c76c56349d462e3682e4db627118a4b214c84776db16040f822c0bf5ecd9ff7acf3edc163646915eeee2a9f64e35daef163f61f07591b8467eaa84c4f740281f5729dda6f0ff0e212586bae9c300c00263bd2fc32c68949289ae0f80e8397f40e396a3d625aea0326466b77c5d3b30745330687129316c979788e03a4b7a6aacf6a0779f990b39fb3b7ffabfada3d1e8e9cc10c7359c4db9e0b77164139b2a637f60e338d6be6b99493a955369ab7117de3cadc9317f90bfa1e12de1dde2e5ef072bf96d07e8d655beb1ea3346f6dbc7a1a857159fd0d5200ac914694718ac20f7eab3dd892b629be6a86de8479addec35ceb5371b99b6bd8b18e002356e33363a8ad5628c2a62c6708d1bb55e630dbda814a347cfc0bd85233ba35adb582df96355ee99c7d399624eb00b7bb68e2e975210cbf15bab6ac361dfa162c3058783ca2eb0ff91358870bf3c1d34ec90e3386a67a8050061e04374e684b53943793b1d0b3eb6bb1d01fb1e676f9a5e5bbfbb1099b14f01b3ca30a4a2753b14267b1784057ad26f5bd88004cc79efe3393b3965a87fb9e21ea176dd7e6dfc5dccbdddc83af1dc9dfe6ff2bca3a0e7fc365680dfe85d2e3a217f79ee58700d5851a4695f5ea88d920c77b06a5439a821249505b63ad86c1372bfe51a41db4d1a68d2e0fc6bb8744d84395cd64a0c6fbab35d8e1b367e4b579ec2ca0808d973c6b0eb6b98712affdd3b6bcb50ec972fc0ea21c88143add9a2d8371213ba6021b1f9865c467c831187df777e2d4278659093e5db4bd96f127df1f275d6cf713055ed88b0058f3c92622891d4614ffe26c1e03e67fe32cf9295a8894ea8f638624e60a7ffe58f041b3e12fa16b0ddd1269a61d3188233b123d7f0ec141e0197be8d90d0096f8bf2316357cf3a1e840ac004089c0212ea154a2ff79d2ec10f3462153a15910dde92e96e57f67d3293ef6e2913b00d72427f91ce841f2c820ac9b51cf461f7498340191b3304a1e3fc9e939dcaef1d65b2def3f4a51d4ff6d743b6569b54d8f9b46b2277c3b527fb42fdbfe356333d277c7da63c3bada19cdfde048bd2eee85d3d4b8200aec5f86300b8786a50509e074528bdcc555b2bdf7ed01755b73f7684da46ccb599cbd0d6282d503b05950903c805197e1e9b7099533ac8c5c91119b71a83aba5dbf9c92db963eb43861eec524922563125bfaed2dc0dfb068f0b028ccad5adb7ec85a21934523a58de140fe77b754b70d8c12ce7721e7b8b710ddb0bab46d6a769491e9fe7b3f28c19456b623583bb50cb2ff9f34135bdc34f4f8dd45599faa56daa0ad71d15b0befff462bffa7c5da987addc0015f39e67decba14ee1ec78ff6514debfe65ed5b89cefe40646599dac7019bee83018dec7c56edbb782d958bd000c180972a1fd4f6404d08712eb2568e5b7d01de5b6e1d57d98dc65596f3439b4e34ac1a7a99b03c474e2e0e78d989b4469943fadf5721f206c79ca40ea8d778d934d8bd2efdc6b27cfa641e54d909e1dea764fd2cb96482f3d37754fed1255ad51218d77b7982c3311b059b33f3c89c27c4a04c2c933589d142d52c6eab8c1f859dfb667d9436bae521ea6d2bc46b1a6be0b2e994da6212991db971b9e1766b2ece8b1b8d421bb1e536757a0bdd87901d8ec18cc7bfb6d13ebdd897e1f4a70143cd133285247b273dd5633df9c6351a54b8c0a841e74a1167234d6db61b1803096e3b99bb912916a3926a38412bbe168ba6318249f289144b0864047795e4a4a2dced40936f5c555cc3a554b59f992cf14acff0f0d3e0866923ae32036e87a1dbdb99a8d7510af020adfa892cda6a3da4bf8bf994146143d1ea5d54fffbfe49e407eef85a74917171ea7debf0f252749d9ec5feda4c479e0baebe02284068a9fe20d9a7cecd50b3aad0c73617a5ba8c0bbbb17078f1e2968d13354c172cd5672ab27bc4198863c57bd2c58f60fdf32ce1596df07a5f57c2580028f9dc2624986bd9f7ea0022308e58d3f097a036f3ade477efae59c41971b7239ce2ce30d6968f61281cd508593c9e4060f0b07936f975f235aae6423283e093fcbb640dad37cc5d8adb2d09ebae6e353aa43c216aa0a9a4d1e55cdc19f9d3b9498baf7cd69f48035484898c1043c92fb2530cdcae9936a9e8dfdb5337c93213c6e5e9a7094e4fdf06985a2a19490256dfe3f318f40e76f224ff0446524502bafa4c5982fa838db7f6640057b9e6230cdf3f106b6796ebc0237a2db09a9c2b9126b090083169224940b9a6d2452538619146676c1884dbb1de40f9054cc854024d774fa8ed0635597a77a0b08152221f3bfc36c461bc72fd781a9fed4f5fe423e5f5d388361723b4928e41fd96fc923a4da8cf1a1de76409cf89f7cb7d4679a363781ff1affeefb593defcbfcbb6435a18c64421e290c99d69b209e50d4de8ccc0a5469e4300b36cef986506407df47713da50cc84a6921847104cf5ddf013f07cd8427606b7b89c050372a63ce8130d55ad1ddd0b9ac830554495a1305c2f768c273c87cce5096ff9748fc37ed5a2ada509400a213009976b45f08c09b62711ddad96828433c27e08e5d0f070fe9fa74d18aed6999bc128f8ffe88ffb4a8892f39345e0e96bf32dd39b4f3658d2e66f40fc9544c37c1917f517e6780f6792882607bed96419b448fef71da416c32fdc2aaebf47320d9a47e348c1ef30434faadb4df08799927d55e32a5cff6cdb98ecfb3fe29fcf57aab80262c3c21b9fcb1b51e9d5b9bfbe2a2ad35ed337ba8cb09c473d7d2dbbaff4d91a6a9f8949b213f9c2e14f276b80ab60c94547ef949f348079c268a76150b8b47dfda912fc89cb1c9a5f7efc3256a799e71b257e5302e6a230d66a97872959307f877f047b0d25faabf7a29d152a28673f9925005b30309392f97ca08671d03eaafb05faad4ddf113435eaafd500a73c2928f20b235c96e9ec977666de851f83fb7211cc9985f31a67f820472dab3e40e4f79a677827b56a1ec259f265aa35cab0d7f85afaad15a32728caa1c870f8f382d8b8ae72dc21039b0dbd2ba2fd379320505c6f9b80f6267c13db188e59e864a317595bac31cc44f4c5eaa42642905ebb5b74e726f4a25869b294e3bd04c2c4833aae16956b2867b773ce5eb0a4dca5c3ccbd8e062fdb83f112e33c84b7d0323b49874b06554e30bbf204a29e0a1ffc76b42067447e5df5d05fca8b4a6dc5410d739fe17d12ea7830dad76f3bc08f0553c2b7e4222b96482dc132b2d03730b74172785cab77febac8f0b219a7bc8d121f1bffcc2070303b53ac95a9ef6c3f9eb9dba80c963f88b761503d3ecebd2c8059fadca1675beb51a95c5bef6bb6ba18b4985fcb33afbd1fca1b5ffa09ccf53d11666cdcf0ae7907c25a1b1425cf197ff32cd50d5b7a168a960f847efed43728f9431832795671a69ea3c1970fce3c388a16baafa817c30557d82d83fb26deff5cf931616baeb88fa5c5f09204ea6c8c06936b0bdcf61a1c82861a3a8d424632e002c70fa84ba4f7f945b11499158cc3388688c7fd846faa0acb7b8570bc707433e0f30fbc533bd30d9fc1216e425d21c2eba664ea8dcf717b35b45c74942c024a19dab1e5f61ebf1f84f99278e8672332c3c6729aa3c1e0d4e3998cee38c4dba23e115a02ce30a02707e593fcc99d3d59ddfd8fd9c0ef590967d6ed42e501669494c04272c87c5167dc81f5b51d1add793cce5e2b90ea151b216c8f5a64ffb56763535e1513e334962b92a50265eebe8da9de01e1728aa6e1969200698ffc21e3812501c55a7453bcd9dc35209d4d202e98469df7e0ce73c8c81c6698c85b7ccdbc437c380cb8ee36037cf1583e50483cd819e401b8be3e54c9a1a149c041e2f54cb293c2833c214b83779861ece8cde763ee40d717ef44d58ce760f21d19a2bbcfe80070f3d9f4072c586e5d03d435962a2d737ce51cce9f3ccc7d6d032bc2d257ce995f4637b0275290ed389fe36ceb099ce17c720cc5ea59d20f3d28b65f9de3c98d4ac6e9913522641c2e9774ab2ea3913fede7b931c86042efc4145df58e246eb1fb9e04050ebf254b9fd724c57957624800166539ae0ae3b6eedf00295fbfe67e27b97729e2543a7f09d5a5cf84794c9bb9a0f5379b615ec23ae6a23e8e9c4481401aa4a86207734b312e6f22b519234c5748df32519c3b5cb353ce0b73b50cc50988237f4a9112ea73b5d9d717083611425acf84b9404b5bab6e6f4dda1e340ac4975477e3fc2c16ec30e28bec09582a2613e0a4af4f45e1bad56998a0ede4c58cd84be2e6a658156ee2f1dfaf1a86708a19540032594da4d65b581403b39dd1fee06051a9cb6cb0156d8054003e8b80fb95bd060f7ad6df920f3b41b610910186e68f9ef1bdfbfdb0db9bccc41b9c46c10d964443b016858bee9108f3ef4a9ab5f1fd897d7c0b58191581b5fdd8e4a3fa6cb4aa08954e2847929f76cbdf316f7139adb460f40686ccf4fdb56b2edc391c4d61d363b9d4ec40d9899bf7b1dbbff6284b43bc721e0f4bf163fb3ceeb3b6737f17c7ae8bedafa4579419a21d13ad7d7d495344bae6f038d42d4538239396b08f8065399e722a3b698b3c3b7b251c25ac382a226146c354bb0545405f31cf4b2b0a2ef3f5933eaa8231393475d90d02a4c3b5bf704421466defc6c2a529a532c92e57af6aca0b3122acf133a7ee753ec09c6bf4fa51946f83c0a8a9f1b7c58fa9e0275b33ea953857ed65c17f747591639ad89d7fc5b5451692a45b3d6b1ad6b6802565773cbff4c6d36d61aa124d221e5b63877a5044bac3f938a3c7252c5dac25ada7bd9eb71cffd5c8959ae1ca876051a9f79595435bd02497450f9a66ff4bdf54f7ca0f1b0d3ff789eab6fd75d987f20791235eab9f514948e5587edaf8a0ea598742615a53f9b952be122c63798d94dc502e6c73c71c1c7cacbab077c6bdaf981b023b3a6ac1d9948058dd83692a8ae21c09ba3557a886904bf5c030bcc043ab797935cd1c556c881063ee07f1dc8f4b9d500b5d1b5da03a958f2fd7dde2515c34b2db564b6c55210dfb32e322aca349947491b3f0ac666416e84cf79f4f58b1084544fcde09429a3fb88e7172b4de513319ba8794002a86563d3fef26e369d91e8c9c19624f610fb327479b0c00b96ae56a8825245dc2252fd3aca7da622837c076b1d74e5b75915f2ddac78de7a55ed0d4e7bf9953c33318b8a784704e470201054547155eb4eefd33998a113f72236084f9a40a1a644e45fc3f97ba63f36b2503e667c68d374db891f601684aad708aeef08463695488de8038fee339a1b071a9e98f96cd03875af9c90db9e9e6850f2015b1c5558694392b45ba11d067ea346af6e22ee5765ef434f17647a6cdf487cc6fc1bffa94d0af95a59546a01cb8797ae4b56908375d3ca9ba98fc52f905b235b3b493481bb9375785117516e6f7821da9dfc7727a71907665fac488cbc21800636aeaa367c8a70d5f461ec490cf12ebeb5dba1c86f7ea4bdb8d4d29d9faac58effcc65630217818dc53916b4599537a5c05c1a0a3e42edc55c4e39472c94cc69a69216198023e35ec3842cf46d9fb477c58ba7a0c1b8d6e7c9b687442a8a84dc1c43e223144d213ee1e36eddb8b1f65ce421289eab1d0a45f6658d46cb9959cf07c20b0876ee2785725233a0e0bf113a62355fb74f6f20adf9e0993036b10702fb188c7d37eb35990b835095d0bf866317386b81e10269d6192bb10d2f7baef0d75f0f59c8384ddbafa83ec32d8f060d95b9d406bf9341391a872812d6837e3f6cd8f2bf3dbd38f6b00000386873ec56a4caeca768b106a4ba0740a10b9b3cf902ddf60e8189f8143d4303dedb04ae52f8537e9248856d124ab42630b1ace99770f87f7a564d5208fcc7416893d7c5603e5acf33ad3d1b7e2a3fae6ac5747b32234cdf77cf88a6196b57059f8361dfc0c8e8f86d75145283ae68941178cdddc0046b40fdea4394a12c32e5297ceeefeabbf01938b028c22edeac787a1f6deb53df4c1eccbf9ca2ddbecb6bcbe2126d9c8448f768b4d41b6f515653bb539701460bc3b877306dc886eab8a1fa3a31767cd3c412bad3937e88499111ecbb229d4e4ed6720d3cda5dfa683ecef53851c46e053c981eb0094e9e079be960c07afaafa54d00210d8295b459af3798524d0b3ad9197f277c7c9f36ba86df8fd53b0a0e985ef4d5dfbdcb625eaca04f906a000a82b9894a15657265f7a3ec36ff0bc12a38a64229a1e257280cedab20a3eaabd422c249f1b51f7ffa8bbd11fd04fefc931501e5c3ae000317195dc0bcedcac66a2370b97822385904b9dc68c5800e7846d6b8c5a41568d7c5b507da5df1c4bd06ea0727384e4b416d226704854d7fbf176dcc4b2e48778a64bffc617be276935aca0638f7d335f81bc657d3f3cf0adb273d788ac5718a1f06b0a1b714af979ee974fec82ef0dc868eaed4721c8988db32f24f0afa41ec6b5c4e4ede16f7d8aef93cf37ee4b12d3a26236d1105a18c3061362314262020b94f91df6363b4d5fd89b1e0a993a13745f0392296e4bb6bbbb526bbc78fa9d6a60614ad3fbc44b75995504c54d4f960bb3db3e8d9e5e110e9b279d74d5a6ee55157bf6ffbed98b0bd5bcd1e84ab038ba0a543dcd9d964c367c7013b6467b01ceb9865ad419afadc7a3a4657fd78eb0be1ae6311277689810c0dd24f93575e0903b284cbcbef8018f5303acf8af1b6c5163ab6be949afe927a4617a9d1cb2c546cd8318ec19969f12291581d76657c036ec9231d40feeed8bdde85eeb4ec49fc4978eb9de87d0d0ad9eef29e4f6bfb6bc1c317231639b5ade60e93ea2fa12cb9926037288b8be3163ff099bb094c12f4a7e164f0eed309dabed8ac38868e7e2e09df88b0b678d46a71ae9276292d1294f4c027014fa5411b70a647b7abafaaa920dd87e2828a305bede8a34bd07fb0d046c8ec2994f0d7c6c7c55276d50cb60ae2625482f9dcd80bc10375e64e76f3c51fb1f83a4a13e8c81db096ac5d4f69c109e63f3ce8c34a8dd534736a819fbdeb78ea8ab178faf51029dd57985f71e8c77465fdb56f3bfe0fa383616d4dec2c18e9fc72309342473f3b206d2d2e2a681fc079bbbeb777bdab6fc86a87dc50afe7ce91a8e263ff5e6cd6fb298219ef6d60036b84de99893bfb01bcd0643b967c65da8e026199b6fc085478450feaf42730d9c3508e6104aeab43b902f1fc76f4736e49efcd26afbccd6ac83b447a3016a18f43026440cfc133b5595371d4d12d0abeeb3e8fe0b96d01ac02389d7a43b2a179b9d4ad9fb6339a08c8ec1200bc73a88380e59e4a6686987142bba504bcc1cd1af79e7707b35e8556d3cc4e281d132b445e93f22d21154895f1270952b0966c97cbfd93b9c13aeb22b381f2c9414115a8ef2cd6f6aa2abeb8e566e1d9f06c62aa4adbadbbd8a72f15f19de24266b8c0004af2f045beee452a1eb9f386e8503b77d51ff8c13457b99e4df3065ef7feefe347cf717ade15a8d5a0c5618aa7b1268b6b5524859f31eef64923ca6cf69d3ee082fff3fa448316221d0c14849ca019f0d4ef7e14ef5eba9158fd233a2086dd5d1e65a683441f178396ac41f29759a3f95d588648e8dfbcee28242fe8fede5be468004f888750694df5571ee56bc2dbf03aec98487a5128decb412deee0796618bdedbe3e99a502d1d6ef90984046dba01d971255a964f62dd9b4b1543f8a75a89b9c94f55b0046ced60fbe570d609e7edc9b89bd876cf0629f54e0b9703b05d3c2fa82cacd4515ff715efa43429da839cb6d7771255ef10258e7468cdd1c8d292e72417adae3d96f6f3be151d312349b015d6b72cde659922ac1ddbe1d2e843194f4d72dbca63648b5d10121f54fd3800eb56f078381120c4b07bb69a786e53601393529ccd1ab9ec5d3a03e8db9ae8338487517ecdf85b9e153181d85d3e19cb13c7c45c0232b9a47e25688be931372f7f5a3858f76b996c68ce14d7c7382c7281c2bd1e645798875f5dffdc8b38f2ac25a05d1d8733188778694f30ca3caee2a8561d2c719b20c038b1c9d2706bd67485af08a1f6502d037ff6547a7b27e52cc728b95f2e9e06481722bebb10e14ec01d59904e2f49388ee37bd6a57cde6336d8f17869ffd51bc3ee85430067150cbbbd209ba8a0cbeac9a6e9d5ba4316b29f4f4f253eb7ab7fe4380d3c1285e868326f183ac1ffe21cbafe23315aded8a6077975817d551c0d18056470dce1dc62a9154b594b7809979e467bf0766c0a2cee9ba087c11cfb2e1c633dee3efb1f7d69ef4fec009bebe3799d7f31904f10b5695d633a674f03a191a617bc2ed3f33945a4d150ba0b74d1a4f666ea4a33fc43847db2ef3a51aa28ab659baa50f6d5d6b8a2935d7447df6e396570c4d8e203f685f8318d92a45881a4836bb7b3fb7f86f532b0437309960d62c416afcf653f7cd06bb41def97fa0a678e7656bec2ba355101d6bb1ea91ddb4485b13e1f82dcc78bf763986b51b32e20a8cbb7e9edc0034c062b024cd2a9f3eb79b5da8c847a8ad7cd65bc5b0d95c6df87065ec5f41e8a62503098b78770a3a0859fa88730b7c8dd7cb40bc90392dccb5c2294b3550ee817b0e1270bc9d7f482504128c69c28f81507049981c4d00a73d27e8c08f0833944e90cb527719b1df9e578400bb583bde8799255197fd7de997dcd946211905e96323594ecfacb9e1590eee66d81b3b7258ae9805b1673c8a28bc30568c408e706f5263e36414f7fb518f580100fce4005910d9850a733648aa188da355cf89b6ad951ad01985b3864e69bae5431899136eab5c8021acfe6637e9e322fb76fe7a7e6d7fe4ca44c7644a5a5a7b3e451fd33ee233ff38e34cb31341a06f35aefc40fe5ec91a69d0d363261a57c52142f3659f5e0fe1296385b83573ef14cc6b19cc6240322332ad17105f13ead64ad02cce7a1ba83f83cfc811418b2a02340d492646b6588723b5a06fbd7119bfd0001186bf278be0fbdfdec2d2de72feb035d7ebdcad175a026e16f11b9d7f73f16dfb087a098bdf2be1dc167384dde78f0c5d85807f48f69cb5f427c440b29df8064bcb6f9390dc40e7085727a20a875e1b273e7e86252605601a89752796ba36826a784a43eb213a610ba309a77eb58ff125ccde55e87500083dd6131d40421627f484e832ed3d4c2c2fb16f79d6bbbb5f11e78783b9b532ffb7d2be85486572b108a15c6e73a949dee978bdd3b6684a90cce9f38aa03f05eec23aed97141894e9a744570453fe7bc0de483f926c61a427c63c5ec9f8fd314a81d644db7602179c68dcf2679e3fed84e9817bb51dc9e8b030d679891ef96ba40e16eb23987f6ef86eba9a763b56c1faf616eb5a3ee2eae89ab30eafe4ba789b73f442df44b8d60f934d4c4509a9b0755586c4b36b0ceb21c673acaea1ef1104ee579dc8a8c80e65d7709370d90e2ddaed94befac833e61be2b7607160356af71d23bce0dbaf8c6beb2df54dbe4976d712add00cf84625445ccf4342ae293fbebfad52a5338749dbb841a050f1a2cb6dce961b9163b84e8c4351d8c69551631a93f42ec878a65c6bda3528e529692ff59ac02659805ca28e516924f9dd206b336f37e99e5d46808056bcffef165b3b2ce0ba2eb2e8a1135ff3f7fef55a08aef6666b4523ed28cb884d9ff0fa0e8f50635625d14e8bd5b920cb17f900713a1e18bb6ebeb33d86391d21e82c21d47c1d7d922c151d2444a4d921a91f738269b43c691ef251904112e02cf2c1ad36e4887b3d1f80051dbfa28cb3b467714e5e0281a453e6f4a3c8eb0cfb80711274c2b39f403702c7f42676312b179e7fba82648259b437719e58df1b40901f9eeddf7970d4434f1d1df3ee47c12b9ec4926de5631ecccf052271103a860731b9118dfae86d8ecdfbfc4dee76df30f85531033857e895a858f1777c600f78d616cc0096110f0f2ff6a55fca7ceb873cca40e9da915a8aab832ba534ddd09fd44c772c1aa7b1a4ff46b4147b75f9c7ccfce2c1f71476b25824ae93e678b96dc98cd264dc430e511b4f52b574f598d707d9854085e040b2271e4c26f473f06cdae979601c72a7840953364b24e75992c6f968ed450b38ded7db8e771a9d7af2f5e1c2b4c511ef55f15d8dd5b913f08a5f1d66e07e702e744bb3844993654a34c71c4950bd7b8a1c1a2488a97cddadec04c1b1c88d5785863dbdb97256d360ec11ca918f418fd5ab790c3115a26a5388ffb3c7cd9353b999426b44df92ac198ace1cb890794c79e9f1870ee6cb10f316008eade07f52166f28d9520c70a592ebd67998556328099ba1207d2caa69d690b1cc56b1952964f2023ccd88f594d2ddd5baa8a57e0f42498a881364fde1cab5db0980e4c722a507262bd71f89337576fd755c0c48a9b81f4c786402f1872935821bf712fa69f1672ba582bbdaacd63683af90c0cde4f254b5242b896a2123f570f265c521199d4721d4a95f9e51e615d504c9a587d971dd62c18fb530d4b909ef27ee2831718ff4f2372987f4ddb35360d943e1d088a721f1285b3f2cab668d83ebf19dd7cc4683d52e98024b0035c80cbab45e1a5fe5e27f391677fd1cf02d27ec0bf4469bccde0f848b22c67193b2908c62e76b2248a901865592c756d3ff317c0adddf2b334f994fae5bcb184660fa03dbc49cb960e5f1516a1fdc4aef582c0422542c15e74ba8ab4da6f0e0627a7250cc917638563a7671c9aab5a4df3f04f6fc80d88e5e09496e3a1b045fb68e5995dda9fc5d9dcb73f292bc4b35795013962de05ca2bdcc3295597fd62fb437a5685ee9b1a2255aba284e58227cb5f5b290abafd90a0343d0b4031095773fa3c038c682c7dbc2985ae9bcf8858aaf5f5f1dad2652b8774cde0741a9f7265b7ff5d8654c4750974c2c44cfc5722ef63fe61ead10e17ae56cfd4a61f864f31385ef45f30781c6610b814d8d680db005bdec87298e8204114ffe18acb1bb82b6ef95e4c1d252ab0b0c460d436e6eac495ebeeb3613a5066ecfc3c4d8d0bd3d4e1660b0f3652bf318a62de6558d230d1189befc09044465334f1d0e904e059686283c30ec0c30e197022761f7f4aec1e715ee088de51d007a5effc8faee1b95cff61742737c352183bd935dece4e2d2c8e7227574fd5f0dfc8c5250faaf2f5e6bd66baa788230d3bba350336acabdb6e1ff339b4c3b8bab43aacde70fba05adffeea51347d50ea9bbe31b2234a92251edeca675495ccf4e112ea4aec26f49b55db7fbae55a53bb0c7d212ab51214f1421ae3c8a3119b4a251ad57f228c1c113f9c247c9b62f2ef92836a21380d1771a730249ce2da37d4066e29b1775162da39d43b73ae774ac3a0afa5fba3930706289785075c878e1aa2f22029c1890d4d8968cca27c66364898527e71449f9940e3d18454dac9e1409bb0f2c0fb1ec805354d000b4abafc1c792c67db41787ffa721e85643017cd69bd5819947f21c210ce628c8479272fecc8b9e59f73563a69d6b4df3778f3e305f59da830e85f47439cb1fcecc81906a86785c5ac1b98a8d44e28f9318dd14c47a2f1e7826b1029694a610a2137e312a2b6d2e833d1ad0f6d9611bec77afb4728ae11311970140e8291c5ae218390cc874de589e06e13cf8eedcb33aa7dbebe2b79bd25451ee297ecb3ee0130296a0e0f7c8b132fc6b602bb591801a7dd5e3af91537baea48b7153d5f51152fdc30bce84abc0f92a10d64b95ff5ab665e2499f5753d24ab6100f3a4deee9089b5193c8146dbd5ce45fc6dae22c5cafa079a45bd03e73b519d058d3f31fe04c9503b1e9d5abcdf2473fe48d14410e7847cc8540fb5f5b41d58bc4b10255aaad7e96e668bb32e83ec25c99b50e52a88e3b6c8e1de85c73eb1a4b794c51f7ece3f57e1cff028415066075b94305c01a882816a8584dd0210f8d1db4191215e9cad2f4488cc8544e55ec0f94ab0316f1df3e679cc6441e8c3e5d69117451d799d3f69c8304fe972b7a3f7aa8c0af6ab46445a9824d0ccd590b23e5cfcfc6e289f98dcf9ea8a117b96ed64e6444ee30c82ccb6e100946439fe2dcd507c27da8033b5519d51bfc75e65f5ac3695f9168d286c1a2cb06b179219988bdcd015544fd1d2d4f811543b9deb0e7878b89642d834a3d18611931090e27391cc9701b440eb17ae91994bca4e7c3819c43f85f38b7eadc59ab7d347fe723e5dfd340fdecb445458533337ec26ca0fe0417446a3e20f17baeea9ccfaf7edc900343f62a064119b4b7c0ffd8726d98455c91778f478b62fd3779255b42fcecda5290f4a0a0b00966c510542907769424d3cd6c350f76c321913638b64095afa36bb73af933728628b4c02ab87a3d461196a1298745a58ecd9eca2f42b52e51727673ce042024a1e11563183dc9af271556f0f71bafcbcbf217d8438520b8a547e52ded22e06f049d2e314c7c4e4c0df18ced3ec2b45a84635521c494bfbabb15ebf8a5b4919f0a70879271ff886a57e0f22e2312786d12a242e0e37e19832b9e2f0665c932c23faa0ff740fb3b90eaf589dbfb81357a2fce2717567b6e249452f0849040ce1f60c40519a3b4da78676510fd01a388463fa50b383527f88579e483eb9debec1665430bd89c7ffbeadd2a207b1d4f23b815fcf8dc4c0ca63251853e81ced4795b1653b88e7ecc54ca4c86858a4405a2c66186a465317af761f5d6c6547b9d755ebc334b2565270206cda7cd54a21167131533e6aa62401b213f1f8575208309ae1294ed5f3b7c75ec47d3b3a911c9efc5a879272b399f6dbc6f24ac2636234b8aa9ac926d256a2f8b5c12c3398945e0d5eb45e852e012179f1c51ea31db43f93b961764fe126fc55ba25b2a43fa7bf571a2cb1e8c17ad5a8e74024732273e0ad09adc53147ba6270a133b51b9026f657cec7acd30b64500b4fd29d1507eba1dd720f99ff57c89ce40717f50da517d3f5add628b8d6d2bc6d7e0d7fb12bd17d02d694ac5d20d577bce8278d0832758f9d8af716a14c9a28e4d17f555dce23e38e1a8671d40a0d44ce8055185335ba18570dd31a7a8142b04871a00af9e5acaa4881c3dbd3cb9d623c586693c554b3d9cc57b9557460009208c8d7aca94a94bc3326936759d4ff5ed9558488c50f534d67542b2d0610ab6d824321c6e7cf5fb035afe61edb0be413a6e60b9aca7dcdf8cbcfb1b2e2b50ea2ebea634a2b4a7b54c91efbb1417928583a410b5b91eb8e009cca909f6cec0740209e0199c86e701eaa2606b0988a378539ae3ac7840817a003293ea5973d76dfcd597f719f2352f4a58bb1c887eb276190f4f37608fde1debb387107a6d9752c0605ff7cd553f30453a0b9150880f779a9b58d18ff76e4eef62eae6cddc02ad1864905f6c6cd3b5912258ab88e3527060e7f4fa20dfbbe9865c79a446ca19daaef6179b10d98e4639bd02119dd8a50db7e23f3248d923ecf84013521bc3a1c5e30a79f64a23cb2aa187faf87701dbf7bdd1a5dd7859b95ee2ea1cbfcfa6be8878d492d4a2f49d8a0a711c1d3262be243ba45c044c3002a7a79428b0e31d868d06b5e55f0a833721fc8b7f09cd4001cc45faad42c25d12a15f35d4cdb6ca697b73952260c784898ed8240b716dc7c4a102f385811882c91835191061d82e9010fe95922420614447bd67220fd33fc4fb93a7bea205222de4fe7e3f395caa52eedad4cde9e859c30587442a0f35774023d6bec586f752c8fed86f664e327c602734153512ac63f923b6c263eb54bb76a4050a929961d24ee69f2d0323d8e81d03e1b179db41d7f71c8d6ce6a95f869ff00513bf6a718478edf28b11ab564d90d5db2eca5daeafcf47168ebe180e1a4b36f919130f19fa37a4d90fbafbcac27c6a10ff701d9fb9240a5dde6d96d20f831fb8207a853ba89d236396ff0963e4e330a35f4aba6b8f07d20090d7cb5f00cb82d24a321e1a54715c5d67c8e34e0172cc2bc24a564ca6404f4f689338ad4fcbba33b1a7509068deedf355d2e14b3e1f49d7abe3287eafef2ea4b2ce638a82ab4b41ae8dbf13870448e328329c1a6cf502025a7e1d0f6ee221ad7b74820e4d25e5d0548c79a38a3d7399abaf1298bbd2d7c2847e52d14b991da56a22f67a51d569dc25d8f056616a2420a7a95856604b8126d85a9c4b604d91cc28d4018d10e9dca8fb2622162cbe99e81322b3fae7c7977053b6badd06513fd0690144929ef3a8359b22facffb0cef78087b2ed7408e6a83121fb782ee173c1f0582cf4755c9eeed1a47cd060ddde21764c2904c6de5b0dfcda6ed7ec5404f3ceba37f48c16a4bc9561b3ed0f1f2abaf86faf071747f6b10d839d367f45c2498d6fa4bc187490bde2d044bdf969e74277754b5935cf95dd4a0d64fafee075dad6b9ba09b74011cb4273900d2f3af53bd469a10f46e6db8c6f086fc23e9972951c456999cde700655b01aeb11ca0c462a051c085f71039d9c9fc88212622fdfa4ec38ffa592b17f409ccf9803c0ddbd8089e28503d28758695233419c19d19d55366fa7cdffb2f5c96cf77e6cc5da1dd0c63c2453574350080637e85d07293173d22742612040caf4d5e7e52818141030d66bb3f1296f0e6d4e35791e41f3564c8aa984bd5e9f29318131b119fce92da1665e054fe5a3d47ee3a646acba1d57f1e056e695b25b7d447d1604816578c86ccd8c246b5242fb76ed8ac82eb1bdef612ff0d618496323728bb5d21f51b387704b9b3acafbb9c35fe5db3f89a417212bbf3039419d5b141daf53570c28df7c17ce6ddb0697b4c09a5cfdf8f06758e8093e145d583740a941220d320dbe5b70fb802ad86eb3860317179d6e6ac5a7cc96279914a0bf56ec1445fa9f2b9eb9756521cacd3a1fe22f19e88962e4f7660cb405704056fde64cf5e40f900c21b8e7fd98a9ef7d4809f6f81fd271d112d471eddf229efb817e02d0211a315b5abad4acd20b559165eec5d533d87657d48943dd42e1bdd627560995e994755b4100919eff1ae47c306dc8a7bb0b46e23f63a5baa22816a05d2d36ac73a02681a53c3df170805de4b1d5444c384f9e1dde1084f0a99dd83dbfa15f9cc8fb30d6d93196b940092fd25d7ac44a50226148535767877751bf45af52ccaf74ee61233ff987e25e5ea840089dc01dca66c1d75991b53e82aea2551bc24077fbf25fd1d2b48a7f698da6c6fddf07cc2e3764fc08a020659aa00e558e41b569ab7a8ee6a2159f646fa7e083a5045794a367f19fcf3ac47abeb989b9ea96fd2b83d7bada8c0241869d7d8039ad084c9f97ae0709b484179ad4f0d6bb3c0bbaf8bdcc50ce61650a5e54cf873005d596fcffb030e9c6746fbeffa16d6a78ebce8aedfdc70d5ae02d15aee0fd0085b52cca6f7310a28d9659dc4bea19f03b38ac21f630816fa1ab6f18e4098b8b58c4e3145d51940d1825494db235762ad0c9ea085fda03603101a9b00289756b85042f9c9125255458577f1e40d568218f18a48d0a38b9df8d065bee66d6e456d4e9c0f2d3280fcd910649e3a58fadc89d9af2c3ecaa43c7381397d5beebcdffe377ae3becc1b4e6ff4c48cba7367f586f09f315e994a32a8733113f16eb4bd42ca5f2f3d55575a4118093826c88c9ca6758f03a6fc103ecae5eb73f30be6e47ed753269f6c1b2bcc1c96dc16498a82ad847bc3b674a3ff1dc0ed2087b54fb094bb842cfbb9291552e80a58582d049c0ad11055f5648726e9985e5efe4df3ba8690a76c02e0dec9819b709d514951946fc74e04b5348bfc2024fa28d80952ade5eff31a268777556f51566238d4dd833bd5fe453c4f635a81f0b83a5a4722e3e0325f072a5c00b034a63e81dbc00eb3c2b1e54f2841d4a7e927935b26fb562caae49a3e0fc8756fbee08e33bcfc7661a97a02865cd42826f06e198c18553d84e2d4939cc7bcc740d406e69ddada475a89bc6f0d7655a537f9f24bc34406d4fd3a3b6e21f137a28a9d5324bc2ade0579f0bc3a977cd87a13792c3294b0d1b83763b6ea8cad4d6792cd3a06568e6dfb2f89374c3c6a0d003886516beab4fb62c5b4f179fd0c2f66d1d438e8b33d8ec389cce31f7d2633f9ef7367fd6493dd8768d2492717582dcec0540a692bfe957aa002eadb449edb760696a5bf94b7fc5087952bf055da113a785cca1b1ad247a619bb6c1c6acccd7f7e132e4a51a189da7ed025685039d250c6904f0bc72da2b8e89a73c10aa002db1a9bc04e342ab01eac3f8220870f721f315ee82d49a2b932bf14f73ca7d6d1f4ff81383a7c9940f35c0a86a119a7c7cadc69c1822b8448a7859ed6286b6341e29d1df4caff66f7f9e3d1adfec377c0b1d4c9c7ec125d93e93e13ca4cc28a76da9e7f75ba21f2ca3ed04e2950c8cd78300637e5b8da13a245036112d99a706e1ce6bdbf9a9e5638bc41fd5005bd084fec25f0d8645a867f6030a5f695380da2261990f8806d3ef5d913b605a776392cdee0b65a088dca9bfb66643d3487ce7c277ef6018dcee4a66ac859e6f2fd8b4a6f77797cf2472e641a6b2f91874f2edac8ee0fc088a8b6d701d90eb5686d0f56d3bfd1e5d0540f964e76ab010ab5d3a7a5c1fea1e0f211af06c8d1dda947839db73102a33a1bc01a819cba3291481d2bded7ef73fc69eaba2dfff63b1022c38c9c69b890f9ed5523a5304d8dd7661016b3fe0d755aa3c23e5993542c30a8a614519a86a3a0413c83bcf531d8057f73e6671330e4cc759d77c6208fa0947c3baec751fe8480c27af57d9d756a16793ab585182c4cfb3a6c637170d025285b464e7c0f56c67ab937b0181a330cd93e24896bdaf0951b61f1f98997f29b2fef00068efe11810b4d35e5ec81b1ac8246cc7d1d97747e463df541e6993f8ab2a2aa635e37b75ce96f8e5ac3a546daab6054899aa5367e1911b89f558304b01a2a6a79fac464ca98b015cdf1c98becb5d2ba351a58a29d096a66c5f49b07fdcf0c879743ccb575076e5026b65cd6fb87861aac805ea33abf73cb69ec251512def3b166e143433bf5ffd7c98d094f6a789809e30c57cca4e259ce183feb7b33c75dfa7a60841fd824506d4974df0f04c753c3fdf209af790cff99d8f35e72f76c0321cb072e8f22bd0bd886eccf8a21ffc9504b37892bc55f90647f9bde60176209081521c8a6a7906a490dda06a6af6f2816b7782c6bd28e0aac71da30aca5fd9afac27c4ff113f3c1051c33dccf8b8649957f78bc2684d4f3142146db25060114e3f9cfffde6d12d398cfb2a45e8710973f4bd6d25daf6323894a4098a5da3adeb864fed9aafd2ea0320583626182351b608bb32e96a7c6c7398b7a29e6300ef61c820b8b3a4d5c8c6354a1d8a83f23661b55732716fb110ded49d3457b35063bd494ab9af02a8f6ddfbf9d700aaae070a553bc469787968a0bbfa052c6a0a219078126387c056e453a667baf98ea9d90334a4bf590c7280f7fa67c34e9409a26395b5de51994f2be1b0d22793e7255052c47a27ecc758c98489b93c3c97db637e6777dffc03a1b8de6062faa47ceec22cfe386015e1c0c305967da6fb6119ceb0b38e42ddb067c8b81ff05203aa05d9e99fc03700196eff6845a2f781b4ddee43536a3211e1878114e1fcab5c3952f750eb5606bdf313aeef0d3b7d0017ef3592c947175c525368e30331b967552d0923144a70a03d73247d8ee2d39e91c0f3ca99ac25d629b3183cbaf322bbefa747348ae51e3573e513d6699873efeaf429438ffb5e28daaa0eabaf3c6145f3177eb49fae6baf566cae2ee8bd597d0422a78970f079cb7ccebc2fe01da75d6763766274bf567e7e91aab750207247a7dc823eaa73e8c0463efa0c72839f8c7306981afcc39bab0fca30fdc41e3b7296d24c10a6e71a45cff55858d1429c046d6b6cd36af9a9cc5f7a8d94b1b3bf373c0ddd72cccab2ce85812c0d0d8d5afefe76099e8294c7d7895ca64e80515593a7dfd9e07f7b1b0b1b00dd683365b77f9ebd7e6b4c7043bb87b19de5041cde7e60730a620349ca13bde6a2b0389fb82f440d5dbad8c84964543b5ac7c4daa78af6cb0577928792ad69f56d0450a6890d1cf0bc12fa77307af34af3db856f637ec250ea1bd43102ad2be2d48d79a2c8310dc6aaf5e39523f774735bf2bb762737010b8642f0b2dab58534428ab29b24892ed0d6426f1374ad7169cd80ae411a9cf9698c251490821e81fe2faea7320b731b14b9306e563952073a3fbf4d9b705622537013adfe38a46770dacfaec06bad8dc3642a0693f7a7a50074f7aa5bbe18e75fe7aed5ea86e7a061799e768590de2e510228115ce9951e5d3f282b6113d6661b3b88255c590b38af3a8ac2efea135b595434bad420bc8fa065aca14c3760a91946241dde729d16ae4ed50b25e782fbaa67e4a59fe378c63b257bb980352632ef3fcc73b651999b3a52af1f68b78a89640c15c8a2b17655627f8c564ee40707a8a9abcbfa8e182cc9ed3948d6c83f6d50850420c1f3032c312671bf83602949e60008e16f39edc749a61532e0c8d483682e491395502b9a653083d50ca5b70f42c9908be948b67f176c8b7b331cbdc7310bbc582e6220ee4d36f3de1f6c8c129d807f62f5cdc78977390f0871a4fa7a5c2d5f9630fcb6ca08b55b43af8e214de9e70ce72162794cb22c07d77a750421a0983c3fd737e8288d7530e517c821d04ed0a161bb8d857570522ca91ce4aa6a3ee7be276434eea7606653f73e95253c61d58a09b4d665c189280ff689ff4b331bd5eb4106166cafa220c41a8e8f70983fab82a245b81864fb7ff40bb560c524c71c9a221d71e3be2a96a470c0af9d59980f880430ca20119ddfa623e99a3fbe8a379d4a67ff1ff4f58f9c4aa491af6c851156eefe4421b22a46405298d7d59c8e518e2cd283963f6931db87a80dd3a39c28d80d9237ec34e5c38b20212f98c3ebc82358db224aecf2b5740bdd21401c0e7518ddd83a89a8ee8dde70cb5b99df398b2f96e86e2dcf56f3beba7584d6e48d9ecb9211e57d069f0f8f0d173080cc3746b632279b3a4212c5265022b331fd90bac41d50993e351f1d02314ba8882d2c872a97eae0c8d0282dc15189b8bc2eaee0fc9f6ea319da20f9b3598ffd5e3232709c1ab4c5f55425c1b27ef3d30f4ce90dcae987e064480e83d263a7fc410b42701a046eecd731f1e230c6b2359431e0030e2471df435ae3fe5480495a553ffcf3701512e905bd50562b7b3ebd896d1b2c51996a96727998480c31e07ff63618fb1f5f563129e5dd0770ab0f95f82c3c8e0051efd96eb19f6e1e901abdec3ef2b2e19e19952c47fee3914f242ab906a9564fda50f4927c46ddc94bc44630f6b9fe49ec5e9194db1237a43b2402eacd46011cf42a0ecb9515ddee90c8e047fbbfa47476e8698e12a5cf39d06772722f438ed78af2a40a5431766a6ba48e8fad54eed5aeaadd45580ea28534bd3242464d3fd644dc67ae796e16ff26c06400e13064d203326c4c57f553f6833cd747f90735fddc1436b4cc8601dbf23cfb02c4e641e8d5dbd903b50d65ebd0f25e08a9b07e3f1f0eb9de42c867086ddb267bc931de88bfe7c0a1c83c60b087942d6295d3936441c41f5513301139d3d81e6030cfd24a3265a9cc5eb8b002ef15f1e7f9ace750f3db8cf06a8c2cb9079e72011d86cca56c7204528fcc8f12fe5b80749c90d1e47e28306614c9484123c0d046a997a38a876da01b3b8c4ae12ab4684e10b86c0f6eb95c9f6472ab4d7d684f81ef1d8e74180a66eeed0440c53cd34f8afd4710772587f7251b5f58e9ebb3dd5803f738dd5de0f7ff23a37a456270fa9835e142ef6436a9e3be23baf5d0b5f927a355c235efdbdd50cefe78b0a900c831806b5d3de16ca0b473476c63bf24d94b442120e719c6c156fef442a4aa8d2c8b183c15e185a261184714a47c0f017f01e38c4bab39e587a928908252223658f348326cc1ec8c7faa15894243ff3af392e55ba4d35cb40bbb4c8646fa01bfcc6454242434020a2266e63c6f3943a49c2c7721f937cee0fd7854b2e158a4bdee7308801a2a191f2a2c3ed8976e290417c9ddfdc34f8d394c6f8c6857a83f6499ab6dbd176e496416e380a01ab43449b5ba676cddba76963da376ad28d6de8693c31ac5255674d37210e597bd5e281df6d38a6d296a4f39971eb0b95d03087dc2e47948d1c5d4d15394e23b8b8681e54ba9cada33b3f7ea8d640a6164928443d9def9aa95cb7c442f148b5f4b929645ca73748b27794e5e08eaadde9faf4e1248617cd5880a6587d3e08a7fce787b896aa7f94e55914d519b2e9e499f5c839d2bb6a236948f43adff4bda5dee70b45909fc9b3464d41c7536dbdbf85a28a881b039dba7ca28159bfe6069aa31deed22690b72a81a71bb4e6955a4b463f239c8f52d13d7689e4c876b26c574b92289dbff7d9bfa9254d75fce2131e782b1d65b1504b90be8225a8352dda9e3e9dc0ac2444cf2ef3dd8c6688455e8c4c43544dbf652232acc7fd2e593c4bac684e6483ca5c80dcbe9bbc54f116243dec85fb3feb4b34eacdc02edb0f4ce570965846eb6419c192013b2fd57e4720a56893b0754d1451d0fe285d961990761bd4de0d8bf5664fe67cae7a83654cfaff9866ef23834f5591b4798a7369ea032e7358cce3051e1e7d462a3fedc2669ec3a7b8686c97feff64d2c67e6e3c14333f9d04ab403abd66271cfb1ec7b80bc9b654043b615ccf4d552d27eb43db18e72498821695156b9ab9cd02988871209bae5e93d9fc55657461127e0bbcd503889ca1179a02034faecbe9feb91478c030aeadf7c543e745287ca00a50e06d549855c325181342930556b48ae5ec30333d5c27c3f53be1ff89b69b144592799a969fac0a198d3c1e8d3032ea3b3588932156e2035c662fd26522f96b8064aeda9a18ee278a9fecb7be25850a1cff96c70ea4806b57580245950d14dc17a122b2fbeb39f66af8a5c3448462b160cf404c3b6da1c3e1f4ad0e9fc8985509d9d3530c8dc42874a20a358eabfba523d3227e9d0d7d09abc9f24c0ecbcef25a0b3177dd426488d24157192a208ac642cc3e124e6bc876f2524b040276f8393839a3bda4d13f8058bd10bd14bcb54cbfdc6d1e691b41aa9d64068c4206a2a4f796633a93192e34b479b9faadd5296951a5b162f54f31c143da72ea4ffec080a5dac22fa267103b577a93b8ddfead64512975ee0bd55a22085f5f409f2bb2db5937319e2803d57cae20ff45fb85a8951a2df0125d227015b3d2707560df60bc5e01223bb09f76057a7681da6cf804a5357a04ed627104311e90930e9a2f4056aab460bc27c7625b5445977eec99289d0082d55c57e510c4d51b3edf1982897ce418c148ecf9a528af695ff5bafec0be2bad12d6e00bcb92772efcf67a5daf88af4681ec1cd6915f358e838a20effa4c29b1738a3157e8d944b92cdc8060b017874649e289938f50f15ab9d78408781f25321b4febd8b09c48430debd97de283581779e34fb90bb3aa832234b9b5fd8397bd7e7db40fd83d4b6a4268981c789df22a9afba2c020af019123a7f4abdbffea9d33855e0f151658df1df326d4c5d41cf85bb8d508b5b4c25abbbc8ca0d29b59a40f691d8b9daa38765ecf5d0294560de52a9fb236481c4f934a509a0292bd4dc24f9b2428e986c5295272915704821501175e6417560d7ceca16c002efca93c1260def55bd0c97a176d68718c90efe887e99b0b3b4813ca89a407bbb213788d89b3bcc036fb42ba6c673d96ed40835c0ae0e6af6751052e78429bbf905162f231a054715fbfa7982292d28aa27bff9525df70986dca9d83852f99b303e90c9d7a438d228f08f026092db5fe23d47fffffa17240d291f3ffd8ddb7cb69933ec4db7fbf812f2e1cb053baf8fd7fad7b51924156ed4ab642e707f8ceec3fe17dba580096621508266d05acf98650ded29ffa33fd89bce239e5e6df9a3e56db9b9ed15d9ee2b95037a3fc675fa86cf51e49be40900cc433ec97a7f579a70424e2f4ca19835d72c823dc8e17cc18cb493fe691c07972fd744e074b666958df68e55f790a8fcd57d1fbf48820f34198df530a47932d593d20cb4337fec11ccdf94e4b442b6b33ef44d0e5d00e906684d68aacc0d77f54b3bde064ea15f949e70f8bfd53a052415b022502ae657ac90be8984158e7fc0fd7e6c02570393bdc6db07b10dc426fb068e4063bb0f1f77684e58ad7affa77f7385accfa2490860940f642c1ae6622b61ab1dfb757e92d751f4e4eaebc827d90c73c0ae6df6e3a9442d8900da6ad4a6d0939901ff1db3a1f14844716a2df09c0b8501f35b42881e8ee0faa0a111021044ae1dd784a6782c97beda0c4dc3d222765d4cb564c6b5653ce4ed429bd39be6a7d3514a2b6239a35186af4ff8ee6c92dfb87ba71cc2265c63c9116abcee4ed467a89cdaa0c020f6f7506faaaa1b440f4d66b2c9a997055339e7435382d3c16b0766d0037755c23ed07c795fc2f9a5ce482b42d0958f9245e8bde3deb1bb253827966bc5e8e3e4f093d3c36923a0805cba5b9a40309ce91f31d6f3dce788c5b4a80beea888432033481fd2c566733e15a5f6f9c83f7a85e18cc73dd817176cb0deaa1ffc36125c0e38f9b1ff86e22c066dad3314b6a3aa5b29975572687983fcbe00869a3220f294a95d7daaa965a8ed191800b88be5afbc52d969dd5a575313def85cb8b3098b0bb3e213bdcb5050939e379608d186b27dadd2b0c422ec8b8d7be01a4d897f88af383802dea373cb3b2838f179e09e25fb53ef667eb859beef2880dc3bbfb94cda901e717a5efc350d6af67368c587e3060525d25c50de9c0f0e8077409ae6c599645f39b7ed344eaa7ae0e48290dc44997345ffa6e4a21cfa4912e6edf0405eddeb2c46a63261ed6ce8ac9a5da948e0c5fa1e3a89a354511aa5e23fa871e331123d7295db4edf2dd3ffea9210114f81764aec7160ecb8f859ecbe0c16b5b00f370c577b5b8433d6ac4fa354bf10a7753622eec3cace64259ef1ebf5454f09fab2e81952047cfcb859c81d79e1ae92b0b5e1b25cdde0a0d663c6353ae9251a6d36d9280ac79e0405b0529a720f22e1dba3c918e26f52a56136c88187a3decc9414bb1ecbbf6fb69bb1eda97c0964245329ed098e783668e9153abd058dcffcb00736c5e85e0e3ca6e9f9d2612a46f164ec65fe4fcd46a0b52217d8876083c558b939f963f44097ae3d97c2d15dbfc20d9709583d0517007f8156b2ff29189a7825751fb78065df91ed19f47da00b83180f3f5374b00869435e2b639439ece17605cb2b2e379d558fb7d9ab919218c25f6f04cdd7fbb07084d00dbe083b485d76c64c0db84e9c12f4bad42672ec9a846d53e1543de2c897ca58c2f061ccfce1e2af90f33765e4e4f89a16291ebea906502622b73414ae282859710b205b667d84c36cfb8a997118356d282a47e79a6522c9e3a4c507dc6fffc66393c7b0897c16682ef1d3eac9954c4b38cf3566c94222900be9d95dd156b8a4f996dd513681fe4f484ca5599f56588bc7facc35988e146f6fbdf08cb3c095ebac6ec71ac1561314f1a885ae37f3c8171713171b814cb6b07439dc56c986585939446a4629f521ffc29cfd08437549b78821e1d2f2103c46444ed342e7d73e8ba9a08340dd67ee48b9dbf013e597f8c5969c8562349b6430ec99ba44eeac2fb3a19fb38fb39ae73bf8861265d609ca3896f60129c25b0e3bc8841447506f09e033de23436dfd80bceaff76090c0c44a2b05ed8f28e4d15ffb03bc041ac8fc6704f299617340bf6404294578575539cbf4f7dbf6ef072ed5f8f9d0c85a62be324fd493b9a6d4eeca6ecb41a50e23ade88a3e6fe643cacb7ce8cc64a09038eba67beb5f68a6179498c97e6cb8219b98cdd7fa15fc3869fd4ecbf90e84eca0213756b0c8a395c0be9f5371817219b2fca8f587b0581261fbb87784f3cf81cb35b0def7023351c90b7141bb22bf4924cda2acb0f14699ecf5a62de82889718312842ca0f5065cdbc67415ca0cfcda7b12590e36878e5a4b1ae906ca85cf5742f3163bf2ca9e42e50b4281a5cc5411e990d83fd23ec7fdda457afe381649357805ff2727fef70acc7071cbbf029e0612410d01aa28af76a549d5b315b5a635329d86b1a84c2e6a4702f04d4b6b36cc5c655fe778053438624ccb6e6bdbffda0452ea6f2f023c6f1445db9f9328cdeaf9401c67d53dd96d62dee83fb7656a8a5b2ff9e382c350b52cfa961dbcada1eec58a10fa33d5f03baaa94f6c0cb7ea895741231f7c968e018a76c4eb8ccd27aeec49af7ce942d7d83b5d8008c33dcfdb6a7378ac2bf68da77321c40392748ed14a767a2756fed0fad480f9c0af8aabcdc7eb3ae761b62e41fd43a76b16891b2f62332e818ad1b47363d6869a62b3d4aff581a80643bdc13e26b77f3933a3753534d90ee87be1736b0863a697cee7497508b58769ac28d9f3000a49ff95744397bc37bfd526258260f4707f2aa32e8b82cd4896a10cce68f8c1be02ce7f6fc06a25942e074bcc64d39be103a593ba69f6a9dc8ce0b80f33d90d7d4bdd074ce9f454a8944902e5b432303ed75497b94c0f84e4172afccb4704037a672b89ef58b024b8e1da6d3b166d4d3948059a6054c5546a2b5578ee8aee64dbf972fcfb4511c691d6df020347b7ad4213fb2e7eaf7263c0fa67cd4717b4224ee9a120f9afbf7a01e0f5f9659546be51f1bbd2be968b616cf82825f4499ccd4c13117ab27c13b2d5204d74060d0e68b6b565ff5347733cf3137128a652821526ec62d30d7f085963fdd38c96b69cf277e31d24760afcc01469d83c77031fc03351865c4638c71a98208abf0f10e432b241737aa25ecca5eb7e102f77080f72031bb7333aa5c6224b0169026876fe4969e9d45e3fcc6808b2cf80fadfe59e94f1e3245a3310a20fe351040c839ec5c8b08f62840756c7e8c68bad9d542b4c19009ecf28a1d58b95f71cfadf041e9a9b6d23bb33293ea387d5974ff3ab6ac34edc5e0fa1cb07107b938f2ce44cc9ccfad2a81dc6d64650ca363db4b676140ddf0e63d18d7872af481090ec706e0b7644f98fe14e4a380a0c52dcc504fb8330c76ce61cbc81a4b4b20bfde4a51af0b16fdaf602a45b5a582a3c31af5e162d7bfab6dc9b1cd63b838a4b6f8defd91c1195e8c9c6dc19abbab6bc827ffd613635dc922692dad4ef9b5d6d5a10d0c37a09cba8892cf777b25df0160b4365f9a07db83e4db90ceef463953b75ee0295e19981384af7beaa349bd93f265fe38de18240d90e1d5ba68907a16de30aa495e4db6ec8035a62319db842441b437ad16239fd19bb35c25191b13d8349a4d2348cdf6551f8b7d2bde2e60f8cd2c1ec6d604567d114f3042472b264c93df4721097e889dc4943e146f3bd83f38ff17cea958b727ad642e22ceddeebac9d73ea0a63a888b17ecbffb7f9e00fffd2a73fc7fd13273e42c3c7829090e356a1e4b6b4f420dcdf35ec86df1f02130c941ed68a7a60c42673959faa03324db58aa9b9fbe23da750abb910fd09f147fa98e914f847a2a68d4c2ba07971e50ae37ec7acb5df95fa616b7714b2076e69f9f5dd2181821cefc8464c5b44d1ce1419fa000a319bde06527a43cb5a34569eb28a98581ede7d67d3a2de1dd632dcdaab32a2421a3c64e6d1421361ff1009624eca62f77025321e38ba13052e4079f1b0aa6d857264e6522fbf4b40ed268acc3</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Please enter the access password</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
+      
+       <hr><span style="font-style: italic;color: gray;"> Please indicate the source when reprinting. Please verify the citation sources in the article and point out any errors or unclear expressions. </span>
+    </div>
+</article>
+
+
+
+
+
+
+
+    
+        <!-- MathJax配置，可通过单美元符号书写行内公式等 -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    "HTML-CSS": {
+        preferredFont: "TeX",
+        availableFonts: ["STIX","TeX"],
+        linebreaks: { automatic:true },
+        EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+        inlineMath: [ ["$", "$"], ["\\(","\\)"] ],
+        processEscapes: true,
+        ignoreClass: "tex2jax_ignore|dno",
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+        equationNumbers: { autoNumber: "AMS" },
+        noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } },
+        Macros: { href: "{}" }
+    },
+    messageStyle: "none"
+    });
+</script>
+<!-- 给MathJax元素添加has-jax class -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<!-- 通过连接CDN加载MathJax的js代码 -->
+<script type="text/javascript" async
+        src="//cdn.jsdelivr.net/npm/mathjax@2.7.8/unpacked/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<input type="hidden" id="MathJax-js"
+        value="//cdn.jsdelivr.net/npm/mathjax@2.7.8/unpacked/MathJax.js?config=TeX-MML-AM_CHTML">
+</input>
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2022-2024 Louis
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'photoSwipe';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+
+        /*高亮代码块行号*/
+        
+        $('pre code').each(function(){
+            var lines = $(this).text().trim().split('\n').length, widther='';
+            if (lines>99) {
+                widther = 'widther'
+            }
+            var $numbering = $('<ul/>').addClass('pre-numbering ' + widther).attr("unselectable","on");
+            $(this).addClass('has-numbering ' + widther)
+                    .parent()
+                    .append($numbering);
+            for(var i=1;i<=lines;i++){
+                $numbering.append($('<li/>').text(i));
+            }
+        });
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+
+        // PhotoSwipe
+        $('article').each(function(i){
+            $(this).find('img').each(function(){
+                if ($(this).closest('figure').hasClass('article-gallery-img')) {
+                    return;
+                }
+                var alt = this.alt;
+                $(this)
+                    .wrap('<figure class="article-gallery-img" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"></figure>')
+                    .wrap('<a href="' + this.src + '" title="' + alt + '"></a>');
+                $(this).after('<div class="img_alt"><span>' + (alt || '') + '</span></div>');
+            });
+        });
+
+        var pswpElement = document.querySelectorAll('.pswp')[0];
+        if (pswpElement) {
+            var gallerySelector = '.article-gallery, article';
+
+            var initPhotoSwipeFromDOM = function(gallerySelector) {
+
+                // parse slide data (url, title, size ...) from DOM elements
+                // (children of gallerySelector)
+                var parseThumbnailElements = function(el) {
+                    var thumbElements = $(el).find('figure.article-gallery-img').toArray(),
+                        numNodes = thumbElements.length,
+                        items = [],
+                        figureEl,
+                        linkEl,
+                        size,
+                        imgEl,
+                        item;
+
+                    for (var i = 0; i < numNodes; i++) {
+
+                        figureEl = thumbElements[i]; // <figure> element
+
+                        // include only element nodes
+                        if (figureEl.nodeType !== 1) {
+                            continue;
+                        }
+
+                        linkEl = figureEl.children[0]; // <a> element
+                        imgEl = linkEl.children[0]; // <img>
+
+                        size = linkEl.getAttribute('data-size');
+                        size = size && size.split('x');
+
+                        // create slide object
+                        item = {
+                            src: linkEl.getAttribute('href'),
+                            w: size && parseInt(size[0], 10) || imgEl.width,
+                            h: size && parseInt(size[1], 10) || imgEl.height
+                        };
+
+                        if (figureEl.children.length > 1) {
+                            // <figcaption> content
+                            item.title = figureEl.children[1].innerHTML;
+                        }
+
+                        if (linkEl.children.length > 0) {
+                            // <img> thumbnail element, retrieving thumbnail url
+                            item.msrc = linkEl.children[0].getAttribute('src');
+                        }
+
+                        item.el = figureEl; // save link to element for getThumbBoundsFn
+                        items.push(item);
+                    }
+
+                    return items;
+                };
+
+                // find nearest parent element
+                var closest = function closest(el, fn) {
+                    return el && (fn(el) ? el : closest(el.parentNode, fn));
+                };
+
+                // triggers when user clicks on thumbnail
+                var onThumbnailsClick = function(e) {
+                    e = e || window.event;
+
+                    var eTarget = e.target || e.srcElement;
+
+                    // find root element of slide
+                    var clickedListItem = closest(eTarget, function(el) {
+                        return (el.tagName && el.tagName.toUpperCase() === 'FIGURE');
+                    });
+
+                    if (!clickedListItem) {
+                        return;
+                    }
+
+                    if (e.preventDefault) {
+                        e.preventDefault();
+                    } else {
+                        e.returnValue = false;
+                    }
+
+                    // find index of clicked item by looping through all child nodes
+                    // alternatively, you may define index via data- attribute
+                    var clickedGallery = $(clickedListItem).closest(gallerySelector)[0],
+                        childNodes = $(clickedGallery).find('figure.article-gallery-img').toArray(),
+                        numChildNodes = childNodes.length,
+                        nodeIndex = 0,
+                        index;
+
+                    for (var i = 0; i < numChildNodes; i++) {
+                        if (childNodes[i].nodeType !== 1) {
+                            continue;
+                        }
+
+                        if (childNodes[i] === clickedListItem) {
+                            index = nodeIndex;
+                            break;
+                        }
+                        nodeIndex++;
+                    }
+
+
+
+                    if (index >= 0) {
+                        // open PhotoSwipe if valid index found
+                        openPhotoSwipe(index, clickedGallery);
+                    }
+                    return false;
+                };
+
+                // parse picture index and gallery index from URL (#&pid=1&gid=2)
+                var photoswipeParseHash = function() {
+                    var hash = window.location.hash.substring(1),
+                        params = {};
+
+                    if (hash.length < 5) {
+                        return params;
+                    }
+
+                    var vars = hash.split('&');
+                    for (var i = 0; i < vars.length; i++) {
+                        if (!vars[i]) {
+                            continue;
+                        }
+                        var pair = vars[i].split('=');
+                        if (pair.length < 2) {
+                            continue;
+                        }
+                        params[pair[0]] = pair[1];
+                    }
+
+                    if (params.gid) {
+                        params.gid = parseInt(params.gid, 10);
+                    }
+
+                    return params;
+                };
+
+                var openPhotoSwipe = function(index, galleryElement, disableAnimation, fromURL) {
+                    var pswpElement = document.querySelectorAll('.pswp')[0],
+                        gallery,
+                        options,
+                        items;
+
+                    items = parseThumbnailElements(galleryElement);
+
+                    // define options (if needed)
+                    options = {
+
+                        // define gallery index (for URL)
+                        galleryUID: galleryElement.getAttribute('data-pswp-uid'),
+
+                        getThumbBoundsFn: function(index) {
+                            // See Options -> getThumbBoundsFn section of documentation for more info
+                            var thumbnail = items[index].el.getElementsByTagName('img')[0], // find thumbnail
+                                pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
+                                rect = thumbnail.getBoundingClientRect();
+
+                            return {
+                                x: rect.left,
+                                y: rect.top + pageYScroll,
+                                w: rect.width
+                            };
+                        }
+                    };
+
+                    // PhotoSwipe opened from URL
+                    if (fromURL) {
+                        if (options.galleryPIDs) {
+                            // parse real index when custom PIDs are used
+                            // http://photoswipe.com/documentation/faq.html#custom-pid-in-url
+                            for (var j = 0; j < items.length; j++) {
+                                if (items[j].pid == index) {
+                                    options.index = j;
+                                    break;
+                                }
+                            }
+                        } else {
+                            // in URL indexes start from 1
+                            options.index = parseInt(index, 10) - 1;
+                        }
+                    } else {
+                        options.index = parseInt(index, 10);
+                    }
+
+                    // exit if index not found
+                    if (isNaN(options.index)) {
+                        return;
+                    }
+
+                    if (disableAnimation) {
+                        options.showAnimationDuration = 0;
+                    }
+
+                    // Pass data to PhotoSwipe and initialize it
+                    gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+
+                    gallery.listen('imageLoadComplete', function(index, item) {
+                        var linkEl = item.el.children[0];
+                        var img = item.container.children[0];
+                        if (!linkEl.getAttribute('data-size')) {
+                            linkEl.setAttribute('data-size', img.naturalWidth + 'x' + img.naturalHeight);
+                            item.w = img.naturalWidth;
+                            item.h = img.naturalHeight;
+                            gallery.invalidateCurrItems();
+                            gallery.updateSize(true);
+                        }
+                    });
+
+                    gallery.init();
+                };
+
+                // loop through all gallery elements and bind events
+                var galleryElements = document.querySelectorAll(gallerySelector);
+
+                for (var i = 0, l = galleryElements.length; i < l; i++) {
+                    galleryElements[i].setAttribute('data-pswp-uid', i + 1);
+                    galleryElements[i].onclick = onThumbnailsClick;
+                }
+
+                // Parse URL and open gallery if it contains #&pid=3&gid=1
+                var hashData = photoswipeParseHash();
+                if (hashData.pid && hashData.gid) {
+                    openPhotoSwipe(hashData.pid, galleryElements[hashData.gid - 1], true, true);
+                }
+            };
+
+            // execute above function
+            initPhotoSwipeFromDOM(gallerySelector);
+        }
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<style>
+    pre{
+        position: relative;
+        margin-bottom: 24px;
+        border-radius: 10px;
+        border: 1px solid #e2dede;
+        background: #FFF;
+        overflow: hidden;
+    }
+    code.has-numbering{
+        margin-left: 30px;
+    }
+    code.has-numbering.widther{
+        margin-left: 35px;
+    }
+    .pre-numbering{
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        padding: 18px 3px 15px 5px;
+        border-right: 1px solid #C3CCD0;
+        text-align: right;
+        color: #AAA;
+        background-color: #fafafa;
+    }
+    .pre-numbering.widther {
+        width: 35px;
+    }
+</style>
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+    .nav-right:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+        background: url("/img/gj2.jpg");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    
+
+    
+    #post .pjax article :not(pre) > code {
+        color: #24292e;
+        font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+        background-color: rgba(27,31,35,.05);
+        border-radius: 3px;
+        font-size: 85%;
+        margin: 0;
+        padding: .2em .4em;
+    }
+    
+</style>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+         It's a separate element, as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+</html>

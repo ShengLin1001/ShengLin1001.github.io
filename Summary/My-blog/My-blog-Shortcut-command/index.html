@@ -1,0 +1,2524 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>My blog - Shortcut command | Please be chilling out</title>
+  <meta name="keywords" content=" Summary-My_blog ">
+  <meta name="description" content="My blog - Shortcut command | Please be chilling out">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="About this WeBlog我是一名 2022 级在读研究生（力学 &#x2F; 机器学习）。本博客创建于 2024.3 ，为了整合记录读研以来所有的知识积累（知乎，哔哩哔哩，公众号，博客，网站，书籍）。 目前我对微观尺度下金属领域的相变机制&#x2F;位错演化很感兴趣。如果大家对我的研究领域感兴趣，欢迎发邮件给我，共同进步。😃 使用软件包括：Python，VASP，Lammps Pyth">
+<meta property="og:type" content="website">
+<meta property="og:title" content="about">
+<meta property="og:url" content="https://shenglin1001.github.io/about/">
+<meta property="og:site_name" content="Please be chilling out">
+<meta property="og:description" content="About this WeBlog我是一名 2022 级在读研究生（力学 &#x2F; 机器学习）。本博客创建于 2024.3 ，为了整合记录读研以来所有的知识积累（知乎，哔哩哔哩，公众号，博客，网站，书籍）。 目前我对微观尺度下金属领域的相变机制&#x2F;位错演化很感兴趣。如果大家对我的研究领域感兴趣，欢迎发邮件给我，共同进步。😃 使用软件包括：Python，VASP，Lammps Pyth">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-03-30T01:20:39.000Z">
+<meta property="article:modified_time" content="2024-06-21T02:16:33.835Z">
+<meta property="article:author" content="Louis">
+<meta property="article:tag" content="material science">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css" rel="stylesheet">
+<link href="//cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 7.1.1"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="false" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/avatar.jpg"/>
+</a>
+<div class="author">
+    <span>Louis</span>
+</div>
+
+<div class="icon">
+    
+        
+            <a title="github"
+               href="https://github.com/ShengLin1001"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="zhihu"
+               href="https://www.zhihu.com/people/bas-58"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-zhihu"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="email"
+               href="mailto:12324025@zju.edu.cn"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-email"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="qq"
+               href="http://wpa.qq.com/msgrd?v=3&uin=1770861169&site=qq&menu=yes"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-qq"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+</div>
+
+
+
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="All">All
+            
+        </div>
+    </li>
+    
+        
+            
+                
+    <li>
+        <div data-rel="Thinking">
+            <i class="fold iconfont icon-right"></i>
+            Thinking
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Thinking&lt;---&gt;Diary">
+            
+            Diary
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Thinking&lt;---&gt;Idea">
+            
+            Idea
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="Summary">
+            <i class="fold iconfont icon-right"></i>
+            Summary
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Summary&lt;---&gt;My_blog">
+            
+            My_blog
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Summary&lt;---&gt;Other_people_blog">
+            
+            Other_people_blog
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="Software">
+            <i class="fold iconfont icon-right"></i>
+            Software
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;VASP">
+            <i class="fold iconfont icon-right"></i>
+            VASP
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;VASP&lt;---&gt;Special_functions">
+            
+            Special_functions
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;VASP&lt;---&gt;VTheory">
+            
+            VTheory
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;ASE">
+            
+            ASE
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;Lammps">
+            
+            Lammps
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;P4VASP">
+            
+            P4VASP
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;Pymatgen">
+            
+            Pymatgen
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;Tool">
+            
+            Tool
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="Program">
+            <i class="fold iconfont icon-right"></i>
+            Program
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Program&lt;---&gt;Python">
+            
+            Python
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="Developing">
+            <i class="fold iconfont icon-right"></i>
+            Developing
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Developing&lt;---&gt;Install">
+            
+            Install
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Developing&lt;---&gt;Mymetal">
+            
+            Mymetal
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="Theory">
+            <i class="fold iconfont icon-right"></i>
+            Theory
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Theory&lt;---&gt;Quantum_mechanics">
+            
+            Quantum_mechanics
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="Writing">
+            <i class="fold iconfont icon-right"></i>
+            Writing
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Writing&lt;---&gt;Academic">
+            
+            Academic
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+            
+            
+            
+    </div>
+    <div>
+        
+            <a class="about  hasFriend  site_url"
+               
+               href="/about">About</a>
+        
+        <a style="width: 50%"
+                
+                                           class="friends">Friends</a>
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="49">
+<input type="hidden" id="yelog_site_word_count" value="33.4k">
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        Links
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="https://blog.shishiruqi.com/">啦啦黑还黑</a></li>
+            
+            <li><a target="_blank" href="https://www.bigbrosci.com/">大师兄</a></li>
+            
+            <li><a target="_blank" href="http://sobereva.com/">卢天</a></li>
+            
+            <li><a target="_blank" href="http://staff.ustc.edu.cn/~zqj/">郑奇靖</a></li>
+            
+            <li><a target="_blank" href="https://www.zhihu.com/people/obaica/columns">学术之友</a></li>
+            
+            <li><a target="_blank" href="https://www.zhihu.com/column/c_1680331980414226432">我的专栏</a></li>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索"></i>
+            <div class="right-title">All</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" autocomplete="off"/>
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Developing-Install</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Developing-Mymetal</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Program-Python</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Software-ASE</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Software-Lammps</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Software-P4VASP</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Software-Pymatgen</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Software-Tool</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Software-VASP-Special_functions</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Software-VASP-VTheory</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Summary-My_blog</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Summary-Other_people_blog</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Theory-Quantum_mechanics</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Thinking-Diary</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Thinking-Idea</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Writing-Academic</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <div id="local-search-result">
+
+    </div>
+    
+    <nav id="title-list-nav">
+        
+        
+        <a id="top" class="All Summary My_blog "
+           href="/Summary/My-blog/My-blog-Literature-summary/"
+           data-tag="Summary-My_blog"
+           data-author="" >
+            <span class="post-title" title="My blog - Literature summary">My blog - Literature summary</span>
+            <span class="post-date" title="2024-09-10 21:55:00">2024/09/10</span>
+        </a>
+        
+        
+        <a id="top" class="All Summary My_blog "
+           href="/Summary/My-blog/My-blog-Technology-summary/"
+           data-tag="Summary-My_blog"
+           data-author="" >
+            <span class="post-title" title="My blog - Technology summary">My blog - Technology summary</span>
+            <span class="post-date" title="2024-09-10 21:50:00">2024/09/10</span>
+        </a>
+        
+        
+        <a id="top" class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-Log/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - Log">Diary - Log</span>
+            <span class="post-date" title="2024-04-10 00:31:48">2024/04/10</span>
+        </a>
+        
+        
+        <a id="top" class="All Summary My_blog "
+           href="/Summary/My-blog/My-blog-My-summary/"
+           data-tag="Summary-My_blog"
+           data-author="" >
+            <span class="post-title" title="My blog - My summary">My blog - My summary</span>
+            <span class="post-date" title="2024-03-30 17:46:59">2024/03/30</span>
+        </a>
+        
+        
+        <a id="top" class="All Software VASP VTheory "
+           href="/Software/VASP/VTheory/VASP-VTheory-Classical-literatures/"
+           data-tag="Software-VASP-VTheory"
+           data-author="" >
+            <span class="post-title" title="VASP - VTheory - Classical literatures">VASP - VTheory - Classical literatures</span>
+            <span class="post-date" title="2024-03-30 16:00:07">2024/03/30</span>
+        </a>
+        
+        
+        <a id="top" class="All Software Tool "
+           href="/Software/Tool/Tool-My-Summary/"
+           data-tag="Software-Tool"
+           data-author="" >
+            <span class="post-title" title="Tool - Summary">Tool - Summary</span>
+            <span class="post-date" title="2024-03-30 13:29:09">2024/03/30</span>
+        </a>
+        
+        
+        <a id="top" class="All Theory Quantum_mechanics "
+           href="/Theory/Quantum-mechanics/Quantum-mechanics-some-website-and-book/"
+           data-tag="Theory-Quantum_mechanics"
+           data-author="" >
+            <span class="post-title" title="Quantum mechanics - some websites and books">Quantum mechanics - some websites and books</span>
+            <span class="post-date" title="2024-03-29 21:31:42">2024/03/29</span>
+        </a>
+        
+        
+        <a id="top" class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-I-want-to-do-now-keep-updating/"
+           data-tag="Thinking-Diary,Thinking-Idea"
+           data-author="" >
+            <span class="post-title" title="Diary - I want to do now (keep updating)">Diary - I want to do now (keep updating)</span>
+            <span class="post-date" title="2024-03-29 18:17:26">2024/03/29</span>
+        </a>
+        
+        
+        <a id="top" class="All Summary Other_people_blog "
+           href="/Summary/Other-people-blog/Other-people-blog-computational-material-science/"
+           data-tag="Summary-Other_people_blog"
+           data-author="" >
+            <span class="post-title" title="Other people blog - computational material science">Other people blog - computational material science</span>
+            <span class="post-date" title="2024-03-29 18:16:05">2024/03/29</span>
+        </a>
+        
+        
+        <a id="top" class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-How-to-do-my-research/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - How to do my research">Diary - How to do my research</span>
+            <span class="post-date" title="2024-03-28 13:30:54">2024/03/28</span>
+        </a>
+        
+        
+        <a id="top" class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-Writing-at-first/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - Writing at first">Diary - Writing at first</span>
+            <span class="post-date" title="2024-03-25 22:00:04">2024/03/25</span>
+        </a>
+        
+        
+        <a id="top" class="All Summary My_blog "
+           href="/Summary/My-blog/My-blog-Shortcut-command/"
+           data-tag="Summary-My_blog"
+           data-author="" >
+            <span class="post-title" title="My blog - Shortcut command">My blog - Shortcut command</span>
+            <span class="post-date" title="2024-01-23 01:33:00">2024/01/23</span>
+        </a>
+        
+        
+        <a  class="All Writing Academic "
+           href="/Writing/Academic/Research-literature/"
+           data-tag="Writing-Academic"
+           data-author="" >
+            <span class="post-title" title="Academic - Notes">Academic - Notes</span>
+            <span class="post-date" title="2026-04-13 11:35:00">2026/04/13</span>
+        </a>
+        
+        
+        <a  class="All Writing Academic "
+           href="/Writing/Academic/Academic-Notes/"
+           data-tag="Writing-Academic"
+           data-author="" >
+            <span class="post-title" title="Academic - Notes">Academic - Notes</span>
+            <span class="post-date" title="2026-04-01 17:30:00">2026/04/01</span>
+        </a>
+        
+        
+        <a  class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-2026/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - 2026">Diary - 2026</span>
+            <span class="post-date" title="2026-01-13 19:58:00">2026/01/13</span>
+        </a>
+        
+        
+        <a  class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-Plans/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - Plans">Diary - Plans</span>
+            <span class="post-date" title="2025-11-05 09:14:00">2025/11/05</span>
+        </a>
+        
+        
+        <a  class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-2025/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - 2025">Diary - 2025</span>
+            <span class="post-date" title="2025-03-04 21:13:00">2025/03/04</span>
+        </a>
+        
+        
+        <a  class="All Summary Other_people_blog "
+           href="/Summary/Other-people-blog/Other-people-blog-Metals/"
+           data-tag="Summary-Other_people_blog"
+           data-author="" >
+            <span class="post-title" title="Other people blog - Metals">Other people blog - Metals</span>
+            <span class="post-date" title="2024-12-18 09:58:00">2024/12/18</span>
+        </a>
+        
+        
+        <a  class="All Theory Quantum_mechanics "
+           href="/Theory/Quantum-mechanics/Quantum-mechanics-Atomic-orbital/"
+           data-tag="Theory-Quantum_mechanics"
+           data-author="" >
+            <span class="post-title" title="Quantum mechanics - Atomic orbital">Quantum mechanics - Atomic orbital</span>
+            <span class="post-date" title="2024-11-21 14:55:00">2024/11/21</span>
+        </a>
+        
+        
+        <a  class="All Software Pymatgen "
+           href="/Software/Pymatgen/Pymatgen-Calculation-parameters/"
+           data-tag="Software-Pymatgen"
+           data-author="" >
+            <span class="post-title" title="Pymatgen - Calculation parameters">Pymatgen - Calculation parameters</span>
+            <span class="post-date" title="2024-06-24 19:17:00">2024/06/24</span>
+        </a>
+        
+        
+        <a  class="All Developing Mymetal "
+           href="/Developing/Mymetal/Mymetal-Lattice-mismatch/"
+           data-tag="Developing-Mymetal"
+           data-author="" >
+            <span class="post-title" title="Mymetal - Lattice mismatch">Mymetal - Lattice mismatch</span>
+            <span class="post-date" title="2024-06-08 15:30:00">2024/06/08</span>
+        </a>
+        
+        
+        <a  class="All Summary Other_people_blog "
+           href="/Summary/Other-people-blog/Other-people-blog-Machine-learning/"
+           data-tag="Summary-Other_people_blog"
+           data-author="" >
+            <span class="post-title" title="Other people blog - Machine learning">Other people blog - Machine learning</span>
+            <span class="post-date" title="2024-04-29 13:00:00">2024/04/29</span>
+        </a>
+        
+        
+        <a  class="All Developing Install "
+           href="/Developing/Install/Install-Software/"
+           data-tag="Developing-Install"
+           data-author="" >
+            <span class="post-title" title="Install - Software">Install - Software</span>
+            <span class="post-date" title="2024-04-23 10:22:00">2024/04/23</span>
+        </a>
+        
+        
+        <a  class="All Summary Other_people_blog "
+           href="/Summary/Other-people-blog/Other-people-blog-Mechanics/"
+           data-tag="Summary-Other_people_blog"
+           data-author="" >
+            <span class="post-title" title="Other people blog - Mechanics">Other people blog - Mechanics</span>
+            <span class="post-date" title="2024-04-22 05:05:00">2024/04/22</span>
+        </a>
+        
+        
+        <a  class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-2024/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - 2024">Diary - 2024</span>
+            <span class="post-date" title="2024-04-22 04:52:00">2024/04/22</span>
+        </a>
+        
+        
+        <a  class="All Summary Other_people_blog "
+           href="/Summary/Other-people-blog/Other-people-blog-on-the-way-of%20doctor/"
+           data-tag="Summary-Other_people_blog"
+           data-author="" >
+            <span class="post-title" title="Other people blog - on the way of doctor">Other people blog - on the way of doctor</span>
+            <span class="post-date" title="2024-04-20 04:26:00">2024/04/20</span>
+        </a>
+        
+        
+        <a  class="All Summary Other_people_blog "
+           href="/Summary/Other-people-blog/Other-people-blog-DFT/"
+           data-tag="Summary-Other_people_blog"
+           data-author="" >
+            <span class="post-title" title="Other people blog - DFT">Other people blog - DFT</span>
+            <span class="post-date" title="2024-04-20 03:00:00">2024/04/20</span>
+        </a>
+        
+        
+        <a  class="All Thinking Idea "
+           href="/Thinking/Idea/Idea-Next-paper/"
+           data-tag="Thinking-Idea"
+           data-author="" >
+            <span class="post-title" title="Idea - Next paper">Idea - Next paper</span>
+            <span class="post-date" title="2024-04-12 05:34:00">2024/04/12</span>
+        </a>
+        
+        
+        <a  class="All Software VASP VTheory "
+           href="/Software/VASP/VTheory/VASP-VTheory-Space-group/"
+           data-tag="Software-VASP-VTheory"
+           data-author="" >
+            <span class="post-title" title="VASP - VTheory - Space group">VASP - VTheory - Space group</span>
+            <span class="post-date" title="2024-04-10 13:52:00">2024/04/10</span>
+        </a>
+        
+        
+        <a  class="All Software VASP VTheory "
+           href="/Software/VASP/VTheory/VASP-VTheory-Influence-of-cell/"
+           data-tag="Software-VASP-VTheory"
+           data-author="" >
+            <span class="post-title" title="VASP - VTheory - Influence of cell">VASP - VTheory - Influence of cell</span>
+            <span class="post-date" title="2024-04-10 01:19:00">2024/04/10</span>
+        </a>
+        
+        
+        <a  class="All Software Tool "
+           href="/Software/Tool/Tool-Find-heterostructure/"
+           data-tag="Software-Tool"
+           data-author="" >
+            <span class="post-title" title="Tool - Find heterostructure">Tool - Find heterostructure</span>
+            <span class="post-date" title="2024-04-07 00:36:38">2024/04/07</span>
+        </a>
+        
+        
+        <a  class="All Theory Quantum_mechanics "
+           href="/Theory/Quantum-mechanics/Quantum-mechanics-Density-functional-theory/"
+           data-tag="Theory-Quantum_mechanics"
+           data-author="" >
+            <span class="post-title" title="Quantum mechanics - Density functional theory">Quantum mechanics - Density functional theory</span>
+            <span class="post-date" title="2024-04-01 15:16:03">2024/04/01</span>
+        </a>
+        
+        
+        <a  class="All Theory Quantum_mechanics "
+           href="/Theory/Quantum-mechanics/Quantum-mechanics-The-Feynman-lectures-on-physics-1/"
+           data-tag="Theory-Quantum_mechanics"
+           data-author="" >
+            <span class="post-title" title="Quantum mechanics - The Feynman lectures on physics 1">Quantum mechanics - The Feynman lectures on physics 1</span>
+            <span class="post-date" title="2024-04-01 14:43:03">2024/04/01</span>
+        </a>
+        
+        
+        <a  class="All Developing Mymetal "
+           href="/Developing/Mymetal/Mymetal-error/"
+           data-tag="Developing-Mymetal"
+           data-author="" >
+            <span class="post-title" title="Mymetal - error">Mymetal - error</span>
+            <span class="post-date" title="2024-03-30 01:44:55">2024/03/30</span>
+        </a>
+        
+        
+        <a  class="All Developing Mymetal "
+           href="/Developing/Mymetal/Mymetal-log/"
+           data-tag="Developing-Mymetal"
+           data-author="" >
+            <span class="post-title" title="Mymetal - work log">Mymetal - work log</span>
+            <span class="post-date" title="2024-03-30 01:44:55">2024/03/30</span>
+        </a>
+        
+        
+        <a  class="All Software P4VASP "
+           href="/Software/P4VASP/P4VASP-install/"
+           data-tag="Software-P4VASP"
+           data-author="" >
+            <span class="post-title" title="P4VASP - Install">P4VASP - Install</span>
+            <span class="post-date" title="2024-03-25 14:33:00">2024/03/25</span>
+        </a>
+        
+        
+        <a  class="All Software VASP Special_functions "
+           href="/Software/VASP/Special-functions/VASP-Special-functions-fix-basic-vector/"
+           data-tag="Software-VASP-Special_functions"
+           data-author="" >
+            <span class="post-title" title="VASP - Special functions - fix basic vector">VASP - Special functions - fix basic vector</span>
+            <span class="post-date" title="2024-01-24 18:57:00">2024/01/24</span>
+        </a>
+        
+        
+        <a  class="All Software Tool "
+           href="/Software/Tool/Tool-Proxy-problem-of-copilot/"
+           data-tag="Software-Tool"
+           data-author="" >
+            <span class="post-title" title="Tool - Proxy problem of copilot">Tool - Proxy problem of copilot</span>
+            <span class="post-date" title="2024-01-23 02:54:00">2024/01/23</span>
+        </a>
+        
+        
+        <a  class="All Software ASE "
+           href="/Software/ASE/ASE-How-to-generate-surface/"
+           data-tag="Software-ASE"
+           data-author="" >
+            <span class="post-title" title="ASE - How to generate surface">ASE - How to generate surface</span>
+            <span class="post-date" title="2024-01-19 12:13:00">2024/01/19</span>
+        </a>
+        
+        
+        <a  class="All Software ASE "
+           href="/Software/ASE/ASE-Modify-the-source-code-of-Write-function/"
+           data-tag="Software-ASE"
+           data-author="" >
+            <span class="post-title" title="ASE - Modify the source code of Write function">ASE - Modify the source code of Write function</span>
+            <span class="post-date" title="2024-01-18 07:01:00">2024/01/18</span>
+        </a>
+        
+        
+        <a  class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-Past-and-future/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - Past and future">Diary - Past and future</span>
+            <span class="post-date" title="2023-12-29 05:08:00">2023/12/29</span>
+        </a>
+        
+        
+        <a  class="All Software ASE "
+           href="/Software/ASE/ASE-generate-POSCAR/"
+           data-tag="Software-ASE"
+           data-author="" >
+            <span class="post-title" title="ASE - generate POSCAR">ASE - generate POSCAR</span>
+            <span class="post-date" title="2023-12-14 23:51:00">2023/12/14</span>
+        </a>
+        
+        
+        <a  class="All Program Python "
+           href="/Program/Python/Python-DFT-calculation-3-Generate-Kpoints/"
+           data-tag="Program-Python"
+           data-author="" >
+            <span class="post-title" title="Python - DFT calculation 3 - Generate Kpoints">Python - DFT calculation 3 - Generate Kpoints</span>
+            <span class="post-date" title="2023-11-23 17:28:00">2023/11/23</span>
+        </a>
+        
+        
+        <a  class="All Program Python "
+           href="/Program/Python/Python-DFT-calculation-2-Introduction-of-Kspace/"
+           data-tag="Program-Python"
+           data-author="" >
+            <span class="post-title" title="Python - DFT calculation 2 - Introduction of Kspace">Python - DFT calculation 2 - Introduction of Kspace</span>
+            <span class="post-date" title="2023-11-21 23:26:00">2023/11/21</span>
+        </a>
+        
+        
+        <a  class="All Program Python "
+           href="/Program/Python/Python-DFT-calculation-1-Solve-the-one-dimensional-Schrodinger-equation/"
+           data-tag="Program-Python"
+           data-author="" >
+            <span class="post-title" title="Python - DFT calculation 1 - Solve the one dimensional Schrodinger equation">Python - DFT calculation 1 - Solve the one dimensional Schrodinger equation</span>
+            <span class="post-date" title="2023-08-30 16:36:00">2023/08/30</span>
+        </a>
+        
+        
+        <a  class="All Software Lammps "
+           href="/Software/Lammps/Lammps-Reinstall/"
+           data-tag="Software-Lammps"
+           data-author="" >
+            <span class="post-title" title="Lammps - Reinstall">Lammps - Reinstall</span>
+            <span class="post-date" title="2022-11-25 11:56:00">2022/11/25</span>
+        </a>
+        
+        
+        <a  class="All Software Lammps "
+           href="/Software/Lammps/Lammps-SW-mod-potential-of-MoS2/"
+           data-tag="Software-Lammps"
+           data-author="" >
+            <span class="post-title" title="Lammps - SW mod potential of MoS2">Lammps - SW mod potential of MoS2</span>
+            <span class="post-date" title="2022-04-19 17:46:00">2022/04/19</span>
+        </a>
+        
+        
+        <a  class="All Software Lammps "
+           href="/Software/Lammps/Lammps-Add-new-pair-style/"
+           data-tag="Software-Lammps"
+           data-author="" >
+            <span class="post-title" title="Lammps - Add new pair style">Lammps - Add new pair style</span>
+            <span class="post-date" title="2022-04-16 19:20:00">2022/04/16</span>
+        </a>
+        
+        
+        <a  class="All Software Lammps "
+           href="/Software/Lammps/Lammps-RDF-of-annealed-SiO2-using-VMD/"
+           data-tag="Software-Lammps"
+           data-author="" >
+            <span class="post-title" title="Lammps - RDF of annealed SiO2 using VMD">Lammps - RDF of annealed SiO2 using VMD</span>
+            <span class="post-date" title="2022-04-05 20:09:00">2022/04/05</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-Summary/My-blog-Shortcut-command" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">My blog - Shortcut command</h1>
+    
+    <div class="article-meta">
+        
+        <span class="top"><a>置顶</a></span>
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="Summary">Summary</a> > 
+            
+            <a  data-rel="Summary&lt;---&gt;My_blog">My_blog</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color1">Summary-My_blog</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            Created At : <time class="date" title='Updated At: 2026-03-14 15:12:33'>2024-01-23 01:33</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>Count:3.6k</span>
+        
+        
+        <span id="busuanzi_container_page_pv">
+            Views 👀 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#VS-code"><span class="toc-text">VS code</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#OUTLOOK"><span class="toc-text">OUTLOOK</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Python3"><span class="toc-text">Python3</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4"><span class="toc-text">基础命令</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Python-%E7%B1%BB%E5%9E%8B%E6%B3%A8%E8%A7%A3%E9%80%9F%E6%9F%A5"><span class="toc-text">Python 类型注解速查</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E5%9F%BA%E6%9C%AC%E5%86%85%E7%BD%AE%E7%B1%BB%E5%9E%8B%EF%BC%88%E6%B0%B8%E8%BF%9C%E5%8F%AF%E7%9B%B4%E6%8E%A5%E4%BD%BF%E7%94%A8%EF%BC%89"><span class="toc-text">1. 基本内置类型（永远可直接使用）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-%E5%AE%B9%E5%99%A8%E7%B1%BB%E5%9E%8B%EF%BC%88%E6%A0%B9%E6%8D%AE-Python-%E7%89%88%E6%9C%AC%E5%86%B3%E5%AE%9A%E6%9D%A5%E6%BA%90%EF%BC%89"><span class="toc-text">2. 容器类型（根据 Python 版本决定来源）</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#2-1-Python-3-9-%EF%BC%88%E5%8C%85%E6%8B%AC-3-10%E3%80%813-11-%E7%AD%89%EF%BC%89"><span class="toc-text">2.1 Python 3.9+（包括 3.10、3.11 等）</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2-2-Python-3-5-3-8%EF%BC%88%E6%97%A7%E7%89%88%E6%9C%AC%EF%BC%89"><span class="toc-text">2.2 Python 3.5 ~ 3.8（旧版本）</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-%E7%89%B9%E6%AE%8A%E7%B1%BB%E5%9E%8B%EF%BC%88%E5%A7%8B%E7%BB%88%E9%9C%80%E8%A6%81%E4%BB%8E-typing-%E5%AF%BC%E5%85%A5%EF%BC%89"><span class="toc-text">3. 特殊类型（始终需要从 typing 导入）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-%E5%B8%B8%E8%A7%81%E7%A4%BA%E4%BE%8B%E5%8F%8A%E5%86%99%E6%B3%95%E6%BC%94%E5%8F%98"><span class="toc-text">4. 常见示例及写法演变</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#4-1-%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0%E5%92%8C%E8%BF%94%E5%9B%9E%E5%80%BC"><span class="toc-text">4.1 函数参数和返回值</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#4-2-%E5%AD%97%E5%85%B8%E7%B1%BB%E5%9E%8B"><span class="toc-text">4.2 字典类型</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#4-3-%E5%8F%AF%E9%80%89%E5%80%BC"><span class="toc-text">4.3 可选值</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#7-%E7%B1%BB%E5%9E%8B%E6%B3%A8%E8%A7%A3%E7%9A%84%E6%9C%AA%E6%9D%A5"><span class="toc-text">7. 类型注解的未来</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#8-%E6%8E%A8%E8%8D%90%E5%AE%9E%E8%B7%B5"><span class="toc-text">8. 推荐实践</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Anaconda"><span class="toc-text">Anaconda</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux"><span class="toc-text">Linux</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#find"><span class="toc-text">find</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#grep"><span class="toc-text">grep</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#To-see"><span class="toc-text">To see</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#write-to-file"><span class="toc-text">write to file</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#chmod-command"><span class="toc-text">chmod command</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#delete-or-add-something-on-file"><span class="toc-text">delete or add something on file</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Unzip-command"><span class="toc-text">Unzip command</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#cp-command"><span class="toc-text">cp command</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#mv-command"><span class="toc-text">mv command</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#For-internet"><span class="toc-text">For internet</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Storage"><span class="toc-text">Storage</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Slurm"><span class="toc-text">Slurm</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4"><span class="toc-text">运行时间</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#scontrol"><span class="toc-text">scontrol</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#sacct"><span class="toc-text">sacct</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#head-tail"><span class="toc-text">head, tail</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#awk"><span class="toc-text">awk</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#sed"><span class="toc-text">sed</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#cut"><span class="toc-text">cut</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#sacctmgr"><span class="toc-text">sacctmgr</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Git"><span class="toc-text">Git</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#alias"><span class="toc-text">alias</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Para"><span class="toc-text">Para</span></a></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-5 i,
+    .toc-level-5 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p align="center"><strong><em>It's never the umbrella that can get out of the rainy season, but the one who is not afraid of the wind and rain.<em></strong></p>
+
+<p align="center"><strong><em>能走出雨季的从来不是雨伞，而是不惧风雨的自己。<em></strong></p>
+
+<p><strong>Updated time: 03&#x2F;14 2026.</strong></p>
+<h2 id="VS-code"><a href="#VS-code" class="headerlink" title="VS code"></a>VS code</h2><pre><code class="language-bash">Shift whole left: shift + Tab
+		   Right: Tab
+
+Batch annotation: Ctrl + K + C
+          Cancel： Ctrl + K + U
+
+COMMAND: Ctrl + Shift + P
+
+Global Search: Ctrl+T
+jump to function definition: F12
+vs code 左侧工具栏自带全局 search
+Ctrl+Shift+O 当前文件大纲
+左侧工具栏自带的OUTLINE也可以查看当前文件大纲更方便
+
+# VS Code 全局搜索快捷键大全
+
+## 1. 核心全局搜索快捷键
+
+| 快捷键 (Windows/Linux) | 快捷键 (Mac) | 功能描述 | 适用场景 |
+|-----------------------|-------------|---------|---------|
+| `Ctrl+T` | `Cmd+T` | 搜索**工作区所有符号**（函数名、类名、变量等） | 快速跳转到定义 |
+| `Ctrl+P` | `Cmd+P` | 搜索**文件名** | 快速打开文件 |
+| `Ctrl+Shift+F` | `Cmd+Shift+F` | 全局**文本搜索**（文件内容） | 搜索代码片段 |
+| `Ctrl+Shift+P` | `Cmd+Shift+P` | 搜索**命令面板**（所有可执行命令） | 执行VS Code操作 |
+
+## 2. 符号（Symbol）精准搜索技巧
+
+在 `Ctrl+T`/`Cmd+T` 符号搜索中：
+- **`#` + 符号名**：搜索当前文件的符号（等价于 `Ctrl+Shift+O`）
+- **`@` + 符号名**：在已打开的文件中搜索符号（TypeScript/JavaScript专用）
+- **`:` + 行号**：跳转到指定行（如 `:120`）
+
+![符号搜索演示](https://code.visualstudio.com/assets/docs/editor/editingevolved/opensymbolquickaccess.gif)
+
+## 3. 进阶搜索组合技
+
+| 快捷键 (Windows/Linux) | 快捷键 (Mac) | 功能描述 |
+|-----------------------|-------------|---------|
+| `Ctrl+Shift+O` | `Cmd+Shift+O` | 当前文件的**大纲视图** |
+| `F12` 或 `Ctrl+Click` | `F12` 或 `Cmd+Click` | 跳转到定义 |
+| `Ctrl+Shift+.` | `Cmd+Shift+.` | 跳转到下一个符号 |
+| `Ctrl+Shift+,` | `Cmd+Shift+,` | 跳转到上一个符号 |
+
+## 4. 搜索范围控制技巧
+
+在全局文本搜索 (`Ctrl+Shift+F`/`Cmd+Shift+F`) 中：
+- **`↑`/`↓`**：在搜索结果间导航
+- **`*`**：通配符匹配（如 `*.py` 只搜Python文件）
+- **`🔍`图标**：展开高级选项（支持正则表达式、排除文件夹等）
+
+![高级搜索面板](https://code.visualstudio.com/assets/docs/editor/codebasics/search.png)
+
+## 5. 实用场景示例
+
+1. **快速找到函数定义**
+   - 按下 `Ctrl+T`/`Cmd+T` → 输入 `move_atoms` → 直接跳转定义文件
+
+2. **全局替换变量名**
+   - `Ctrl+Shift+F`/`Cmd+Shift+F` → 输入旧变量名 → 点击替换 → 输入新变量名
+
+3. **批量修改API调用**
+   - 开启正则模式 → 搜索 `old_function\((.*?)\)` → 替换为 `new_function($1)`
+
+## 6. 推荐扩展增强
+
+| 扩展名称 | 功能 |
+|---------|------|
+| **GitLens** | 在搜索结果中显示Git历史 |
+| **Todo Tree** | 全局搜索TODO/FIXME注释 |
+| **REST Client** | 全局搜索API端点 |
+</code></pre>
+<h2 id="OUTLOOK"><a href="#OUTLOOK" class="headerlink" title="OUTLOOK"></a>OUTLOOK</h2><pre><code class="language-bash">Emoij: Windows + Dot
+</code></pre>
+<h2 id="Python3"><a href="#Python3" class="headerlink" title="Python3"></a>Python3</h2><h4 id="基础命令"><a href="#基础命令" class="headerlink" title="基础命令"></a>基础命令</h4><pre><code class="language-bash">python3 -m venv /path/name
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+
+1、添加源
+比如添加清华源https://pypi.tuna.tsinghua.edu.cn/simple：
+
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+如果set多次，似乎只能保存最后一次set的镜像源。
+
+2、删除源
+pip config unset global.index-url
+
+3、查看现在用的哪个源
+pip config list
+</code></pre>
+<h4 id="Python-类型注解速查"><a href="#Python-类型注解速查" class="headerlink" title="Python 类型注解速查"></a>Python 类型注解速查</h4><p>本文档总结了 Python 类型注解中常用的类型及其来源，帮助你快速决定何时需要 <code>from typing import ...</code>，何时可以直接使用内置类型。</p>
+<h5 id="1-基本内置类型（永远可直接使用）"><a href="#1-基本内置类型（永远可直接使用）" class="headerlink" title="1. 基本内置类型（永远可直接使用）"></a>1. 基本内置类型（永远可直接使用）</h5><table>
+<thead>
+<tr>
+<th align="left">类型</th>
+<th align="left">描述</th>
+<th align="left">示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>int</code></td>
+<td align="left">整数</td>
+<td align="left"><code>def func(x: int) -&gt; int</code></td>
+</tr>
+<tr>
+<td align="left"><code>float</code></td>
+<td align="left">浮点数</td>
+<td align="left"><code>def func(x: float) -&gt; str</code></td>
+</tr>
+<tr>
+<td align="left"><code>str</code></td>
+<td align="left">字符串</td>
+<td align="left"><code>name: str = &quot;Alice&quot;</code></td>
+</tr>
+<tr>
+<td align="left"><code>bool</code></td>
+<td align="left">布尔值</td>
+<td align="left"><code>flag: bool = True</code></td>
+</tr>
+<tr>
+<td align="left"><code>bytes</code></td>
+<td align="left">字节串</td>
+<td align="left"><code>data: bytes = b&quot;hello&quot;</code></td>
+</tr>
+<tr>
+<td align="left"><code>None</code></td>
+<td align="left">空类型</td>
+<td align="left"><code>def func() -&gt; None</code></td>
+</tr>
+</tbody></table>
+<p>这些类型是 Python 的内置类型，<strong>无需导入</strong>，直接作为注解使用。</p>
+<h5 id="2-容器类型（根据-Python-版本决定来源）"><a href="#2-容器类型（根据-Python-版本决定来源）" class="headerlink" title="2. 容器类型（根据 Python 版本决定来源）"></a>2. 容器类型（根据 Python 版本决定来源）</h5><h6 id="2-1-Python-3-9-（包括-3-10、3-11-等）"><a href="#2-1-Python-3-9-（包括-3-10、3-11-等）" class="headerlink" title="2.1 Python 3.9+（包括 3.10、3.11 等）"></a>2.1 Python 3.9+（包括 3.10、3.11 等）</h6><p>内置容器类型<strong>直接支持泛型语法</strong>（即下标指定元素类型），无需从 <code>typing</code> 导入。</p>
+<table>
+<thead>
+<tr>
+<th align="left">内置类型</th>
+<th align="left">示例注解</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>list</code></td>
+<td align="left"><code>list[int]</code></td>
+<td align="left">元素为整数的列表</td>
+</tr>
+<tr>
+<td align="left"><code>tuple</code></td>
+<td align="left"><code>tuple[str, float]</code></td>
+<td align="left">固定长度元组，两个元素</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"><code>tuple[int, ...]</code></td>
+<td align="left">可变长度元组，所有元素为整数</td>
+</tr>
+<tr>
+<td align="left"><code>dict</code></td>
+<td align="left"><code>dict[str, int]</code></td>
+<td align="left">键为字符串，值为整数的字典</td>
+</tr>
+<tr>
+<td align="left"><code>set</code></td>
+<td align="left"><code>set[float]</code></td>
+<td align="left">元素为浮点数的集合</td>
+</tr>
+<tr>
+<td align="left"><code>frozenset</code></td>
+<td align="left"><code>frozenset[bool]</code></td>
+<td align="left">元素为布尔值的冻结集合</td>
+</tr>
+</tbody></table>
+<h6 id="2-2-Python-3-5-3-8（旧版本）"><a href="#2-2-Python-3-5-3-8（旧版本）" class="headerlink" title="2.2 Python 3.5 ~ 3.8（旧版本）"></a>2.2 Python 3.5 ~ 3.8（旧版本）</h6><p>需要使用 <code>typing</code> 模块中的对应类型：</p>
+<p>python</p>
+<pre><code>from typing import List, Tuple, Dict, Set, FrozenSet
+
+# 示例
+names: List[str] = [&quot;Alice&quot;, &quot;Bob&quot;]
+point: Tuple[float, float] = (1.2, 3.4)
+data: Dict[str, int] = &#123;&quot;key&quot;: 42&#125;
+unique: Set[int] = &#123;1, 2, 3&#125;
+frozen: FrozenSet[bool] = frozenset([True, False])
+</code></pre>
+<blockquote>
+<p><strong>注意</strong>：即使你使用 Python 3.9+，为了兼容旧版本，有时仍会看到导入写法。</p>
+</blockquote>
+<h5 id="3-特殊类型（始终需要从-typing-导入）"><a href="#3-特殊类型（始终需要从-typing-导入）" class="headerlink" title="3. 特殊类型（始终需要从 typing 导入）"></a>3. 特殊类型（始终需要从 <code>typing</code> 导入）</h5><p>这些类型是类型系统提供的辅助工具，必须从 <code>typing</code> 导入（除非在 Python 3.10+ 使用 <code>|</code> 替代部分功能）。</p>
+<table>
+<thead>
+<tr>
+<th align="left">类型</th>
+<th align="left">描述</th>
+<th align="left">示例</th>
+<th align="left">替代写法（Python 3.10+）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>Union</code></td>
+<td align="left">联合类型，表示可以是几种类型之一</td>
+<td align="left"><code>Union[int, str]</code></td>
+<td align="left">&#96;int</td>
+</tr>
+<tr>
+<td align="left"><code>Optional</code></td>
+<td align="left">可选类型，等价于 <code>Union[X, None]</code></td>
+<td align="left"><code>Optional[float]</code></td>
+<td align="left">&#96;float</td>
+</tr>
+<tr>
+<td align="left"><code>Any</code></td>
+<td align="left">任意类型，关闭类型检查</td>
+<td align="left"><code>Any</code></td>
+<td align="left">无</td>
+</tr>
+<tr>
+<td align="left"><code>Callable</code></td>
+<td align="left">可调用对象（函数、方法等）</td>
+<td align="left"><code>Callable[[int, int], int]</code></td>
+<td align="left">无</td>
+</tr>
+<tr>
+<td align="left"><code>Iterable</code></td>
+<td align="left">可迭代对象</td>
+<td align="left"><code>Iterable[int]</code></td>
+<td align="left">无</td>
+</tr>
+<tr>
+<td align="left"><code>Iterator</code></td>
+<td align="left">迭代器</td>
+<td align="left"><code>Iterator[str]</code></td>
+<td align="left">无</td>
+</tr>
+<tr>
+<td align="left"><code>Generator</code></td>
+<td align="left">生成器</td>
+<td align="left"><code>Generator[int, None, None]</code></td>
+<td align="left">无</td>
+</tr>
+<tr>
+<td align="left"><code>Sequence</code></td>
+<td align="left">序列（如 <code>list</code>, <code>tuple</code> 等）</td>
+<td align="left"><code>Sequence[float]</code></td>
+<td align="left">无</td>
+</tr>
+<tr>
+<td align="left"><code>Mapping</code></td>
+<td align="left">映射（如 <code>dict</code>）</td>
+<td align="left"><code>Mapping[str, int]</code></td>
+<td align="left">无</td>
+</tr>
+<tr>
+<td align="left"><code>TypeVar</code></td>
+<td align="left">类型变量，用于泛型</td>
+<td align="left"><code>T = TypeVar(&#39;T&#39;)</code></td>
+<td align="left">无</td>
+</tr>
+<tr>
+<td align="left"><code>Generic</code></td>
+<td align="left">泛型基类</td>
+<td align="left"><code>class Stack(Generic[T]): ...</code></td>
+<td align="left">无</td>
+</tr>
+<tr>
+<td align="left"><code>Literal</code></td>
+<td align="left">限定为特定的字面值</td>
+<td align="left"><code>Literal[&quot;red&quot;, &quot;green&quot;, &quot;blue&quot;]</code></td>
+<td align="left">无</td>
+</tr>
+<tr>
+<td align="left"><code>Final</code></td>
+<td align="left">表示该变量不应被重新赋值</td>
+<td align="left"><code>Final[int] = 42</code></td>
+<td align="left">无</td>
+</tr>
+<tr>
+<td align="left"><code>TypedDict</code></td>
+<td align="left">具有固定键集的字典</td>
+<td align="left"><code>class Point(TypedDict): x: int; y: int</code></td>
+<td align="left">无</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p><strong>注意</strong>：<code>Union</code> 和 <code>Optional</code> 在 Python 3.10+ 可以使用 <code>|</code> 运算符，但 <code>Any</code> 等仍需从 <code>typing</code> 导入。</p>
+</blockquote>
+<h5 id="4-常见示例及写法演变"><a href="#4-常见示例及写法演变" class="headerlink" title="4. 常见示例及写法演变"></a>4. 常见示例及写法演变</h5><h6 id="4-1-函数参数和返回值"><a href="#4-1-函数参数和返回值" class="headerlink" title="4.1 函数参数和返回值"></a>4.1 函数参数和返回值</h6><pre><code class="language-python"># Python 3.8 及之前
+from typing import Optional, Union, List
+
+def greet(name: Optional[str] = None) -&gt; Union[str, List[str]]:
+    if name is None:
+        return [&quot;Hello&quot;, &quot;World&quot;]
+    return f&quot;Hello &#123;name&#125;&quot;
+
+# Python 3.10+
+def greet(name: str | None = None) -&gt; str | list[str]:
+    if name is None:
+        return [&quot;Hello&quot;, &quot;World&quot;]
+    return f&quot;Hello &#123;name&#125;&quot;
+</code></pre>
+<h6 id="4-2-字典类型"><a href="#4-2-字典类型" class="headerlink" title="4.2 字典类型"></a>4.2 字典类型</h6><pre><code class="language-python"># Python 3.8
+from typing import Dict, Any
+data: Dict[str, Any] = &#123;&quot;a&quot;: 1, &quot;b&quot;: &quot;text&quot;&#125;
+python
+# Python 3.9+
+data: dict[str, Any] = &#123;&quot;a&quot;: 1, &quot;b&quot;: &quot;text&quot;&#125;
+</code></pre>
+<h6 id="4-3-可选值"><a href="#4-3-可选值" class="headerlink" title="4.3 可选值"></a>4.3 可选值</h6><pre><code class="language-python"># Python 3.8
+from typing import Optional
+maybe_number: Optional[int] = None
+
+# Python 3.10+
+maybe_number: int | None = None
+</code></pre>
+<h5 id="7-类型注解的未来"><a href="#7-类型注解的未来" class="headerlink" title="7. 类型注解的未来"></a>7. 类型注解的未来</h5><ul>
+<li>Python 3.10+：使用 <code>|</code> 简化 <code>Union</code> 和 <code>Optional</code>。</li>
+<li>Python 3.9+：内置容器支持泛型，无需导入 <code>List</code> 等。</li>
+<li>Python 3.11+：<code>typing</code> 模块持续优化，部分类型标记为 deprecated，推荐使用内置版本或 <code>collections.abc</code>。</li>
+</ul>
+<h5 id="8-推荐实践"><a href="#8-推荐实践" class="headerlink" title="8. 推荐实践"></a>8. 推荐实践</h5><ul>
+<li><p>如果代码只需在 Python 3.10+ 运行，使用 <code>|</code> 和内置容器泛型，减少导入。</p>
+</li>
+<li><p>如果需要兼容 Python 3.8 及以下，保留 <code>from typing import ...</code> 写法。</p>
+</li>
+<li><p>对于复杂类型，可以使用类型别名提高可读性：</p>
+<pre><code class="language-python">from typing import TypeAlias  # Python 3.10+
+MyDict: TypeAlias = dict[str, list[int]]
+    
+# 表示一个坐标点
+Point = tuple[float, float]  # Python 3.9+
+
+# 表示一个矩阵（二维列表）
+Matrix = list[list[float]]
+
+# 表示一个可能为空的字符串列表
+StringListOrNone = list[str] | None  # Python 3.10+
+
+# 在函数中使用
+def distance(p1: Point, p2: Point) -&gt; float:
+    ...
+
+def transpose(m: Matrix) -&gt; Matrix:
+    ...
+
+def get_names() -&gt; StringListOrNone:
+    ...
+</code></pre>
+</li>
+</ul>
+<hr>
+<p>希望这份速查表能帮你快速确定类型注解的来源。如有遗漏或特定场景疑问，欢迎补充！</p>
+<h2 id="Anaconda"><a href="#Anaconda" class="headerlink" title="Anaconda"></a>Anaconda</h2><pre><code class="language-BASH">conda activate ...
+conda env list
+conda list -e &gt; requirement.txt
+conda create -n ... python=3.11
+conda env remove -n ...
+
+1、添加源
+比如清华源：
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+conda config --set show_channel_urls yes
+2、删除源
+conda config --remove-key channels
+3、查看现在用的是哪些源
+conda config --show channels
+也可以使用
+conda config --show-sources
+</code></pre>
+<h2 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h2><h3 id="find"><a href="#find" class="headerlink" title="find"></a>find</h3><pre><code class="language-bash">% find
+% delete all files despite of &#39;relax.bash&#39;
+find . -type f ! -name &#39;relax.bash&#39; -exec rm -f &#123;&#125; +
+find . -type f ! \( -name &#39;POSCAR&#39; -o -name &#39;INCAR&#39; \) -print
+find . -type f ! \( -name &#39;POSCAR&#39; -o -name &#39;INCAR&#39; -o -name &#39;POTCAR&#39; \) -exec rm -f &#123;&#125; +
+</code></pre>
+<h3 id="grep"><a href="#grep" class="headerlink" title="grep"></a>grep</h3><pre><code class="language-bash">% grep
+% what line up and after around the line contained &#39;format&#39;
+grep -A 6 -B 6 &#39;format&#39; file
+% grep energy
+grep  without OUTCAR | tail -n 1
+grep &#39;  without&#39; OUTCAR | tail -n 1  # 本人常用的是这个
+grep sigma OUTCAR | tail -n 1 
+</code></pre>
+<h3 id="To-see"><a href="#To-see" class="headerlink" title="To see"></a>To see</h3><pre><code class="language-bash">% to see
+diff file1 file2
+more sub.vasp
+cat sub.vasp
+% to see the line number
+cat -n filename.txt
+% tail
+tail -f slurm.txt
+</code></pre>
+<h3 id="write-to-file"><a href="#write-to-file" class="headerlink" title="write to file"></a>write to file</h3><pre><code class="language-bash">%create a file
+cat &gt; file.txt
+Ctrl + D
+% write content
+echo &#39; &#39; &gt;  file.txt
+         &gt;&gt;              % append
+</code></pre>
+<h3 id="chmod-command"><a href="#chmod-command" class="headerlink" title="chmod command"></a>chmod command</h3><pre><code class="language-bash">% for run script
+chmod u+x sub.vasp
+</code></pre>
+<h3 id="delete-or-add-something-on-file"><a href="#delete-or-add-something-on-file" class="headerlink" title="delete or add something on file"></a>delete or add something on file</h3><pre><code class="language-bash">% delete specified line of the file
+sed -i &#39;10, 20d&#39; filename.txt
+
+% cat command
+a = &#39;$(cat POSCAR)&#39;
+echo &#39;$a&#39;
+
+% add file to another file
+sed -i &#39;N r tmp_file&#39; filename.txt
+% N - line
+
+% delete file
+rm -f /../../*.log
+
+% delete directory
+rm -rf /root/log/game
+</code></pre>
+<h3 id="Unzip-command"><a href="#Unzip-command" class="headerlink" title="Unzip command"></a>Unzip command</h3><pre><code class="language-bash">unzip .../*.zip
+tar -zxvf .../*.tar.gz
+</code></pre>
+<h3 id="cp-command"><a href="#cp-command" class="headerlink" title="cp command"></a>cp command</h3><pre><code class="language-bash">% transfer the entirely directory
+cp  -r /home/downloads/phpcms_v9_UTF8/install_package/ /opt/lampp/htdocs/
+</code></pre>
+<h3 id="mv-command"><a href="#mv-command" class="headerlink" title="mv command"></a>mv command</h3><pre><code class="language-bash">% move directory
+mv ../../  ../
+</code></pre>
+<h3 id="For-internet"><a href="#For-internet" class="headerlink" title="For internet"></a>For internet</h3><pre><code class="language-bash"># all up
+ip addr
+# restart network
+sudo systemctl restart networking
+# if down, set up
+sudo ip link set ens33 up
+sudo dhclient ens33
+</code></pre>
+<h3 id="Storage"><a href="#Storage" class="headerlink" title="Storage"></a>Storage</h3><pre><code class="language-bash">lfs quota -uh $USER ~
+</code></pre>
+<h3 id="Slurm"><a href="#Slurm" class="headerlink" title="Slurm"></a>Slurm</h3><h4 id="运行时间"><a href="#运行时间" class="headerlink" title="运行时间"></a>运行时间</h4><table>
+<thead>
+<tr>
+<th>目的</th>
+<th>命令</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>查看历史任务时间</td>
+<td><code>sacct -j &lt;job_id&gt;</code></td>
+</tr>
+<tr>
+<td>正在运行任务时间</td>
+<td><code>squeue -j &lt;job_id&gt;</code></td>
+</tr>
+<tr>
+<td>总结资源使用率</td>
+<td><code>seff &lt;job_id&gt;</code></td>
+</tr>
+<tr>
+<td>日志文件末尾查看</td>
+<td><code>tail slurm-&lt;jobid&gt;.out</code></td>
+</tr>
+<tr>
+<td>自己记录时间</td>
+<td><code>start=$(date +%s)</code></td>
+</tr>
+</tbody></table>
+<h4 id="scontrol"><a href="#scontrol" class="headerlink" title="scontrol"></a>scontrol</h4><pre><code class="language-bash">scontrol show job 123456
+</code></pre>
+<h4 id="sacct"><a href="#sacct" class="headerlink" title="sacct"></a>sacct</h4><pre><code class="language-bash">sacct -j 37302670 --format=JobID,JobName,State,ExitCode,WorkDir,NodeList,Elapsed,ReqMem,MaxRSS
+JobID：作业 ID
+JobName：作业名称
+State：作业状态（COMPLETED, FAILED, TIMEOUT 等）
+ExitCode：退出代码（格式 0:0 表示正常退出）
+WorkDir：工作目录
+Submit：提交时间
+Start：开始时间
+End：结束时间
+Elapsed：运行时长
+NNodes：分配的节点数
+NCPUS：分配的 CPU 核心数
+ReqMem：请求的内存
+MaxRSS：最大内存使用
+AllocCPUS：分配的 CPU 数（与 NCPUS 类似）
+NodeList：分配的节点列表
+Partition：分区
+Account：账户
+UID：用户 ID
+User：用户名
+ReqCPUS：请求的 CPU 数
+</code></pre>
+<h3 id="head-tail"><a href="#head-tail" class="headerlink" title="head, tail"></a>head, tail</h3><pre><code class="language-bash"># 末尾
+tail -n 1
+# 顶部
+head -n 1
+</code></pre>
+<h3 id="awk"><a href="#awk" class="headerlink" title="awk"></a>awk</h3><pre><code class="language-bash">awk &#39;&#123;print $1&#125;&#39;
+</code></pre>
+<h3 id="sed"><a href="#sed" class="headerlink" title="sed"></a>sed</h3><pre><code class="language-bash"># get 120-line content
+sed -n 120p slurm*.out
+</code></pre>
+<h3 id="cut"><a href="#cut" class="headerlink" title="cut"></a>cut</h3><pre><code class="language-bash">cut -d: -f1
+</code></pre>
+<h3 id="sacctmgr"><a href="#sacctmgr" class="headerlink" title="sacctmgr"></a>sacctmgr</h3><pre><code class="language-bash">sacctmgr show assoc
+# 最大提交任务，核数
+</code></pre>
+<h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><pre><code class="language-bash"># 配置Git用户信息
+git config --global user.name &quot;Your Name&quot;  # 设置全局用户名
+git config --global user.email &quot;youremail@example.com&quot;  # 设置全局邮箱地址
+# SSH to cennected between git and github
+
+# 初始化一个新的Git仓库
+git init  # 在当前目录初始化新的Git仓库
+
+# 克隆一个现有的仓库 # http / SSH (recommended)
+git clone https://github.com/username/repository.git  # 克隆远程仓库到本地
+git clone git@github.com:ShengLin1001/hetbuilder.git
+
+# 查看状态
+git status  # 查看当前工作目录和暂存区的状态
+
+# 添加和提交更改
+git add .  # 将所有修改和新文件添加到暂存区
+git commit -m &quot;Commit message&quot;  # 提交暂存区到仓库区
+
+# 推送更改到远程仓库
+git push origin main  # 将本地的更改推送到远程仓库的main分支
+
+# 更新你的本地仓库
+git pull origin main  # 从远程仓库的main分支拉取最新更改并合并到本地
+
+# 分支操作
+git branch branchname  # 创建一个新分支
+git checkout branchname  # 切换到指定分支
+git merge branchname  # 将指定分支合并到当前分支
+
+# 查看提交历史
+git log  # 查看提交历史记录
+</code></pre>
+<h3 id="alias"><a href="#alias" class="headerlink" title="alias"></a>alias</h3><pre><code class="language-bash"># see alias
+git config --get-regexp alias
+
+# 设置 &#39;co&#39; 为 &#39;checkout&#39; 的别名 git co branch-name
+git config --global alias.co checkout
+
+# 设置 &#39;br&#39; 为 &#39;branch&#39; 的别名
+git config --global alias.br branch
+
+# 设置 &#39;ci&#39; 为 &#39;commit&#39; 的别名
+git config --global alias.ci commit
+
+# 设置 &#39;st&#39; 为 &#39;status&#39; 的别名
+git config --global alias.st status
+
+# 设置 &#39;lg&#39; 为更美观的日志输出格式
+git config --global alias.lg &quot;log --graph --pretty=format:&#39;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset&#39; --abbrev-commit&quot;
+
+# 设置 &#39;unstage&#39; 作为撤销暂存的别名
+git config --global alias.unstage &#39;reset HEAD --&#39;
+
+# 设置 &#39;last&#39; 为查看最后一次提交的别名
+git config --global alias.last &#39;log -1 HEAD&#39;
+
+# git ac &quot;&quot;
+git config --global alias.ac &#39;!git add -A &amp;&amp; git commit -m&#39;
+
+# push and pull on main
+git config --global alias.push &#39;push origin main&#39;
+git config --global alias.pull &#39;pull origin main&#39;
+</code></pre>
+<h2 id="Para"><a href="#Para" class="headerlink" title="Para"></a>Para</h2><pre><code class="language-bash">papp_cloud 是一个登录超算的命令行工具，具备ssh，scp，rsync, sftp, sshfs 等基础功能。
+
+o 支持的操作系统
+
+  - Linux x86_64/i686
+  - Darwin x86_64
+
+Flags:
+  -h, --help     Show context-sensitive help (also try --help-long and --help-man).
+  -V, --version  Show application version.
+  -D, --debug    Enable debug mode.
+  -s, --select   select a vpn link route.
+
+Commands:
+  help [&lt;command&gt;...]
+    Show help.
+
+  ssh [&lt;flags&gt;] &lt;destination&gt; [&lt;command&gt;...]
+    Ssh is a sub command for logging into a remote machine and for executing commands on a remote machine.
+
+    example:
+
+      1. 使用paratera帐号登录广州超算(IPv4)
+
+      $ papp_cloud ssh paratera@gz                                                   
+
+      2. 使用paratera帐号登录广州超算(IPv6)
+
+      $ papp_cloud ssh -6 paratera@gz                                                   
+
+
+  sshfs [&lt;flags&gt;] &lt;source ... target&gt;...
+    SSHFS - filesystem client based on SSH.
+
+    example:
+
+
+       1.挂载广州超算目录/home/paratera到本地挂载点/localdir
+
+       $ papp_cloud sshfs paratera@gz:/home/paratera /localdir
+
+  scp [&lt;flags&gt;] &lt;source ... target&gt;...
+    Scp copies files between hosts on a network.
+
+    example:
+
+      o Upload
+
+      1. 使用paratera帐号上传file1，file2文件到广州超算的paratera用户家目录(IPv4)
+
+      $ papp_cloud scp file1 file2 paratera@gz:/home/paratera           
+
+      2. 使用paratera帐号上传file1，file2文件到广州超算的paratera用户家目录(IPv6)
+
+      $ papp_cloud scp -6 file1 file2 paratera@gz:/home/paratera           
+
+      o Download
+
+      1. 使用paratera帐号下载广州超算paratera用户家目录下的file1 文件到本地的/data
+      目录(IPv4)
+
+      $ papp_cloud scp paratera@gz:/home/paratera/file1 /data           
+
+      2. 使用paratera帐号下载广州超算paratera用户家目录下的file1 文件到本地的/data
+      目录(IPv6)
+
+      $ papp_cloud scp -6 paratera@gz:/home/paratera/file1 /data           
+
+
+  sftp [&lt;flags&gt;] &lt;destination&gt;...
+    Sftp is a file transfer program, similar to ftp.
+
+    example:
+
+      1. 使用paratera帐号登录广州超算(IPv4)
+
+      $ papp_cloud sftp paratera@gz                           
+
+      2. 使用paratera帐号登录广州超算(IPv6)
+
+      $ papp_cloud sftp -6 paratera@gz                           
+
+
+  rsync [&lt;flags&gt;] &lt;source ... target&gt;...
+
+    Rsync copies files either to or from a remote host, or locally on the current host (it does not support copying files between two remote hosts
+
+    example:
+
+      o Upload
+
+      1. 使用paratera帐号同步file1，file2文件到广州超算的paratera用户家目录(IPv4)
+
+      $ papp_cloud rsync file1 file2 paratera@gz:/home/paratera         
+
+      2. 使用paratera帐号同步file1，file2文件到广州超算的paratera用户家目录(IPv6)
+
+      $ papp_cloud rsync -6 file1 file2 paratera@gz:/home/paratera         
+
+      o Download
+
+      1. 使用paratera帐号下载广州超算paratera用户家目录下的file1 文件到本地的/data
+      目录(IPv4)
+
+      $ papp_cloud rsync paratera@gz:/home/paratera/file1 /data         
+
+      2. 使用paratera帐号下载广州超算paratera用户家目录下的file1 文件到本地的/data
+      目录(IPv6)
+
+      $ papp_cloud rsync -6 paratera@gz:/home/paratera/file1 /data         
+
+  login --user=USER --[no-]password
+    Login paratera cloud service.
+
+    example:
+
+      $ papp_cloud login -u user@paratera.com -p
+
+  logout
+    Logout paratera cloud service.
+
+    example:
+
+      $ papp_cloud logout
+
+  lsc
+    list super computer centers.
+
+  accounts
+    list super computer center accounts
+
+</code></pre>
+<pre><code class="language-bash">papp_cloud ssh scg6928@zc-m6
+</code></pre>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> Please indicate the source when reprinting. Please verify the citation sources in the article and point out any errors or unclear expressions. </span>
+    </div>
+</article>
+
+
+
+
+
+
+
+    
+        <!-- MathJax配置，可通过单美元符号书写行内公式等 -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    "HTML-CSS": {
+        preferredFont: "TeX",
+        availableFonts: ["STIX","TeX"],
+        linebreaks: { automatic:true },
+        EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+        inlineMath: [ ["$", "$"], ["\\(","\\)"] ],
+        processEscapes: true,
+        ignoreClass: "tex2jax_ignore|dno",
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+        equationNumbers: { autoNumber: "AMS" },
+        noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } },
+        Macros: { href: "{}" }
+    },
+    messageStyle: "none"
+    });
+</script>
+<!-- 给MathJax元素添加has-jax class -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<!-- 通过连接CDN加载MathJax的js代码 -->
+<script type="text/javascript" async
+        src="//cdn.jsdelivr.net/npm/mathjax@2.7.8/unpacked/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<input type="hidden" id="MathJax-js"
+        value="//cdn.jsdelivr.net/npm/mathjax@2.7.8/unpacked/MathJax.js?config=TeX-MML-AM_CHTML">
+</input>
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2022-2024 Louis
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'photoSwipe';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+
+        /*高亮代码块行号*/
+        
+        $('pre code').each(function(){
+            var lines = $(this).text().trim().split('\n').length, widther='';
+            if (lines>99) {
+                widther = 'widther'
+            }
+            var $numbering = $('<ul/>').addClass('pre-numbering ' + widther).attr("unselectable","on");
+            $(this).addClass('has-numbering ' + widther)
+                    .parent()
+                    .append($numbering);
+            for(var i=1;i<=lines;i++){
+                $numbering.append($('<li/>').text(i));
+            }
+        });
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+
+        // PhotoSwipe
+        $('article').each(function(i){
+            $(this).find('img').each(function(){
+                if ($(this).closest('figure').hasClass('article-gallery-img')) {
+                    return;
+                }
+                var alt = this.alt;
+                $(this)
+                    .wrap('<figure class="article-gallery-img" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"></figure>')
+                    .wrap('<a href="' + this.src + '" title="' + alt + '"></a>');
+                $(this).after('<div class="img_alt"><span>' + (alt || '') + '</span></div>');
+            });
+        });
+
+        var pswpElement = document.querySelectorAll('.pswp')[0];
+        if (pswpElement) {
+            var gallerySelector = '.article-gallery, article';
+
+            var initPhotoSwipeFromDOM = function(gallerySelector) {
+
+                // parse slide data (url, title, size ...) from DOM elements
+                // (children of gallerySelector)
+                var parseThumbnailElements = function(el) {
+                    var thumbElements = $(el).find('figure.article-gallery-img').toArray(),
+                        numNodes = thumbElements.length,
+                        items = [],
+                        figureEl,
+                        linkEl,
+                        size,
+                        imgEl,
+                        item;
+
+                    for (var i = 0; i < numNodes; i++) {
+
+                        figureEl = thumbElements[i]; // <figure> element
+
+                        // include only element nodes
+                        if (figureEl.nodeType !== 1) {
+                            continue;
+                        }
+
+                        linkEl = figureEl.children[0]; // <a> element
+                        imgEl = linkEl.children[0]; // <img>
+
+                        size = linkEl.getAttribute('data-size');
+                        size = size && size.split('x');
+
+                        // create slide object
+                        item = {
+                            src: linkEl.getAttribute('href'),
+                            w: size && parseInt(size[0], 10) || imgEl.width,
+                            h: size && parseInt(size[1], 10) || imgEl.height
+                        };
+
+                        if (figureEl.children.length > 1) {
+                            // <figcaption> content
+                            item.title = figureEl.children[1].innerHTML;
+                        }
+
+                        if (linkEl.children.length > 0) {
+                            // <img> thumbnail element, retrieving thumbnail url
+                            item.msrc = linkEl.children[0].getAttribute('src');
+                        }
+
+                        item.el = figureEl; // save link to element for getThumbBoundsFn
+                        items.push(item);
+                    }
+
+                    return items;
+                };
+
+                // find nearest parent element
+                var closest = function closest(el, fn) {
+                    return el && (fn(el) ? el : closest(el.parentNode, fn));
+                };
+
+                // triggers when user clicks on thumbnail
+                var onThumbnailsClick = function(e) {
+                    e = e || window.event;
+
+                    var eTarget = e.target || e.srcElement;
+
+                    // find root element of slide
+                    var clickedListItem = closest(eTarget, function(el) {
+                        return (el.tagName && el.tagName.toUpperCase() === 'FIGURE');
+                    });
+
+                    if (!clickedListItem) {
+                        return;
+                    }
+
+                    if (e.preventDefault) {
+                        e.preventDefault();
+                    } else {
+                        e.returnValue = false;
+                    }
+
+                    // find index of clicked item by looping through all child nodes
+                    // alternatively, you may define index via data- attribute
+                    var clickedGallery = $(clickedListItem).closest(gallerySelector)[0],
+                        childNodes = $(clickedGallery).find('figure.article-gallery-img').toArray(),
+                        numChildNodes = childNodes.length,
+                        nodeIndex = 0,
+                        index;
+
+                    for (var i = 0; i < numChildNodes; i++) {
+                        if (childNodes[i].nodeType !== 1) {
+                            continue;
+                        }
+
+                        if (childNodes[i] === clickedListItem) {
+                            index = nodeIndex;
+                            break;
+                        }
+                        nodeIndex++;
+                    }
+
+
+
+                    if (index >= 0) {
+                        // open PhotoSwipe if valid index found
+                        openPhotoSwipe(index, clickedGallery);
+                    }
+                    return false;
+                };
+
+                // parse picture index and gallery index from URL (#&pid=1&gid=2)
+                var photoswipeParseHash = function() {
+                    var hash = window.location.hash.substring(1),
+                        params = {};
+
+                    if (hash.length < 5) {
+                        return params;
+                    }
+
+                    var vars = hash.split('&');
+                    for (var i = 0; i < vars.length; i++) {
+                        if (!vars[i]) {
+                            continue;
+                        }
+                        var pair = vars[i].split('=');
+                        if (pair.length < 2) {
+                            continue;
+                        }
+                        params[pair[0]] = pair[1];
+                    }
+
+                    if (params.gid) {
+                        params.gid = parseInt(params.gid, 10);
+                    }
+
+                    return params;
+                };
+
+                var openPhotoSwipe = function(index, galleryElement, disableAnimation, fromURL) {
+                    var pswpElement = document.querySelectorAll('.pswp')[0],
+                        gallery,
+                        options,
+                        items;
+
+                    items = parseThumbnailElements(galleryElement);
+
+                    // define options (if needed)
+                    options = {
+
+                        // define gallery index (for URL)
+                        galleryUID: galleryElement.getAttribute('data-pswp-uid'),
+
+                        getThumbBoundsFn: function(index) {
+                            // See Options -> getThumbBoundsFn section of documentation for more info
+                            var thumbnail = items[index].el.getElementsByTagName('img')[0], // find thumbnail
+                                pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
+                                rect = thumbnail.getBoundingClientRect();
+
+                            return {
+                                x: rect.left,
+                                y: rect.top + pageYScroll,
+                                w: rect.width
+                            };
+                        }
+                    };
+
+                    // PhotoSwipe opened from URL
+                    if (fromURL) {
+                        if (options.galleryPIDs) {
+                            // parse real index when custom PIDs are used
+                            // http://photoswipe.com/documentation/faq.html#custom-pid-in-url
+                            for (var j = 0; j < items.length; j++) {
+                                if (items[j].pid == index) {
+                                    options.index = j;
+                                    break;
+                                }
+                            }
+                        } else {
+                            // in URL indexes start from 1
+                            options.index = parseInt(index, 10) - 1;
+                        }
+                    } else {
+                        options.index = parseInt(index, 10);
+                    }
+
+                    // exit if index not found
+                    if (isNaN(options.index)) {
+                        return;
+                    }
+
+                    if (disableAnimation) {
+                        options.showAnimationDuration = 0;
+                    }
+
+                    // Pass data to PhotoSwipe and initialize it
+                    gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+
+                    gallery.listen('imageLoadComplete', function(index, item) {
+                        var linkEl = item.el.children[0];
+                        var img = item.container.children[0];
+                        if (!linkEl.getAttribute('data-size')) {
+                            linkEl.setAttribute('data-size', img.naturalWidth + 'x' + img.naturalHeight);
+                            item.w = img.naturalWidth;
+                            item.h = img.naturalHeight;
+                            gallery.invalidateCurrItems();
+                            gallery.updateSize(true);
+                        }
+                    });
+
+                    gallery.init();
+                };
+
+                // loop through all gallery elements and bind events
+                var galleryElements = document.querySelectorAll(gallerySelector);
+
+                for (var i = 0, l = galleryElements.length; i < l; i++) {
+                    galleryElements[i].setAttribute('data-pswp-uid', i + 1);
+                    galleryElements[i].onclick = onThumbnailsClick;
+                }
+
+                // Parse URL and open gallery if it contains #&pid=3&gid=1
+                var hashData = photoswipeParseHash();
+                if (hashData.pid && hashData.gid) {
+                    openPhotoSwipe(hashData.pid, galleryElements[hashData.gid - 1], true, true);
+                }
+            };
+
+            // execute above function
+            initPhotoSwipeFromDOM(gallerySelector);
+        }
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<style>
+    pre{
+        position: relative;
+        margin-bottom: 24px;
+        border-radius: 10px;
+        border: 1px solid #e2dede;
+        background: #FFF;
+        overflow: hidden;
+    }
+    code.has-numbering{
+        margin-left: 30px;
+    }
+    code.has-numbering.widther{
+        margin-left: 35px;
+    }
+    .pre-numbering{
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        padding: 18px 3px 15px 5px;
+        border-right: 1px solid #C3CCD0;
+        text-align: right;
+        color: #AAA;
+        background-color: #fafafa;
+    }
+    .pre-numbering.widther {
+        width: 35px;
+    }
+</style>
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+    .nav-right:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+        background: url("/img/gj2.jpg");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    
+
+    
+    #post .pjax article :not(pre) > code {
+        color: #24292e;
+        font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+        background-color: rgba(27,31,35,.05);
+        border-radius: 3px;
+        font-size: 85%;
+        margin: 0;
+        padding: .2em .4em;
+    }
+    
+</style>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+         It's a separate element, as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+</html>

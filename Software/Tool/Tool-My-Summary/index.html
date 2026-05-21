@@ -1,0 +1,2087 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Tool - Summary | Please be chilling out</title>
+  <meta name="keywords" content=" Software-Tool ">
+  <meta name="description" content="Tool - Summary | Please be chilling out">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="About this WeBlog我是一名 2022 级在读研究生（力学 &#x2F; 机器学习）。本博客创建于 2024.3 ，为了整合记录读研以来所有的知识积累（知乎，哔哩哔哩，公众号，博客，网站，书籍）。 目前我对微观尺度下金属领域的相变机制&#x2F;位错演化很感兴趣。如果大家对我的研究领域感兴趣，欢迎发邮件给我，共同进步。😃 使用软件包括：Python，VASP，Lammps Pyth">
+<meta property="og:type" content="website">
+<meta property="og:title" content="about">
+<meta property="og:url" content="https://shenglin1001.github.io/about/">
+<meta property="og:site_name" content="Please be chilling out">
+<meta property="og:description" content="About this WeBlog我是一名 2022 级在读研究生（力学 &#x2F; 机器学习）。本博客创建于 2024.3 ，为了整合记录读研以来所有的知识积累（知乎，哔哩哔哩，公众号，博客，网站，书籍）。 目前我对微观尺度下金属领域的相变机制&#x2F;位错演化很感兴趣。如果大家对我的研究领域感兴趣，欢迎发邮件给我，共同进步。😃 使用软件包括：Python，VASP，Lammps Pyth">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-03-30T01:20:39.000Z">
+<meta property="article:modified_time" content="2024-06-21T02:16:33.835Z">
+<meta property="article:author" content="Louis">
+<meta property="article:tag" content="material science">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css" rel="stylesheet">
+<link href="//cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 7.1.1"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="false" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/avatar.jpg"/>
+</a>
+<div class="author">
+    <span>Louis</span>
+</div>
+
+<div class="icon">
+    
+        
+            <a title="github"
+               href="https://github.com/ShengLin1001"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="zhihu"
+               href="https://www.zhihu.com/people/bas-58"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-zhihu"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="email"
+               href="mailto:12324025@zju.edu.cn"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-email"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="qq"
+               href="http://wpa.qq.com/msgrd?v=3&uin=1770861169&site=qq&menu=yes"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-qq"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+</div>
+
+
+
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="All">All
+            
+        </div>
+    </li>
+    
+        
+            
+                
+    <li>
+        <div data-rel="Thinking">
+            <i class="fold iconfont icon-right"></i>
+            Thinking
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Thinking&lt;---&gt;Diary">
+            
+            Diary
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Thinking&lt;---&gt;Idea">
+            
+            Idea
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="Summary">
+            <i class="fold iconfont icon-right"></i>
+            Summary
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Summary&lt;---&gt;My_blog">
+            
+            My_blog
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Summary&lt;---&gt;Other_people_blog">
+            
+            Other_people_blog
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="Software">
+            <i class="fold iconfont icon-right"></i>
+            Software
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;VASP">
+            <i class="fold iconfont icon-right"></i>
+            VASP
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;VASP&lt;---&gt;Special_functions">
+            
+            Special_functions
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;VASP&lt;---&gt;VTheory">
+            
+            VTheory
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;ASE">
+            
+            ASE
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;Lammps">
+            
+            Lammps
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;P4VASP">
+            
+            P4VASP
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;Pymatgen">
+            
+            Pymatgen
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;Tool">
+            
+            Tool
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="Program">
+            <i class="fold iconfont icon-right"></i>
+            Program
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Program&lt;---&gt;Python">
+            
+            Python
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="Developing">
+            <i class="fold iconfont icon-right"></i>
+            Developing
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Developing&lt;---&gt;Install">
+            
+            Install
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Developing&lt;---&gt;Mymetal">
+            
+            Mymetal
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="Theory">
+            <i class="fold iconfont icon-right"></i>
+            Theory
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Theory&lt;---&gt;Quantum_mechanics">
+            
+            Quantum_mechanics
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="Writing">
+            <i class="fold iconfont icon-right"></i>
+            Writing
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Writing&lt;---&gt;Academic">
+            
+            Academic
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+            
+            
+            
+    </div>
+    <div>
+        
+            <a class="about  hasFriend  site_url"
+               
+               href="/about">About</a>
+        
+        <a style="width: 50%"
+                
+                                           class="friends">Friends</a>
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="49">
+<input type="hidden" id="yelog_site_word_count" value="33.4k">
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        Links
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="https://blog.shishiruqi.com/">啦啦黑还黑</a></li>
+            
+            <li><a target="_blank" href="https://www.bigbrosci.com/">大师兄</a></li>
+            
+            <li><a target="_blank" href="http://sobereva.com/">卢天</a></li>
+            
+            <li><a target="_blank" href="http://staff.ustc.edu.cn/~zqj/">郑奇靖</a></li>
+            
+            <li><a target="_blank" href="https://www.zhihu.com/people/obaica/columns">学术之友</a></li>
+            
+            <li><a target="_blank" href="https://www.zhihu.com/column/c_1680331980414226432">我的专栏</a></li>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索"></i>
+            <div class="right-title">All</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" autocomplete="off"/>
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Developing-Install</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Developing-Mymetal</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Program-Python</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Software-ASE</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Software-Lammps</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Software-P4VASP</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Software-Pymatgen</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Software-Tool</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Software-VASP-Special_functions</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Software-VASP-VTheory</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Summary-My_blog</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Summary-Other_people_blog</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Theory-Quantum_mechanics</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Thinking-Diary</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Thinking-Idea</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Writing-Academic</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <div id="local-search-result">
+
+    </div>
+    
+    <nav id="title-list-nav">
+        
+        
+        <a id="top" class="All Summary My_blog "
+           href="/Summary/My-blog/My-blog-Literature-summary/"
+           data-tag="Summary-My_blog"
+           data-author="" >
+            <span class="post-title" title="My blog - Literature summary">My blog - Literature summary</span>
+            <span class="post-date" title="2024-09-10 21:55:00">2024/09/10</span>
+        </a>
+        
+        
+        <a id="top" class="All Summary My_blog "
+           href="/Summary/My-blog/My-blog-Technology-summary/"
+           data-tag="Summary-My_blog"
+           data-author="" >
+            <span class="post-title" title="My blog - Technology summary">My blog - Technology summary</span>
+            <span class="post-date" title="2024-09-10 21:50:00">2024/09/10</span>
+        </a>
+        
+        
+        <a id="top" class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-Log/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - Log">Diary - Log</span>
+            <span class="post-date" title="2024-04-10 00:31:48">2024/04/10</span>
+        </a>
+        
+        
+        <a id="top" class="All Summary My_blog "
+           href="/Summary/My-blog/My-blog-My-summary/"
+           data-tag="Summary-My_blog"
+           data-author="" >
+            <span class="post-title" title="My blog - My summary">My blog - My summary</span>
+            <span class="post-date" title="2024-03-30 17:46:59">2024/03/30</span>
+        </a>
+        
+        
+        <a id="top" class="All Software VASP VTheory "
+           href="/Software/VASP/VTheory/VASP-VTheory-Classical-literatures/"
+           data-tag="Software-VASP-VTheory"
+           data-author="" >
+            <span class="post-title" title="VASP - VTheory - Classical literatures">VASP - VTheory - Classical literatures</span>
+            <span class="post-date" title="2024-03-30 16:00:07">2024/03/30</span>
+        </a>
+        
+        
+        <a id="top" class="All Software Tool "
+           href="/Software/Tool/Tool-My-Summary/"
+           data-tag="Software-Tool"
+           data-author="" >
+            <span class="post-title" title="Tool - Summary">Tool - Summary</span>
+            <span class="post-date" title="2024-03-30 13:29:09">2024/03/30</span>
+        </a>
+        
+        
+        <a id="top" class="All Theory Quantum_mechanics "
+           href="/Theory/Quantum-mechanics/Quantum-mechanics-some-website-and-book/"
+           data-tag="Theory-Quantum_mechanics"
+           data-author="" >
+            <span class="post-title" title="Quantum mechanics - some websites and books">Quantum mechanics - some websites and books</span>
+            <span class="post-date" title="2024-03-29 21:31:42">2024/03/29</span>
+        </a>
+        
+        
+        <a id="top" class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-I-want-to-do-now-keep-updating/"
+           data-tag="Thinking-Diary,Thinking-Idea"
+           data-author="" >
+            <span class="post-title" title="Diary - I want to do now (keep updating)">Diary - I want to do now (keep updating)</span>
+            <span class="post-date" title="2024-03-29 18:17:26">2024/03/29</span>
+        </a>
+        
+        
+        <a id="top" class="All Summary Other_people_blog "
+           href="/Summary/Other-people-blog/Other-people-blog-computational-material-science/"
+           data-tag="Summary-Other_people_blog"
+           data-author="" >
+            <span class="post-title" title="Other people blog - computational material science">Other people blog - computational material science</span>
+            <span class="post-date" title="2024-03-29 18:16:05">2024/03/29</span>
+        </a>
+        
+        
+        <a id="top" class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-How-to-do-my-research/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - How to do my research">Diary - How to do my research</span>
+            <span class="post-date" title="2024-03-28 13:30:54">2024/03/28</span>
+        </a>
+        
+        
+        <a id="top" class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-Writing-at-first/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - Writing at first">Diary - Writing at first</span>
+            <span class="post-date" title="2024-03-25 22:00:04">2024/03/25</span>
+        </a>
+        
+        
+        <a id="top" class="All Summary My_blog "
+           href="/Summary/My-blog/My-blog-Shortcut-command/"
+           data-tag="Summary-My_blog"
+           data-author="" >
+            <span class="post-title" title="My blog - Shortcut command">My blog - Shortcut command</span>
+            <span class="post-date" title="2024-01-23 01:33:00">2024/01/23</span>
+        </a>
+        
+        
+        <a  class="All Writing Academic "
+           href="/Writing/Academic/Research-literature/"
+           data-tag="Writing-Academic"
+           data-author="" >
+            <span class="post-title" title="Academic - Notes">Academic - Notes</span>
+            <span class="post-date" title="2026-04-13 11:35:00">2026/04/13</span>
+        </a>
+        
+        
+        <a  class="All Writing Academic "
+           href="/Writing/Academic/Academic-Notes/"
+           data-tag="Writing-Academic"
+           data-author="" >
+            <span class="post-title" title="Academic - Notes">Academic - Notes</span>
+            <span class="post-date" title="2026-04-01 17:30:00">2026/04/01</span>
+        </a>
+        
+        
+        <a  class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-2026/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - 2026">Diary - 2026</span>
+            <span class="post-date" title="2026-01-13 19:58:00">2026/01/13</span>
+        </a>
+        
+        
+        <a  class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-Plans/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - Plans">Diary - Plans</span>
+            <span class="post-date" title="2025-11-05 09:14:00">2025/11/05</span>
+        </a>
+        
+        
+        <a  class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-2025/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - 2025">Diary - 2025</span>
+            <span class="post-date" title="2025-03-04 21:13:00">2025/03/04</span>
+        </a>
+        
+        
+        <a  class="All Summary Other_people_blog "
+           href="/Summary/Other-people-blog/Other-people-blog-Metals/"
+           data-tag="Summary-Other_people_blog"
+           data-author="" >
+            <span class="post-title" title="Other people blog - Metals">Other people blog - Metals</span>
+            <span class="post-date" title="2024-12-18 09:58:00">2024/12/18</span>
+        </a>
+        
+        
+        <a  class="All Theory Quantum_mechanics "
+           href="/Theory/Quantum-mechanics/Quantum-mechanics-Atomic-orbital/"
+           data-tag="Theory-Quantum_mechanics"
+           data-author="" >
+            <span class="post-title" title="Quantum mechanics - Atomic orbital">Quantum mechanics - Atomic orbital</span>
+            <span class="post-date" title="2024-11-21 14:55:00">2024/11/21</span>
+        </a>
+        
+        
+        <a  class="All Software Pymatgen "
+           href="/Software/Pymatgen/Pymatgen-Calculation-parameters/"
+           data-tag="Software-Pymatgen"
+           data-author="" >
+            <span class="post-title" title="Pymatgen - Calculation parameters">Pymatgen - Calculation parameters</span>
+            <span class="post-date" title="2024-06-24 19:17:00">2024/06/24</span>
+        </a>
+        
+        
+        <a  class="All Developing Mymetal "
+           href="/Developing/Mymetal/Mymetal-Lattice-mismatch/"
+           data-tag="Developing-Mymetal"
+           data-author="" >
+            <span class="post-title" title="Mymetal - Lattice mismatch">Mymetal - Lattice mismatch</span>
+            <span class="post-date" title="2024-06-08 15:30:00">2024/06/08</span>
+        </a>
+        
+        
+        <a  class="All Summary Other_people_blog "
+           href="/Summary/Other-people-blog/Other-people-blog-Machine-learning/"
+           data-tag="Summary-Other_people_blog"
+           data-author="" >
+            <span class="post-title" title="Other people blog - Machine learning">Other people blog - Machine learning</span>
+            <span class="post-date" title="2024-04-29 13:00:00">2024/04/29</span>
+        </a>
+        
+        
+        <a  class="All Developing Install "
+           href="/Developing/Install/Install-Software/"
+           data-tag="Developing-Install"
+           data-author="" >
+            <span class="post-title" title="Install - Software">Install - Software</span>
+            <span class="post-date" title="2024-04-23 10:22:00">2024/04/23</span>
+        </a>
+        
+        
+        <a  class="All Summary Other_people_blog "
+           href="/Summary/Other-people-blog/Other-people-blog-Mechanics/"
+           data-tag="Summary-Other_people_blog"
+           data-author="" >
+            <span class="post-title" title="Other people blog - Mechanics">Other people blog - Mechanics</span>
+            <span class="post-date" title="2024-04-22 05:05:00">2024/04/22</span>
+        </a>
+        
+        
+        <a  class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-2024/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - 2024">Diary - 2024</span>
+            <span class="post-date" title="2024-04-22 04:52:00">2024/04/22</span>
+        </a>
+        
+        
+        <a  class="All Summary Other_people_blog "
+           href="/Summary/Other-people-blog/Other-people-blog-on-the-way-of%20doctor/"
+           data-tag="Summary-Other_people_blog"
+           data-author="" >
+            <span class="post-title" title="Other people blog - on the way of doctor">Other people blog - on the way of doctor</span>
+            <span class="post-date" title="2024-04-20 04:26:00">2024/04/20</span>
+        </a>
+        
+        
+        <a  class="All Summary Other_people_blog "
+           href="/Summary/Other-people-blog/Other-people-blog-DFT/"
+           data-tag="Summary-Other_people_blog"
+           data-author="" >
+            <span class="post-title" title="Other people blog - DFT">Other people blog - DFT</span>
+            <span class="post-date" title="2024-04-20 03:00:00">2024/04/20</span>
+        </a>
+        
+        
+        <a  class="All Thinking Idea "
+           href="/Thinking/Idea/Idea-Next-paper/"
+           data-tag="Thinking-Idea"
+           data-author="" >
+            <span class="post-title" title="Idea - Next paper">Idea - Next paper</span>
+            <span class="post-date" title="2024-04-12 05:34:00">2024/04/12</span>
+        </a>
+        
+        
+        <a  class="All Software VASP VTheory "
+           href="/Software/VASP/VTheory/VASP-VTheory-Space-group/"
+           data-tag="Software-VASP-VTheory"
+           data-author="" >
+            <span class="post-title" title="VASP - VTheory - Space group">VASP - VTheory - Space group</span>
+            <span class="post-date" title="2024-04-10 13:52:00">2024/04/10</span>
+        </a>
+        
+        
+        <a  class="All Software VASP VTheory "
+           href="/Software/VASP/VTheory/VASP-VTheory-Influence-of-cell/"
+           data-tag="Software-VASP-VTheory"
+           data-author="" >
+            <span class="post-title" title="VASP - VTheory - Influence of cell">VASP - VTheory - Influence of cell</span>
+            <span class="post-date" title="2024-04-10 01:19:00">2024/04/10</span>
+        </a>
+        
+        
+        <a  class="All Software Tool "
+           href="/Software/Tool/Tool-Find-heterostructure/"
+           data-tag="Software-Tool"
+           data-author="" >
+            <span class="post-title" title="Tool - Find heterostructure">Tool - Find heterostructure</span>
+            <span class="post-date" title="2024-04-07 00:36:38">2024/04/07</span>
+        </a>
+        
+        
+        <a  class="All Theory Quantum_mechanics "
+           href="/Theory/Quantum-mechanics/Quantum-mechanics-Density-functional-theory/"
+           data-tag="Theory-Quantum_mechanics"
+           data-author="" >
+            <span class="post-title" title="Quantum mechanics - Density functional theory">Quantum mechanics - Density functional theory</span>
+            <span class="post-date" title="2024-04-01 15:16:03">2024/04/01</span>
+        </a>
+        
+        
+        <a  class="All Theory Quantum_mechanics "
+           href="/Theory/Quantum-mechanics/Quantum-mechanics-The-Feynman-lectures-on-physics-1/"
+           data-tag="Theory-Quantum_mechanics"
+           data-author="" >
+            <span class="post-title" title="Quantum mechanics - The Feynman lectures on physics 1">Quantum mechanics - The Feynman lectures on physics 1</span>
+            <span class="post-date" title="2024-04-01 14:43:03">2024/04/01</span>
+        </a>
+        
+        
+        <a  class="All Developing Mymetal "
+           href="/Developing/Mymetal/Mymetal-error/"
+           data-tag="Developing-Mymetal"
+           data-author="" >
+            <span class="post-title" title="Mymetal - error">Mymetal - error</span>
+            <span class="post-date" title="2024-03-30 01:44:55">2024/03/30</span>
+        </a>
+        
+        
+        <a  class="All Developing Mymetal "
+           href="/Developing/Mymetal/Mymetal-log/"
+           data-tag="Developing-Mymetal"
+           data-author="" >
+            <span class="post-title" title="Mymetal - work log">Mymetal - work log</span>
+            <span class="post-date" title="2024-03-30 01:44:55">2024/03/30</span>
+        </a>
+        
+        
+        <a  class="All Software P4VASP "
+           href="/Software/P4VASP/P4VASP-install/"
+           data-tag="Software-P4VASP"
+           data-author="" >
+            <span class="post-title" title="P4VASP - Install">P4VASP - Install</span>
+            <span class="post-date" title="2024-03-25 14:33:00">2024/03/25</span>
+        </a>
+        
+        
+        <a  class="All Software VASP Special_functions "
+           href="/Software/VASP/Special-functions/VASP-Special-functions-fix-basic-vector/"
+           data-tag="Software-VASP-Special_functions"
+           data-author="" >
+            <span class="post-title" title="VASP - Special functions - fix basic vector">VASP - Special functions - fix basic vector</span>
+            <span class="post-date" title="2024-01-24 18:57:00">2024/01/24</span>
+        </a>
+        
+        
+        <a  class="All Software Tool "
+           href="/Software/Tool/Tool-Proxy-problem-of-copilot/"
+           data-tag="Software-Tool"
+           data-author="" >
+            <span class="post-title" title="Tool - Proxy problem of copilot">Tool - Proxy problem of copilot</span>
+            <span class="post-date" title="2024-01-23 02:54:00">2024/01/23</span>
+        </a>
+        
+        
+        <a  class="All Software ASE "
+           href="/Software/ASE/ASE-How-to-generate-surface/"
+           data-tag="Software-ASE"
+           data-author="" >
+            <span class="post-title" title="ASE - How to generate surface">ASE - How to generate surface</span>
+            <span class="post-date" title="2024-01-19 12:13:00">2024/01/19</span>
+        </a>
+        
+        
+        <a  class="All Software ASE "
+           href="/Software/ASE/ASE-Modify-the-source-code-of-Write-function/"
+           data-tag="Software-ASE"
+           data-author="" >
+            <span class="post-title" title="ASE - Modify the source code of Write function">ASE - Modify the source code of Write function</span>
+            <span class="post-date" title="2024-01-18 07:01:00">2024/01/18</span>
+        </a>
+        
+        
+        <a  class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-Past-and-future/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - Past and future">Diary - Past and future</span>
+            <span class="post-date" title="2023-12-29 05:08:00">2023/12/29</span>
+        </a>
+        
+        
+        <a  class="All Software ASE "
+           href="/Software/ASE/ASE-generate-POSCAR/"
+           data-tag="Software-ASE"
+           data-author="" >
+            <span class="post-title" title="ASE - generate POSCAR">ASE - generate POSCAR</span>
+            <span class="post-date" title="2023-12-14 23:51:00">2023/12/14</span>
+        </a>
+        
+        
+        <a  class="All Program Python "
+           href="/Program/Python/Python-DFT-calculation-3-Generate-Kpoints/"
+           data-tag="Program-Python"
+           data-author="" >
+            <span class="post-title" title="Python - DFT calculation 3 - Generate Kpoints">Python - DFT calculation 3 - Generate Kpoints</span>
+            <span class="post-date" title="2023-11-23 17:28:00">2023/11/23</span>
+        </a>
+        
+        
+        <a  class="All Program Python "
+           href="/Program/Python/Python-DFT-calculation-2-Introduction-of-Kspace/"
+           data-tag="Program-Python"
+           data-author="" >
+            <span class="post-title" title="Python - DFT calculation 2 - Introduction of Kspace">Python - DFT calculation 2 - Introduction of Kspace</span>
+            <span class="post-date" title="2023-11-21 23:26:00">2023/11/21</span>
+        </a>
+        
+        
+        <a  class="All Program Python "
+           href="/Program/Python/Python-DFT-calculation-1-Solve-the-one-dimensional-Schrodinger-equation/"
+           data-tag="Program-Python"
+           data-author="" >
+            <span class="post-title" title="Python - DFT calculation 1 - Solve the one dimensional Schrodinger equation">Python - DFT calculation 1 - Solve the one dimensional Schrodinger equation</span>
+            <span class="post-date" title="2023-08-30 16:36:00">2023/08/30</span>
+        </a>
+        
+        
+        <a  class="All Software Lammps "
+           href="/Software/Lammps/Lammps-Reinstall/"
+           data-tag="Software-Lammps"
+           data-author="" >
+            <span class="post-title" title="Lammps - Reinstall">Lammps - Reinstall</span>
+            <span class="post-date" title="2022-11-25 11:56:00">2022/11/25</span>
+        </a>
+        
+        
+        <a  class="All Software Lammps "
+           href="/Software/Lammps/Lammps-SW-mod-potential-of-MoS2/"
+           data-tag="Software-Lammps"
+           data-author="" >
+            <span class="post-title" title="Lammps - SW mod potential of MoS2">Lammps - SW mod potential of MoS2</span>
+            <span class="post-date" title="2022-04-19 17:46:00">2022/04/19</span>
+        </a>
+        
+        
+        <a  class="All Software Lammps "
+           href="/Software/Lammps/Lammps-Add-new-pair-style/"
+           data-tag="Software-Lammps"
+           data-author="" >
+            <span class="post-title" title="Lammps - Add new pair style">Lammps - Add new pair style</span>
+            <span class="post-date" title="2022-04-16 19:20:00">2022/04/16</span>
+        </a>
+        
+        
+        <a  class="All Software Lammps "
+           href="/Software/Lammps/Lammps-RDF-of-annealed-SiO2-using-VMD/"
+           data-tag="Software-Lammps"
+           data-author="" >
+            <span class="post-title" title="Lammps - RDF of annealed SiO2 using VMD">Lammps - RDF of annealed SiO2 using VMD</span>
+            <span class="post-date" title="2022-04-05 20:09:00">2022/04/05</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-Software/Tool-My-Summary" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">Tool - Summary</h1>
+    
+    <div class="article-meta">
+        
+        <span class="top"><a>置顶</a></span>
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="Software">Software</a> > 
+            
+            <a  data-rel="Software&lt;---&gt;Tool">Tool</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color4">Software-Tool</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            Created At : <time class="date" title='Updated At: 2025-07-02 15:33:52'>2024-03-30 13:29</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>Count:1.4k</span>
+        
+        
+        <span id="busuanzi_container_page_pv">
+            Views 👀 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#0-Write-the-first-Interesting-Tools-see-Endnote-DFT-HCP-Au-Tools"><span class="toc-text">0. Write the first. Interesting Tools (see Endnote: DFT-HCP-Au&#x2F;Tools)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-High-through-electronic-calculations"><span class="toc-text">1. High-through electronic calculations</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-Automatic-Flow-AFLOW-ACONVASP"><span class="toc-text">1.1 Automatic Flow, AFLOW&#x2F;ACONVASP</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-PASP"><span class="toc-text">1.2 PASP</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-AMP2-%E7%A8%8B%E5%BA%8F%EF%BC%9A%E7%94%A8%E4%BA%8E%E4%BB%8E%E5%A4%B4%E8%AE%A1%E7%AE%97%E6%99%B6%E4%BD%93%E6%9D%90%E6%96%99%E7%9A%84%E5%85%A8%E8%87%AA%E5%8A%A8%E7%A8%8B%E5%BA%8F"><span class="toc-text">1.3 AMP2 程序：用于从头计算晶体材料的全自动程序</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Design-material"><span class="toc-text">2 Design material</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-MLMD"><span class="toc-text">2.1 MLMD</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-AtomGPT-%E7%A8%8B%E5%BA%8F%EF%BC%9A%E7%94%A8%E4%BA%8E%E6%AD%A3%E5%90%91%E5%92%8C%E9%80%86%E5%90%91%E6%9D%90%E6%96%99%E8%AE%BE%E8%AE%A1%E7%9A%84%E5%8E%9F%E5%AD%90%E7%94%9F%E6%88%90%E9%A2%84%E8%AE%AD%E7%BB%83%E8%BD%AC%E6%8D%A2%E5%99%A8"><span class="toc-text">2.2 AtomGPT 程序：用于正向和逆向材料设计的原子生成预训练转换器</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-Surface-calculation"><span class="toc-text">3. Surface calculation</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-SurFlow"><span class="toc-text">3.1 SurFlow</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-Surfkit"><span class="toc-text">3.2 Surfkit</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-CLEAVING-%E7%A8%8B%E5%BA%8F%EF%BC%9A%E7%94%A8%E4%BA%8E%E8%AE%A1%E7%AE%97%E8%A1%A8%E9%9D%A2%E8%87%AA%E7%94%B1%E8%83%BD%E7%9A%84-LAMMPS-%E8%BD%AF%E4%BB%B6%E5%8C%85"><span class="toc-text">3.3 CLEAVING 程序：用于计算表面自由能的 LAMMPS 软件包</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-Mechanics"><span class="toc-text">4. Mechanics</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-SMATool"><span class="toc-text">4.1 SMATool</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-ElasTool-update-to-3-0"><span class="toc-text">4.2 ElasTool (update to 3.0)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3-VELAS"><span class="toc-text">4.3 VELAS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3-MyElas"><span class="toc-text">4.3 MyElas</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-Building-heterostructure"><span class="toc-text">5. Building heterostructure</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#5-1-Hetbuilder"><span class="toc-text">5.1 Hetbuilder</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-2-Hetero2D"><span class="toc-text">5.2 Hetero2D</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-3-VASPKIT-CUP"><span class="toc-text">5.3 VASPKIT_CUP</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-4-Structure-Tool-maybe-useless"><span class="toc-text">5.4 Structure Tool (maybe useless)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-5-Interface-master"><span class="toc-text">5.5 Interface_master</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-6-OgreInterface"><span class="toc-text">5.6 OgreInterface</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-7-ASE-Pymatgen"><span class="toc-text">5.7 ASE &#x2F; Pymatgen</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-8-Pymatgen"><span class="toc-text">5.8 Pymatgen</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-9-InterMatch"><span class="toc-text">5.9 InterMatch</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-About-heterostructure-see-Tool-Find-heterostructure"><span class="toc-text">6. About heterostructure (see Tool-Find-heterostructure)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#6-1-Epitaxy"><span class="toc-text">6.1 Epitaxy</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-2-2D-Elastic-Properties"><span class="toc-text">6.2 2D Elastic Properties</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-Python-and-DFT-MD"><span class="toc-text">7. Python and DFT&#x2F;MD</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#7-1-QMC-DFT-Python"><span class="toc-text">7.1 QMC DFT Python</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-2-FCP-vasp-ase"><span class="toc-text">7.2 FCP-vasp-ase</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-3-PyL3dMD-Python-LAMMPS-3D-molecular-descriptors-package"><span class="toc-text">7.3 PyL3dMD: Python LAMMPS 3D molecular descriptors package</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-4-eNEB"><span class="toc-text">7.4 eNEB</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-5-PyLAT-%E7%A8%8B%E5%BA%8F%EF%BC%9A%E5%9F%BA%E4%BA%8E-Python-%E4%BB%A3%E7%A0%81%E7%9A%84-LAMMPS-%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7"><span class="toc-text">7.5 PyLAT 程序：基于 Python 代码的 LAMMPS 数据处理工具</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-6-VTAnDeM-%E7%A8%8B%E5%BA%8F%EF%BC%9A%E7%94%A8%E4%BA%8E%E5%90%8C%E6%97%B6%E5%8F%AF%E8%A7%86%E5%8C%96%E6%9D%90%E6%96%99%E7%9A%84%E7%9B%B8%E7%A8%B3%E5%AE%9A%E6%80%A7%E3%80%81%E7%BC%BA%E9%99%B7%E8%83%BD%E9%87%8F%E5%AD%A6%E5%92%8C%E8%BD%BD%E6%B5%81%E5%AD%90%E6%B5%93%E5%BA%A6%E7%9A%84-python-%E5%B7%A5%E5%85%B7%E5%8C%85"><span class="toc-text">7.6 VTAnDeM 程序：用于同时可视化材料的相稳定性、缺陷能量学和载流子浓度的 python 工具包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-7-PyCDT-%E7%A8%8B%E5%BA%8F%EF%BC%9A%E7%94%A8%E4%BA%8E%E5%AF%B9%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%92%8C%E7%BB%9D%E7%BC%98%E4%BD%93%E4%B8%AD%E7%9A%84%E7%82%B9%E7%BC%BA%E9%99%B7%E8%BF%9B%E8%A1%8C%E5%BB%BA%E6%A8%A1%E7%9A%84-Python-%E5%B7%A5%E5%85%B7%E5%8C%85"><span class="toc-text">7.7 PyCDT 程序：用于对半导体和绝缘体中的点缺陷进行建模的 Python 工具包</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-Re-compile-VASP"><span class="toc-text">8. Re-compile VASP</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#8-1-VASP-OPT-AXIS"><span class="toc-text">8.1 VASP OPT AXIS</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-Model-tools-Pre-Post-process"><span class="toc-text">9. Model tools &#x2F; Pre &#x2F; Post process</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#9-1-VASPKIT"><span class="toc-text">9.1 VASPKIT</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-2-ATOMKIT"><span class="toc-text">9.2 ATOMKIT</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-3-Atomsk"><span class="toc-text">9.3 Atomsk</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-4-ASE"><span class="toc-text">9.4 ASE</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-5-AACSD"><span class="toc-text">9.5 AACSD</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-6-Pyprocar"><span class="toc-text">9.6 Pyprocar</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-7-IFermi"><span class="toc-text">9.7 IFermi</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-8-Aimsgb-%E7%94%9F%E6%88%90%E5%91%A8%E6%9C%9F%E6%80%A7%E6%99%B6%E7%95%8C"><span class="toc-text">9.8 Aimsgb: 生成周期性晶界</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-9-%E5%8E%9F%E5%AD%90%E7%BB%93%E6%9E%84%E8%AF%86%E5%88%AB"><span class="toc-text">9.9 原子结构识别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-10-MDANSE"><span class="toc-text">9.10 MDANSE</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-11-Pymatgen"><span class="toc-text">9.11 Pymatgen</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-12-VoroTop-%E7%A8%8B%E5%BA%8F-Vorotis-%E7%A8%8B%E5%BA%8F-ParVoro-%E7%A8%8B%E5%BA%8F%E7%BB%93%E5%90%88-OVITO-%E7%A8%8B%E5%BA%8F"><span class="toc-text">9.12 VoroTop 程序 + Vorotis 程序 + ParVoro++ 程序结合 OVITO 程序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-13-ScaleLat-%E7%A8%8B%E5%BA%8F%EF%BC%9A%E4%B8%80%E7%A7%8D%E7%94%A8%E4%BA%8E%E7%BB%98%E5%88%B6%E5%A4%9A%E7%9B%B8%E4%BD%93%E7%B3%BB%E5%92%8C%E9%AB%98%E7%86%B5%E5%90%88%E9%87%91%E5%8E%9F%E5%AD%90%E7%BB%93%E6%9E%84%E7%9A%84%E5%8C%96%E5%AD%A6%E7%BB%93%E6%9E%84%E5%8C%B9%E9%85%8D%E7%AE%97%E6%B3%95"><span class="toc-text">9.13 ScaleLat 程序：一种用于绘制多相体系和高熵合金原子结构的化学结构匹配算法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-14-MultiShifter-%E7%A8%8B%E5%BA%8F%EF%BC%9A%E7%94%9F%E6%88%90-3D-%E5%92%8C-2D-%E6%99%B6%E4%BD%93%E4%B8%AD%E6%89%A9%E5%B1%95%E4%BA%8C%E7%BB%B4%E7%BC%BA%E9%99%B7%E7%BB%93%E6%9E%84%E6%A8%A1%E5%9E%8B%E7%9A%84%E8%BD%AF%E4%BB%B6"><span class="toc-text">9.14 MultiShifter 程序：生成 3D 和 2D 晶体中扩展二维缺陷结构模型的软件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10-Space-group"><span class="toc-text">10. Space group</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#10-1-Spglib"><span class="toc-text">10.1 Spglib</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-2-CrystKit"><span class="toc-text">10.2 CrystKit</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-3-SeeK-path"><span class="toc-text">10.3 SeeK-path</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-4-Brillouin-jl-%E7%A8%8B%E5%BA%8F%EF%BC%9Ak-%E7%A9%BA%E9%97%B4%E8%B7%AF%E5%BE%84%E5%92%8C%E5%B8%83%E9%87%8C%E6%B8%8A%E5%8C%BA%E5%8F%AF%E8%A7%86%E5%8C%96%E8%BD%AF%E4%BB%B6%E5%8C%85"><span class="toc-text">10.4 Brillouin.jl 程序：k-空间路径和布里渊区可视化软件包</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#11-Phase-diagram"><span class="toc-text">11. Phase diagram</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#11-1-Phasego"><span class="toc-text">11.1 Phasego</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12-Test-of-the-convergence"><span class="toc-text">12. Test of the convergence</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#12-1-vaspup2-0"><span class="toc-text">12.1  vaspup2.0</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#13-Machine-learning"><span class="toc-text">13. Machine learning</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#13-1-CrySPY"><span class="toc-text">13.1 CrySPY</span></a></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-5 i,
+    .toc-level-5 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p align="center"><strong><em>Knowledge starts with practice.<em></strong></p>
+
+<p align="center"><strong><em>实践出真知<em></strong></p>
+
+<p><strong>Updated time: 01&#x2F;22 2025.</strong></p>
+<h2 id="0-Write-the-first-Interesting-Tools-see-Endnote-DFT-HCP-Au-Tools"><a href="#0-Write-the-first-Interesting-Tools-see-Endnote-DFT-HCP-Au-Tools" class="headerlink" title="0. Write the first. Interesting Tools (see Endnote: DFT-HCP-Au/Tools)"></a>0. Write the first. Interesting Tools (see <code>Endnote: DFT-HCP-Au/Tools</code>)</h2><p>It’s for add some interesting tools that I interested in but not used.</p>
+<p>Not only software, also some GitHub stars.</p>
+<p>Some summary websites:</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/5P0T8Ma4ZKIz1qr3WJw5vg">Best of Atomistic Machine Learning</a></li>
+</ul>
+<h2 id="1-High-through-electronic-calculations"><a href="#1-High-through-electronic-calculations" class="headerlink" title="1. High-through electronic calculations"></a>1. High-through electronic calculations</h2><h3 id="1-1-Automatic-Flow-AFLOW-ACONVASP"><a href="#1-1-Automatic-Flow-AFLOW-ACONVASP" class="headerlink" title="1.1 Automatic Flow, AFLOW&#x2F;ACONVASP"></a>1.1 Automatic Flow, AFLOW&#x2F;ACONVASP</h3><ul>
+<li><strong>Article:</strong> High-throughput electronic band structure calculations: Challenges and tools (see <code>Endnote</code>)</li>
+<li><strong>Function:</strong><ul>
+<li>The article give some example of momentum space for lots of bravais lattice.</li>
+</ul>
+</li>
+</ul>
+<h3 id="1-2-PASP"><a href="#1-2-PASP" class="headerlink" title="1.2 PASP"></a>1.2 PASP</h3><ul>
+<li><strong>Description:</strong> <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/IvasK6q9jseLK_WUCYHdHQ">WeiXin</a></li>
+</ul>
+<h3 id="1-3-AMP2-程序：用于从头计算晶体材料的全自动程序"><a href="#1-3-AMP2-程序：用于从头计算晶体材料的全自动程序" class="headerlink" title="1.3 AMP2 程序：用于从头计算晶体材料的全自动程序"></a>1.3 AMP2 程序：用于从头计算晶体材料的全自动程序</h3><ul>
+<li><strong>Article:</strong> AMP2: A fully automated program for ab initio calculations of crystalline materials (see <code>Endnote</code>)</li>
+<li><strong>Description:</strong> <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/_Aob1gCqllUFiioqX365ig">WeiXin</a></li>
+</ul>
+<h2 id="2-Design-material"><a href="#2-Design-material" class="headerlink" title="2 Design material"></a>2 Design material</h2><h3 id="2-1-MLMD"><a href="#2-1-MLMD" class="headerlink" title="2.1 MLMD"></a>2.1 MLMD</h3><ul>
+<li><strong>Article:</strong> MLMD: a programming-free AI platform to predict and design materials (see <code>Endnote</code>)</li>
+<li><strong>Source code:</strong> <ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/Jiaxuan-Ma/MLMD">NLMD</a> </li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Bin-Cao/Bgolearn">Bgolearn</a> - Active learning package</li>
+<li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/JZUuMwOZPt-qS3j0hEJwcw">bohrium</a></li>
+</ul>
+</li>
+<li><strong>Description:</strong> <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/xvtH0k1GKPQspNP2CLR6fg">WeiXin</a></li>
+</ul>
+<h3 id="2-2-AtomGPT-程序：用于正向和逆向材料设计的原子生成预训练转换器"><a href="#2-2-AtomGPT-程序：用于正向和逆向材料设计的原子生成预训练转换器" class="headerlink" title="2.2 AtomGPT 程序：用于正向和逆向材料设计的原子生成预训练转换器"></a>2.2 AtomGPT 程序：用于正向和逆向材料设计的原子生成预训练转换器</h3><ul>
+<li><strong>Article:</strong> AtomGPT: Atomistic Generative Pretrained Transformer for Forward and Inverse Materials Design  (see <code>Endnote</code>)</li>
+<li><strong>Description:</strong> <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/1PmCHNgf60EaaW5LgLlVew">WeiXin</a></li>
+</ul>
+<h2 id="3-Surface-calculation"><a href="#3-Surface-calculation" class="headerlink" title="3. Surface calculation"></a>3. Surface calculation</h2><h3 id="3-1-SurFlow"><a href="#3-1-SurFlow" class="headerlink" title="3.1 SurFlow"></a>3.1 SurFlow</h3><ul>
+<li><strong>Article:</strong> SurfFlow: High-throughput surface energy calculations for arbitrary crystals (see <code>Endnote</code>)</li>
+<li><strong>Source code:</strong> <a target="_blank" rel="noopener" href="https://github.com/ShengLin1001/surfflow">GitHub</a></li>
+<li><strong>Description:</strong> <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/LbEcw69Cm3sFEZvF7P4afQ">WeiXin</a></li>
+</ul>
+<h3 id="3-2-Surfkit"><a href="#3-2-Surfkit" class="headerlink" title="3.2 Surfkit"></a>3.2 Surfkit</h3><ul>
+<li><strong>Article:</strong> Surfkit: An atomic toolkit for surface modelling with molecular adsorption (see <code>Endnote</code>)</li>
+<li><strong>Source code:</strong> <a target="_blank" rel="noopener" href="https://github.com/zrfcms/Surfkit">Github</a></li>
+</ul>
+<h3 id="3-3-CLEAVING-程序：用于计算表面自由能的-LAMMPS-软件包"><a href="#3-3-CLEAVING-程序：用于计算表面自由能的-LAMMPS-软件包" class="headerlink" title="3.3 CLEAVING 程序：用于计算表面自由能的 LAMMPS 软件包"></a>3.3 CLEAVING 程序：用于计算表面自由能的 LAMMPS 软件包</h3><ul>
+<li><strong>Article:</strong> CLEAVING: a LAMMPS package to compute surface free energies (see <code>Endnote</code>)</li>
+</ul>
+<h2 id="4-Mechanics"><a href="#4-Mechanics" class="headerlink" title="4. Mechanics"></a>4. Mechanics</h2><h3 id="4-1-SMATool"><a href="#4-1-SMATool" class="headerlink" title="4.1 SMATool"></a>4.1 SMATool</h3><ul>
+<li><strong>Article:</strong> SMATOOL: Strength of materials analysis toolkit  (see <code>Endnote</code>)</li>
+<li><strong>Source code:</strong>  <a target="_blank" rel="noopener" href="https://github.com/gmp007/smatool">Github</a></li>
+<li><strong>Description:</strong> <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/scozTK_PvAuH9MGTO8y1AA">WeiXin</a></li>
+</ul>
+<h3 id="4-2-ElasTool-update-to-3-0"><a href="#4-2-ElasTool-update-to-3-0" class="headerlink" title="4.2 ElasTool (update to 3.0)"></a>4.2 ElasTool (update to 3.0)</h3><ul>
+<li><strong>Article:</strong><ul>
+<li>ElasTool: An automated toolkit for elastic constants calculation (see <code>Endnote</code>)</li>
+<li>ELASTOOL V3.0: Efficient computational and visualization toolkit for elastic and mechanical properties of materials (see <code>Endnote</code>)</li>
+</ul>
+</li>
+<li><strong>Source code:</strong> <a target="_blank" rel="noopener" href="https://github.com/gmp007/elastool">GitHub</a></li>
+<li><strong>Description:</strong> <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/29rqYa3k6iQjcHXwe3KOwA">WeiXin</a></li>
+</ul>
+<h3 id="4-3-VELAS"><a href="#4-3-VELAS" class="headerlink" title="4.3 VELAS"></a>4.3 VELAS</h3><ul>
+<li><strong>Article:</strong><ul>
+<li>VELAS: An open-source toolbox for visualization and analysis of elastic anisotropy  (see <code>Endnote</code>)</li>
+</ul>
+</li>
+<li><strong>Source code:</strong> <a target="_blank" rel="noopener" href="https://github.com/ranzhengcode/VELAS">GitHub</a></li>
+<li><strong>Description:</strong> <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/pBFkIt9rGfeywRHa3vjhng">WeiXin</a></li>
+</ul>
+<h3 id="4-3-MyElas"><a href="#4-3-MyElas" class="headerlink" title="4.3 MyElas"></a>4.3 MyElas</h3><ul>
+<li><strong>Article:</strong><ul>
+<li>MyElas: An automatized tool-kit for high-throughput calculation, post-processing and visualization of elasticity and related properties of solids   (see <code>Endnote</code>)</li>
+</ul>
+</li>
+<li><strong>Source code:</strong> <a target="_blank" rel="noopener" href="https://github.com/tiandijunhao/MyElas">GitHub</a></li>
+<li><strong>Description:</strong> <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/345jCRHXzn2PX_1K6_fI7Q">WeiXin</a></li>
+</ul>
+<h2 id="5-Building-heterostructure"><a href="#5-Building-heterostructure" class="headerlink" title="5. Building heterostructure"></a>5. Building heterostructure</h2><h3 id="5-1-Hetbuilder"><a href="#5-1-Hetbuilder" class="headerlink" title="5.1 Hetbuilder"></a>5.1 Hetbuilder</h3><ul>
+<li><p><strong>Algorithm:</strong> <strong>Coincidence lattices</strong></p>
+</li>
+<li><p><strong>Source code:</strong> <a target="_blank" rel="noopener" href="https://github.com/romankempt/hetbuilder">Github</a>, <a target="_blank" rel="noopener" href="https://github.com/hongyi-zhao/hetbuilder">revised version</a></p>
+</li>
+<li><p><strong>Document:</strong> <a target="_blank" rel="noopener" href="https://hetbuilder.readthedocs.io/en/latest/index.html">Page</a></p>
+</li>
+</ul>
+<h3 id="5-2-Hetero2D"><a href="#5-2-Hetero2D" class="headerlink" title="5.2 Hetero2D"></a>5.2 Hetero2D</h3><ul>
+<li><p><strong>Article:</strong> Computational synthesis of 2D materials: A high-throughput approach to materials design (see <code>Endnote</code>)</p>
+</li>
+<li><p><strong>Source code:</strong> <a target="_blank" rel="noopener" href="https://github.com/cmdlab/Hetero2d">Github</a></p>
+</li>
+<li><p><strong>Document:</strong> <a target="_blank" rel="noopener" href="https://cmdlab.github.io/Hetero2d/html/index.html">Page</a></p>
+</li>
+<li><p><strong>Description:</strong> low-lattice mismatched hetero-structures for arbitrary 2D materials and substrate surfaces</p>
+</li>
+</ul>
+<h3 id="5-3-VASPKIT-CUP"><a href="#5-3-VASPKIT-CUP" class="headerlink" title="5.3 VASPKIT_CUP"></a>5.3 VASPKIT_CUP</h3><ul>
+<li><strong>Source code:</strong> <a target="_blank" rel="noopener" href="https://github.com/vaspkit/1st_VASPKIT_CUP">Github</a></li>
+</ul>
+<h3 id="5-4-Structure-Tool-maybe-useless"><a href="#5-4-Structure-Tool-maybe-useless" class="headerlink" title="5.4 Structure Tool (maybe useless)"></a>5.4 Structure Tool (maybe useless)</h3><ul>
+<li><strong>Source code:</strong> <a target="_blank" rel="noopener" href="https://github.com/pmirabedini/Structure_Toolbox">Github</a></li>
+</ul>
+<h3 id="5-5-Interface-master"><a href="#5-5-Interface-master" class="headerlink" title="5.5 Interface_master"></a>5.5 Interface_master</h3><ul>
+<li>Source code: <a target="_blank" rel="noopener" href="https://github.com/ShengLin1001/interface_master">Github</a></li>
+<li>Article: A brute-force code searching for cell of non-identical displacement for CSL grain boundaries and interfaces  (see <code>Endnote</code>)</li>
+<li>Description: Find heterostructure and shift in plane to search a minimal energy configuration</li>
+</ul>
+<h3 id="5-6-OgreInterface"><a href="#5-6-OgreInterface" class="headerlink" title="5.6 OgreInterface"></a>5.6 OgreInterface</h3><ul>
+<li>Source code: <a target="_blank" rel="noopener" href="https://github.com/ShengLin1001/OgreInterface">Github</a></li>
+<li>Description: Package for creating and optimizing lattice matched and domain matched epitaxial interfaces.</li>
+</ul>
+<h3 id="5-7-ASE-Pymatgen"><a href="#5-7-ASE-Pymatgen" class="headerlink" title="5.7 ASE &#x2F; Pymatgen"></a>5.7 ASE &#x2F; Pymatgen</h3><ul>
+<li>Issues: <a target="_blank" rel="noopener" href="https://github.com/ShengLin1001/PJ-advanced-reasearch/issues/1">Github</a></li>
+</ul>
+<h3 id="5-8-Pymatgen"><a href="#5-8-Pymatgen" class="headerlink" title="5.8 Pymatgen"></a>5.8 Pymatgen</h3><ul>
+<li>Nice tool</li>
+</ul>
+<h3 id="5-9-InterMatch"><a href="#5-9-InterMatch" class="headerlink" title="5.9 InterMatch"></a>5.9 InterMatch</h3><ul>
+<li>Article: High-throughput ab initio design of atomic interfaces using InterMatch   (see <code>Endnote</code>)</li>
+<li>Description: <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/vcZduuRd0PD02_Ej-62DpA">WeiXin</a></li>
+</ul>
+<h2 id="6-About-heterostructure-see-Tool-Find-heterostructure"><a href="#6-About-heterostructure-see-Tool-Find-heterostructure" class="headerlink" title="6. About heterostructure (see Tool-Find-heterostructure)"></a>6. About heterostructure (see <code>Tool-Find-heterostructure</code>)</h2><h3 id="6-1-Epitaxy"><a href="#6-1-Epitaxy" class="headerlink" title="6.1 Epitaxy"></a>6.1 Epitaxy</h3><ul>
+<li><p><strong>Source code:</strong> <a target="_blank" rel="noopener" href="https://github.com/Vnyk121098/Epitaxy">Github</a></p>
+</li>
+<li><p><strong>Description:</strong> The objective of this project is to write a Python code for identifying a suitable crystal substrate which shows least lattice mismatch for a film crystal</p>
+</li>
+</ul>
+<h3 id="6-2-2D-Elastic-Properties"><a href="#6-2-2D-Elastic-Properties" class="headerlink" title="6.2 2D Elastic Properties"></a>6.2 2D Elastic Properties</h3><ul>
+<li><strong>Source code:</strong> <a target="_blank" rel="noopener" href="https://github.com/gmp007/2D_Elastic-Properties">Github</a></li>
+<li><strong>Description:</strong> Computational Design and Analysis of Mechanical Properties of 2D Materials &amp; Heterostructures</li>
+</ul>
+<h2 id="7-Python-and-DFT-MD"><a href="#7-Python-and-DFT-MD" class="headerlink" title="7. Python and DFT&#x2F;MD"></a>7. Python and DFT&#x2F;MD</h2><h3 id="7-1-QMC-DFT-Python"><a href="#7-1-QMC-DFT-Python" class="headerlink" title="7.1 QMC DFT Python"></a>7.1 QMC DFT Python</h3><ul>
+<li><strong>Source code:</strong> <a target="_blank" rel="noopener" href="https://github.com/kayahans/qmc-dft-python">Github</a></li>
+<li><strong>Description:</strong> QMC-DFT-Python is a lightweight open-source code for scientists and enthusiasts to understand the basic concepts behind the implementations of most popular electronic structure calculation method: Density Functional Theory (DFT) and also quantum Monte carlo (QMC).</li>
+</ul>
+<h3 id="7-2-FCP-vasp-ase"><a href="#7-2-FCP-vasp-ase" class="headerlink" title="7.2 FCP-vasp-ase"></a>7.2 FCP-vasp-ase</h3><ul>
+<li><strong>Source code:</strong> <a target="_blank" rel="noopener" href="https://github.com/hellozhaoming/FCP-vasp-ase">Github</a></li>
+<li><strong>Article:</strong> Grand Canonical Ensemble Modeling of Electrochemical Interfaces Made Simple (see <code>Endnote</code>)</li>
+</ul>
+<h3 id="7-3-PyL3dMD-Python-LAMMPS-3D-molecular-descriptors-package"><a href="#7-3-PyL3dMD-Python-LAMMPS-3D-molecular-descriptors-package" class="headerlink" title="7.3 PyL3dMD: Python LAMMPS 3D molecular descriptors package"></a>7.3 PyL3dMD: Python LAMMPS 3D molecular descriptors package</h3><ul>
+<li><strong>Source code:</strong> <a target="_blank" rel="noopener" href="https://github.com/panwarp/PyL3dMD">Github</a></li>
+<li><strong>Article:</strong> PyL3dMD: Python LAMMPS 3D molecular descriptors package (see <code>Endnote</code>)</li>
+</ul>
+<h3 id="7-4-eNEB"><a href="#7-4-eNEB" class="headerlink" title="7.4 eNEB"></a>7.4 eNEB</h3><ul>
+<li><p><strong>Article:</strong> Simulation of Potential-Dependent Activation Energies in Electrocatalysis: Mechanism of O–O Bond Formation on RuO2 (see <code>Endnote</code>)</p>
+</li>
+<li><p><strong>Source code:</strong> <a target="_blank" rel="noopener" href="https://github.com/penghao-xiao/Electrochemical-barrier">Github</a></p>
+</li>
+</ul>
+<h3 id="7-5-PyLAT-程序：基于-Python-代码的-LAMMPS-数据处理工具"><a href="#7-5-PyLAT-程序：基于-Python-代码的-LAMMPS-数据处理工具" class="headerlink" title="7.5 PyLAT 程序：基于 Python 代码的 LAMMPS 数据处理工具"></a>7.5 PyLAT 程序：基于 Python 代码的 LAMMPS 数据处理工具</h3><ul>
+<li><strong>Article:</strong> PyLAT: Python LAMMPS Analysis Tools (see <code>Endnote</code>)</li>
+<li><strong>Source code:</strong> <a target="_blank" rel="noopener" href="https://github.com/MaginnGroup/PyLAT">Github</a></li>
+<li><strong>Description:</strong> <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/mRRdTMt8qM7O4-mb3Oe7Cg">WeiXin</a></li>
+</ul>
+<h3 id="7-6-VTAnDeM-程序：用于同时可视化材料的相稳定性、缺陷能量学和载流子浓度的-python-工具包"><a href="#7-6-VTAnDeM-程序：用于同时可视化材料的相稳定性、缺陷能量学和载流子浓度的-python-工具包" class="headerlink" title="7.6 VTAnDeM 程序：用于同时可视化材料的相稳定性、缺陷能量学和载流子浓度的 python 工具包"></a>7.6 VTAnDeM 程序：用于同时可视化材料的相稳定性、缺陷能量学和载流子浓度的 python 工具包</h3><ul>
+<li><strong>Article:</strong> VTAnDeM: A python toolkit for simultaneously visualizing phase stability, defect energetics, and carrier concentrations of materials (see <code>Endnote</code>)</li>
+</ul>
+<h3 id="7-7-PyCDT-程序：用于对半导体和绝缘体中的点缺陷进行建模的-Python-工具包"><a href="#7-7-PyCDT-程序：用于对半导体和绝缘体中的点缺陷进行建模的-Python-工具包" class="headerlink" title="7.7 PyCDT 程序：用于对半导体和绝缘体中的点缺陷进行建模的 Python 工具包"></a>7.7 PyCDT 程序：用于对半导体和绝缘体中的点缺陷进行建模的 Python 工具包</h3><ul>
+<li><strong>Description:</strong> <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/8KxwCHssVKbDPIOudGkjlA">WeiXin</a></li>
+<li><strong>Article:</strong> PyCDT: A Python toolkit for modeling point defects in semiconductors and insulators (see <code>Endnote</code>)</li>
+</ul>
+<h2 id="8-Re-compile-VASP"><a href="#8-Re-compile-VASP" class="headerlink" title="8. Re-compile VASP"></a>8. Re-compile VASP</h2><h3 id="8-1-VASP-OPT-AXIS"><a href="#8-1-VASP-OPT-AXIS" class="headerlink" title="8.1 VASP OPT AXIS"></a>8.1 VASP OPT AXIS</h3><ul>
+<li><strong>Source code:</strong> <a target="_blank" rel="noopener" href="https://github.com/Chengcheng-Xiao/VASP_OPT_AXIS">Github</a></li>
+</ul>
+<h2 id="9-Model-tools-Pre-Post-process"><a href="#9-Model-tools-Pre-Post-process" class="headerlink" title="9. Model tools &#x2F; Pre &#x2F; Post process"></a>9. Model tools &#x2F; Pre &#x2F; Post process</h2><h3 id="9-1-VASPKIT"><a href="#9-1-VASPKIT" class="headerlink" title="9.1 VASPKIT"></a>9.1 VASPKIT</h3><ul>
+<li><strong>Source code:</strong> <a target="_blank" rel="noopener" href="https://vaspkit.com/">VASPKIT</a></li>
+</ul>
+<h3 id="9-2-ATOMKIT"><a href="#9-2-ATOMKIT" class="headerlink" title="9.2 ATOMKIT"></a>9.2 ATOMKIT</h3><ul>
+<li><strong>Source code:</strong> <a target="_blank" rel="noopener" href="https://vaspkit.com/atomkit.html">ATOMKIT</a></li>
+</ul>
+<h3 id="9-3-Atomsk"><a href="#9-3-Atomsk" class="headerlink" title="9.3 Atomsk"></a>9.3 Atomsk</h3><ul>
+<li><strong>Source code:</strong> <a target="_blank" rel="noopener" href="https://github.com/pierrehirel/atomsk">Github</a></li>
+<li><strong>Description:</strong> For metal, alloy, poly, dislocation, cenvert cell</li>
+</ul>
+<h3 id="9-4-ASE"><a href="#9-4-ASE" class="headerlink" title="9.4 ASE"></a>9.4 ASE</h3><ul>
+<li><strong>Article:</strong> The atomic simulation environment-a Python library for working with atoms (see <code>Endnote</code>)</li>
+<li><strong>Website:</strong> <a target="_blank" rel="noopener" href="https://wiki.fysik.dtu.dk/ase/index.html">ASE</a></li>
+</ul>
+<h3 id="9-5-AACSD"><a href="#9-5-AACSD" class="headerlink" title="9.5 AACSD"></a>9.5 AACSD</h3><ul>
+<li>Article: AACSD: An atomistic analyzer for crystal structure and defects (see <code>Endnote</code>)</li>
+<li>Description: <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/Seh0G2BXCIvwh_BLD2IbDQ">Weixin</a></li>
+</ul>
+<h3 id="9-6-Pyprocar"><a href="#9-6-Pyprocar" class="headerlink" title="9.6 Pyprocar"></a>9.6 Pyprocar</h3><ul>
+<li>Article: PyProcar: A Python library for electronic structure pre&#x2F;post-processing (see <code>Endnote</code>)</li>
+<li>Description: <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/tddoz6xXnycc8vJ5Lx5vDg">WeiXin</a></li>
+</ul>
+<h3 id="9-7-IFermi"><a href="#9-7-IFermi" class="headerlink" title="9.7 IFermi"></a>9.7 IFermi</h3><ul>
+<li>Article: IFermi - A python library for Fermi surface generation and analysis (see <code>Endnote</code>)</li>
+</ul>
+<h3 id="9-8-Aimsgb-生成周期性晶界"><a href="#9-8-Aimsgb-生成周期性晶界" class="headerlink" title="9.8 Aimsgb: 生成周期性晶界"></a>9.8 Aimsgb: 生成周期性晶界</h3><ul>
+<li>Article: Aimsgb: An algorithm and open-source python library to generate periodic grain boundary structures (see <code>Endnote</code>)</li>
+<li>Description: <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/GpCdBZYWwJQALq7NBY-U5Q">Weixin</a></li>
+</ul>
+<h3 id="9-9-原子结构识别"><a href="#9-9-原子结构识别" class="headerlink" title="9.9 原子结构识别"></a>9.9 原子结构识别</h3><ul>
+<li>Article: Structure identification methods for atomistic simulations of crystalline materials (see <code>Endnote</code>)</li>
+<li>Description: <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/DBqocxeOxz0a7Z9H3xfsPw">WeiXin</a></li>
+</ul>
+<h3 id="9-10-MDANSE"><a href="#9-10-MDANSE" class="headerlink" title="9.10 MDANSE"></a>9.10 MDANSE</h3><ul>
+<li>Article: MDANSE: An Interactive Analysis Environment for Molecular Dynamics Simulations (see <code>Endnote</code>)</li>
+<li>Description: <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/DUGkp5h7elJR7GrI4fGkgw">WeiXin</a></li>
+</ul>
+<h3 id="9-11-Pymatgen"><a href="#9-11-Pymatgen" class="headerlink" title="9.11 Pymatgen"></a>9.11 Pymatgen</h3><ul>
+<li><strong>Article:</strong> Python Materials Genomics (pymatgen): A robust, open-source python library for materials analysis. (see <code>Endnote</code>)</li>
+<li><strong>Source code:</strong>  <a target="_blank" rel="noopener" href="https://github.com/materialsproject/pymatgen">Github</a></li>
+</ul>
+<h3 id="9-12-VoroTop-程序-Vorotis-程序-ParVoro-程序结合-OVITO-程序"><a href="#9-12-VoroTop-程序-Vorotis-程序-ParVoro-程序结合-OVITO-程序" class="headerlink" title="9.12 VoroTop 程序 + Vorotis 程序 + ParVoro++ 程序结合 OVITO 程序"></a>9.12 VoroTop 程序 + Vorotis 程序 + ParVoro++ 程序结合 OVITO 程序</h3><ul>
+<li><strong>Description:</strong> <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/9o_y5mtT3c2dnYypnBGO-g">WeiXin</a></li>
+</ul>
+<h3 id="9-13-ScaleLat-程序：一种用于绘制多相体系和高熵合金原子结构的化学结构匹配算法"><a href="#9-13-ScaleLat-程序：一种用于绘制多相体系和高熵合金原子结构的化学结构匹配算法" class="headerlink" title="9.13 ScaleLat 程序：一种用于绘制多相体系和高熵合金原子结构的化学结构匹配算法"></a>9.13 ScaleLat 程序：一种用于绘制多相体系和高熵合金原子结构的化学结构匹配算法</h3><ul>
+<li><strong>Source code:</strong> <a target="_blank" rel="noopener" href="https://github.com/NanLi-xjtu/ScaleLat.git">Github</a></li>
+<li><strong>Description:</strong>  <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/dbwhnc02BPx9vWQL8bM17g">WeiXin</a></li>
+<li><strong>Article:</strong> ScaleLat: A chemical structure matching algorithm for mapping atomic structure of multi-phase system and high entropy alloys (see <code>Endnote</code>)</li>
+</ul>
+<h3 id="9-14-MultiShifter-程序：生成-3D-和-2D-晶体中扩展二维缺陷结构模型的软件"><a href="#9-14-MultiShifter-程序：生成-3D-和-2D-晶体中扩展二维缺陷结构模型的软件" class="headerlink" title="9.14 MultiShifter 程序：生成 3D 和 2D 晶体中扩展二维缺陷结构模型的软件"></a>9.14 MultiShifter 程序：生成 3D 和 2D 晶体中扩展二维缺陷结构模型的软件</h3><ul>
+<li><strong>Description:</strong>  <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/31lTzgA1owBqto64kzu9Qg">WeiXin</a></li>
+<li><strong>Article:</strong> MultiShifter: Software to generate structural models of extended two-dimensional defects in 3D and 2D crystals (see <code>Endnote</code>)</li>
+</ul>
+<h2 id="10-Space-group"><a href="#10-Space-group" class="headerlink" title="10. Space group"></a>10. Space group</h2><h3 id="10-1-Spglib"><a href="#10-1-Spglib" class="headerlink" title="10.1 Spglib"></a>10.1 Spglib</h3><ul>
+<li><strong>Article:</strong> Spglib: a software library for crystal symmetry search (see <code>Endnote</code>)</li>
+<li><strong>Functions:</strong><ul>
+<li>Could convert between primitive &lt;&lt;&#x3D;&#x3D;&gt;&gt; conventional cell</li>
+</ul>
+</li>
+</ul>
+<h3 id="10-2-CrystKit"><a href="#10-2-CrystKit" class="headerlink" title="10.2 CrystKit"></a>10.2 CrystKit</h3><ul>
+<li><strong>Source code:</strong> <a target="_blank" rel="noopener" href="https://github.com/hongyi-zhao/CrystKit">Github</a></li>
+<li><strong>Description:</strong> CrystKit is a GAP package designed to manipulate and analyze crystallographic groups</li>
+</ul>
+<h3 id="10-3-SeeK-path"><a href="#10-3-SeeK-path" class="headerlink" title="10.3 SeeK-path"></a>10.3 SeeK-path</h3><ul>
+<li><strong>Article:</strong> Band structure diagram paths based on crystallography (see <code>Endnote</code>)</li>
+<li><strong>Functions:</strong><ul>
+<li>the k-path finder and visualizer</li>
+</ul>
+</li>
+</ul>
+<h3 id="10-4-Brillouin-jl-程序：k-空间路径和布里渊区可视化软件包"><a href="#10-4-Brillouin-jl-程序：k-空间路径和布里渊区可视化软件包" class="headerlink" title="10.4 Brillouin.jl 程序：k-空间路径和布里渊区可视化软件包"></a>10.4 Brillouin.jl 程序：k-空间路径和布里渊区可视化软件包</h3><ul>
+<li><p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/621112008">https://zhuanlan.zhihu.com/p/621112008</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://thchr.github.io/Brillouin.jl/stable/kpaths/">https://thchr.github.io/Brillouin.jl/stable/kpaths/</a></p>
+</li>
+<li><p><strong>Description:</strong> <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/4QLzpmsJrVM6G5ZJtEndaQ">Weixin</a></p>
+</li>
+</ul>
+<h2 id="11-Phase-diagram"><a href="#11-Phase-diagram" class="headerlink" title="11. Phase diagram"></a>11. Phase diagram</h2><h3 id="11-1-Phasego"><a href="#11-1-Phasego" class="headerlink" title="11.1 Phasego"></a>11.1 Phasego</h3><ul>
+<li><strong>Article:</strong> <ul>
+<li>[1] Phasego: A toolkit for automatic calculation and plot of phase diagram</li>
+<li>[2] Phasego 2.0: Counting full anharmonic effects from high-temperature  phonon density of states</li>
+<li>[3] Phasego 3.0: Automatic analysis of synthesis and decomposition conditions for compounds</li>
+</ul>
+</li>
+<li><strong>Description:</strong> <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/FoqGnffZXTOmlxUMY7xZsg">WeiXin</a></li>
+</ul>
+<h2 id="12-Test-of-the-convergence"><a href="#12-Test-of-the-convergence" class="headerlink" title="12. Test of the convergence"></a>12. Test of the convergence</h2><h3 id="12-1-vaspup2-0"><a href="#12-1-vaspup2-0" class="headerlink" title="12.1  vaspup2.0"></a>12.1  vaspup2.0</h3><ul>
+<li><strong>Source code:</strong> <a target="_blank" rel="noopener" href="https://github.com/ShengLin1001/vaspup2.0">Github</a></li>
+</ul>
+<h2 id="13-Machine-learning"><a href="#13-Machine-learning" class="headerlink" title="13. Machine learning"></a>13. Machine learning</h2><h3 id="13-1-CrySPY"><a href="#13-1-CrySPY" class="headerlink" title="13.1 CrySPY"></a>13.1 CrySPY</h3><ul>
+<li><p><strong>Article:</strong> CrySPY: a crystal structure prediction tool accelerated by machine learning  (see <code>Endnote</code>)</p>
+</li>
+<li><p><strong>Source code:</strong> <a target="_blank" rel="noopener" href="https://tomoki-yamashita.github.io/CrySPY_doc/input/index.html">Github</a></p>
+</li>
+<li><p><strong>Description:</strong> <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/SLLtzhHpQ0pHH29Pe5Bw2Q">WeiXin</a></p>
+</li>
+</ul>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> Please indicate the source when reprinting. Please verify the citation sources in the article and point out any errors or unclear expressions. </span>
+    </div>
+</article>
+
+
+
+
+
+
+
+    
+        <!-- MathJax配置，可通过单美元符号书写行内公式等 -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    "HTML-CSS": {
+        preferredFont: "TeX",
+        availableFonts: ["STIX","TeX"],
+        linebreaks: { automatic:true },
+        EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+        inlineMath: [ ["$", "$"], ["\\(","\\)"] ],
+        processEscapes: true,
+        ignoreClass: "tex2jax_ignore|dno",
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+        equationNumbers: { autoNumber: "AMS" },
+        noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } },
+        Macros: { href: "{}" }
+    },
+    messageStyle: "none"
+    });
+</script>
+<!-- 给MathJax元素添加has-jax class -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<!-- 通过连接CDN加载MathJax的js代码 -->
+<script type="text/javascript" async
+        src="//cdn.jsdelivr.net/npm/mathjax@2.7.8/unpacked/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<input type="hidden" id="MathJax-js"
+        value="//cdn.jsdelivr.net/npm/mathjax@2.7.8/unpacked/MathJax.js?config=TeX-MML-AM_CHTML">
+</input>
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2022-2024 Louis
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'photoSwipe';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+
+        /*高亮代码块行号*/
+        
+        $('pre code').each(function(){
+            var lines = $(this).text().trim().split('\n').length, widther='';
+            if (lines>99) {
+                widther = 'widther'
+            }
+            var $numbering = $('<ul/>').addClass('pre-numbering ' + widther).attr("unselectable","on");
+            $(this).addClass('has-numbering ' + widther)
+                    .parent()
+                    .append($numbering);
+            for(var i=1;i<=lines;i++){
+                $numbering.append($('<li/>').text(i));
+            }
+        });
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+
+        // PhotoSwipe
+        $('article').each(function(i){
+            $(this).find('img').each(function(){
+                if ($(this).closest('figure').hasClass('article-gallery-img')) {
+                    return;
+                }
+                var alt = this.alt;
+                $(this)
+                    .wrap('<figure class="article-gallery-img" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"></figure>')
+                    .wrap('<a href="' + this.src + '" title="' + alt + '"></a>');
+                $(this).after('<div class="img_alt"><span>' + (alt || '') + '</span></div>');
+            });
+        });
+
+        var pswpElement = document.querySelectorAll('.pswp')[0];
+        if (pswpElement) {
+            var gallerySelector = '.article-gallery, article';
+
+            var initPhotoSwipeFromDOM = function(gallerySelector) {
+
+                // parse slide data (url, title, size ...) from DOM elements
+                // (children of gallerySelector)
+                var parseThumbnailElements = function(el) {
+                    var thumbElements = $(el).find('figure.article-gallery-img').toArray(),
+                        numNodes = thumbElements.length,
+                        items = [],
+                        figureEl,
+                        linkEl,
+                        size,
+                        imgEl,
+                        item;
+
+                    for (var i = 0; i < numNodes; i++) {
+
+                        figureEl = thumbElements[i]; // <figure> element
+
+                        // include only element nodes
+                        if (figureEl.nodeType !== 1) {
+                            continue;
+                        }
+
+                        linkEl = figureEl.children[0]; // <a> element
+                        imgEl = linkEl.children[0]; // <img>
+
+                        size = linkEl.getAttribute('data-size');
+                        size = size && size.split('x');
+
+                        // create slide object
+                        item = {
+                            src: linkEl.getAttribute('href'),
+                            w: size && parseInt(size[0], 10) || imgEl.width,
+                            h: size && parseInt(size[1], 10) || imgEl.height
+                        };
+
+                        if (figureEl.children.length > 1) {
+                            // <figcaption> content
+                            item.title = figureEl.children[1].innerHTML;
+                        }
+
+                        if (linkEl.children.length > 0) {
+                            // <img> thumbnail element, retrieving thumbnail url
+                            item.msrc = linkEl.children[0].getAttribute('src');
+                        }
+
+                        item.el = figureEl; // save link to element for getThumbBoundsFn
+                        items.push(item);
+                    }
+
+                    return items;
+                };
+
+                // find nearest parent element
+                var closest = function closest(el, fn) {
+                    return el && (fn(el) ? el : closest(el.parentNode, fn));
+                };
+
+                // triggers when user clicks on thumbnail
+                var onThumbnailsClick = function(e) {
+                    e = e || window.event;
+
+                    var eTarget = e.target || e.srcElement;
+
+                    // find root element of slide
+                    var clickedListItem = closest(eTarget, function(el) {
+                        return (el.tagName && el.tagName.toUpperCase() === 'FIGURE');
+                    });
+
+                    if (!clickedListItem) {
+                        return;
+                    }
+
+                    if (e.preventDefault) {
+                        e.preventDefault();
+                    } else {
+                        e.returnValue = false;
+                    }
+
+                    // find index of clicked item by looping through all child nodes
+                    // alternatively, you may define index via data- attribute
+                    var clickedGallery = $(clickedListItem).closest(gallerySelector)[0],
+                        childNodes = $(clickedGallery).find('figure.article-gallery-img').toArray(),
+                        numChildNodes = childNodes.length,
+                        nodeIndex = 0,
+                        index;
+
+                    for (var i = 0; i < numChildNodes; i++) {
+                        if (childNodes[i].nodeType !== 1) {
+                            continue;
+                        }
+
+                        if (childNodes[i] === clickedListItem) {
+                            index = nodeIndex;
+                            break;
+                        }
+                        nodeIndex++;
+                    }
+
+
+
+                    if (index >= 0) {
+                        // open PhotoSwipe if valid index found
+                        openPhotoSwipe(index, clickedGallery);
+                    }
+                    return false;
+                };
+
+                // parse picture index and gallery index from URL (#&pid=1&gid=2)
+                var photoswipeParseHash = function() {
+                    var hash = window.location.hash.substring(1),
+                        params = {};
+
+                    if (hash.length < 5) {
+                        return params;
+                    }
+
+                    var vars = hash.split('&');
+                    for (var i = 0; i < vars.length; i++) {
+                        if (!vars[i]) {
+                            continue;
+                        }
+                        var pair = vars[i].split('=');
+                        if (pair.length < 2) {
+                            continue;
+                        }
+                        params[pair[0]] = pair[1];
+                    }
+
+                    if (params.gid) {
+                        params.gid = parseInt(params.gid, 10);
+                    }
+
+                    return params;
+                };
+
+                var openPhotoSwipe = function(index, galleryElement, disableAnimation, fromURL) {
+                    var pswpElement = document.querySelectorAll('.pswp')[0],
+                        gallery,
+                        options,
+                        items;
+
+                    items = parseThumbnailElements(galleryElement);
+
+                    // define options (if needed)
+                    options = {
+
+                        // define gallery index (for URL)
+                        galleryUID: galleryElement.getAttribute('data-pswp-uid'),
+
+                        getThumbBoundsFn: function(index) {
+                            // See Options -> getThumbBoundsFn section of documentation for more info
+                            var thumbnail = items[index].el.getElementsByTagName('img')[0], // find thumbnail
+                                pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
+                                rect = thumbnail.getBoundingClientRect();
+
+                            return {
+                                x: rect.left,
+                                y: rect.top + pageYScroll,
+                                w: rect.width
+                            };
+                        }
+                    };
+
+                    // PhotoSwipe opened from URL
+                    if (fromURL) {
+                        if (options.galleryPIDs) {
+                            // parse real index when custom PIDs are used
+                            // http://photoswipe.com/documentation/faq.html#custom-pid-in-url
+                            for (var j = 0; j < items.length; j++) {
+                                if (items[j].pid == index) {
+                                    options.index = j;
+                                    break;
+                                }
+                            }
+                        } else {
+                            // in URL indexes start from 1
+                            options.index = parseInt(index, 10) - 1;
+                        }
+                    } else {
+                        options.index = parseInt(index, 10);
+                    }
+
+                    // exit if index not found
+                    if (isNaN(options.index)) {
+                        return;
+                    }
+
+                    if (disableAnimation) {
+                        options.showAnimationDuration = 0;
+                    }
+
+                    // Pass data to PhotoSwipe and initialize it
+                    gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+
+                    gallery.listen('imageLoadComplete', function(index, item) {
+                        var linkEl = item.el.children[0];
+                        var img = item.container.children[0];
+                        if (!linkEl.getAttribute('data-size')) {
+                            linkEl.setAttribute('data-size', img.naturalWidth + 'x' + img.naturalHeight);
+                            item.w = img.naturalWidth;
+                            item.h = img.naturalHeight;
+                            gallery.invalidateCurrItems();
+                            gallery.updateSize(true);
+                        }
+                    });
+
+                    gallery.init();
+                };
+
+                // loop through all gallery elements and bind events
+                var galleryElements = document.querySelectorAll(gallerySelector);
+
+                for (var i = 0, l = galleryElements.length; i < l; i++) {
+                    galleryElements[i].setAttribute('data-pswp-uid', i + 1);
+                    galleryElements[i].onclick = onThumbnailsClick;
+                }
+
+                // Parse URL and open gallery if it contains #&pid=3&gid=1
+                var hashData = photoswipeParseHash();
+                if (hashData.pid && hashData.gid) {
+                    openPhotoSwipe(hashData.pid, galleryElements[hashData.gid - 1], true, true);
+                }
+            };
+
+            // execute above function
+            initPhotoSwipeFromDOM(gallerySelector);
+        }
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<style>
+    pre{
+        position: relative;
+        margin-bottom: 24px;
+        border-radius: 10px;
+        border: 1px solid #e2dede;
+        background: #FFF;
+        overflow: hidden;
+    }
+    code.has-numbering{
+        margin-left: 30px;
+    }
+    code.has-numbering.widther{
+        margin-left: 35px;
+    }
+    .pre-numbering{
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        padding: 18px 3px 15px 5px;
+        border-right: 1px solid #C3CCD0;
+        text-align: right;
+        color: #AAA;
+        background-color: #fafafa;
+    }
+    .pre-numbering.widther {
+        width: 35px;
+    }
+</style>
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+    .nav-right:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+        background: url("/img/gj2.jpg");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    
+
+    
+    #post .pjax article :not(pre) > code {
+        color: #24292e;
+        font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+        background-color: rgba(27,31,35,.05);
+        border-radius: 3px;
+        font-size: 85%;
+        margin: 0;
+        padding: .2em .4em;
+    }
+    
+</style>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+         It's a separate element, as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+</html>

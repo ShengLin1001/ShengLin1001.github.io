@@ -1,0 +1,1830 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Academic - Notes | Please be chilling out</title>
+  <meta name="keywords" content=" Writing-Academic ">
+  <meta name="description" content="Academic - Notes | Please be chilling out">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="About this WeBlog我是一名 2022 级在读研究生（力学 &#x2F; 机器学习）。本博客创建于 2024.3 ，为了整合记录读研以来所有的知识积累（知乎，哔哩哔哩，公众号，博客，网站，书籍）。 目前我对微观尺度下金属领域的相变机制&#x2F;位错演化很感兴趣。如果大家对我的研究领域感兴趣，欢迎发邮件给我，共同进步。😃 使用软件包括：Python，VASP，Lammps Pyth">
+<meta property="og:type" content="website">
+<meta property="og:title" content="about">
+<meta property="og:url" content="https://shenglin1001.github.io/about/">
+<meta property="og:site_name" content="Please be chilling out">
+<meta property="og:description" content="About this WeBlog我是一名 2022 级在读研究生（力学 &#x2F; 机器学习）。本博客创建于 2024.3 ，为了整合记录读研以来所有的知识积累（知乎，哔哩哔哩，公众号，博客，网站，书籍）。 目前我对微观尺度下金属领域的相变机制&#x2F;位错演化很感兴趣。如果大家对我的研究领域感兴趣，欢迎发邮件给我，共同进步。😃 使用软件包括：Python，VASP，Lammps Pyth">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-03-30T01:20:39.000Z">
+<meta property="article:modified_time" content="2024-06-21T02:16:33.835Z">
+<meta property="article:author" content="Louis">
+<meta property="article:tag" content="material science">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css" rel="stylesheet">
+<link href="//cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 7.1.1"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="false" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/avatar.jpg"/>
+</a>
+<div class="author">
+    <span>Louis</span>
+</div>
+
+<div class="icon">
+    
+        
+            <a title="github"
+               href="https://github.com/ShengLin1001"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="zhihu"
+               href="https://www.zhihu.com/people/bas-58"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-zhihu"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="email"
+               href="mailto:12324025@zju.edu.cn"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-email"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="qq"
+               href="http://wpa.qq.com/msgrd?v=3&uin=1770861169&site=qq&menu=yes"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-qq"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+</div>
+
+
+
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="All">All
+            
+        </div>
+    </li>
+    
+        
+            
+                
+    <li>
+        <div data-rel="Thinking">
+            <i class="fold iconfont icon-right"></i>
+            Thinking
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Thinking&lt;---&gt;Diary">
+            
+            Diary
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Thinking&lt;---&gt;Idea">
+            
+            Idea
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="Summary">
+            <i class="fold iconfont icon-right"></i>
+            Summary
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Summary&lt;---&gt;My_blog">
+            
+            My_blog
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Summary&lt;---&gt;Other_people_blog">
+            
+            Other_people_blog
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="Software">
+            <i class="fold iconfont icon-right"></i>
+            Software
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;VASP">
+            <i class="fold iconfont icon-right"></i>
+            VASP
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;VASP&lt;---&gt;Special_functions">
+            
+            Special_functions
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;VASP&lt;---&gt;VTheory">
+            
+            VTheory
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;ASE">
+            
+            ASE
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;Lammps">
+            
+            Lammps
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;P4VASP">
+            
+            P4VASP
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;Pymatgen">
+            
+            Pymatgen
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;Tool">
+            
+            Tool
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="Program">
+            <i class="fold iconfont icon-right"></i>
+            Program
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Program&lt;---&gt;Python">
+            
+            Python
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="Developing">
+            <i class="fold iconfont icon-right"></i>
+            Developing
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Developing&lt;---&gt;Install">
+            
+            Install
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Developing&lt;---&gt;Mymetal">
+            
+            Mymetal
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="Theory">
+            <i class="fold iconfont icon-right"></i>
+            Theory
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Theory&lt;---&gt;Quantum_mechanics">
+            
+            Quantum_mechanics
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="Writing">
+            <i class="fold iconfont icon-right"></i>
+            Writing
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Writing&lt;---&gt;Academic">
+            
+            Academic
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+            
+            
+            
+    </div>
+    <div>
+        
+            <a class="about  hasFriend  site_url"
+               
+               href="/about">About</a>
+        
+        <a style="width: 50%"
+                
+                                           class="friends">Friends</a>
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="49">
+<input type="hidden" id="yelog_site_word_count" value="33.4k">
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        Links
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="https://blog.shishiruqi.com/">啦啦黑还黑</a></li>
+            
+            <li><a target="_blank" href="https://www.bigbrosci.com/">大师兄</a></li>
+            
+            <li><a target="_blank" href="http://sobereva.com/">卢天</a></li>
+            
+            <li><a target="_blank" href="http://staff.ustc.edu.cn/~zqj/">郑奇靖</a></li>
+            
+            <li><a target="_blank" href="https://www.zhihu.com/people/obaica/columns">学术之友</a></li>
+            
+            <li><a target="_blank" href="https://www.zhihu.com/column/c_1680331980414226432">我的专栏</a></li>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索"></i>
+            <div class="right-title">All</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" autocomplete="off"/>
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Developing-Install</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Developing-Mymetal</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Program-Python</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Software-ASE</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Software-Lammps</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Software-P4VASP</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Software-Pymatgen</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Software-Tool</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Software-VASP-Special_functions</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Software-VASP-VTheory</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Summary-My_blog</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Summary-Other_people_blog</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Theory-Quantum_mechanics</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Thinking-Diary</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Thinking-Idea</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Writing-Academic</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <div id="local-search-result">
+
+    </div>
+    
+    <nav id="title-list-nav">
+        
+        
+        <a id="top" class="All Summary My_blog "
+           href="/Summary/My-blog/My-blog-Literature-summary/"
+           data-tag="Summary-My_blog"
+           data-author="" >
+            <span class="post-title" title="My blog - Literature summary">My blog - Literature summary</span>
+            <span class="post-date" title="2024-09-10 21:55:00">2024/09/10</span>
+        </a>
+        
+        
+        <a id="top" class="All Summary My_blog "
+           href="/Summary/My-blog/My-blog-Technology-summary/"
+           data-tag="Summary-My_blog"
+           data-author="" >
+            <span class="post-title" title="My blog - Technology summary">My blog - Technology summary</span>
+            <span class="post-date" title="2024-09-10 21:50:00">2024/09/10</span>
+        </a>
+        
+        
+        <a id="top" class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-Log/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - Log">Diary - Log</span>
+            <span class="post-date" title="2024-04-10 00:31:48">2024/04/10</span>
+        </a>
+        
+        
+        <a id="top" class="All Summary My_blog "
+           href="/Summary/My-blog/My-blog-My-summary/"
+           data-tag="Summary-My_blog"
+           data-author="" >
+            <span class="post-title" title="My blog - My summary">My blog - My summary</span>
+            <span class="post-date" title="2024-03-30 17:46:59">2024/03/30</span>
+        </a>
+        
+        
+        <a id="top" class="All Software VASP VTheory "
+           href="/Software/VASP/VTheory/VASP-VTheory-Classical-literatures/"
+           data-tag="Software-VASP-VTheory"
+           data-author="" >
+            <span class="post-title" title="VASP - VTheory - Classical literatures">VASP - VTheory - Classical literatures</span>
+            <span class="post-date" title="2024-03-30 16:00:07">2024/03/30</span>
+        </a>
+        
+        
+        <a id="top" class="All Software Tool "
+           href="/Software/Tool/Tool-My-Summary/"
+           data-tag="Software-Tool"
+           data-author="" >
+            <span class="post-title" title="Tool - Summary">Tool - Summary</span>
+            <span class="post-date" title="2024-03-30 13:29:09">2024/03/30</span>
+        </a>
+        
+        
+        <a id="top" class="All Theory Quantum_mechanics "
+           href="/Theory/Quantum-mechanics/Quantum-mechanics-some-website-and-book/"
+           data-tag="Theory-Quantum_mechanics"
+           data-author="" >
+            <span class="post-title" title="Quantum mechanics - some websites and books">Quantum mechanics - some websites and books</span>
+            <span class="post-date" title="2024-03-29 21:31:42">2024/03/29</span>
+        </a>
+        
+        
+        <a id="top" class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-I-want-to-do-now-keep-updating/"
+           data-tag="Thinking-Diary,Thinking-Idea"
+           data-author="" >
+            <span class="post-title" title="Diary - I want to do now (keep updating)">Diary - I want to do now (keep updating)</span>
+            <span class="post-date" title="2024-03-29 18:17:26">2024/03/29</span>
+        </a>
+        
+        
+        <a id="top" class="All Summary Other_people_blog "
+           href="/Summary/Other-people-blog/Other-people-blog-computational-material-science/"
+           data-tag="Summary-Other_people_blog"
+           data-author="" >
+            <span class="post-title" title="Other people blog - computational material science">Other people blog - computational material science</span>
+            <span class="post-date" title="2024-03-29 18:16:05">2024/03/29</span>
+        </a>
+        
+        
+        <a id="top" class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-How-to-do-my-research/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - How to do my research">Diary - How to do my research</span>
+            <span class="post-date" title="2024-03-28 13:30:54">2024/03/28</span>
+        </a>
+        
+        
+        <a id="top" class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-Writing-at-first/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - Writing at first">Diary - Writing at first</span>
+            <span class="post-date" title="2024-03-25 22:00:04">2024/03/25</span>
+        </a>
+        
+        
+        <a id="top" class="All Summary My_blog "
+           href="/Summary/My-blog/My-blog-Shortcut-command/"
+           data-tag="Summary-My_blog"
+           data-author="" >
+            <span class="post-title" title="My blog - Shortcut command">My blog - Shortcut command</span>
+            <span class="post-date" title="2024-01-23 01:33:00">2024/01/23</span>
+        </a>
+        
+        
+        <a  class="All Writing Academic "
+           href="/Writing/Academic/Research-literature/"
+           data-tag="Writing-Academic"
+           data-author="" >
+            <span class="post-title" title="Academic - Notes">Academic - Notes</span>
+            <span class="post-date" title="2026-04-13 11:35:00">2026/04/13</span>
+        </a>
+        
+        
+        <a  class="All Writing Academic "
+           href="/Writing/Academic/Academic-Notes/"
+           data-tag="Writing-Academic"
+           data-author="" >
+            <span class="post-title" title="Academic - Notes">Academic - Notes</span>
+            <span class="post-date" title="2026-04-01 17:30:00">2026/04/01</span>
+        </a>
+        
+        
+        <a  class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-2026/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - 2026">Diary - 2026</span>
+            <span class="post-date" title="2026-01-13 19:58:00">2026/01/13</span>
+        </a>
+        
+        
+        <a  class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-Plans/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - Plans">Diary - Plans</span>
+            <span class="post-date" title="2025-11-05 09:14:00">2025/11/05</span>
+        </a>
+        
+        
+        <a  class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-2025/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - 2025">Diary - 2025</span>
+            <span class="post-date" title="2025-03-04 21:13:00">2025/03/04</span>
+        </a>
+        
+        
+        <a  class="All Summary Other_people_blog "
+           href="/Summary/Other-people-blog/Other-people-blog-Metals/"
+           data-tag="Summary-Other_people_blog"
+           data-author="" >
+            <span class="post-title" title="Other people blog - Metals">Other people blog - Metals</span>
+            <span class="post-date" title="2024-12-18 09:58:00">2024/12/18</span>
+        </a>
+        
+        
+        <a  class="All Theory Quantum_mechanics "
+           href="/Theory/Quantum-mechanics/Quantum-mechanics-Atomic-orbital/"
+           data-tag="Theory-Quantum_mechanics"
+           data-author="" >
+            <span class="post-title" title="Quantum mechanics - Atomic orbital">Quantum mechanics - Atomic orbital</span>
+            <span class="post-date" title="2024-11-21 14:55:00">2024/11/21</span>
+        </a>
+        
+        
+        <a  class="All Software Pymatgen "
+           href="/Software/Pymatgen/Pymatgen-Calculation-parameters/"
+           data-tag="Software-Pymatgen"
+           data-author="" >
+            <span class="post-title" title="Pymatgen - Calculation parameters">Pymatgen - Calculation parameters</span>
+            <span class="post-date" title="2024-06-24 19:17:00">2024/06/24</span>
+        </a>
+        
+        
+        <a  class="All Developing Mymetal "
+           href="/Developing/Mymetal/Mymetal-Lattice-mismatch/"
+           data-tag="Developing-Mymetal"
+           data-author="" >
+            <span class="post-title" title="Mymetal - Lattice mismatch">Mymetal - Lattice mismatch</span>
+            <span class="post-date" title="2024-06-08 15:30:00">2024/06/08</span>
+        </a>
+        
+        
+        <a  class="All Summary Other_people_blog "
+           href="/Summary/Other-people-blog/Other-people-blog-Machine-learning/"
+           data-tag="Summary-Other_people_blog"
+           data-author="" >
+            <span class="post-title" title="Other people blog - Machine learning">Other people blog - Machine learning</span>
+            <span class="post-date" title="2024-04-29 13:00:00">2024/04/29</span>
+        </a>
+        
+        
+        <a  class="All Developing Install "
+           href="/Developing/Install/Install-Software/"
+           data-tag="Developing-Install"
+           data-author="" >
+            <span class="post-title" title="Install - Software">Install - Software</span>
+            <span class="post-date" title="2024-04-23 10:22:00">2024/04/23</span>
+        </a>
+        
+        
+        <a  class="All Summary Other_people_blog "
+           href="/Summary/Other-people-blog/Other-people-blog-Mechanics/"
+           data-tag="Summary-Other_people_blog"
+           data-author="" >
+            <span class="post-title" title="Other people blog - Mechanics">Other people blog - Mechanics</span>
+            <span class="post-date" title="2024-04-22 05:05:00">2024/04/22</span>
+        </a>
+        
+        
+        <a  class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-2024/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - 2024">Diary - 2024</span>
+            <span class="post-date" title="2024-04-22 04:52:00">2024/04/22</span>
+        </a>
+        
+        
+        <a  class="All Summary Other_people_blog "
+           href="/Summary/Other-people-blog/Other-people-blog-on-the-way-of%20doctor/"
+           data-tag="Summary-Other_people_blog"
+           data-author="" >
+            <span class="post-title" title="Other people blog - on the way of doctor">Other people blog - on the way of doctor</span>
+            <span class="post-date" title="2024-04-20 04:26:00">2024/04/20</span>
+        </a>
+        
+        
+        <a  class="All Summary Other_people_blog "
+           href="/Summary/Other-people-blog/Other-people-blog-DFT/"
+           data-tag="Summary-Other_people_blog"
+           data-author="" >
+            <span class="post-title" title="Other people blog - DFT">Other people blog - DFT</span>
+            <span class="post-date" title="2024-04-20 03:00:00">2024/04/20</span>
+        </a>
+        
+        
+        <a  class="All Thinking Idea "
+           href="/Thinking/Idea/Idea-Next-paper/"
+           data-tag="Thinking-Idea"
+           data-author="" >
+            <span class="post-title" title="Idea - Next paper">Idea - Next paper</span>
+            <span class="post-date" title="2024-04-12 05:34:00">2024/04/12</span>
+        </a>
+        
+        
+        <a  class="All Software VASP VTheory "
+           href="/Software/VASP/VTheory/VASP-VTheory-Space-group/"
+           data-tag="Software-VASP-VTheory"
+           data-author="" >
+            <span class="post-title" title="VASP - VTheory - Space group">VASP - VTheory - Space group</span>
+            <span class="post-date" title="2024-04-10 13:52:00">2024/04/10</span>
+        </a>
+        
+        
+        <a  class="All Software VASP VTheory "
+           href="/Software/VASP/VTheory/VASP-VTheory-Influence-of-cell/"
+           data-tag="Software-VASP-VTheory"
+           data-author="" >
+            <span class="post-title" title="VASP - VTheory - Influence of cell">VASP - VTheory - Influence of cell</span>
+            <span class="post-date" title="2024-04-10 01:19:00">2024/04/10</span>
+        </a>
+        
+        
+        <a  class="All Software Tool "
+           href="/Software/Tool/Tool-Find-heterostructure/"
+           data-tag="Software-Tool"
+           data-author="" >
+            <span class="post-title" title="Tool - Find heterostructure">Tool - Find heterostructure</span>
+            <span class="post-date" title="2024-04-07 00:36:38">2024/04/07</span>
+        </a>
+        
+        
+        <a  class="All Theory Quantum_mechanics "
+           href="/Theory/Quantum-mechanics/Quantum-mechanics-Density-functional-theory/"
+           data-tag="Theory-Quantum_mechanics"
+           data-author="" >
+            <span class="post-title" title="Quantum mechanics - Density functional theory">Quantum mechanics - Density functional theory</span>
+            <span class="post-date" title="2024-04-01 15:16:03">2024/04/01</span>
+        </a>
+        
+        
+        <a  class="All Theory Quantum_mechanics "
+           href="/Theory/Quantum-mechanics/Quantum-mechanics-The-Feynman-lectures-on-physics-1/"
+           data-tag="Theory-Quantum_mechanics"
+           data-author="" >
+            <span class="post-title" title="Quantum mechanics - The Feynman lectures on physics 1">Quantum mechanics - The Feynman lectures on physics 1</span>
+            <span class="post-date" title="2024-04-01 14:43:03">2024/04/01</span>
+        </a>
+        
+        
+        <a  class="All Developing Mymetal "
+           href="/Developing/Mymetal/Mymetal-error/"
+           data-tag="Developing-Mymetal"
+           data-author="" >
+            <span class="post-title" title="Mymetal - error">Mymetal - error</span>
+            <span class="post-date" title="2024-03-30 01:44:55">2024/03/30</span>
+        </a>
+        
+        
+        <a  class="All Developing Mymetal "
+           href="/Developing/Mymetal/Mymetal-log/"
+           data-tag="Developing-Mymetal"
+           data-author="" >
+            <span class="post-title" title="Mymetal - work log">Mymetal - work log</span>
+            <span class="post-date" title="2024-03-30 01:44:55">2024/03/30</span>
+        </a>
+        
+        
+        <a  class="All Software P4VASP "
+           href="/Software/P4VASP/P4VASP-install/"
+           data-tag="Software-P4VASP"
+           data-author="" >
+            <span class="post-title" title="P4VASP - Install">P4VASP - Install</span>
+            <span class="post-date" title="2024-03-25 14:33:00">2024/03/25</span>
+        </a>
+        
+        
+        <a  class="All Software VASP Special_functions "
+           href="/Software/VASP/Special-functions/VASP-Special-functions-fix-basic-vector/"
+           data-tag="Software-VASP-Special_functions"
+           data-author="" >
+            <span class="post-title" title="VASP - Special functions - fix basic vector">VASP - Special functions - fix basic vector</span>
+            <span class="post-date" title="2024-01-24 18:57:00">2024/01/24</span>
+        </a>
+        
+        
+        <a  class="All Software Tool "
+           href="/Software/Tool/Tool-Proxy-problem-of-copilot/"
+           data-tag="Software-Tool"
+           data-author="" >
+            <span class="post-title" title="Tool - Proxy problem of copilot">Tool - Proxy problem of copilot</span>
+            <span class="post-date" title="2024-01-23 02:54:00">2024/01/23</span>
+        </a>
+        
+        
+        <a  class="All Software ASE "
+           href="/Software/ASE/ASE-How-to-generate-surface/"
+           data-tag="Software-ASE"
+           data-author="" >
+            <span class="post-title" title="ASE - How to generate surface">ASE - How to generate surface</span>
+            <span class="post-date" title="2024-01-19 12:13:00">2024/01/19</span>
+        </a>
+        
+        
+        <a  class="All Software ASE "
+           href="/Software/ASE/ASE-Modify-the-source-code-of-Write-function/"
+           data-tag="Software-ASE"
+           data-author="" >
+            <span class="post-title" title="ASE - Modify the source code of Write function">ASE - Modify the source code of Write function</span>
+            <span class="post-date" title="2024-01-18 07:01:00">2024/01/18</span>
+        </a>
+        
+        
+        <a  class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-Past-and-future/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - Past and future">Diary - Past and future</span>
+            <span class="post-date" title="2023-12-29 05:08:00">2023/12/29</span>
+        </a>
+        
+        
+        <a  class="All Software ASE "
+           href="/Software/ASE/ASE-generate-POSCAR/"
+           data-tag="Software-ASE"
+           data-author="" >
+            <span class="post-title" title="ASE - generate POSCAR">ASE - generate POSCAR</span>
+            <span class="post-date" title="2023-12-14 23:51:00">2023/12/14</span>
+        </a>
+        
+        
+        <a  class="All Program Python "
+           href="/Program/Python/Python-DFT-calculation-3-Generate-Kpoints/"
+           data-tag="Program-Python"
+           data-author="" >
+            <span class="post-title" title="Python - DFT calculation 3 - Generate Kpoints">Python - DFT calculation 3 - Generate Kpoints</span>
+            <span class="post-date" title="2023-11-23 17:28:00">2023/11/23</span>
+        </a>
+        
+        
+        <a  class="All Program Python "
+           href="/Program/Python/Python-DFT-calculation-2-Introduction-of-Kspace/"
+           data-tag="Program-Python"
+           data-author="" >
+            <span class="post-title" title="Python - DFT calculation 2 - Introduction of Kspace">Python - DFT calculation 2 - Introduction of Kspace</span>
+            <span class="post-date" title="2023-11-21 23:26:00">2023/11/21</span>
+        </a>
+        
+        
+        <a  class="All Program Python "
+           href="/Program/Python/Python-DFT-calculation-1-Solve-the-one-dimensional-Schrodinger-equation/"
+           data-tag="Program-Python"
+           data-author="" >
+            <span class="post-title" title="Python - DFT calculation 1 - Solve the one dimensional Schrodinger equation">Python - DFT calculation 1 - Solve the one dimensional Schrodinger equation</span>
+            <span class="post-date" title="2023-08-30 16:36:00">2023/08/30</span>
+        </a>
+        
+        
+        <a  class="All Software Lammps "
+           href="/Software/Lammps/Lammps-Reinstall/"
+           data-tag="Software-Lammps"
+           data-author="" >
+            <span class="post-title" title="Lammps - Reinstall">Lammps - Reinstall</span>
+            <span class="post-date" title="2022-11-25 11:56:00">2022/11/25</span>
+        </a>
+        
+        
+        <a  class="All Software Lammps "
+           href="/Software/Lammps/Lammps-SW-mod-potential-of-MoS2/"
+           data-tag="Software-Lammps"
+           data-author="" >
+            <span class="post-title" title="Lammps - SW mod potential of MoS2">Lammps - SW mod potential of MoS2</span>
+            <span class="post-date" title="2022-04-19 17:46:00">2022/04/19</span>
+        </a>
+        
+        
+        <a  class="All Software Lammps "
+           href="/Software/Lammps/Lammps-Add-new-pair-style/"
+           data-tag="Software-Lammps"
+           data-author="" >
+            <span class="post-title" title="Lammps - Add new pair style">Lammps - Add new pair style</span>
+            <span class="post-date" title="2022-04-16 19:20:00">2022/04/16</span>
+        </a>
+        
+        
+        <a  class="All Software Lammps "
+           href="/Software/Lammps/Lammps-RDF-of-annealed-SiO2-using-VMD/"
+           data-tag="Software-Lammps"
+           data-author="" >
+            <span class="post-title" title="Lammps - RDF of annealed SiO2 using VMD">Lammps - RDF of annealed SiO2 using VMD</span>
+            <span class="post-date" title="2022-04-05 20:09:00">2022/04/05</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-Writing/Academic-Notes" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">Academic - Notes</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="Writing">Writing</a> > 
+            
+            <a  data-rel="Writing&lt;---&gt;Academic">Academic</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color2">Writing-Academic</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            Created At : <time class="date" title='Updated At: 2026-04-01 12:39:41'>2026-04-01 17:30</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>Count:6</span>
+        
+        
+        <span id="busuanzi_container_page_pv">
+            Views 👀 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-5 i,
+    .toc-level-5 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="7253033a2625813f00a7d3d003b81e5b8282940308bdaf0f10d59acc22192a8c">854f3c2ab23829a1f0914184ee1beb6c8f7fd98794ecf11dbb9719370c1c1153c70dd90dc12f5c706db4093cafc031210db923ff63dd32bbf76e9a2c814db588540bd76802f2a02c822e07c7593e58a1396b0035638242fb2fceeb3e1b9e8e3460f1146e7e14f591b289f54e48d91697963111ef26533516df484bcd7fd2ca7014838f9e8df1521f2fecfcb7d05fdb9cb2df7d2804a4c8e155cc1d47f5fc3ef0414635766710923df6bacb46c7677030975e71ab6bb485c764b67f8b1b84cd6852abb7f671dc331a49621811aa6a5e2d10d270da74626664131a53c78ab39e4239982367b12a3c9966f084f75742ed3eddc67daaaeb8c94a1bafba6939a5f755ecea07e71c271e37d0eb73f1bd603f89eaf4d2e8eda0e1dc3b8a5bbe1d4adc68a8adcb1a8579e90db9bf7fa8e17016b882c791e9087c1b18a1ba2ba3def3fc77dae173bd9d8a3ede828b621e8f7d60243acb10124a49cdca748788b07b79b2e41a8f15de3a8f0e067aa4bc269e7905c907a3e42a8327fd48310150d7b81d1bd82ac6eb88631e24ea921b1c113c5730991c32d3940bc0b9b5bbd280a5b71d657fc679d085540e6761445077cadd641f5304403e05eb18fe386fbce8949a9b34e7021662b0f055e39ce670aa78dfc05f8b7ec1b4e464cc9a09749b3445eda4a15df3cd7f534074728908c1996b911a49d9755eede726339e860b486e00f213e1224f68085d0ebc419f1031dda0fb04a9ecb6eef2fe6fa365b3d20d9d1f2ba5aed7f0da2df35fb8c4a5ff5037f44cc7dd0157fb5fa6e3ef7a361e7b2bd22d2e9c3eee3565c7a4c206471daa135986facdbe0c8784066085448819f182013060257f3b8a2e361fc26d05fe9b32727a79f2fcc7997048a82f58d69af80ee8bfca349bc9c800c2ad07cfd2a358db261e66f5eaa35ade593a5ac773dd95057b033277de6831575391a7db283dcefcf25e1e0ef794653ab7f262051a477400f67a731b6290128c185d5eb97d1d53d2c4074d24212b2c33042ca6a51c85ad13863593c407378abd7e8965dcd21edbda48c806035eb14c048f9cd3f61965e2c581976916fb37271d6c3b70a87f8ada2ad3952f0e888cdad271c3b402e634546286ca33259fad6a86c208f7fef4599a29f56ea213332819555b4990c027222eb3b6c8b449a29c9c897f51fb654e84649d73022a6259625ce2b5e2c9890c3ea6b1a1acf13e7c57c2edf68d4d6a8446144dda03bfde7970dc1879230f358b386d2e49250419f4bda0c337880ea6331d7997d9ed2edc281b4b0c1a313dd45841154b85bff013fb50a636c4a1dc4d0796d6fe26df6adac12ead2cee6467b4db546acb32d0d6a170334de389cd12909aea0f8649981c78f3eb9b8f651beecbcca5414282ff9a19290443264bcdd31aa372573c8fe16531144336a826a8dad3f3c9d43a3edef85f027c4f2962fa098d55f97d252806ffe5f40430249eb7bbdbaa60b0d38b7c5d139db14276767ecaa5103679ba6cd3ae0c85ef9642fcda1c05b0bb01e55b36535ef11ce6e480966212bf86ae4c80a0599d8e9c1335351b858c3a3c521ef339707caa5663cd1ef7f1508b2f8b07a103166ac8186488e19b3661422fe6bb1f5ca836c43874d3974f2317b0c353f4efb5e4d20f7185eb71bb301ee79df32242841d1bd95fb8ef92ab5cb2ac79a0c5e03985f11fea7f9e9e7ce9a5ed0216e25f06688c28f4cfed738c101b745cb39ac7524495b9165a2e8fd6a84285596965b002a2c029f8b33b2119e49ddde67d5d9bae6c5017e68faaf7f7bfe2373f5d989977cb3a1c76949e33748ee661ff26a869653fa56a0ace80c55eb6220c01aeebccdaaf92659be16a63b889f7fe0303532e8ec9429def8083a3ae8510a9f94f0191c11887c6461f3552d4d3127257b30e2474021e4b4a9c41fb2ccf20c1669cde1b8653192105ff3898cd19a1864f741802721e00e33096a0d0c1ed0132e5f24903e5d8843f3aa3f203ae140348bfb61f0ace3395071e6938d2471bc263e25d64e9b758f7eecb847b5f8d80437bca9e47e9b793999106363a481ac6c559b76d8f51b0191bfbbe11ba57115554bf2d29313b9b2b3c875c071446aa7769f4e5728aa77902e0021f9c8fb83e397d9b5fca7bd926abf57b0534720c00953bdc9cf7382b857a11f5924fb164d0067f7fb70952d2a78b0df2eee9bd74fe85059d5b0901733a3d59c925261892ef6b11f70f85eea727067d1b78c470b1b86796e3312e49e7a6097463e073bec1bc513ce5a3774b688c615e8c9c7e957ca4a2f342ccac36401b48fb7d9565380c3dfdd9b56b29048a7884e5c26302dcdf5454d714ca40b16bee761c27f121a352564dd0487a52fec1de8c48fec1952fe76cd7f94ed18470e8536fa06bb2a73d633a4d5b9914e5afc8b9ebb548144bc81ce9db126711373f13c0198238870e1ded13c28202f9947fc0ba5fcfe6efeb618f7c39556b72f8ccac5fc3c9fff18350cf75d635b1e74b58c93e025fae2ecc25543b864cb1fa002d2caabfedc5b3e24d0d2ea05ed57a227b5dd84f0c2c97713c8d572d78398ad91eb4a8ba9d43cc0098d1598eb7de54337e8d15bd251ef26de8fdaa4d4b4fd0d1e4ba496620dd6790fcc2eb82bcfe966774a1ae0f2ce24e4d4f6d3c7d794f1894e308099a1c9c3628da0bdc8575f672a02dc907d343004d5e7210f187d2b35eed18c60218104013909e289bb5ae652b45d55347578a6b0107d57ec2ea35a65d5507652243ed3ba0150e10915fd9e0f2150abfa538d5a347cf53b2545f75622e12b80505b2a8ea26d698660766b354f04d0a70a01b0141f57ffd48355753cf25bed8f449c647894fe2e0a697f591cdfa891481cd87e2f6a03594189c2183a8928d96762b42868f7c58a7ecb70c2529760f6bc71bbc038f0c7d933d774690dad2f6d1c6487ec18f468b2fb5b55585d1b4d1426924a7eb2b45b45c4ba4ce09bc18d2e9678175b98acd8346cf928e6c22645d71320e3825630fce6815584278d9cba0f4b7ef17118e0ecc5314e7013c930b2ebbc3e1c1f4c85d87351c2169ca769d3278bc62cbc6b6f7089c2781f53463fb07324bf05f0acd444fbe673d6723ded45737f8b922fdd53f8954ce7b7b470144521dd83af3030c8ef56617a1666432507899ced6817a4196b27a1a70b8385bfb37e60005acef0822717c7d59a25a1eefc2f58c78011b30a8e1de35933d5b9a98eb6521d4ec3e7c9282948dffc693e8d41d2cb413dd72812038a9a09ddb0dcfd6e6f30175bf04de7b8929f236865e5e9140bb804ace31d4b8033df2fd53ea7509f1a7543dd27f95d5722165c35e458ad06af060a64116470870d50cfd7a2243864bb526560fa7236da54f10c60e70dc4ea16c7045375edad99640ef8676834c5a8bb4834442769c069da02ba9ea6236c03e6935fbf03a2f2ec960922a095dfb2404311ff32fcdacbe67bb9936065af5e3f239f944e46be99a5497d32bc443e69814bcb404ad1e3c204397dfd948ebdaf87dfbe0362340d52281201d6ad2d45b836e1e3991e59c6e8f1bfdd60e97d0043556b53179b91b21d697730e18149aeb1b04f2463ffb5f1023f5cf1fe12cf60ec39593da67ec0c1eeb35eaffcc569f05c3c6b958adb4e6f46de7273e146c6b27479e6028716587d4514be60a7b267abb0bc73f08504058e934bc5623589f7a44e51b977e2976cd96db48f84e404c09bdbbbf8786a72ad4cd462d78c0fc739fe3373aae5f87196de2ef13126ff61c456f7bf98cbc83735b126e17111f40984150bd29898c4c3869208a64de848e44b6b23a3d4850180f1f14783ab225c384ff57c14d83054f542e1b341e7b19b05ab8365a0472cdc7f0ed347745cff5d39dbd54590b10821af2236d567a587da9adef6e47f753ce832189689570af106eaaed528d12d643dfa0b77cf9ee63561b34b8b49d5e238f88f4d9254eeab668b78dc756fe6061c4081c4056f5ae42ec41110803f80913b63fc7d969ff35acbe55e60b9b028603a33f3209ba6d160ddfe49f74aec511558adfd18c0f969bf560f29e97513837c3a5ee7d23ebc2aed25d2d8573f19c2f0c32a2e3b56c2c642c8937b89e2e96fe8a4d0e186ca3b0a6b1a3be0bf5556eaf709300494b36c4ed369d798f8f36c3def25594c7cf86b120c125374ec33f717f8a06b8986efd3872c8e2a68994edb5fb585af7daadaa915beb000a3a83bed7096cb382b823f8bc7fb910cd937af0098b93aa3137d4056a0d3b10cd1219a8c67669e995b2bfb5368d309d1a50e94aea58c5912689895b1b7df884f95183c1c373467b975aa35b72ce065798d2e9bfecbbdb51985062a5c3215eaa391432370d70029cdc2b9d2257cb332676ead2ddd33fd123ee4f80119ee1d45fa8f8a853b62bee19b917b33c01ee6be1a936b4a514abbaad205bfba53b2b718d9426b20c8aac48ebaae1d8be5c704c98be05ff96dee4f799d1c983ae80e10dbcef052f2e909e10079606ddc21517914adf2f35d6ae35a6edff79b8aaa7d4a2fd98f768ff8502800762345a50a4295328977e29b0bff0473af55cd78551346747802304a0665d593c8f9ee85e13e01872cf9bf483c74965904efdc09be8ee7cb3e0baa17dc32670e8db729eb98d67b471e332d3dd5bfbee53c59ed7ff6faed4de78cf137692fe615878234e344ca76b85ee4e65affcd29b7acb24f54f5a89cf7d4b1018de343ecef14d45bc1ff5154ca2370abfe2e2c491942bde5d29ef8aa353046d1acafb5bd6bc1c92f9b3e2f1a1f0a558a928d9e3a041381320c4791f8b46c1394a99b4361635ca2e726f541ab52dc7852a4aecdd5d0bd9e352afa69dcfa640b7b353ed9490116dc08590b8bf9f7638263b8dc48cabc9305c8b6d277b64afc4a35474572ce5d77c05006c048906adc5da9c1ed2f6031eda98c64053735d820125159f7a2fe45edbd7214f81906d929228f102dc1e4055d75bd9754b1947d56e1ee46abc6e4450feab3d545f4f63b65b2ae8cec9ea40dc6c08a39297ddb0f9c382b86cf76822dac034f734328d8a21de8a30c3460986aaf179903e17ad0b88cedb868340266a21834125f07dfb3bf77fe86cc4d46a59860f07038c02da7781c5079aceb0f7dc9ba095eb0fc67b7019ea377c23b774b558b4c3d12951c82168f2f2f4d292afe5020c585c1439b24bde009327acb521b4e63f8db7c5fd8507c26e54734591073ca3cbc814d0f53cfd117b7c72c7582adc927e6d57d70e49d2d010aed49ffe2a5ad57233ebe99e0c5f7b5a3cd6e38d9720abdfc48f91cc9176365eea79db855eb1f4da2fbf459ae3c10e90d52d9938fb5fc2c6b8ff29ee6a7f4f2e49afe1be8de8e54832c95863ce9f621fe45b35619e972a21c8aafba2431cfe5f3940ccabdae4a50931514980854dbd1cf3116ad530e90937330e96040a61e5190c723a31e49432098f9d737db3d4cf56e2d6b1c7346d0b17a14f32f690ebab18eff52dbf75fb05eddaf440f7443e4f2bbda94d59d7cff47669399cfd9d24ba56ed48141b9fcecee1aefe46babf32a238fa4cd67a4a592b975bf29bc7c8ab133fdb247d9cc556b97e80b498de871cddbe2b279dad462bd2ba16608c6ddd344cca6a3caf523736371db6efee2bcab743ef1d34ac54754eb86be50a82cb201f6e296de1c84a53f7a358c1ea0dc89063344fdea9a11ca7754a78cfbb9763d78814e8ace2953fcfd90d27da943ccf835674324b8a73519ef0db37b26d19534e0467940a91cca53f06f727848c15624ecbbe8e04d33474fa67536373b4f3cfabb177d492b5260613f60d37aca4eafbe1dc5f941754cf7d66fafe61d687753615bba5a64476da53644c38259f6c895cb51693f627413fdd771faece37c99a2c020fc56be011b4ffbe6048877eecaffff62c928da2975dceb21cd6ef7bcad744bb93631d54701911c5b670dbbd7bcfd4b25dfcb95d0474f7eb27a77ec73cec99120acf0b5154284ef547484b9e3e58f49864acf1f9bd42571054f9af7661e3c3dc691bac7105711d4e1d183378b38f8c7104172930ef609a960bf423667b48866bc6a4ee092c446c6360569208732c022ad6ec61b235acaaf3d26fba06aa160dc59ffc2f5d4d3a8cc8cd6a67f4f946aa281af3825f447fea05469600f16f7490c7ee1b88711cb5ea5c547e1a6cc0d9ff920ae4e41bebccf0144d551ee563665cf5f74ac4778881979b161d23e64a8fbf3fde43592560c969a802a9cdd5d774433d2a0ad5b5092f6c334ec042189a53830edb9f57503b2002af0135b8c6aa3fda61e8c108f3ab796c6af986294082f4a9ae77775f55ce44a887d797a00214474c7fb403515bb435a2ee626e1c2c9e6ce6ebae4b31d32ce123a7fb1cc4481802710151498cbdef06da96d98cb8cf59d44407c635ed91010f9064a236e248e11957447a6bae2ad5d53512cfe52f93820c1fc66a443ca93673ab9d5e32b402e5ecf86a071cd18f71518794425e9d2e1c5af8e9c3e48f3014db71c3790fb2439d293276b84c4a5bef7c79b31dec3e1567c2c1d51141d11000c227eb2b9186bff2833cc2b078f57b64b5e85e84373450c84e81f7ddd490657cde0acc934c2cdc973cc520d81d3b2ce737fc9d812c53b374aa4c5f1f47a0ecab3297a25188cf0c72f30d58ba1e81a4ef4aa54c35ccd37e8cda250fbf749eb9fa74bf66dbe0ec6f312a9d9595b16a4c399ee3ad9cb6634655031bf26788697d0a922016f056a23ec540b105a2bfcd01eaa874adf9b86e2748f41b0993329dac948cf15a915b04e4245d749211bf0643f6fbe98136d752345893ecce24516b212ea2f2f8323298090ed51a4c9e52f5ced4be5dbfa2ed902ea9e8577e10dbc150cc04801988c96aca7e62a84858615e45397e77f45c3da695f60b040108c8ebd7a93a33dbeddbd2918ab3b68a25a1f82d8cb342b9daa4e7cac54dec00e2497f97ca6656854217da560727e788feef4e6d084dec6f68a34841d79e02e1e9e7599c3931143ea807555d3adfc31a77d3229657c87c7022c76cee6463797e8bf2c889dd27875404aab92e6ac5336906d1d118c50ea222c57a5c59d1ea358f5a6ab6f9f873294035a45c851e722328e59cc755c14965a7d29f11f53092bc7212ce3757997238a595d28f7df27e867bdf28927ed0efe7a438a2edca37bb2fc5d5b8819141cb694e20d1a9163fda0227b77c660337f07e754b3330bc9907f634d3a12224364ff4041b13cf7cd13d210d3c29360c3d0f709bc4ce6c291eb41c1fcbd5ba414e87fb8d96ff54c9a5b48d151790f149bba087439df8ba891451918df30bce9ab3ec55b7aa4eeaf1c3da571edc0b7775edbbe45e5eba62c0c3c5c83d75fe5c97883669b282c0bea3962fe2f135ca9cec6c975a7f78844d3474c1ee5118f43bfd954619b967a533c79ff628e6252dc491d679c3511aa64763fe740f4b72c6032981e05470c342617f3726715c7497694724d738f9bda622bd2a7e25eac63406b9149d70839086724823b8e0f2d1db2d6746c67f7e86b76fd79581c63f1f34ae33411e6e9b7671b6408f42babc300785f497523a80c3634965065d82d52ca37d52459b5e45c806246bca1694ff9c4e492fe67767ef749b5ee3d62c00a61979b255ded0146085af851f3caf54cb270cc4e9e6f42646ac3584d73c92476909cfee0fd80e28a3a8c78d0a0fce45f6ea666d3694d9ce0b8cd35f8441292197a6dc6a6324e06cced828269bb36c71c95c93a88490d710b29e6092bf0f39c3fbae4b19e7e2df617c42bc2c655d55ee2b96b6f35244cb88af575c9f903c5e8efbe36e5392695d1688f63a87ee5c449a6acde6b01ec6641e1226f9ab15c7a963283558ef5d06a805955f11fad056a00d1aa0b3f7c6598734bb9001afa8ff3112d869199814e1090afaa99269f4321baacf812dde8f1f905ee3cfa03d5d2d80fefe96303aaca2eb782f373d573e23235512f2e754d2363a5f4fe689cbb511f9c7c9bd05297cc0d20a538caf797b6c729f3ab147663aaae3fe5313fadab02f223f02c056807466db11d2740e244396ece81b2b7dd64ed9955e1b4ae3baf8e6862700e496af362f464826f542f2e3f669037c1ab53188845a00b4e6015d40f6a9d8229ff4754781b972b9c044aa27777bbcbc2b12b72b1db717f7f15410e9b2b04cbb66ccc83273b15bef9b30ed1189bdf2b2795a43f6dfde37e194a2ca7e413424760380268babfb3e14c60651d7a11630c8861b950b81455e46b6cd69091e0712bcc612be0ecf88248f6c2bde1c9e6e88dcfb5ed7315c54a462b23cce1e4fe491d6bcd05e2a6e4f576e71f0342a9864455eb109cd3173bbdf1df20cbe42fc1fa74527f4258a48f41d7ff84a71ec4cdf7bbc3523d8cf39727eb98ef43dd75fab79b9640dc4309399cd132b67a0af72c7a39f15d7f94e7562b22679be76409672748abac374a7de209ef55a4cd8a206b4c12fc2498ea0e4fb377d5279a660f68a013ad805242c8518526324e4da0993e5cba4cedb20782914d82ccecf46404fcf07cdd99b536080dab53c334deaf913554eb3198b7174efc09bc5e131a5f08e3948c155a2ad221c5b3fd3f6e9ac61dd23cb6b6ca82ad014c1795513a2f30a47496cf597ba881605f06978c0f172ddcc439dd40d2d66d3854f98386524761e0153bf47c73d6eb238405f22839e96ac0281160b30ded187d7ef612bba4c18573e6dccbbcb7daab4363a47d8e622c1836871027321c9762b6ed9ec7d15af498a4e69244c423a309eb20839b2a8faa41d9d82c5a7df4f31ecd440bb7164fe4c5321af438db089c696f8e890804dd1456b748fea0ad435716e6d8c7cf9cabb5f0195e22ab8ac808f68f2067445e816802a46a65cb93f8e416c12a3b30e156415b6928e48c7e42ac03fc47e19cf2f6d7ead62e1ac245110a9fb373e2af0aff4ff56f4a8995d0859bb1e138f519ba09c505051569bc85e00ac389f4de3ff8978efc4e74548f9aa1033007681453276a4343a7c8145fe74b3bd6934c7fedfe76d0d969bb740fd6091e9f4f1b46b680d4feb37f9a465979afc6b82e1d418502121e39d64fd4b143243652e8209f5b777aa9e409f64a71df6511686f0218ddccd95c325cef201ccf8793a479476e5a14b82cffc63ce70124b610604029747e0f19348bcf93efa6035c79c5c843ce7a97d7d2be13a0bc338fe01295fb055e1d1df5382bbdd8675dcb2528dbef787648d8687abdb1fcadbd0b6691b0f2856a9b2e787828bfe629f87bed8e728805ff0534f7a7c62a48dfe41e7b1e621706c7fcb3e0c70efc0239cbe736aedd53894e8af578b8b1976a05797b2d91b8c14bfc3989aa049f9a9e9d8f11442cf44c73ff1882dc24a3b1613dfc5c9ca0b4665e45ff6ae87a02184945ca90436106c2c2555ecdfa0c5f5f7641d6f3c7dc3b860fe0bea2c14b1236d4014d5661d2e99bedebec97a3c2f194790cc617617e1acfb82035f3eb18e63deac52dce6c78655c0924f271dd08e7340c7e480fb533f65ab9ee3408d6a776134bf0f079958b8d3b2bd98bdbd23220647b31461169730b1a788f174e52e5152d6405c563744ed53126a078985544a77470fef098ae56af5bc374e75de36716a9a749e7278d152f5aca801f1805edbc7d5c4c1d1e9de20494940af7831790a1b16f1551efe2a12bfe896c6ada68c4136a2f6cb2fa18e6a6ab16d368923594498c6ca7bcc4e45259d2311747516ea7c1329d93e71a825bc95bd260538cc6cbbfeb1dc79342cbc326d6501c482f39909ac36de014ab37adad90b954e11070541483895171552bb21e9c1dbfa3612335afd8ebd21fb85ede08411530561897928d3bb9dd89351f2a2f859a64f55b1cc0b219cd92b215f643db7f7dc3adb60cb7952e2390257ac76110d0aa4f8221fed2c38de2e074844fa01fd544d1bdf42b2f976536942acf771a0710fec78a392d9f3167e82a0409682f1a803375b60e40d24d95d2f5ac40ea9c497ea6e40c6521f014b0e8b7c4a27c0bb8347fa371442209379869badbd1aae8fa6ba96a74645a1a52deca31f8090d3358990d2ebd6928dc5c600e0acd54b770eae1b4f476e9636586445d8e3532682e741694dd76afeea795b056f76ddac3f6c52c00632ac6388cd1d5864bb19cac69bc4c7bce4fa5543fb98d12213066dd74581cc819c550ce21978ad294068c0f46fcbea1f40a2018f257c93d6e4be647749b4a519dd6c193f4ddecdc29eb85138dcd8e6e5825d416a2ca30c4040b7766ef1a56b2c33df229253fb7e904f780fc4b1a83720bc0967eaec229725c106bf29380113f066893ff939432bdc7931833f46ce24bcc4c1a830c16fd36a6d76f4f4d8f656a4ce1f11797a2e0fb0f5d58be1209a33c95a6e4e95c523e7ad638e1d1c48d730ae7ae7e5a29a2bc44d3a043cc3c150ebb718fe5960be8abee8f8007d2920b2dcffc9e288985723a31d88b780d014c2dbaf7e6a00f083d4693b4b75bbf561dcc68023f96f4276a44d4c3a5a53fdea18d9e2f9518fa993a99aafe3f93de55783aaea9161ec48e4a88c421f3e899d3dc905ac69e0cae1f017396c7d5164b360a701e605d3f6b2dc4ebbb8b66412d49e57679aa9322907e770fe6af4b8599e67d6603479c1d007eddd82ed03d27968cfc621b3ec8c95c7c975945aa8d0457158840e42b45178c3ecd8c0f932cef33578c49a245231cef5200d89e1fdc94c80f0f59ec7f54c6de7774adbf42ba653fa14ab33dd0a9541c807eb44ee5771c5bd1c875f0125e4da58c5361c63245f58d1579bf659b4bf449f80575dff9f11cedd9e49ae8e68788e1e1870483072aaead1ce41bacbd93d9b85fce805c3f86a69f078053cd1e47a032667a5ad73019e15747d85e6afe8af4845d8e508b6a90edccca48cc6495b91e99a742e3f3032b794a1b6b179cad651d066d3c960a42d60abfb52a658576e6e2f2b1f964daf8b57dc84f0e98b1fae0bf65d3636873a3d7b1b45ac9dc75d1cd6b00eda3a4ed25d0c8faab9b81b49e30ce7d65b18534f144c480a25641b9431102ff8bf9db9c630ec2de8795d735b30daef0a6cc7346669afa916cc583fe11cd84e2567255b503e6fa5324defbebf63ca73ac4dd697bb2d4c0048fc291796a1d0919bf9d4a6f3f06a33bba6a79f7d7dfa74d55a12005d966d484643b8144664d4df721f29198d2619fca2bd375b1b4b018a536e3f489c43cce03a19e35c8121c94e600038d2805f282e41ff30fe1c0b732067c74ba819c30a11abebf8136bd56a584204f973318ae586778e7420a93f244f2c83c4e470715d31219ce232042bf5ca6802ffc1c12b3853d24554a562316b714ecc15b364672f209ddd98a292dfe736f6a0f0b0f667e3cc1bf5a0849f69c2e6a7c2d76b134808ea2da53329183f4701001cd583149c1465468695509ea99f5a2d88e6f3a4083ba91cb07f0366b8125ed551081997d4e2bafc08f558957d9fb92671ff073844c199b03cb5c9e800a1c0c8806800bafbc250be5f2ded493b9fe984b838854b6029ce336cc3dd7564d645185fc2f70169d6d7b16410071c7470d7afacdffcec63eb635506c62a547428d68eb305edd2b055fb8245cf21e11952cdeaa21e16f6c7fd1ecacff2a9b332b46baf55f873396b972512dce4f951588989f62f06706a16289f15373c61015952d3e0899d56c8d5637ffe85648e5ab36c978480bf285076845145faa17c575eededd136a26491536c66fe014043bf95c1bc29736ca9759cd4e72adb5a5c0a0aea15edbe5ca76fc257b7d4f53b82f8930582516f6f726ce6dc49cc879c2c53d9c7b7122e91214bf9e54257ace9caf3007440274c034c946ab5712e2f60c72342baed6e0cbb6466fcbd8f9963cb782bf0682b07ad1e987c2761486a1969b368ec07aadf083c8cb9fd7dd5960db2a2833df6fdae7cc61514cccfba59e818ad0e002e9887248c455a521c5dd0611e57207eee9fe14f1017e29f2c2c63bcf7870b9524354ced6c5e28576ef812afe8d553aac28a20a76018f7b63fd2d0efe9ec9632ff834800cca6caa0634b5040184595709a45222f4db54584c9cd18253b5190c30c4672db44ff90e7c6b7c3d4027c3459286e507498880bf3f500dbfaa73d24521fe848976ef71a780f9b3cf08f3d6df29996db716ce23c42fdfd8d475eeae8afafe05fb6b3aaa8cd9a18186189faf6610a77fb8f7664b99b2910bb9bb934e42357382fe1bc4013d0bc11175bf10c5e61b72728d41036ea19f2ccf3975fc7b82df2bb22a5cb61dbcd9952331ed37a7b375661330f26191582550ee3d363d1ff8fe70fe2a87b39ec4f579b233c970d9bbfa03462ac80e4885eab1b1bd1bb6325cd52d41f690c58d675a0dd169886d3cb900bcb36c192671b3a8dd4c441734b3f9bccf0a9acb87133a2a74c74ae576e725becfe219c5ae39f0b28c6a9f8ff32c2ba62128cd759a6a51e7bb7701a4f0d6ff5d8b3c548829a144215696ab2e54f72f36881ce7c0aeb932689c32d0da8fb12d818e2e40db4a089d73d48c20de386e4afaf68d9e4892c999cd42906cbbe6756383417368683e15418de8ca5b92bd0aee650e7a98d839903323c0475ac7b6427e6fa8fc53bc4088eb0e529d38cb9521c7df6c0e348ff57f027a59fae56e6a768cb1187cf5adf6fbb95fb69a7cf067f87a380e7da7d5d0e0a1344d03479b523c2da370e4a49aa3ac18d42bcce0fd21480fc1636fb0cfeea8ef89242fd202b323db35c7ec456033e6090e3ba8aacf133d782ce850fef91758f34fb4bd69990cab6ee2f6fd3b9a7d6966f7cca4aeaa17990c92f78fe65d1a9fb5e6c278a3637b01a61a8273f15ff9057d595f4502354c2447782c0a85f064ff37e8e14586b07202107a3f8df42c5ecb955001b07d655d1e4674e79973b10da83b708bb756e4efeda1ddd2ee230786efc79e924aeb85e2e8179f99951efa7061f319ff585197d044623becc11ce70f457c50dd008c6e6b0c5f75fbf02ac2813f1384534d9bedcb7f9ffd22e4530f57e316a31b350bc0e0050c3461d8b45cc6f508ea59921afdc17918f049db19ebefdc7b06fbbf892490aa9ec6ce56b5e7855e0cc293770d4e835b6c29f857d8b01deaec082f6d16ade24ce063f664fb57ba7de502329c4f48085d87b4ce1ca9f7c9baaefba62a6fcf73c738e1f2205b2e896c1f6f8d605d98bdc77815b6e31a13fc8088e275ff41141d30b06488055788eee13c9fca804d3a8347d2210c27de66ddd2e9a9ebc3cae8fac4b6bc31dcedf50d47c837b872df84196ec6d7bd744fbcfb2234d2969152d5654d15767f7a62c09fd6de3c66204921681e3495a37d95de026d7a2cd4a87da1d70a2935062073adbdd5fb6e962e282aea5042427930dd2ec1652b02254c4056b17f9ae82d8ec31f63076fa69e231ad1db2cddc799b76d98951f25c1d36ac0ecf50f86d541d541af61d227ba69e0db636a92621ce7124fe4f9ed6854e93001f8739a92a1bcf6e16bd22e6fc11f4e64f67a2a2feff9cc7df1614e122557ebd733451d520259d4195893c4f78f6e4c38352cb541ac11c499f7c8227343e51a6dd3a17798dff1b631cf3c4a0ce2a5d65d94c379e5e288890380d5a84c2b59b492f44a9270ef1814ef84f495137303085c804d25253539b84a96964b0506ac91819bb852ae52e4151f5720821cb189d484afdef8ea1c82c121d724b3f633b39393f7d2a210272ec8b2b89d9d5bed853e96f78aca6026a4c86b1eb4e7bbd87bea3ee7a083225d70fcbadea27c8cf7953c8469853021ac277031fb3570039395d96adeb61085f010148f4bd088b306d6332b74ab9f746a7e768aace99aedac01b43cf662d170c8224d46eaf8e695672209c8cae2f1766ae7cc0b0d6846cd9ab66fbf7d5fdc837ac486428412f29ebce9f841bba684d260ccf1d7a04a68ec28f8c0c51a023e60d59070618c5fad3c1dff6a3c177b9047250c9112d8e1b4d40ee866a4135def0aec690d2524984189321a7f90cea254e19dc70eeb4f464e115112c496dd4ab85e98c8639b114e50d210f1e91c252c4d103a2da851e462cfdab2f648e17b159f9335389bc8217e031e59766f5af9cbcf969e5ce48fd8f463a4f9742df309d73540b2ef9d622b771438cd9297fc23ccfea3e13ac0a50c9c66835f3e15a2425c27650fc51a98116d2bc57655d0efaaf2013ce23c4fa5a4a83907404e6b0b5a4738df7c1a864cd2189b45aafed234aa310a4b1ac2569350e4cb0f046878c809e24d2c252dc1f53a30b7ed78e52a85434a91a54fe86f4d21b109f43cee45322be3c566d60d3964f6dca04cd602ce44e6b97d21c0f523ebf56a5bffe32bee38242470bd292e1c25323dbb9d1ada2955356a2c35243bc3749cfee65ff423b5f2007cee4259e3ddc3faf10b6adc3429199a287c77b584977ed06824639806d916625016745af5b7fb5f1a8d1522ce5b382bf3d859bdfb245526b12c99b616469418d425728b68ddebea9cbc96e60c6526467938a58b2840da834fab7e75b728857a3e55c0a6cff2a4f4f62e8fac7ebd5e0d192b56a9979ece6d63dfd6682df52e6422a44bf43ecbb35425a8a38a051ba2cbb2ed5217033bada49d2857a4e54807a554cf12b97502cb44e1571657cbdedbf2a8d14b690a32d312228b2952c1d38db4763b441a42e06de71ca7110c124403b9c31a29dbf0c82b499c40214ca5689eecfc61036f9a75775c58e01c5c4d464331d083f3e5e641fbd8e536352328356806deacbad878ab8e8aba1f3db617e9a92167f48368acc786114be8fbdc9a62e52e6533d265594f51c43d14555eaa6901d58b1af0389969d3b8fd8f3296c929d63cc66da4f205254b14943c784ed5783b76f5bc370d15e5640ad75e01b778f5173b4134d5cf66eb46acd2348894951c49d58deeb68022a8f56272e58f1d703f88a6609a9473eb6bca7d66bcf58009f4f6a7baffe1d0b621420ab2ea4d97b3c7991b96f916f459b2e4f9d7274</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Please enter the access password</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
+      
+       <hr><span style="font-style: italic;color: gray;"> Please indicate the source when reprinting. Please verify the citation sources in the article and point out any errors or unclear expressions. </span>
+    </div>
+</article>
+
+
+
+
+
+
+
+    
+        <!-- MathJax配置，可通过单美元符号书写行内公式等 -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    "HTML-CSS": {
+        preferredFont: "TeX",
+        availableFonts: ["STIX","TeX"],
+        linebreaks: { automatic:true },
+        EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+        inlineMath: [ ["$", "$"], ["\\(","\\)"] ],
+        processEscapes: true,
+        ignoreClass: "tex2jax_ignore|dno",
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+        equationNumbers: { autoNumber: "AMS" },
+        noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } },
+        Macros: { href: "{}" }
+    },
+    messageStyle: "none"
+    });
+</script>
+<!-- 给MathJax元素添加has-jax class -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<!-- 通过连接CDN加载MathJax的js代码 -->
+<script type="text/javascript" async
+        src="//cdn.jsdelivr.net/npm/mathjax@2.7.8/unpacked/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<input type="hidden" id="MathJax-js"
+        value="//cdn.jsdelivr.net/npm/mathjax@2.7.8/unpacked/MathJax.js?config=TeX-MML-AM_CHTML">
+</input>
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2022-2024 Louis
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'photoSwipe';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+
+        /*高亮代码块行号*/
+        
+        $('pre code').each(function(){
+            var lines = $(this).text().trim().split('\n').length, widther='';
+            if (lines>99) {
+                widther = 'widther'
+            }
+            var $numbering = $('<ul/>').addClass('pre-numbering ' + widther).attr("unselectable","on");
+            $(this).addClass('has-numbering ' + widther)
+                    .parent()
+                    .append($numbering);
+            for(var i=1;i<=lines;i++){
+                $numbering.append($('<li/>').text(i));
+            }
+        });
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+
+        // PhotoSwipe
+        $('article').each(function(i){
+            $(this).find('img').each(function(){
+                if ($(this).closest('figure').hasClass('article-gallery-img')) {
+                    return;
+                }
+                var alt = this.alt;
+                $(this)
+                    .wrap('<figure class="article-gallery-img" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"></figure>')
+                    .wrap('<a href="' + this.src + '" title="' + alt + '"></a>');
+                $(this).after('<div class="img_alt"><span>' + (alt || '') + '</span></div>');
+            });
+        });
+
+        var pswpElement = document.querySelectorAll('.pswp')[0];
+        if (pswpElement) {
+            var gallerySelector = '.article-gallery, article';
+
+            var initPhotoSwipeFromDOM = function(gallerySelector) {
+
+                // parse slide data (url, title, size ...) from DOM elements
+                // (children of gallerySelector)
+                var parseThumbnailElements = function(el) {
+                    var thumbElements = $(el).find('figure.article-gallery-img').toArray(),
+                        numNodes = thumbElements.length,
+                        items = [],
+                        figureEl,
+                        linkEl,
+                        size,
+                        imgEl,
+                        item;
+
+                    for (var i = 0; i < numNodes; i++) {
+
+                        figureEl = thumbElements[i]; // <figure> element
+
+                        // include only element nodes
+                        if (figureEl.nodeType !== 1) {
+                            continue;
+                        }
+
+                        linkEl = figureEl.children[0]; // <a> element
+                        imgEl = linkEl.children[0]; // <img>
+
+                        size = linkEl.getAttribute('data-size');
+                        size = size && size.split('x');
+
+                        // create slide object
+                        item = {
+                            src: linkEl.getAttribute('href'),
+                            w: size && parseInt(size[0], 10) || imgEl.width,
+                            h: size && parseInt(size[1], 10) || imgEl.height
+                        };
+
+                        if (figureEl.children.length > 1) {
+                            // <figcaption> content
+                            item.title = figureEl.children[1].innerHTML;
+                        }
+
+                        if (linkEl.children.length > 0) {
+                            // <img> thumbnail element, retrieving thumbnail url
+                            item.msrc = linkEl.children[0].getAttribute('src');
+                        }
+
+                        item.el = figureEl; // save link to element for getThumbBoundsFn
+                        items.push(item);
+                    }
+
+                    return items;
+                };
+
+                // find nearest parent element
+                var closest = function closest(el, fn) {
+                    return el && (fn(el) ? el : closest(el.parentNode, fn));
+                };
+
+                // triggers when user clicks on thumbnail
+                var onThumbnailsClick = function(e) {
+                    e = e || window.event;
+
+                    var eTarget = e.target || e.srcElement;
+
+                    // find root element of slide
+                    var clickedListItem = closest(eTarget, function(el) {
+                        return (el.tagName && el.tagName.toUpperCase() === 'FIGURE');
+                    });
+
+                    if (!clickedListItem) {
+                        return;
+                    }
+
+                    if (e.preventDefault) {
+                        e.preventDefault();
+                    } else {
+                        e.returnValue = false;
+                    }
+
+                    // find index of clicked item by looping through all child nodes
+                    // alternatively, you may define index via data- attribute
+                    var clickedGallery = $(clickedListItem).closest(gallerySelector)[0],
+                        childNodes = $(clickedGallery).find('figure.article-gallery-img').toArray(),
+                        numChildNodes = childNodes.length,
+                        nodeIndex = 0,
+                        index;
+
+                    for (var i = 0; i < numChildNodes; i++) {
+                        if (childNodes[i].nodeType !== 1) {
+                            continue;
+                        }
+
+                        if (childNodes[i] === clickedListItem) {
+                            index = nodeIndex;
+                            break;
+                        }
+                        nodeIndex++;
+                    }
+
+
+
+                    if (index >= 0) {
+                        // open PhotoSwipe if valid index found
+                        openPhotoSwipe(index, clickedGallery);
+                    }
+                    return false;
+                };
+
+                // parse picture index and gallery index from URL (#&pid=1&gid=2)
+                var photoswipeParseHash = function() {
+                    var hash = window.location.hash.substring(1),
+                        params = {};
+
+                    if (hash.length < 5) {
+                        return params;
+                    }
+
+                    var vars = hash.split('&');
+                    for (var i = 0; i < vars.length; i++) {
+                        if (!vars[i]) {
+                            continue;
+                        }
+                        var pair = vars[i].split('=');
+                        if (pair.length < 2) {
+                            continue;
+                        }
+                        params[pair[0]] = pair[1];
+                    }
+
+                    if (params.gid) {
+                        params.gid = parseInt(params.gid, 10);
+                    }
+
+                    return params;
+                };
+
+                var openPhotoSwipe = function(index, galleryElement, disableAnimation, fromURL) {
+                    var pswpElement = document.querySelectorAll('.pswp')[0],
+                        gallery,
+                        options,
+                        items;
+
+                    items = parseThumbnailElements(galleryElement);
+
+                    // define options (if needed)
+                    options = {
+
+                        // define gallery index (for URL)
+                        galleryUID: galleryElement.getAttribute('data-pswp-uid'),
+
+                        getThumbBoundsFn: function(index) {
+                            // See Options -> getThumbBoundsFn section of documentation for more info
+                            var thumbnail = items[index].el.getElementsByTagName('img')[0], // find thumbnail
+                                pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
+                                rect = thumbnail.getBoundingClientRect();
+
+                            return {
+                                x: rect.left,
+                                y: rect.top + pageYScroll,
+                                w: rect.width
+                            };
+                        }
+                    };
+
+                    // PhotoSwipe opened from URL
+                    if (fromURL) {
+                        if (options.galleryPIDs) {
+                            // parse real index when custom PIDs are used
+                            // http://photoswipe.com/documentation/faq.html#custom-pid-in-url
+                            for (var j = 0; j < items.length; j++) {
+                                if (items[j].pid == index) {
+                                    options.index = j;
+                                    break;
+                                }
+                            }
+                        } else {
+                            // in URL indexes start from 1
+                            options.index = parseInt(index, 10) - 1;
+                        }
+                    } else {
+                        options.index = parseInt(index, 10);
+                    }
+
+                    // exit if index not found
+                    if (isNaN(options.index)) {
+                        return;
+                    }
+
+                    if (disableAnimation) {
+                        options.showAnimationDuration = 0;
+                    }
+
+                    // Pass data to PhotoSwipe and initialize it
+                    gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+
+                    gallery.listen('imageLoadComplete', function(index, item) {
+                        var linkEl = item.el.children[0];
+                        var img = item.container.children[0];
+                        if (!linkEl.getAttribute('data-size')) {
+                            linkEl.setAttribute('data-size', img.naturalWidth + 'x' + img.naturalHeight);
+                            item.w = img.naturalWidth;
+                            item.h = img.naturalHeight;
+                            gallery.invalidateCurrItems();
+                            gallery.updateSize(true);
+                        }
+                    });
+
+                    gallery.init();
+                };
+
+                // loop through all gallery elements and bind events
+                var galleryElements = document.querySelectorAll(gallerySelector);
+
+                for (var i = 0, l = galleryElements.length; i < l; i++) {
+                    galleryElements[i].setAttribute('data-pswp-uid', i + 1);
+                    galleryElements[i].onclick = onThumbnailsClick;
+                }
+
+                // Parse URL and open gallery if it contains #&pid=3&gid=1
+                var hashData = photoswipeParseHash();
+                if (hashData.pid && hashData.gid) {
+                    openPhotoSwipe(hashData.pid, galleryElements[hashData.gid - 1], true, true);
+                }
+            };
+
+            // execute above function
+            initPhotoSwipeFromDOM(gallerySelector);
+        }
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<style>
+    pre{
+        position: relative;
+        margin-bottom: 24px;
+        border-radius: 10px;
+        border: 1px solid #e2dede;
+        background: #FFF;
+        overflow: hidden;
+    }
+    code.has-numbering{
+        margin-left: 30px;
+    }
+    code.has-numbering.widther{
+        margin-left: 35px;
+    }
+    .pre-numbering{
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        padding: 18px 3px 15px 5px;
+        border-right: 1px solid #C3CCD0;
+        text-align: right;
+        color: #AAA;
+        background-color: #fafafa;
+    }
+    .pre-numbering.widther {
+        width: 35px;
+    }
+</style>
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+    .nav-right:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+        background: url("/img/gj2.jpg");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    
+
+    
+    #post .pjax article :not(pre) > code {
+        color: #24292e;
+        font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+        background-color: rgba(27,31,35,.05);
+        border-radius: 3px;
+        font-size: 85%;
+        margin: 0;
+        padding: .2em .4em;
+    }
+    
+</style>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+         It's a separate element, as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+</html>
