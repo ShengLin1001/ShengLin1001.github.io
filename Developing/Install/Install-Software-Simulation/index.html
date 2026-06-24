@@ -1,0 +1,2178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Install - Software - Simulation | Please be chilling out</title>
+  <meta name="keywords" content=" Developing-Install ">
+  <meta name="description" content="Install - Software - Simulation | Please be chilling out">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="About this WeBlog我是一名 2022 级在读研究生（力学 &#x2F; 机器学习）。本博客创建于 2024.3 ，为了整合记录读研以来所有的知识积累（知乎，哔哩哔哩，公众号，博客，网站，书籍）。 目前我对微观尺度下金属领域的相变机制&#x2F;位错演化很感兴趣。如果大家对我的研究领域感兴趣，欢迎发邮件给我，共同进步。😃 使用软件包括：Python，VASP，Lammps Pyth">
+<meta property="og:type" content="website">
+<meta property="og:title" content="about">
+<meta property="og:url" content="https://shenglin1001.github.io/about/">
+<meta property="og:site_name" content="Please be chilling out">
+<meta property="og:description" content="About this WeBlog我是一名 2022 级在读研究生（力学 &#x2F; 机器学习）。本博客创建于 2024.3 ，为了整合记录读研以来所有的知识积累（知乎，哔哩哔哩，公众号，博客，网站，书籍）。 目前我对微观尺度下金属领域的相变机制&#x2F;位错演化很感兴趣。如果大家对我的研究领域感兴趣，欢迎发邮件给我，共同进步。😃 使用软件包括：Python，VASP，Lammps Pyth">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-03-30T01:20:39.000Z">
+<meta property="article:modified_time" content="2024-06-21T02:16:33.835Z">
+<meta property="article:author" content="Louis">
+<meta property="article:tag" content="material science">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css" rel="stylesheet">
+<link href="//cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 7.1.1"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="false" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/avatar.jpg"/>
+</a>
+<div class="author">
+    <span>Louis</span>
+</div>
+
+<div class="icon">
+    
+        
+            <a title="github"
+               href="https://github.com/ShengLin1001"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="zhihu"
+               href="https://www.zhihu.com/people/bas-58"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-zhihu"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="email"
+               href="mailto:12324025@zju.edu.cn"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-email"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="qq"
+               href="http://wpa.qq.com/msgrd?v=3&uin=1770861169&site=qq&menu=yes"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-qq"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+</div>
+
+
+
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="All">All
+            
+        </div>
+    </li>
+    
+        
+            
+                
+    <li>
+        <div data-rel="Thinking">
+            <i class="fold iconfont icon-right"></i>
+            Thinking
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Thinking&lt;---&gt;Diary">
+            
+            Diary
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Thinking&lt;---&gt;Idea">
+            
+            Idea
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="Summary">
+            <i class="fold iconfont icon-right"></i>
+            Summary
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Summary&lt;---&gt;My_blog">
+            
+            My_blog
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Summary&lt;---&gt;Other_people_blog">
+            
+            Other_people_blog
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="Software">
+            <i class="fold iconfont icon-right"></i>
+            Software
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;VASP">
+            <i class="fold iconfont icon-right"></i>
+            VASP
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;VASP&lt;---&gt;Special_functions">
+            
+            Special_functions
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;VASP&lt;---&gt;VTheory">
+            
+            VTheory
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;ASE">
+            
+            ASE
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;Lammps">
+            
+            Lammps
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;P4VASP">
+            
+            P4VASP
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;Pymatgen">
+            
+            Pymatgen
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;Tool">
+            
+            Tool
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="Program">
+            <i class="fold iconfont icon-right"></i>
+            Program
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Program&lt;---&gt;Python">
+            
+            Python
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="Developing">
+            <i class="fold iconfont icon-right"></i>
+            Developing
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Developing&lt;---&gt;Install">
+            
+            Install
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Developing&lt;---&gt;Mymetal">
+            
+            Mymetal
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="Theory">
+            <i class="fold iconfont icon-right"></i>
+            Theory
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Theory&lt;---&gt;Quantum_mechanics">
+            
+            Quantum_mechanics
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="Writing">
+            <i class="fold iconfont icon-right"></i>
+            Writing
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Writing&lt;---&gt;Academic">
+            
+            Academic
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+            
+            
+            
+    </div>
+    <div>
+        
+            <a class="about  hasFriend  site_url"
+               
+               href="/about">About</a>
+        
+        <a style="width: 50%"
+                
+                                           class="friends">Friends</a>
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="56">
+<input type="hidden" id="yelog_site_word_count" value="34.8k">
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        Links
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="https://blog.shishiruqi.com/">啦啦黑还黑</a></li>
+            
+            <li><a target="_blank" href="https://www.bigbrosci.com/">大师兄</a></li>
+            
+            <li><a target="_blank" href="http://sobereva.com/">卢天</a></li>
+            
+            <li><a target="_blank" href="http://staff.ustc.edu.cn/~zqj/">郑奇靖</a></li>
+            
+            <li><a target="_blank" href="https://www.zhihu.com/people/obaica/columns">学术之友</a></li>
+            
+            <li><a target="_blank" href="https://www.zhihu.com/column/c_1680331980414226432">我的专栏</a></li>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索"></i>
+            <div class="right-title">All</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" autocomplete="off"/>
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Developing-Install</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Developing-Mymetal</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Program-Python</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Software-ASE</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Software-Lammps</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Software-P4VASP</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Software-Pymatgen</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Software-Tool</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Software-VASP-Special_functions</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Software-VASP-VTheory</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Summary-My_blog</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Summary-Other_people_blog</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Theory-Quantum_mechanics</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Thinking-Diary</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Thinking-Idea</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Writing-Academic</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <div id="local-search-result">
+
+    </div>
+    
+    <nav id="title-list-nav">
+        
+        
+        <a id="top" class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-AI-works/"
+           data-tag="Thinking-Diary,Thinking-Idea"
+           data-author="" >
+            <span class="post-title" title="Diary - AI works">Diary - AI works</span>
+            <span class="post-date" title="2026-06-13 13:16:00">2026/06/13</span>
+        </a>
+        
+        
+        <a id="top" class="All Summary My_blog "
+           href="/Summary/My-blog/My-blog-Literature-summary/"
+           data-tag="Summary-My_blog"
+           data-author="" >
+            <span class="post-title" title="My blog - Literature summary">My blog - Literature summary</span>
+            <span class="post-date" title="2024-09-10 21:55:00">2024/09/10</span>
+        </a>
+        
+        
+        <a id="top" class="All Summary My_blog "
+           href="/Summary/My-blog/My-blog-Technology-summary/"
+           data-tag="Summary-My_blog"
+           data-author="" >
+            <span class="post-title" title="My blog - Technology summary">My blog - Technology summary</span>
+            <span class="post-date" title="2024-09-10 21:50:00">2024/09/10</span>
+        </a>
+        
+        
+        <a id="top" class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-Log/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - Log">Diary - Log</span>
+            <span class="post-date" title="2024-04-10 00:31:48">2024/04/10</span>
+        </a>
+        
+        
+        <a id="top" class="All Summary My_blog "
+           href="/Summary/My-blog/My-blog-My-summary/"
+           data-tag="Summary-My_blog"
+           data-author="" >
+            <span class="post-title" title="My blog - My summary">My blog - My summary</span>
+            <span class="post-date" title="2024-03-30 17:46:59">2024/03/30</span>
+        </a>
+        
+        
+        <a id="top" class="All Software VASP VTheory "
+           href="/Software/VASP/VTheory/VASP-VTheory-Classical-literatures/"
+           data-tag="Software-VASP-VTheory"
+           data-author="" >
+            <span class="post-title" title="VASP - VTheory - Classical literatures">VASP - VTheory - Classical literatures</span>
+            <span class="post-date" title="2024-03-30 16:00:07">2024/03/30</span>
+        </a>
+        
+        
+        <a id="top" class="All Software Tool "
+           href="/Software/Tool/Tool-My-Summary/"
+           data-tag="Software-Tool"
+           data-author="" >
+            <span class="post-title" title="Tool - Summary">Tool - Summary</span>
+            <span class="post-date" title="2024-03-30 13:29:09">2024/03/30</span>
+        </a>
+        
+        
+        <a id="top" class="All Theory Quantum_mechanics "
+           href="/Theory/Quantum-mechanics/Quantum-mechanics-some-website-and-book/"
+           data-tag="Theory-Quantum_mechanics"
+           data-author="" >
+            <span class="post-title" title="Quantum mechanics - some websites and books">Quantum mechanics - some websites and books</span>
+            <span class="post-date" title="2024-03-29 21:31:42">2024/03/29</span>
+        </a>
+        
+        
+        <a id="top" class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-I-want-to-do-now-keep-updating/"
+           data-tag="Thinking-Diary,Thinking-Idea"
+           data-author="" >
+            <span class="post-title" title="Diary - I want to do now (keep updating)">Diary - I want to do now (keep updating)</span>
+            <span class="post-date" title="2024-03-29 18:17:26">2024/03/29</span>
+        </a>
+        
+        
+        <a id="top" class="All Summary Other_people_blog "
+           href="/Summary/Other-people-blog/Other-people-blog-computational-material-science/"
+           data-tag="Summary-Other_people_blog"
+           data-author="" >
+            <span class="post-title" title="Other people blog - computational material science">Other people blog - computational material science</span>
+            <span class="post-date" title="2024-03-29 18:16:05">2024/03/29</span>
+        </a>
+        
+        
+        <a id="top" class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-How-to-do-my-research/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - How to do my research">Diary - How to do my research</span>
+            <span class="post-date" title="2024-03-28 13:30:54">2024/03/28</span>
+        </a>
+        
+        
+        <a id="top" class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-Writing-at-first/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - Writing at first">Diary - Writing at first</span>
+            <span class="post-date" title="2024-03-25 22:00:04">2024/03/25</span>
+        </a>
+        
+        
+        <a id="top" class="All Summary My_blog "
+           href="/Summary/My-blog/My-blog-Shortcut-command/"
+           data-tag="Summary-My_blog"
+           data-author="" >
+            <span class="post-title" title="My blog - Shortcut command">My blog - Shortcut command</span>
+            <span class="post-date" title="2024-01-23 01:33:00">2024/01/23</span>
+        </a>
+        
+        
+        <a  class="All Developing Install "
+           href="/Developing/Install/Install-Software-for-AI/"
+           data-tag="Developing-Install"
+           data-author="" >
+            <span class="post-title" title="Install - Software - for - AI">Install - Software - for - AI</span>
+            <span class="post-date" title="2026-06-07 20:11:00">2026/06/07</span>
+        </a>
+        
+        
+        <a  class="All Writing Academic "
+           href="/Writing/Academic/Research-literature/"
+           data-tag="Writing-Academic"
+           data-author="" >
+            <span class="post-title" title="Academic - Notes">Academic - Notes</span>
+            <span class="post-date" title="2026-04-13 11:35:00">2026/04/13</span>
+        </a>
+        
+        
+        <a  class="All Writing Academic "
+           href="/Writing/Academic/Academic-Notes/"
+           data-tag="Writing-Academic"
+           data-author="" >
+            <span class="post-title" title="Academic - Notes">Academic - Notes</span>
+            <span class="post-date" title="2026-04-01 17:30:00">2026/04/01</span>
+        </a>
+        
+        
+        <a  class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-2026/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - 2026">Diary - 2026</span>
+            <span class="post-date" title="2026-01-13 19:58:00">2026/01/13</span>
+        </a>
+        
+        
+        <a  class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-Plans/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - Plans">Diary - Plans</span>
+            <span class="post-date" title="2025-11-05 09:14:00">2025/11/05</span>
+        </a>
+        
+        
+        <a  class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-2025/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - 2025">Diary - 2025</span>
+            <span class="post-date" title="2025-03-04 21:13:00">2025/03/04</span>
+        </a>
+        
+        
+        <a  class="All Summary Other_people_blog "
+           href="/Summary/Other-people-blog/Other-people-blog-Metals/"
+           data-tag="Summary-Other_people_blog"
+           data-author="" >
+            <span class="post-title" title="Other people blog - Metals">Other people blog - Metals</span>
+            <span class="post-date" title="2024-12-18 09:58:00">2024/12/18</span>
+        </a>
+        
+        
+        <a  class="All Theory Quantum_mechanics "
+           href="/Theory/Quantum-mechanics/Quantum-mechanics-Atomic-orbital/"
+           data-tag="Theory-Quantum_mechanics"
+           data-author="" >
+            <span class="post-title" title="Quantum mechanics - Atomic orbital">Quantum mechanics - Atomic orbital</span>
+            <span class="post-date" title="2024-11-21 14:55:00">2024/11/21</span>
+        </a>
+        
+        
+        <a  class="All Software Pymatgen "
+           href="/Software/Pymatgen/Pymatgen-Calculation-parameters/"
+           data-tag="Software-Pymatgen"
+           data-author="" >
+            <span class="post-title" title="Pymatgen - Calculation parameters">Pymatgen - Calculation parameters</span>
+            <span class="post-date" title="2024-06-24 19:17:00">2024/06/24</span>
+        </a>
+        
+        
+        <a  class="All Developing Mymetal "
+           href="/Developing/Mymetal/Mymetal-Lattice-mismatch/"
+           data-tag="Developing-Mymetal"
+           data-author="" >
+            <span class="post-title" title="Mymetal - Lattice mismatch">Mymetal - Lattice mismatch</span>
+            <span class="post-date" title="2024-06-08 15:30:00">2024/06/08</span>
+        </a>
+        
+        
+        <a  class="All Summary Other_people_blog "
+           href="/Summary/Other-people-blog/Other-people-blog-Machine-learning/"
+           data-tag="Summary-Other_people_blog"
+           data-author="" >
+            <span class="post-title" title="Other people blog - Machine learning">Other people blog - Machine learning</span>
+            <span class="post-date" title="2024-04-29 13:00:00">2024/04/29</span>
+        </a>
+        
+        
+        <a  class="All Developing Install "
+           href="/Developing/Install/Install-Software-System-Network/"
+           data-tag="Developing-Install"
+           data-author="" >
+            <span class="post-title" title="Install - Software - System &amp; Network">Install - Software - System &amp; Network</span>
+            <span class="post-date" title="2024-04-23 10:26:00">2024/04/23</span>
+        </a>
+        
+        
+        <a  class="All Developing Install "
+           href="/Developing/Install/Install-Software-VSCode-Dev/"
+           data-tag="Developing-Install"
+           data-author="" >
+            <span class="post-title" title="Install - Software - VSCode &amp; Dev">Install - Software - VSCode &amp; Dev</span>
+            <span class="post-date" title="2024-04-23 10:25:00">2024/04/23</span>
+        </a>
+        
+        
+        <a  class="All Developing Install "
+           href="/Developing/Install/Install-Software-Git/"
+           data-tag="Developing-Install"
+           data-author="" >
+            <span class="post-title" title="Install - Software - Git">Install - Software - Git</span>
+            <span class="post-date" title="2024-04-23 10:24:00">2024/04/23</span>
+        </a>
+        
+        
+        <a  class="All Developing Install "
+           href="/Developing/Install/Install-Software-Python/"
+           data-tag="Developing-Install"
+           data-author="" >
+            <span class="post-title" title="Install - Software - Python">Install - Software - Python</span>
+            <span class="post-date" title="2024-04-23 10:23:00">2024/04/23</span>
+        </a>
+        
+        
+        <a  class="All Developing Install "
+           href="/Developing/Install/Install-Software-Simulation/"
+           data-tag="Developing-Install"
+           data-author="" >
+            <span class="post-title" title="Install - Software - Simulation">Install - Software - Simulation</span>
+            <span class="post-date" title="2024-04-23 10:22:00">2024/04/23</span>
+        </a>
+        
+        
+        <a  class="All Developing Install "
+           href="/Developing/Install/Install-Software/"
+           data-tag="Developing-Install"
+           data-author="" >
+            <span class="post-title" title="Install - Software">Install - Software</span>
+            <span class="post-date" title="2024-04-23 10:22:00">2024/04/23</span>
+        </a>
+        
+        
+        <a  class="All Summary Other_people_blog "
+           href="/Summary/Other-people-blog/Other-people-blog-Mechanics/"
+           data-tag="Summary-Other_people_blog"
+           data-author="" >
+            <span class="post-title" title="Other people blog - Mechanics">Other people blog - Mechanics</span>
+            <span class="post-date" title="2024-04-22 05:05:00">2024/04/22</span>
+        </a>
+        
+        
+        <a  class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-2024/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - 2024">Diary - 2024</span>
+            <span class="post-date" title="2024-04-22 04:52:00">2024/04/22</span>
+        </a>
+        
+        
+        <a  class="All Summary Other_people_blog "
+           href="/Summary/Other-people-blog/Other-people-blog-on-the-way-of%20doctor/"
+           data-tag="Summary-Other_people_blog"
+           data-author="" >
+            <span class="post-title" title="Other people blog - on the way of doctor">Other people blog - on the way of doctor</span>
+            <span class="post-date" title="2024-04-20 04:26:00">2024/04/20</span>
+        </a>
+        
+        
+        <a  class="All Summary Other_people_blog "
+           href="/Summary/Other-people-blog/Other-people-blog-DFT/"
+           data-tag="Summary-Other_people_blog"
+           data-author="" >
+            <span class="post-title" title="Other people blog - DFT">Other people blog - DFT</span>
+            <span class="post-date" title="2024-04-20 03:00:00">2024/04/20</span>
+        </a>
+        
+        
+        <a  class="All Thinking Idea "
+           href="/Thinking/Idea/Idea-Next-paper/"
+           data-tag="Thinking-Idea"
+           data-author="" >
+            <span class="post-title" title="Idea - Next paper">Idea - Next paper</span>
+            <span class="post-date" title="2024-04-12 05:34:00">2024/04/12</span>
+        </a>
+        
+        
+        <a  class="All Software VASP VTheory "
+           href="/Software/VASP/VTheory/VASP-VTheory-Space-group/"
+           data-tag="Software-VASP-VTheory"
+           data-author="" >
+            <span class="post-title" title="VASP - VTheory - Space group">VASP - VTheory - Space group</span>
+            <span class="post-date" title="2024-04-10 13:52:00">2024/04/10</span>
+        </a>
+        
+        
+        <a  class="All Software VASP VTheory "
+           href="/Software/VASP/VTheory/VASP-VTheory-Influence-of-cell/"
+           data-tag="Software-VASP-VTheory"
+           data-author="" >
+            <span class="post-title" title="VASP - VTheory - Influence of cell">VASP - VTheory - Influence of cell</span>
+            <span class="post-date" title="2024-04-10 01:19:00">2024/04/10</span>
+        </a>
+        
+        
+        <a  class="All Software Tool "
+           href="/Software/Tool/Tool-Find-heterostructure/"
+           data-tag="Software-Tool"
+           data-author="" >
+            <span class="post-title" title="Tool - Find heterostructure">Tool - Find heterostructure</span>
+            <span class="post-date" title="2024-04-07 00:36:38">2024/04/07</span>
+        </a>
+        
+        
+        <a  class="All Theory Quantum_mechanics "
+           href="/Theory/Quantum-mechanics/Quantum-mechanics-Density-functional-theory/"
+           data-tag="Theory-Quantum_mechanics"
+           data-author="" >
+            <span class="post-title" title="Quantum mechanics - Density functional theory">Quantum mechanics - Density functional theory</span>
+            <span class="post-date" title="2024-04-01 15:16:03">2024/04/01</span>
+        </a>
+        
+        
+        <a  class="All Theory Quantum_mechanics "
+           href="/Theory/Quantum-mechanics/Quantum-mechanics-The-Feynman-lectures-on-physics-1/"
+           data-tag="Theory-Quantum_mechanics"
+           data-author="" >
+            <span class="post-title" title="Quantum mechanics - The Feynman lectures on physics 1">Quantum mechanics - The Feynman lectures on physics 1</span>
+            <span class="post-date" title="2024-04-01 14:43:03">2024/04/01</span>
+        </a>
+        
+        
+        <a  class="All Developing Mymetal "
+           href="/Developing/Mymetal/Mymetal-error/"
+           data-tag="Developing-Mymetal"
+           data-author="" >
+            <span class="post-title" title="Mymetal - error">Mymetal - error</span>
+            <span class="post-date" title="2024-03-30 01:44:55">2024/03/30</span>
+        </a>
+        
+        
+        <a  class="All Developing Mymetal "
+           href="/Developing/Mymetal/Mymetal-log/"
+           data-tag="Developing-Mymetal"
+           data-author="" >
+            <span class="post-title" title="Mymetal - work log">Mymetal - work log</span>
+            <span class="post-date" title="2024-03-30 01:44:55">2024/03/30</span>
+        </a>
+        
+        
+        <a  class="All Software P4VASP "
+           href="/Software/P4VASP/P4VASP-install/"
+           data-tag="Software-P4VASP"
+           data-author="" >
+            <span class="post-title" title="P4VASP - Install">P4VASP - Install</span>
+            <span class="post-date" title="2024-03-25 14:33:00">2024/03/25</span>
+        </a>
+        
+        
+        <a  class="All Software VASP Special_functions "
+           href="/Software/VASP/Special-functions/VASP-Special-functions-fix-basic-vector/"
+           data-tag="Software-VASP-Special_functions"
+           data-author="" >
+            <span class="post-title" title="VASP - Special functions - fix basic vector">VASP - Special functions - fix basic vector</span>
+            <span class="post-date" title="2024-01-24 18:57:00">2024/01/24</span>
+        </a>
+        
+        
+        <a  class="All Software Tool "
+           href="/Software/Tool/Tool-Proxy-problem-of-copilot/"
+           data-tag="Software-Tool"
+           data-author="" >
+            <span class="post-title" title="Tool - Proxy problem of copilot">Tool - Proxy problem of copilot</span>
+            <span class="post-date" title="2024-01-23 02:54:00">2024/01/23</span>
+        </a>
+        
+        
+        <a  class="All Software ASE "
+           href="/Software/ASE/ASE-How-to-generate-surface/"
+           data-tag="Software-ASE"
+           data-author="" >
+            <span class="post-title" title="ASE - How to generate surface">ASE - How to generate surface</span>
+            <span class="post-date" title="2024-01-19 12:13:00">2024/01/19</span>
+        </a>
+        
+        
+        <a  class="All Software ASE "
+           href="/Software/ASE/ASE-Modify-the-source-code-of-Write-function/"
+           data-tag="Software-ASE"
+           data-author="" >
+            <span class="post-title" title="ASE - Modify the source code of Write function">ASE - Modify the source code of Write function</span>
+            <span class="post-date" title="2024-01-18 07:01:00">2024/01/18</span>
+        </a>
+        
+        
+        <a  class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-Past-and-future/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - Past and future">Diary - Past and future</span>
+            <span class="post-date" title="2023-12-29 05:08:00">2023/12/29</span>
+        </a>
+        
+        
+        <a  class="All Software ASE "
+           href="/Software/ASE/ASE-generate-POSCAR/"
+           data-tag="Software-ASE"
+           data-author="" >
+            <span class="post-title" title="ASE - generate POSCAR">ASE - generate POSCAR</span>
+            <span class="post-date" title="2023-12-14 23:51:00">2023/12/14</span>
+        </a>
+        
+        
+        <a  class="All Program Python "
+           href="/Program/Python/Python-DFT-calculation-3-Generate-Kpoints/"
+           data-tag="Program-Python"
+           data-author="" >
+            <span class="post-title" title="Python - DFT calculation 3 - Generate Kpoints">Python - DFT calculation 3 - Generate Kpoints</span>
+            <span class="post-date" title="2023-11-23 17:28:00">2023/11/23</span>
+        </a>
+        
+        
+        <a  class="All Program Python "
+           href="/Program/Python/Python-DFT-calculation-2-Introduction-of-Kspace/"
+           data-tag="Program-Python"
+           data-author="" >
+            <span class="post-title" title="Python - DFT calculation 2 - Introduction of Kspace">Python - DFT calculation 2 - Introduction of Kspace</span>
+            <span class="post-date" title="2023-11-21 23:26:00">2023/11/21</span>
+        </a>
+        
+        
+        <a  class="All Program Python "
+           href="/Program/Python/Python-DFT-calculation-1-Solve-the-one-dimensional-Schrodinger-equation/"
+           data-tag="Program-Python"
+           data-author="" >
+            <span class="post-title" title="Python - DFT calculation 1 - Solve the one dimensional Schrodinger equation">Python - DFT calculation 1 - Solve the one dimensional Schrodinger equation</span>
+            <span class="post-date" title="2023-08-30 16:36:00">2023/08/30</span>
+        </a>
+        
+        
+        <a  class="All Software Lammps "
+           href="/Software/Lammps/Lammps-Reinstall/"
+           data-tag="Software-Lammps"
+           data-author="" >
+            <span class="post-title" title="Lammps - Reinstall">Lammps - Reinstall</span>
+            <span class="post-date" title="2022-11-25 11:56:00">2022/11/25</span>
+        </a>
+        
+        
+        <a  class="All Software Lammps "
+           href="/Software/Lammps/Lammps-SW-mod-potential-of-MoS2/"
+           data-tag="Software-Lammps"
+           data-author="" >
+            <span class="post-title" title="Lammps - SW mod potential of MoS2">Lammps - SW mod potential of MoS2</span>
+            <span class="post-date" title="2022-04-19 17:46:00">2022/04/19</span>
+        </a>
+        
+        
+        <a  class="All Software Lammps "
+           href="/Software/Lammps/Lammps-Add-new-pair-style/"
+           data-tag="Software-Lammps"
+           data-author="" >
+            <span class="post-title" title="Lammps - Add new pair style">Lammps - Add new pair style</span>
+            <span class="post-date" title="2022-04-16 19:20:00">2022/04/16</span>
+        </a>
+        
+        
+        <a  class="All Software Lammps "
+           href="/Software/Lammps/Lammps-RDF-of-annealed-SiO2-using-VMD/"
+           data-tag="Software-Lammps"
+           data-author="" >
+            <span class="post-title" title="Lammps - RDF of annealed SiO2 using VMD">Lammps - RDF of annealed SiO2 using VMD</span>
+            <span class="post-date" title="2022-04-05 20:09:00">2022/04/05</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-Developing/Install-Software-Simulation" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">Install - Software - Simulation</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="Developing">Developing</a> > 
+            
+            <a  data-rel="Developing&lt;---&gt;Install">Install</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color4">Developing-Install</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            Created At : <time class="date" title='Updated At: 2026-06-24 06:05:22'>2024-04-23 10:22</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>Count:2.5k</span>
+        
+        
+        <span id="busuanzi_container_page_pv">
+            Views 👀 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Lammps-Debian-12-5"><span class="toc-text">Lammps - Debian 12.5</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-text">安装</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%AE%89%E8%A3%85%E5%89%8D%E5%87%86%E5%A4%87"><span class="toc-text">1. 安装前准备</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E8%8E%B7%E5%8F%96-LAMMPS-%E6%BA%90%E4%BB%A3%E7%A0%81"><span class="toc-text">2. 获取 LAMMPS 源代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E4%BD%BF%E7%94%A8-CMake-%E9%85%8D%E7%BD%AE%E6%9E%84%E5%BB%BA"><span class="toc-text">3. 使用 CMake 配置构建</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E7%BC%96%E8%AF%91%E5%92%8C%E5%AE%89%E8%A3%85"><span class="toc-text">4. 编译和安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E6%B5%8B%E8%AF%95%E5%AE%89%E8%A3%85"><span class="toc-text">5. 测试安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E4%BF%AE%E6%94%B9"><span class="toc-text">6. 修改</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E9%85%8D%E7%BD%AE"><span class="toc-text">修改配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%89%93%E5%BC%80-CMake-%E9%85%8D%E7%BD%AE"><span class="toc-text">1. 打开 CMake 配置</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%95%8C%E9%9D%A2"><span class="toc-text">使用命令行界面</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9-CMake-%E6%96%87%E4%BB%B6"><span class="toc-text">修改 CMake 文件</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E9%87%8D%E6%96%B0%E7%BC%96%E8%AF%91-LAMMPS"><span class="toc-text">2. 重新编译 LAMMPS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%AE%89%E8%A3%85%EF%BC%88%E5%8F%AF%E9%80%89%EF%BC%89"><span class="toc-text">3. 安装（可选）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E9%AA%8C%E8%AF%81"><span class="toc-text">4. 验证</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85python%E5%8C%85"><span class="toc-text">安装python包</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-First-create-and-activate-your-virtual-environment"><span class="toc-text">1. First, create and activate your virtual environment:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-When-configuring-LAMMPS-with-CMake-set-the-CMAKE-INSTALL-PREFIX-to-point-to-your-virtual-environment"><span class="toc-text">2. When configuring LAMMPS with CMake, set the CMAKE_INSTALL_PREFIX to point to your virtual environment:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-Build-and-install-LAMMPS"><span class="toc-text">3. Build and install LAMMPS:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-You-can-also-install-the-Python-package-with"><span class="toc-text">4. You can also install the Python package with:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85Vorinoi-KIm-%E5%8C%85"><span class="toc-text">安装Vorinoi&#x2F;KIm 包</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Lammps-ZC-M6"><span class="toc-text">Lammps - ZC-M6</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85-1"><span class="toc-text">安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Python"><span class="toc-text">Python</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#VASP"><span class="toc-text">VASP</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#6-3-2-5-4-4-%E8%A3%85%E4%B8%8D%E4%BA%86"><span class="toc-text">6.3.2 (5.4.4 装不了)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Install-intel-Base-HPC-toolkit"><span class="toc-text">Install intel Base&#x2F;HPC toolkit</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hdf5"><span class="toc-text">hdf5</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-4-4-VTST-Yin-patch"><span class="toc-text">5.4.4+VTST+Yin patch</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Phonopy"><span class="toc-text">Phonopy</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Conda"><span class="toc-text">Conda</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Pyvenv"><span class="toc-text">Pyvenv</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#N2P2"><span class="toc-text">N2P2</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Debian-12-5"><span class="toc-text">Debian 12.5</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B6%85%E7%AE%97ZC-M6"><span class="toc-text">超算ZC-M6</span></a></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-5 i,
+    .toc-level-5 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p align="center"><strong><em>He knows most who speaks least.<em></strong></p>
+
+<p align="center"><strong><em>大智若愚<em></strong></p>
+
+<p><strong>Updated time: 06&#x2F;23 2026.</strong></p>
+<p>科学计算与分子模拟软件的安装：Lammps、VASP、Phonopy、N2P2。</p>
+<h1 id="Lammps-Debian-12-5"><a href="#Lammps-Debian-12-5" class="headerlink" title="Lammps - Debian 12.5"></a>Lammps - Debian 12.5</h1><p>Ref:</p>
+<ul>
+<li>chatgpt</li>
+<li><a target="_blank" rel="noopener" href="https://docs.lammps.org/Build_cmake.html">3.1. Build LAMMPS with CMake — LAMMPS documentation</a></li>
+</ul>
+<p>LAMMPS 的源代码安装相对复杂，因为它可以根据需要配置各种选项和扩展。下面是使用 CMake 进行安装的一种常规方法，包括了一些可能需要的依赖项如 FFTW 和 MPICH。</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><h3 id="1-安装前准备"><a href="#1-安装前准备" class="headerlink" title="1. 安装前准备"></a>1. 安装前准备</h3><p>首先，确保你的系统上安装了编译工具和 CMake。另外，对于并行计算支持，你可能需要安装 MPI 实现，如 MPICH 或 OpenMPI。</p>
+<pre><code class="language-bash">sudo apt-get update
+sudo apt-get install build-essential cmake git
+sudo apt-get install mpich libmpich-dev
+sudo apt-get install openmpi-bin openmpi-common libopenmpi-dev
+mpirun --version
+</code></pre>
+<p>如果你打算使用 FFTW （用于更快的傅里叶变换），你也需要安装 FFTW 库：</p>
+<pre><code class="language-bash">sudo apt-get install libfftw3-dev libfftw3-double3
+</code></pre>
+<h3 id="2-获取-LAMMPS-源代码"><a href="#2-获取-LAMMPS-源代码" class="headerlink" title="2. 获取 LAMMPS 源代码"></a>2. 获取 LAMMPS 源代码</h3><p>从 GitHub 克隆 LAMMPS 的仓库：</p>
+<pre><code class="language-bash">git clone -b stable https://github.com/lammps/lammps.git lammps
+cd lammps
+</code></pre>
+<p>这里我们选择了稳定版分支，但你也可以选择其他分支，如开发版等。</p>
+<h3 id="3-使用-CMake-配置构建"><a href="#3-使用-CMake-配置构建" class="headerlink" title="3. 使用 CMake 配置构建"></a>3. 使用 CMake 配置构建</h3><p>创建一个构建目录并进入：</p>
+<pre><code class="language-bash">mkdir build
+cd build
+</code></pre>
+<p>运行 CMake 来配置构建过程。你可以根据需要启用或禁用特定的包或功能：</p>
+<pre><code class="language-bash">cmake ../cmake -D PKG_MPI=yes   # configuration reading CMake scripts from ../cmake
+cmake --build .                 # compilation (or type &quot;make&quot;)
+# cmake ../cmake -DCMAKE_INSTALL_PREFIX=/path/to/install/lammps
+</code></pre>
+<p>这里的 <code>/path/to/install/lammps</code> 应该被替换为你希望安装 LAMMPS 的目录。你可以添加额外的 CMake 选项来启用或禁用特定的 LAMMPS 包，例如：</p>
+<pre><code class="language-bash">-DPKG_MANYBODY=yes -DPKG_MOLECULE=yes
+#test
+/build/lmp -h
+</code></pre>
+<h3 id="4-编译和安装"><a href="#4-编译和安装" class="headerlink" title="4. 编译和安装"></a>4. 编译和安装</h3><p>编译 LAMMPS：</p>
+<pre><code class="language-bash">make -j4  # 使用4个核心进行编译，根据你的处理器调整这个数字
+</code></pre>
+<p>安装 LAMMPS：</p>
+<pre><code class="language-bash">make install
+</code></pre>
+<h3 id="5-测试安装"><a href="#5-测试安装" class="headerlink" title="5. 测试安装"></a>5. 测试安装</h3><p>确保 LAMMPS 已正确安装，可以运行下面的命令测试：</p>
+<pre><code class="language-bash">/path/to/install/lammps/bin/lmp -h
+</code></pre>
+<p>这应该会显示 LAMMPS 的帮助信息，证明安装成功。</p>
+<p>After the initial build, whenever you edit LAMMPS source files, enable or disable packages, change compiler flags or build options, you must re-compile and relink the LAMMPS executable with <code>cmake --build .</code> (or <code>make</code>). If the compilation fails for some reason, try running <code>cmake .</code> and then compile again. The included dependency tracking should make certain that only the necessary subset of files is re-compiled. You can also delete compiled objects, libraries, and executables with <code>cmake --build . --target clean</code> (or <code>make clean</code>).</p>
+<h3 id="6-修改"><a href="#6-修改" class="headerlink" title="6. 修改"></a>6. 修改</h3><p>在使用 <code>ccmake .</code> 进行配置时，退出 <code>ccmake</code> 的界面操作比较简单：</p>
+<ol>
+<li><strong>保存并生成配置</strong>：如果您已经进行了配置修改并希望保存这些更改，并生成用于编译的 <code>Makefile</code>：<ul>
+<li>按下 <code>c</code> 键以配置参数，可能需要多次按 <code>c</code> 直到所有配置问题解决并出现 <code>[g]enerate</code> 的选项。</li>
+<li>完成配置后，按下 <code>g</code> 键来生成 <code>Makefile</code> 并退出 <code>ccmake</code>。</li>
+</ul>
+</li>
+<li><strong>退出而不保存更改</strong>：如果您想退出而不保存所做的更改：<ul>
+<li>按下 <code>q</code> 键。如果您没有进行任何未保存的更改，这将直接退出 <code>ccmake</code>。</li>
+<li>如果您已经修改了配置但还未保存，系统会询问您是否真的要退出。此时，再次按 <code>q</code> 确认退出而不保存更改。</li>
+</ul>
+</li>
+</ol>
+<p>总的来说，<code>ccmake</code> 的操作主要通过界面底部的提示进行，按键操作直接响应于提示的指令。</p>
+<h2 id="修改配置"><a href="#修改配置" class="headerlink" title="修改配置"></a>修改配置</h2><h3 id="1-打开-CMake-配置"><a href="#1-打开-CMake-配置" class="headerlink" title="1. 打开 CMake 配置"></a>1. <strong>打开 CMake 配置</strong></h3><p>首先，您需要进入到 LAMMPS 的源代码或构建目录，并使用 CMake 来修改现有配置。</p>
+<h4 id="使用命令行界面"><a href="#使用命令行界面" class="headerlink" title="使用命令行界面"></a>使用命令行界面</h4><p>如果您在终端中，可以使用 <code>ccmake</code>（面向字符的界面）或 <code>cmake-gui</code>（图形界面）：</p>
+<pre><code class="language-bash">cd /path/to/lammps/build
+ccmake .
+# 或者
+cmake-gui .
+</code></pre>
+<p>在 <code>ccmake</code> 界面中：</p>
+<ul>
+<li>按 <code>t</code> 切换到高级视图。</li>
+<li>使用键盘上下箭头选择要启用的包（包名称以 <code>PKG_</code> 开头）。</li>
+<li>按 <code>Enter</code> 改变选项（<code>ON</code>&#x2F;<code>OFF</code>）。</li>
+<li>一旦完成配置，按 <code>c</code> 进行配置，然后按 <code>g</code> 生成并退出。</li>
+</ul>
+<p>在 <code>cmake-gui</code> 中：</p>
+<ul>
+<li>修改包的选项，将它们从 <code>OFF</code> 改为 <code>ON</code>。</li>
+<li>点击 “Configure”，然后 “Generate”。</li>
+</ul>
+<h4 id="修改-CMake-文件"><a href="#修改-CMake-文件" class="headerlink" title="修改 CMake 文件"></a>修改 CMake 文件</h4><p>或者，您可以直接编辑 CMake 命令行选项，在终端中运行：</p>
+<pre><code class="language-bash">cd /path/to/lammps/build
+cmake -DPKG_MANYBODY=ON -DPKG_MOLECULAR=ON ..
+</code></pre>
+<p>上述命令启用了 <code>MANYBODY</code> 和 <code>MOLECULAR</code> 包。您可以根据需要启用更多包。</p>
+<h3 id="2-重新编译-LAMMPS"><a href="#2-重新编译-LAMMPS" class="headerlink" title="2. 重新编译 LAMMPS"></a>2. <strong>重新编译 LAMMPS</strong></h3><p>配置完成后，重新编译 LAMMPS：</p>
+<pre><code class="language-bash">make -j $(nproc)
+</code></pre>
+<p>这里的 <code>-j $(nproc)</code> 选项允许并行编译，加快编译过程。<code>$(nproc)</code> 命令会自动替换为您系统中的处理器核心数。</p>
+<h3 id="3-安装（可选）"><a href="#3-安装（可选）" class="headerlink" title="3. 安装（可选）"></a>3. <strong>安装（可选）</strong></h3><p>如果您之前安装了 LAMMPS（通过 <code>make install</code>），则需要再次安装来更新安装的二进制文件：</p>
+<pre><code class="language-bash">make install
+</code></pre>
+<h3 id="4-验证"><a href="#4-验证" class="headerlink" title="4. 验证"></a>4. <strong>验证</strong></h3><p>验证新包是否正确安装，可以运行：</p>
+<pre><code class="language-bash">/path/to/lammps/build/lmp -info
+</code></pre>
+<p>查看输出，确认新包已列出。</p>
+<p>这些步骤将指导您通过添加所需的 LAMMPS 包来自定义您的模拟环境。</p>
+<h2 id="安装python包"><a href="#安装python包" class="headerlink" title="安装python包"></a>安装python包</h2><p><a target="_blank" rel="noopener" href="https://docs.lammps.org/Python_install.html">2.2. Installation — LAMMPS documentation</a></p>
+<p>To specify a virtual environment when installing LAMMPS using CMake, follow these steps:</p>
+<h3 id="1-First-create-and-activate-your-virtual-environment"><a href="#1-First-create-and-activate-your-virtual-environment" class="headerlink" title="1. First, create and activate your virtual environment:"></a>1. First, create and activate your virtual environment:</h3><pre><code class="language-bash">python3 -m venv ~/myenv
+source ~/myenv/bin/activate
+</code></pre>
+<h3 id="2-When-configuring-LAMMPS-with-CMake-set-the-CMAKE-INSTALL-PREFIX-to-point-to-your-virtual-environment"><a href="#2-When-configuring-LAMMPS-with-CMake-set-the-CMAKE-INSTALL-PREFIX-to-point-to-your-virtual-environment" class="headerlink" title="2. When configuring LAMMPS with CMake, set the CMAKE_INSTALL_PREFIX to point to your virtual environment:"></a>2. When configuring LAMMPS with CMake, set the <code>CMAKE_INSTALL_PREFIX</code> to point to your virtual environment:</h3><pre><code class="language-bash">cmake -DCMAKE_INSTALL_PREFIX=&#39;~/mysoft/env/mydft&#39; ../cmake
+</code></pre>
+<h3 id="3-Build-and-install-LAMMPS"><a href="#3-Build-and-install-LAMMPS" class="headerlink" title="3. Build and install LAMMPS:"></a>3. Build and install LAMMPS:</h3><pre><code class="language-bash">cmake --build . --target install
+</code></pre>
+<h3 id="4-You-can-also-install-the-Python-package-with"><a href="#4-You-can-also-install-the-Python-package-with" class="headerlink" title="4. You can also install the Python package with:"></a>4. You can also install the Python package with:</h3><pre><code class="language-bash">make install-python
+</code></pre>
+<p>This approach ensures that LAMMPS and its Python module are correctly integrated into your virtual environment.</p>
+<h2 id="安装Vorinoi-KIm-包"><a href="#安装Vorinoi-KIm-包" class="headerlink" title="安装Vorinoi&#x2F;KIm 包"></a>安装Vorinoi&#x2F;KIm 包</h2><p><a target="_blank" rel="noopener" href="https://docs.lammps.org/Build_extras.html#voronoi">3.7. Packages with extra build options — LAMMPS documentation</a></p>
+<p>Very easy using CMAKE.</p>
+<h1 id="Lammps-ZC-M6"><a href="#Lammps-ZC-M6" class="headerlink" title="Lammps - ZC-M6"></a>Lammps - ZC-M6</h1><h2 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h2><pre><code class="language-bash">source /public3/soft/modules/module.sh   
+module list
+module purge
+module load cmake/3.24.1
+module load gcc/12.2
+module load mpi/intel/17.0.7-thc 
+module load fftw/3.3.8-mpi
+
+cd lammps                # change to the LAMMPS distribution directory
+mkdir build; cd build    # create and use a build directory
+# configuration reading CMake scripts from ../cmake
+# 已安装的N2P2使用intel编译器，而lammps不是，所以这里用内置的命令安装ML-HDNNP
+cmake \
+  -C ../cmake/presets/most.cmake \
+  -C ../cmake/presets/nolib.cmake \
+  -D CMAKE_C_COMPILER=/public3/soft/gcc/12.2/bin/gcc \
+  -D CMAKE_CXX_COMPILER=/public3/soft/gcc/12.2/bin/c++ \
+  -D CMAKE_Fortran_COMPILER=/public3/soft/gcc/12.2/bin/gfortran \
+  -D FFTW3_INCLUDE_DIR=/public3/soft/fftw/3.3.8-mpi/include \
+  -D FFTW3_LIBRARY=/public3/soft/fftw/3.3.8-mpi/lib/libfftw3.so \
+  -D PKG_VORONOI=on \
+  -D DOWNLOAD_VORO=on \
+  -D PKG_ML-HDNNP=on \
+  -D DOWNLOAD_N2P2=on \
+  ../cmake                           
+# -D N2P2_DIR=/public3/home/scg6928/mysoft/tools/n2p2/2.3.0/n2p2-2.3.0 \     
+
+cmake --build .          # compilation (or type &quot;make -j 4&quot; 不要用太多核并行)  
+cmake --build . --parallel 4
+
+# 查看所有可选项
+cmake -L
+cmake -LAH
+</code></pre>
+<h2 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h2><pre><code class="language-bash"># 成功安装
+# dft virtual environment
+source ~/path/to/venv/bin/python
+# 注意路径指向lib的父级目录
+cmake  -D CMAKE_INSTALL_PREFIX=/public3/home/scg6928/mysoft/env/pyenv/dft/ -D BUILD_SHARED_LIBS=on .
+
+cmake --build . --parallel 4 # make -j 4
+make install-python
+</code></pre>
+<h1 id="VASP"><a href="#VASP" class="headerlink" title="VASP"></a>VASP</h1><h2 id="6-3-2-5-4-4-装不了"><a href="#6-3-2-5-4-4-装不了" class="headerlink" title="6.3.2 (5.4.4 装不了)"></a>6.3.2 (5.4.4 装不了)</h2><h3 id="Install-intel-Base-HPC-toolkit"><a href="#Install-intel-Base-HPC-toolkit" class="headerlink" title="Install intel Base&#x2F;HPC toolkit"></a>Install intel Base&#x2F;HPC toolkit</h3><p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/617840534">VASP 5.4.4编译与安装 - 知乎 (zhihu.com)</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.intel.com/content/www/us/en/developer/tools/oneapi/base-toolkit-download.html?operatingsystem=linux&distributions=offline">intel Base</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.intel.com/content/www/us/en/developer/tools/oneapi/hpc-toolkit-download.html?wapkw=HPC">intel HPC</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.intel.com/content/www/us/en/developer/articles/technical/building-vasp-with-intel-mkl-and-intel-compilers.html">https://www.intel.com/content/www/us/en/developer/articles/technical/building-vasp-with-intel-mkl-and-intel-compilers.html</a></p>
+<p>甚至可以用apt安装，但是我们需要自行编译 <code>fftw</code>，以及用apt安装的无法调用 <code>icc</code> 命令，应该是环境配置不对</p>
+<h2 id="hdf5"><a href="#hdf5" class="headerlink" title="hdf5"></a>hdf5</h2><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv15039734/">编译支持HDF5的VASP - 哔哩哔哩 (bilibili.com)</a></p>
+<ul>
+<li>安装HDF5</li>
+</ul>
+<p>下载HDF5及相关的SZIP和ZLIB，链接如下</p>
+<p>ZLIB: <a target="_blank" rel="noopener" href="https://www.zlib.net/zlib-1.2.11.tar.gz">https://www.zlib.net/zlib-1.2.11.tar.gz</a></p>
+<p>SZIP: <a target="_blank" rel="noopener" href="https://support.hdfgroup.org/ftp/lib-external/szip/2.1.1/src/szip-2.1.1.tar.gz">https://support.hdfgroup.org/ftp/lib-external/szip/2.1.1/src/szip-2.1.1.tar.gz</a></p>
+<p>HDF5: <a target="_blank" rel="noopener" href="https://www.hdfgroup.org/downloads/hdf5/source-code/">https://www.hdfgroup.org/downloads/hdf5/source-code/</a></p>
+<p><font color='orange'>安装HDF5 和VASP 的编译器必须一致</font></p>
+<ul>
+<li>安装</li>
+</ul>
+<pre><code class="language-bash">export CC=icc
+export CXX=icpc
+export FC=ifort
+export CFLAGS=&#39;-O3 -xHost -ip&#39;
+export CXXFLAGS=&#39;-O3 -xHost -ip&#39;
+export FCFLAGS=&#39;-O3 -xHost -ip&#39;
+tar -zxvf szip-2.1.1.tar.gz
+cd szip-2.1.1
+./configure --prefix=~/bin/szip
+make
+make check
+make install
+
+tar -zxvf zlib-1.2.7.tar.gz
+cd zlib-1.2.7
+./configure --prefix=~/bin/zlib
+make
+make install
+
+tar -zxvf hdf5-1.8.8.tar.gz
+cd hdf5-1.8.8
+./configure --prefix=~/bin/hdf5 --enable-fortran --with-szip=~/bin/szip --with-zlib=~/bin/zlib
+make
+make install
+</code></pre>
+<ul>
+<li>VASP编译</li>
+</ul>
+<p>修改<code>makefile.include</code>，添加</p>
+<pre><code class="language-bash">#HDF5-support (optional but strongly recommended)
+CPP_OPTIONS+= -DVASP_HDF5
+HDF5_ROOT  ?= ~/bin/hdf5
+LLIBS      += -L$(HDF5_ROOT)/lib -lhdf5_fortran
+INCS       += -I$(HDF5_ROOT)/include 
+</code></pre>
+<pre><code class="language-bash">make DEPS=1 -j16 all
+</code></pre>
+<h2 id="5-4-4-VTST-Yin-patch"><a href="#5-4-4-VTST-Yin-patch" class="headerlink" title="5.4.4+VTST+Yin patch"></a>5.4.4+VTST+Yin patch</h2><pre><code class="language-bash">Ref:
+http://bbs.keinsci.com/thread-11111-1-1.html
+https://mp.weixin.qq.com/s/yEMI2VjzW_kLx_TpDpxM3w
+</code></pre>
+<p><img src="/images/Install-Software/1.png" alt="vasp5.4.4"></p>
+<p><img src="/images/Install-Software/2.png" alt="vtst1"></p>
+<p><img src="/images/Install-Software/3.png" alt="vtst2"></p>
+<p>Yin patch涉及以下几个文件</p>
+<ul>
+<li>CONSTR_CELL_RELAX.F: VTST不修改</li>
+<li>DYNA.F: VTST不修改</li>
+<li>MAIN.F: VTST修改的是3146，3147行，且行数没有变化。Yin Patch修改的是3556-3563行。</li>
+<li>.objects: VTST修改的是73行chain.o后面添加。不影响前面的行数。Yin patch修改的是19-25行，添加了y_max_force.o编译。</li>
+<li>y_max_force.F: 新增的文件。</li>
+</ul>
+<p>所以，可以在做完VTST的修改之后，再打Yin patch补丁。</p>
+<pre><code class="language-bash">In vasp root directory:
+patch -p1 &lt; supercell_constraint/mypatch
+</code></pre>
+<h1 id="Phonopy"><a href="#Phonopy" class="headerlink" title="Phonopy"></a>Phonopy</h1><h2 id="Conda"><a href="#Conda" class="headerlink" title="Conda"></a>Conda</h2><pre><code class="language-bash">conda create -n phonopy -c conda-forge
+conda activate phonopy
+conda install -c conda-forge phonopy
+phonopy
+export PATH=$(which python):$PATH 后续发现不添加PATH也可以
+</code></pre>
+<h2 id="Pyvenv"><a href="#Pyvenv" class="headerlink" title="Pyvenv"></a>Pyvenv</h2><pre><code class="language-bash">python -m venv ~/mysoft/env/pyenv/phonopy
+source activate ~/mysoft/env/pyenv/phonopy/bin/activate
+phonopy
+不需要添加PATH
+</code></pre>
+<h1 id="N2P2"><a href="#N2P2" class="headerlink" title="N2P2"></a>N2P2</h1><h2 id="Debian-12-5"><a href="#Debian-12-5" class="headerlink" title="Debian 12.5"></a>Debian 12.5</h2><pre><code class="language-bash">sudo apt update
+sudo apt install -y build-essential make g++ libeigen3-dev libopenmpi-dev libblas-dev libgsl-dev
+
+sudo nano /etc/apt/sources.list
+# 清华大学 Debian 镜像
+deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bookworm main contrib non-free non-free-firmware
+deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bookworm main contrib non-free non-free-firmware
+
+# 安全更新
+deb https://mirrors.tuna.tsinghua.edu.cn/debian-security/ bookworm-security main contrib non-free non-free-firmware
+deb-src https://mirrors.tuna.tsinghua.edu.cn/debian-security/ bookworm-security main contrib non-free non-free-firmware
+
+# 更新仓库
+deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bookworm-updates main contrib non-free non-free-firmware
+deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bookworm-updates main contrib non-free non-free-firmware
+
+cd n2p2/src/
+make -j 4
+使用gnu编译器，intel编译器GCC12不兼容
+</code></pre>
+<h2 id="超算ZC-M6"><a href="#超算ZC-M6" class="headerlink" title="超算ZC-M6"></a>超算ZC-M6</h2><pre><code class="language-bash">source /public3/soft/modules/module.sh   
+module list
+module purge
+# module load intel/17.0.7-thc 
+module load eigen/3.8.8-cyc 
+module load gsl/2.5-cjj 
+module load mpi/openmpi/2.0.4-gcc-4.9.0
+
+# gnu 版本
+scg6928@ln2:~$ g++ --version
+g++ (GCC) 4.8.5 20150623 (Red Hat 4.8.5-44)
+Copyright (C) 2015 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+
+# 修改makefile 用 gnu编译
+    15  # Default compiler (gnu/intel/llvm).
+    16  COMP=gnu
+
+# 添加 GSL library 地址
+export LD_LIBRARY_PATH=/public3/soft/gsl/2.5/lib:$LD_LIBRARY_PATH
+# 修改makefile.gnu 获取头文件地址
+     3  ###############################################################################
+     4  # EXTERNAL LIBRARY PATHS
+     5  ###############################################################################
+     6  # Enter here paths to GSL or EIGEN if they are not in your standard include
+     7  # path. DO NOT completely remove the entry, leave at least &quot;./&quot;.
+     8  PROJECT_GSL=/public3/soft/gsl/2.5/include/
+     9  PROJECT_EIGEN=/public3/soft/eigen/3.3.8-install/include/eigen3/
+     
+make &amp;&amp; make clean-lammps-hdnnp 
+</code></pre>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> Please indicate the source when reprinting. Please verify the citation sources in the article and point out any errors or unclear expressions. </span>
+    </div>
+</article>
+
+
+
+
+
+
+
+    
+        <!-- MathJax配置，可通过单美元符号书写行内公式等 -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    "HTML-CSS": {
+        preferredFont: "TeX",
+        availableFonts: ["STIX","TeX"],
+        linebreaks: { automatic:true },
+        EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+        inlineMath: [ ["$", "$"], ["\\(","\\)"] ],
+        processEscapes: true,
+        ignoreClass: "tex2jax_ignore|dno",
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+        equationNumbers: { autoNumber: "AMS" },
+        noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } },
+        Macros: { href: "{}" }
+    },
+    messageStyle: "none"
+    });
+</script>
+<!-- 给MathJax元素添加has-jax class -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<!-- 通过连接CDN加载MathJax的js代码 -->
+<script type="text/javascript" async
+        src="//cdn.jsdelivr.net/npm/mathjax@2.7.8/unpacked/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<input type="hidden" id="MathJax-js"
+        value="//cdn.jsdelivr.net/npm/mathjax@2.7.8/unpacked/MathJax.js?config=TeX-MML-AM_CHTML">
+</input>
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2022-2024 Louis
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'photoSwipe';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+
+        /*高亮代码块行号*/
+        
+        $('pre code').each(function(){
+            var lines = $(this).text().trim().split('\n').length, widther='';
+            if (lines>99) {
+                widther = 'widther'
+            }
+            var $numbering = $('<ul/>').addClass('pre-numbering ' + widther).attr("unselectable","on");
+            $(this).addClass('has-numbering ' + widther)
+                    .parent()
+                    .append($numbering);
+            for(var i=1;i<=lines;i++){
+                $numbering.append($('<li/>').text(i));
+            }
+        });
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+
+        // PhotoSwipe
+        $('article').each(function(i){
+            $(this).find('img').each(function(){
+                if ($(this).closest('figure').hasClass('article-gallery-img')) {
+                    return;
+                }
+                var alt = this.alt;
+                $(this)
+                    .wrap('<figure class="article-gallery-img" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"></figure>')
+                    .wrap('<a href="' + this.src + '" title="' + alt + '"></a>');
+                $(this).after('<div class="img_alt"><span>' + (alt || '') + '</span></div>');
+            });
+        });
+
+        var pswpElement = document.querySelectorAll('.pswp')[0];
+        if (pswpElement) {
+            var gallerySelector = '.article-gallery, article';
+
+            var initPhotoSwipeFromDOM = function(gallerySelector) {
+
+                // parse slide data (url, title, size ...) from DOM elements
+                // (children of gallerySelector)
+                var parseThumbnailElements = function(el) {
+                    var thumbElements = $(el).find('figure.article-gallery-img').toArray(),
+                        numNodes = thumbElements.length,
+                        items = [],
+                        figureEl,
+                        linkEl,
+                        size,
+                        imgEl,
+                        item;
+
+                    for (var i = 0; i < numNodes; i++) {
+
+                        figureEl = thumbElements[i]; // <figure> element
+
+                        // include only element nodes
+                        if (figureEl.nodeType !== 1) {
+                            continue;
+                        }
+
+                        linkEl = figureEl.children[0]; // <a> element
+                        imgEl = linkEl.children[0]; // <img>
+
+                        size = linkEl.getAttribute('data-size');
+                        size = size && size.split('x');
+
+                        // create slide object
+                        item = {
+                            src: linkEl.getAttribute('href'),
+                            w: size && parseInt(size[0], 10) || imgEl.width,
+                            h: size && parseInt(size[1], 10) || imgEl.height
+                        };
+
+                        if (figureEl.children.length > 1) {
+                            // <figcaption> content
+                            item.title = figureEl.children[1].innerHTML;
+                        }
+
+                        if (linkEl.children.length > 0) {
+                            // <img> thumbnail element, retrieving thumbnail url
+                            item.msrc = linkEl.children[0].getAttribute('src');
+                        }
+
+                        item.el = figureEl; // save link to element for getThumbBoundsFn
+                        items.push(item);
+                    }
+
+                    return items;
+                };
+
+                // find nearest parent element
+                var closest = function closest(el, fn) {
+                    return el && (fn(el) ? el : closest(el.parentNode, fn));
+                };
+
+                // triggers when user clicks on thumbnail
+                var onThumbnailsClick = function(e) {
+                    e = e || window.event;
+
+                    var eTarget = e.target || e.srcElement;
+
+                    // find root element of slide
+                    var clickedListItem = closest(eTarget, function(el) {
+                        return (el.tagName && el.tagName.toUpperCase() === 'FIGURE');
+                    });
+
+                    if (!clickedListItem) {
+                        return;
+                    }
+
+                    if (e.preventDefault) {
+                        e.preventDefault();
+                    } else {
+                        e.returnValue = false;
+                    }
+
+                    // find index of clicked item by looping through all child nodes
+                    // alternatively, you may define index via data- attribute
+                    var clickedGallery = $(clickedListItem).closest(gallerySelector)[0],
+                        childNodes = $(clickedGallery).find('figure.article-gallery-img').toArray(),
+                        numChildNodes = childNodes.length,
+                        nodeIndex = 0,
+                        index;
+
+                    for (var i = 0; i < numChildNodes; i++) {
+                        if (childNodes[i].nodeType !== 1) {
+                            continue;
+                        }
+
+                        if (childNodes[i] === clickedListItem) {
+                            index = nodeIndex;
+                            break;
+                        }
+                        nodeIndex++;
+                    }
+
+
+
+                    if (index >= 0) {
+                        // open PhotoSwipe if valid index found
+                        openPhotoSwipe(index, clickedGallery);
+                    }
+                    return false;
+                };
+
+                // parse picture index and gallery index from URL (#&pid=1&gid=2)
+                var photoswipeParseHash = function() {
+                    var hash = window.location.hash.substring(1),
+                        params = {};
+
+                    if (hash.length < 5) {
+                        return params;
+                    }
+
+                    var vars = hash.split('&');
+                    for (var i = 0; i < vars.length; i++) {
+                        if (!vars[i]) {
+                            continue;
+                        }
+                        var pair = vars[i].split('=');
+                        if (pair.length < 2) {
+                            continue;
+                        }
+                        params[pair[0]] = pair[1];
+                    }
+
+                    if (params.gid) {
+                        params.gid = parseInt(params.gid, 10);
+                    }
+
+                    return params;
+                };
+
+                var openPhotoSwipe = function(index, galleryElement, disableAnimation, fromURL) {
+                    var pswpElement = document.querySelectorAll('.pswp')[0],
+                        gallery,
+                        options,
+                        items;
+
+                    items = parseThumbnailElements(galleryElement);
+
+                    // define options (if needed)
+                    options = {
+
+                        // define gallery index (for URL)
+                        galleryUID: galleryElement.getAttribute('data-pswp-uid'),
+
+                        getThumbBoundsFn: function(index) {
+                            // See Options -> getThumbBoundsFn section of documentation for more info
+                            var thumbnail = items[index].el.getElementsByTagName('img')[0], // find thumbnail
+                                pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
+                                rect = thumbnail.getBoundingClientRect();
+
+                            return {
+                                x: rect.left,
+                                y: rect.top + pageYScroll,
+                                w: rect.width
+                            };
+                        }
+                    };
+
+                    // PhotoSwipe opened from URL
+                    if (fromURL) {
+                        if (options.galleryPIDs) {
+                            // parse real index when custom PIDs are used
+                            // http://photoswipe.com/documentation/faq.html#custom-pid-in-url
+                            for (var j = 0; j < items.length; j++) {
+                                if (items[j].pid == index) {
+                                    options.index = j;
+                                    break;
+                                }
+                            }
+                        } else {
+                            // in URL indexes start from 1
+                            options.index = parseInt(index, 10) - 1;
+                        }
+                    } else {
+                        options.index = parseInt(index, 10);
+                    }
+
+                    // exit if index not found
+                    if (isNaN(options.index)) {
+                        return;
+                    }
+
+                    if (disableAnimation) {
+                        options.showAnimationDuration = 0;
+                    }
+
+                    // Pass data to PhotoSwipe and initialize it
+                    gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+
+                    gallery.listen('imageLoadComplete', function(index, item) {
+                        var linkEl = item.el.children[0];
+                        var img = item.container.children[0];
+                        if (!linkEl.getAttribute('data-size')) {
+                            linkEl.setAttribute('data-size', img.naturalWidth + 'x' + img.naturalHeight);
+                            item.w = img.naturalWidth;
+                            item.h = img.naturalHeight;
+                            gallery.invalidateCurrItems();
+                            gallery.updateSize(true);
+                        }
+                    });
+
+                    gallery.init();
+                };
+
+                // loop through all gallery elements and bind events
+                var galleryElements = document.querySelectorAll(gallerySelector);
+
+                for (var i = 0, l = galleryElements.length; i < l; i++) {
+                    galleryElements[i].setAttribute('data-pswp-uid', i + 1);
+                    galleryElements[i].onclick = onThumbnailsClick;
+                }
+
+                // Parse URL and open gallery if it contains #&pid=3&gid=1
+                var hashData = photoswipeParseHash();
+                if (hashData.pid && hashData.gid) {
+                    openPhotoSwipe(hashData.pid, galleryElements[hashData.gid - 1], true, true);
+                }
+            };
+
+            // execute above function
+            initPhotoSwipeFromDOM(gallerySelector);
+        }
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<style>
+    pre{
+        position: relative;
+        margin-bottom: 24px;
+        border-radius: 10px;
+        border: 1px solid #e2dede;
+        background: #FFF;
+        overflow: hidden;
+    }
+    code.has-numbering{
+        margin-left: 30px;
+    }
+    code.has-numbering.widther{
+        margin-left: 35px;
+    }
+    .pre-numbering{
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        padding: 18px 3px 15px 5px;
+        border-right: 1px solid #C3CCD0;
+        text-align: right;
+        color: #AAA;
+        background-color: #fafafa;
+    }
+    .pre-numbering.widther {
+        width: 35px;
+    }
+</style>
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+    .nav-right:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+        background: url("/img/gj2.jpg");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    
+
+    
+    #post .pjax article :not(pre) > code {
+        color: #24292e;
+        font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+        background-color: rgba(27,31,35,.05);
+        border-radius: 3px;
+        font-size: 85%;
+        margin: 0;
+        padding: .2em .4em;
+    }
+    
+</style>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+         It's a separate element, as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+</html>

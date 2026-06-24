@@ -1,0 +1,1897 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Diary - AI works | Please be chilling out</title>
+  <meta name="keywords" content=" Thinking-Diary , Thinking-Idea ">
+  <meta name="description" content="Diary - AI works | Please be chilling out">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="About this WeBlog我是一名 2022 级在读研究生（力学 &#x2F; 机器学习）。本博客创建于 2024.3 ，为了整合记录读研以来所有的知识积累（知乎，哔哩哔哩，公众号，博客，网站，书籍）。 目前我对微观尺度下金属领域的相变机制&#x2F;位错演化很感兴趣。如果大家对我的研究领域感兴趣，欢迎发邮件给我，共同进步。😃 使用软件包括：Python，VASP，Lammps Pyth">
+<meta property="og:type" content="website">
+<meta property="og:title" content="about">
+<meta property="og:url" content="https://shenglin1001.github.io/about/">
+<meta property="og:site_name" content="Please be chilling out">
+<meta property="og:description" content="About this WeBlog我是一名 2022 级在读研究生（力学 &#x2F; 机器学习）。本博客创建于 2024.3 ，为了整合记录读研以来所有的知识积累（知乎，哔哩哔哩，公众号，博客，网站，书籍）。 目前我对微观尺度下金属领域的相变机制&#x2F;位错演化很感兴趣。如果大家对我的研究领域感兴趣，欢迎发邮件给我，共同进步。😃 使用软件包括：Python，VASP，Lammps Pyth">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-03-30T01:20:39.000Z">
+<meta property="article:modified_time" content="2024-06-21T02:16:33.835Z">
+<meta property="article:author" content="Louis">
+<meta property="article:tag" content="material science">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css" rel="stylesheet">
+<link href="//cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 7.1.1"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="false" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/avatar.jpg"/>
+</a>
+<div class="author">
+    <span>Louis</span>
+</div>
+
+<div class="icon">
+    
+        
+            <a title="github"
+               href="https://github.com/ShengLin1001"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="zhihu"
+               href="https://www.zhihu.com/people/bas-58"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-zhihu"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="email"
+               href="mailto:12324025@zju.edu.cn"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-email"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="qq"
+               href="http://wpa.qq.com/msgrd?v=3&uin=1770861169&site=qq&menu=yes"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-qq"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+</div>
+
+
+
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="All">All
+            
+        </div>
+    </li>
+    
+        
+            
+                
+    <li>
+        <div data-rel="Thinking">
+            <i class="fold iconfont icon-right"></i>
+            Thinking
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Thinking&lt;---&gt;Diary">
+            
+            Diary
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Thinking&lt;---&gt;Idea">
+            
+            Idea
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="Summary">
+            <i class="fold iconfont icon-right"></i>
+            Summary
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Summary&lt;---&gt;My_blog">
+            
+            My_blog
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Summary&lt;---&gt;Other_people_blog">
+            
+            Other_people_blog
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="Software">
+            <i class="fold iconfont icon-right"></i>
+            Software
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;VASP">
+            <i class="fold iconfont icon-right"></i>
+            VASP
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;VASP&lt;---&gt;Special_functions">
+            
+            Special_functions
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;VASP&lt;---&gt;VTheory">
+            
+            VTheory
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;ASE">
+            
+            ASE
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;Lammps">
+            
+            Lammps
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;P4VASP">
+            
+            P4VASP
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;Pymatgen">
+            
+            Pymatgen
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Software&lt;---&gt;Tool">
+            
+            Tool
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="Program">
+            <i class="fold iconfont icon-right"></i>
+            Program
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Program&lt;---&gt;Python">
+            
+            Python
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="Developing">
+            <i class="fold iconfont icon-right"></i>
+            Developing
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Developing&lt;---&gt;Install">
+            
+            Install
+            
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="Developing&lt;---&gt;Mymetal">
+            
+            Mymetal
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="Theory">
+            <i class="fold iconfont icon-right"></i>
+            Theory
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Theory&lt;---&gt;Quantum_mechanics">
+            
+            Quantum_mechanics
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="Writing">
+            <i class="fold iconfont icon-right"></i>
+            Writing
+            
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="Writing&lt;---&gt;Academic">
+            
+            Academic
+            
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+            
+            
+            
+    </div>
+    <div>
+        
+            <a class="about  hasFriend  site_url"
+               
+               href="/about">About</a>
+        
+        <a style="width: 50%"
+                
+                                           class="friends">Friends</a>
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="56">
+<input type="hidden" id="yelog_site_word_count" value="34.8k">
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        Links
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="https://blog.shishiruqi.com/">啦啦黑还黑</a></li>
+            
+            <li><a target="_blank" href="https://www.bigbrosci.com/">大师兄</a></li>
+            
+            <li><a target="_blank" href="http://sobereva.com/">卢天</a></li>
+            
+            <li><a target="_blank" href="http://staff.ustc.edu.cn/~zqj/">郑奇靖</a></li>
+            
+            <li><a target="_blank" href="https://www.zhihu.com/people/obaica/columns">学术之友</a></li>
+            
+            <li><a target="_blank" href="https://www.zhihu.com/column/c_1680331980414226432">我的专栏</a></li>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索"></i>
+            <div class="right-title">All</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" autocomplete="off"/>
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Developing-Install</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Developing-Mymetal</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Program-Python</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Software-ASE</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Software-Lammps</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Software-P4VASP</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Software-Pymatgen</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Software-Tool</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Software-VASP-Special_functions</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Software-VASP-VTheory</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Summary-My_blog</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Summary-Other_people_blog</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Theory-Quantum_mechanics</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Thinking-Diary</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Thinking-Idea</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Writing-Academic</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <div id="local-search-result">
+
+    </div>
+    
+    <nav id="title-list-nav">
+        
+        
+        <a id="top" class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-AI-works/"
+           data-tag="Thinking-Diary,Thinking-Idea"
+           data-author="" >
+            <span class="post-title" title="Diary - AI works">Diary - AI works</span>
+            <span class="post-date" title="2026-06-13 13:16:00">2026/06/13</span>
+        </a>
+        
+        
+        <a id="top" class="All Summary My_blog "
+           href="/Summary/My-blog/My-blog-Literature-summary/"
+           data-tag="Summary-My_blog"
+           data-author="" >
+            <span class="post-title" title="My blog - Literature summary">My blog - Literature summary</span>
+            <span class="post-date" title="2024-09-10 21:55:00">2024/09/10</span>
+        </a>
+        
+        
+        <a id="top" class="All Summary My_blog "
+           href="/Summary/My-blog/My-blog-Technology-summary/"
+           data-tag="Summary-My_blog"
+           data-author="" >
+            <span class="post-title" title="My blog - Technology summary">My blog - Technology summary</span>
+            <span class="post-date" title="2024-09-10 21:50:00">2024/09/10</span>
+        </a>
+        
+        
+        <a id="top" class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-Log/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - Log">Diary - Log</span>
+            <span class="post-date" title="2024-04-10 00:31:48">2024/04/10</span>
+        </a>
+        
+        
+        <a id="top" class="All Summary My_blog "
+           href="/Summary/My-blog/My-blog-My-summary/"
+           data-tag="Summary-My_blog"
+           data-author="" >
+            <span class="post-title" title="My blog - My summary">My blog - My summary</span>
+            <span class="post-date" title="2024-03-30 17:46:59">2024/03/30</span>
+        </a>
+        
+        
+        <a id="top" class="All Software VASP VTheory "
+           href="/Software/VASP/VTheory/VASP-VTheory-Classical-literatures/"
+           data-tag="Software-VASP-VTheory"
+           data-author="" >
+            <span class="post-title" title="VASP - VTheory - Classical literatures">VASP - VTheory - Classical literatures</span>
+            <span class="post-date" title="2024-03-30 16:00:07">2024/03/30</span>
+        </a>
+        
+        
+        <a id="top" class="All Software Tool "
+           href="/Software/Tool/Tool-My-Summary/"
+           data-tag="Software-Tool"
+           data-author="" >
+            <span class="post-title" title="Tool - Summary">Tool - Summary</span>
+            <span class="post-date" title="2024-03-30 13:29:09">2024/03/30</span>
+        </a>
+        
+        
+        <a id="top" class="All Theory Quantum_mechanics "
+           href="/Theory/Quantum-mechanics/Quantum-mechanics-some-website-and-book/"
+           data-tag="Theory-Quantum_mechanics"
+           data-author="" >
+            <span class="post-title" title="Quantum mechanics - some websites and books">Quantum mechanics - some websites and books</span>
+            <span class="post-date" title="2024-03-29 21:31:42">2024/03/29</span>
+        </a>
+        
+        
+        <a id="top" class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-I-want-to-do-now-keep-updating/"
+           data-tag="Thinking-Diary,Thinking-Idea"
+           data-author="" >
+            <span class="post-title" title="Diary - I want to do now (keep updating)">Diary - I want to do now (keep updating)</span>
+            <span class="post-date" title="2024-03-29 18:17:26">2024/03/29</span>
+        </a>
+        
+        
+        <a id="top" class="All Summary Other_people_blog "
+           href="/Summary/Other-people-blog/Other-people-blog-computational-material-science/"
+           data-tag="Summary-Other_people_blog"
+           data-author="" >
+            <span class="post-title" title="Other people blog - computational material science">Other people blog - computational material science</span>
+            <span class="post-date" title="2024-03-29 18:16:05">2024/03/29</span>
+        </a>
+        
+        
+        <a id="top" class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-How-to-do-my-research/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - How to do my research">Diary - How to do my research</span>
+            <span class="post-date" title="2024-03-28 13:30:54">2024/03/28</span>
+        </a>
+        
+        
+        <a id="top" class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-Writing-at-first/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - Writing at first">Diary - Writing at first</span>
+            <span class="post-date" title="2024-03-25 22:00:04">2024/03/25</span>
+        </a>
+        
+        
+        <a id="top" class="All Summary My_blog "
+           href="/Summary/My-blog/My-blog-Shortcut-command/"
+           data-tag="Summary-My_blog"
+           data-author="" >
+            <span class="post-title" title="My blog - Shortcut command">My blog - Shortcut command</span>
+            <span class="post-date" title="2024-01-23 01:33:00">2024/01/23</span>
+        </a>
+        
+        
+        <a  class="All Developing Install "
+           href="/Developing/Install/Install-Software-for-AI/"
+           data-tag="Developing-Install"
+           data-author="" >
+            <span class="post-title" title="Install - Software - for - AI">Install - Software - for - AI</span>
+            <span class="post-date" title="2026-06-07 20:11:00">2026/06/07</span>
+        </a>
+        
+        
+        <a  class="All Writing Academic "
+           href="/Writing/Academic/Research-literature/"
+           data-tag="Writing-Academic"
+           data-author="" >
+            <span class="post-title" title="Academic - Notes">Academic - Notes</span>
+            <span class="post-date" title="2026-04-13 11:35:00">2026/04/13</span>
+        </a>
+        
+        
+        <a  class="All Writing Academic "
+           href="/Writing/Academic/Academic-Notes/"
+           data-tag="Writing-Academic"
+           data-author="" >
+            <span class="post-title" title="Academic - Notes">Academic - Notes</span>
+            <span class="post-date" title="2026-04-01 17:30:00">2026/04/01</span>
+        </a>
+        
+        
+        <a  class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-2026/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - 2026">Diary - 2026</span>
+            <span class="post-date" title="2026-01-13 19:58:00">2026/01/13</span>
+        </a>
+        
+        
+        <a  class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-Plans/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - Plans">Diary - Plans</span>
+            <span class="post-date" title="2025-11-05 09:14:00">2025/11/05</span>
+        </a>
+        
+        
+        <a  class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-2025/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - 2025">Diary - 2025</span>
+            <span class="post-date" title="2025-03-04 21:13:00">2025/03/04</span>
+        </a>
+        
+        
+        <a  class="All Summary Other_people_blog "
+           href="/Summary/Other-people-blog/Other-people-blog-Metals/"
+           data-tag="Summary-Other_people_blog"
+           data-author="" >
+            <span class="post-title" title="Other people blog - Metals">Other people blog - Metals</span>
+            <span class="post-date" title="2024-12-18 09:58:00">2024/12/18</span>
+        </a>
+        
+        
+        <a  class="All Theory Quantum_mechanics "
+           href="/Theory/Quantum-mechanics/Quantum-mechanics-Atomic-orbital/"
+           data-tag="Theory-Quantum_mechanics"
+           data-author="" >
+            <span class="post-title" title="Quantum mechanics - Atomic orbital">Quantum mechanics - Atomic orbital</span>
+            <span class="post-date" title="2024-11-21 14:55:00">2024/11/21</span>
+        </a>
+        
+        
+        <a  class="All Software Pymatgen "
+           href="/Software/Pymatgen/Pymatgen-Calculation-parameters/"
+           data-tag="Software-Pymatgen"
+           data-author="" >
+            <span class="post-title" title="Pymatgen - Calculation parameters">Pymatgen - Calculation parameters</span>
+            <span class="post-date" title="2024-06-24 19:17:00">2024/06/24</span>
+        </a>
+        
+        
+        <a  class="All Developing Mymetal "
+           href="/Developing/Mymetal/Mymetal-Lattice-mismatch/"
+           data-tag="Developing-Mymetal"
+           data-author="" >
+            <span class="post-title" title="Mymetal - Lattice mismatch">Mymetal - Lattice mismatch</span>
+            <span class="post-date" title="2024-06-08 15:30:00">2024/06/08</span>
+        </a>
+        
+        
+        <a  class="All Summary Other_people_blog "
+           href="/Summary/Other-people-blog/Other-people-blog-Machine-learning/"
+           data-tag="Summary-Other_people_blog"
+           data-author="" >
+            <span class="post-title" title="Other people blog - Machine learning">Other people blog - Machine learning</span>
+            <span class="post-date" title="2024-04-29 13:00:00">2024/04/29</span>
+        </a>
+        
+        
+        <a  class="All Developing Install "
+           href="/Developing/Install/Install-Software-System-Network/"
+           data-tag="Developing-Install"
+           data-author="" >
+            <span class="post-title" title="Install - Software - System &amp; Network">Install - Software - System &amp; Network</span>
+            <span class="post-date" title="2024-04-23 10:26:00">2024/04/23</span>
+        </a>
+        
+        
+        <a  class="All Developing Install "
+           href="/Developing/Install/Install-Software-VSCode-Dev/"
+           data-tag="Developing-Install"
+           data-author="" >
+            <span class="post-title" title="Install - Software - VSCode &amp; Dev">Install - Software - VSCode &amp; Dev</span>
+            <span class="post-date" title="2024-04-23 10:25:00">2024/04/23</span>
+        </a>
+        
+        
+        <a  class="All Developing Install "
+           href="/Developing/Install/Install-Software-Git/"
+           data-tag="Developing-Install"
+           data-author="" >
+            <span class="post-title" title="Install - Software - Git">Install - Software - Git</span>
+            <span class="post-date" title="2024-04-23 10:24:00">2024/04/23</span>
+        </a>
+        
+        
+        <a  class="All Developing Install "
+           href="/Developing/Install/Install-Software-Python/"
+           data-tag="Developing-Install"
+           data-author="" >
+            <span class="post-title" title="Install - Software - Python">Install - Software - Python</span>
+            <span class="post-date" title="2024-04-23 10:23:00">2024/04/23</span>
+        </a>
+        
+        
+        <a  class="All Developing Install "
+           href="/Developing/Install/Install-Software-Simulation/"
+           data-tag="Developing-Install"
+           data-author="" >
+            <span class="post-title" title="Install - Software - Simulation">Install - Software - Simulation</span>
+            <span class="post-date" title="2024-04-23 10:22:00">2024/04/23</span>
+        </a>
+        
+        
+        <a  class="All Developing Install "
+           href="/Developing/Install/Install-Software/"
+           data-tag="Developing-Install"
+           data-author="" >
+            <span class="post-title" title="Install - Software">Install - Software</span>
+            <span class="post-date" title="2024-04-23 10:22:00">2024/04/23</span>
+        </a>
+        
+        
+        <a  class="All Summary Other_people_blog "
+           href="/Summary/Other-people-blog/Other-people-blog-Mechanics/"
+           data-tag="Summary-Other_people_blog"
+           data-author="" >
+            <span class="post-title" title="Other people blog - Mechanics">Other people blog - Mechanics</span>
+            <span class="post-date" title="2024-04-22 05:05:00">2024/04/22</span>
+        </a>
+        
+        
+        <a  class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-2024/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - 2024">Diary - 2024</span>
+            <span class="post-date" title="2024-04-22 04:52:00">2024/04/22</span>
+        </a>
+        
+        
+        <a  class="All Summary Other_people_blog "
+           href="/Summary/Other-people-blog/Other-people-blog-on-the-way-of%20doctor/"
+           data-tag="Summary-Other_people_blog"
+           data-author="" >
+            <span class="post-title" title="Other people blog - on the way of doctor">Other people blog - on the way of doctor</span>
+            <span class="post-date" title="2024-04-20 04:26:00">2024/04/20</span>
+        </a>
+        
+        
+        <a  class="All Summary Other_people_blog "
+           href="/Summary/Other-people-blog/Other-people-blog-DFT/"
+           data-tag="Summary-Other_people_blog"
+           data-author="" >
+            <span class="post-title" title="Other people blog - DFT">Other people blog - DFT</span>
+            <span class="post-date" title="2024-04-20 03:00:00">2024/04/20</span>
+        </a>
+        
+        
+        <a  class="All Thinking Idea "
+           href="/Thinking/Idea/Idea-Next-paper/"
+           data-tag="Thinking-Idea"
+           data-author="" >
+            <span class="post-title" title="Idea - Next paper">Idea - Next paper</span>
+            <span class="post-date" title="2024-04-12 05:34:00">2024/04/12</span>
+        </a>
+        
+        
+        <a  class="All Software VASP VTheory "
+           href="/Software/VASP/VTheory/VASP-VTheory-Space-group/"
+           data-tag="Software-VASP-VTheory"
+           data-author="" >
+            <span class="post-title" title="VASP - VTheory - Space group">VASP - VTheory - Space group</span>
+            <span class="post-date" title="2024-04-10 13:52:00">2024/04/10</span>
+        </a>
+        
+        
+        <a  class="All Software VASP VTheory "
+           href="/Software/VASP/VTheory/VASP-VTheory-Influence-of-cell/"
+           data-tag="Software-VASP-VTheory"
+           data-author="" >
+            <span class="post-title" title="VASP - VTheory - Influence of cell">VASP - VTheory - Influence of cell</span>
+            <span class="post-date" title="2024-04-10 01:19:00">2024/04/10</span>
+        </a>
+        
+        
+        <a  class="All Software Tool "
+           href="/Software/Tool/Tool-Find-heterostructure/"
+           data-tag="Software-Tool"
+           data-author="" >
+            <span class="post-title" title="Tool - Find heterostructure">Tool - Find heterostructure</span>
+            <span class="post-date" title="2024-04-07 00:36:38">2024/04/07</span>
+        </a>
+        
+        
+        <a  class="All Theory Quantum_mechanics "
+           href="/Theory/Quantum-mechanics/Quantum-mechanics-Density-functional-theory/"
+           data-tag="Theory-Quantum_mechanics"
+           data-author="" >
+            <span class="post-title" title="Quantum mechanics - Density functional theory">Quantum mechanics - Density functional theory</span>
+            <span class="post-date" title="2024-04-01 15:16:03">2024/04/01</span>
+        </a>
+        
+        
+        <a  class="All Theory Quantum_mechanics "
+           href="/Theory/Quantum-mechanics/Quantum-mechanics-The-Feynman-lectures-on-physics-1/"
+           data-tag="Theory-Quantum_mechanics"
+           data-author="" >
+            <span class="post-title" title="Quantum mechanics - The Feynman lectures on physics 1">Quantum mechanics - The Feynman lectures on physics 1</span>
+            <span class="post-date" title="2024-04-01 14:43:03">2024/04/01</span>
+        </a>
+        
+        
+        <a  class="All Developing Mymetal "
+           href="/Developing/Mymetal/Mymetal-error/"
+           data-tag="Developing-Mymetal"
+           data-author="" >
+            <span class="post-title" title="Mymetal - error">Mymetal - error</span>
+            <span class="post-date" title="2024-03-30 01:44:55">2024/03/30</span>
+        </a>
+        
+        
+        <a  class="All Developing Mymetal "
+           href="/Developing/Mymetal/Mymetal-log/"
+           data-tag="Developing-Mymetal"
+           data-author="" >
+            <span class="post-title" title="Mymetal - work log">Mymetal - work log</span>
+            <span class="post-date" title="2024-03-30 01:44:55">2024/03/30</span>
+        </a>
+        
+        
+        <a  class="All Software P4VASP "
+           href="/Software/P4VASP/P4VASP-install/"
+           data-tag="Software-P4VASP"
+           data-author="" >
+            <span class="post-title" title="P4VASP - Install">P4VASP - Install</span>
+            <span class="post-date" title="2024-03-25 14:33:00">2024/03/25</span>
+        </a>
+        
+        
+        <a  class="All Software VASP Special_functions "
+           href="/Software/VASP/Special-functions/VASP-Special-functions-fix-basic-vector/"
+           data-tag="Software-VASP-Special_functions"
+           data-author="" >
+            <span class="post-title" title="VASP - Special functions - fix basic vector">VASP - Special functions - fix basic vector</span>
+            <span class="post-date" title="2024-01-24 18:57:00">2024/01/24</span>
+        </a>
+        
+        
+        <a  class="All Software Tool "
+           href="/Software/Tool/Tool-Proxy-problem-of-copilot/"
+           data-tag="Software-Tool"
+           data-author="" >
+            <span class="post-title" title="Tool - Proxy problem of copilot">Tool - Proxy problem of copilot</span>
+            <span class="post-date" title="2024-01-23 02:54:00">2024/01/23</span>
+        </a>
+        
+        
+        <a  class="All Software ASE "
+           href="/Software/ASE/ASE-How-to-generate-surface/"
+           data-tag="Software-ASE"
+           data-author="" >
+            <span class="post-title" title="ASE - How to generate surface">ASE - How to generate surface</span>
+            <span class="post-date" title="2024-01-19 12:13:00">2024/01/19</span>
+        </a>
+        
+        
+        <a  class="All Software ASE "
+           href="/Software/ASE/ASE-Modify-the-source-code-of-Write-function/"
+           data-tag="Software-ASE"
+           data-author="" >
+            <span class="post-title" title="ASE - Modify the source code of Write function">ASE - Modify the source code of Write function</span>
+            <span class="post-date" title="2024-01-18 07:01:00">2024/01/18</span>
+        </a>
+        
+        
+        <a  class="All Thinking Diary "
+           href="/Thinking/Diary/Diary-Past-and-future/"
+           data-tag="Thinking-Diary"
+           data-author="" >
+            <span class="post-title" title="Diary - Past and future">Diary - Past and future</span>
+            <span class="post-date" title="2023-12-29 05:08:00">2023/12/29</span>
+        </a>
+        
+        
+        <a  class="All Software ASE "
+           href="/Software/ASE/ASE-generate-POSCAR/"
+           data-tag="Software-ASE"
+           data-author="" >
+            <span class="post-title" title="ASE - generate POSCAR">ASE - generate POSCAR</span>
+            <span class="post-date" title="2023-12-14 23:51:00">2023/12/14</span>
+        </a>
+        
+        
+        <a  class="All Program Python "
+           href="/Program/Python/Python-DFT-calculation-3-Generate-Kpoints/"
+           data-tag="Program-Python"
+           data-author="" >
+            <span class="post-title" title="Python - DFT calculation 3 - Generate Kpoints">Python - DFT calculation 3 - Generate Kpoints</span>
+            <span class="post-date" title="2023-11-23 17:28:00">2023/11/23</span>
+        </a>
+        
+        
+        <a  class="All Program Python "
+           href="/Program/Python/Python-DFT-calculation-2-Introduction-of-Kspace/"
+           data-tag="Program-Python"
+           data-author="" >
+            <span class="post-title" title="Python - DFT calculation 2 - Introduction of Kspace">Python - DFT calculation 2 - Introduction of Kspace</span>
+            <span class="post-date" title="2023-11-21 23:26:00">2023/11/21</span>
+        </a>
+        
+        
+        <a  class="All Program Python "
+           href="/Program/Python/Python-DFT-calculation-1-Solve-the-one-dimensional-Schrodinger-equation/"
+           data-tag="Program-Python"
+           data-author="" >
+            <span class="post-title" title="Python - DFT calculation 1 - Solve the one dimensional Schrodinger equation">Python - DFT calculation 1 - Solve the one dimensional Schrodinger equation</span>
+            <span class="post-date" title="2023-08-30 16:36:00">2023/08/30</span>
+        </a>
+        
+        
+        <a  class="All Software Lammps "
+           href="/Software/Lammps/Lammps-Reinstall/"
+           data-tag="Software-Lammps"
+           data-author="" >
+            <span class="post-title" title="Lammps - Reinstall">Lammps - Reinstall</span>
+            <span class="post-date" title="2022-11-25 11:56:00">2022/11/25</span>
+        </a>
+        
+        
+        <a  class="All Software Lammps "
+           href="/Software/Lammps/Lammps-SW-mod-potential-of-MoS2/"
+           data-tag="Software-Lammps"
+           data-author="" >
+            <span class="post-title" title="Lammps - SW mod potential of MoS2">Lammps - SW mod potential of MoS2</span>
+            <span class="post-date" title="2022-04-19 17:46:00">2022/04/19</span>
+        </a>
+        
+        
+        <a  class="All Software Lammps "
+           href="/Software/Lammps/Lammps-Add-new-pair-style/"
+           data-tag="Software-Lammps"
+           data-author="" >
+            <span class="post-title" title="Lammps - Add new pair style">Lammps - Add new pair style</span>
+            <span class="post-date" title="2022-04-16 19:20:00">2022/04/16</span>
+        </a>
+        
+        
+        <a  class="All Software Lammps "
+           href="/Software/Lammps/Lammps-RDF-of-annealed-SiO2-using-VMD/"
+           data-tag="Software-Lammps"
+           data-author="" >
+            <span class="post-title" title="Lammps - RDF of annealed SiO2 using VMD">Lammps - RDF of annealed SiO2 using VMD</span>
+            <span class="post-date" title="2022-04-05 20:09:00">2022/04/05</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-Thinking/Diary-AI-works" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">Diary - AI works</h1>
+    
+    <div class="article-meta">
+        
+        <span class="top"><a>置顶</a></span>
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="Thinking">Thinking</a> > 
+            
+            <a  data-rel="Thinking&lt;---&gt;Diary">Diary</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color5">Thinking-Diary</a>
+            
+            <a class="color4">Thinking-Idea</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            Created At : <time class="date" title='Updated At: 2026-06-23 15:24:57'>2026-06-13 13:16</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>Count:6</span>
+        
+        
+        <span id="busuanzi_container_page_pv">
+            Views 👀 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-5 i,
+    .toc-level-5 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="f82cabce5dc289887ea46a9dce0a08e8a73721e8cb8ba71320e866017547892a">854f3c2ab23829a1f0914184ee1beb6c8f7fd98794ecf11dbb9719370c1c1153c70dd90dc12f5c706db4093cafc03121a752b32d603eae3f90cfb7f61fee83050b3a117ab2f964513243ab17e75c92ea88809f5e21d108c72d89bab0d1a88fd95b9ff07522d717d91f343aec3e064e01d33693feda1def9dceb5a630a09c3d56bc362504abdb48495e185c3723de5da23a5d4cc127b13dbc70b04ac43401e04d0ab88da941728285ad82c0c1cc991b40bd859862c636d52b314d367eafb9419ae0c6b7c96e9ec1fcc62e01ae39ed055613351d532376f16b0e8a0115e9b865a4234d969739acc43ddd1eac176bee84106039bfe906b86e14298817fbe082234c984dffffbad6ffb97281a94cfc781d6404e440ca74782fe28040954704aa9a26a06c8df691aa6be693dfc4f682ed6305129abb06caa812334c1a4bd74c41c9c47d6b031d02eca1ab2fc3d5e87b574f5edb74480b35cac72c917de4bb6e2d2151c6d8b68283525c672817229c1e89e2fcae98b0293ce2369adc1fef0aa8e2988a628df772b7538aca8f01b762caabd912c17d1ccbc3ebc103064ed8b3f0b6ae4975b8ad1cbae445ed632d70f35cc8baff3624850d296611e69a6dc2723c756c4cc7627aa1da747959a7d98afc4fede68b3164957bb366714e11f8c0cd68d4f335f536200bf4e0b0d56dd602ec5548162495c2a3a0a8fc46b883e3901d16ec8b7d593b94b044ebbb630dc58ffae3bfa65c0b1480f5424df6486bfe2d8bee76b2ad02579cffc27a853056abd4971053eefb4486669bff723f64ad7deec3c2795498a0cecb96a4c194997344b5f5f41d09a20691f24f165bf92e172d8d831785e1b09b29b85e5177bae17c3afcb82896b6db485bc4029ae3fda7efe848269f907b835403bf73409b969d82cc37c77e171522ea378ccb8cc1cb5d9c3b836b7dd38cbb5ba2948cc7edcc11dfeef337aed407284268abce52872e7e2dbba41c70b5e2c8cc4aab262a7b807301ef3677588187fadbc9d27e11d4d15fba595d0e1d06359f7ad5ee670f755520e538578883739550c021110bf12e6805736a68e80a1980c3ab3a597c0661a8bd3fe17ab26e9c63123aaec485b24ea66d7cab7593adc2eaea727084c5b51cfde62789cf3832396692e2047d8b9aaddbaf666334d373668fc6285ab9c44b31db3a1d68341525c166dc667b9829a8886da33c3fa2512b764c9b27d595f210c704512c9ec58c43167dbf0ee46acdee0566db8f72bcd090a8929c2def67251bb4efe75f0b7d090b1932a267a5b87809da8ab57da722a14103710bff41b63df502d5005cfb19456891e9d8b4d179f2d7adb4764b2256a3b33960ce22802b6dd12e2e6adcc935f1cf6f5dac99fd040b7f7b536c546422c69752f11b419478d6b7b840c418ad4540eed010bb82676fa0a8661153907d79c4661f162aef10d6faea778cd8931fb906a2ff29e0f21a18fa543d68122557c0a0b1bdabae4b632b187af7ab1bca6b5da6feb71f15d26cb663d8b82c505e1e11a88bd1bfed004dbe3c17f006ccef992453ac3a6dea0284b64cd55dc2776175430f525fdc296770351006aa67fe4441b259f14e0d64bf10fe0edec0d624639d5496e248bfaf022704069c396834c5c7f4508b8b78daa54e20bd6a0cd7b7bdd2b18247dc215e9447c92b316e0b9be37f4d0a88489e99fa668399cb1adfcadf488ee4be3357daed18a26467c0d45f0655d63f5b9a88d5c979f4b8f9e4eacb69f2ffbcc9d044d53d24f3925b84f7835c7f5e5e19b39ed2c89a451ab1286bb706cf15d4da78d145aada316698ccab24b36eddcb965736f0d765b24cb1462276c3d6e752b3ed74bae02c4ebe6bf9f168cef8df93b715dddd68b5d48183c474d4739b9d72578f08e9f2b442ae515d43ddbc1bdcd7e25ad40b1e7a1a3c7380fd5fed132be668dd5ac56b3658af4869c554d20d5451e53d354bbb8601480e57c1595822f5e6096e26ea6699aecd65e1ed11c14071e4020da096d7067dbb310f6838b0a12c39acd5eeb45a5a4c6e8dab625680f82e7fb70dbdb4ab08d085affaf158c081af466e41e8227dbc65e284505486845b9e8cfc2ae5d5716ba0c5a54959ec2f4ff5c67131366385b042c4c0fb98770d59fe6ddb5cec8912e61053cb115134d4e17766d0f20aa4ea33aab25db0e87f6ca28c0bb121dfd230d48a6c3776b9a812337d3910606ad69caa84a64f26d91c26c52c0c5562cbbf770276a48292bb5d874ddcc42cd4a7a2ecf68beb0ef003d3b20b9a937c40e81c1d21abfa85e93d0a5f8f93f50ccdf66186513722c9768a629d0d534d0f06067020e067f0278b4a690ac15d7581c35b7626c40fc46edf74b8c2d7e847cda2fab7b4ea95b27ad133b9a8054b3851e93e5ace8c32b9e34ce51d7f5eb4e2239cfbcd6a7c388f5e20faabb168cd84fcbe3915f92c0b74e943250da94bac797149d426ebb9e9aa350d7fc82b354167909289e9224f40c0b9bb2fe379c8659a998ee4843dbc9aaba1417cd20affc29ce1c78f9ca1d3a6343ca0afc1e65e945e37bfd7d656a8fd62e05f3761bf85545bcc7746cbf785f2b634ad2dc5c6039d867e5fc7206058b91f78e7f36759f6903d289c18f7873cf6f6b75a6d11f2b6051af26e4ca43e2c81f89a93e8da99bb3fef42396a5b30c46cb295101e4139f7aecea8249781e92f37d36afdf2d29fe7768d69b2cce9483e635531d2b8335ce8e1f0abf9d510208b5c71c4b571f70c796eb3599d69bc9f053d824712bebfbc369c76380b19013c34afa83d82cb13f4ea3063dcfb84d9e6550425cb4e24d41ac369be99a345726a36f200a6d87365c409f5fa9dc90a83913ff79f990952327c7ff95cac25332481710828815563751d8b741658a35f3ea304a7d1abc8a24e14b7f0812cf3d6afa4cdb00bd618cbb5525171507c17d6f90f7ecf6f16319f3199d113b7c8a9915f3f1606b55d999d3e02f0347300948e380427cbd7fe46e841ed06454f67f95e84af19c9eb3fb24f670561911620527b09c7beb4253cd65583d2e7f3c4049c8368500a2e9e33d469af8190a43d5f182c347472747823aaed538478edf8cb8a9f9c5c96cd080f0963236efdf0ad88ddf27e29632e8a870e96512fcfa2606884207e44871499f61dd20d109d76735d9b53d5ede67cd61e50a628a6ad346ffc65c5332a23b5e6a422e6187367abc6540de6768cc9a0697c685ef73f3974815e4176c80f6d1a0e0cd9193ee2717eb14aa066b18eb71d08f0e8e75134c68e5a41fe570812c8b3823005adff53429fc5a92f607869b0b21146e6c4a4567e14c956665386f74b8e539c862d016ba240933bfd503c04a8025f12586d7a8c4e352b0d472b88a3ef39894c5e2b1134ebc55db61dc4cf6bf5444e82d1f1781341a26687eafc9eff1f7001fe24ce0aa783828f0f9f79f4e3fb11f6590a3d400a7bf5c09e4af07ecdbb1d52092a134855160510f8cac4fd5b9122338999daa292b04266789ecc96b132ab986e7aed42d0455a8b43a3471dce4ade08dbcc84d068841b1857f3fc2e3552de5c78f5b7e8a75303de7c04d5f9fbdb9290171758459cdd8dcef37e0aab11cdf2f73cc3ede34e9e2a7f77c5b1d599a2c401ef62066bd973335674e71613a0f6e11b136b59d9e38b1606b54943142f34d56f50ae6350a098f7d10b0cff7175f543d4d3a7af6664f65e19e07c713d9984639ba41b8eeef41763cd3c59a041f796fd3965bcf0ca2480cf34eb944c451952f81846ecf843357754949acc93cc</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Please enter the access password</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
+      
+       <hr><span style="font-style: italic;color: gray;"> Please indicate the source when reprinting. Please verify the citation sources in the article and point out any errors or unclear expressions. </span>
+    </div>
+</article>
+
+
+
+
+
+
+
+    
+        <!-- MathJax配置，可通过单美元符号书写行内公式等 -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    "HTML-CSS": {
+        preferredFont: "TeX",
+        availableFonts: ["STIX","TeX"],
+        linebreaks: { automatic:true },
+        EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+        inlineMath: [ ["$", "$"], ["\\(","\\)"] ],
+        processEscapes: true,
+        ignoreClass: "tex2jax_ignore|dno",
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+        equationNumbers: { autoNumber: "AMS" },
+        noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } },
+        Macros: { href: "{}" }
+    },
+    messageStyle: "none"
+    });
+</script>
+<!-- 给MathJax元素添加has-jax class -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<!-- 通过连接CDN加载MathJax的js代码 -->
+<script type="text/javascript" async
+        src="//cdn.jsdelivr.net/npm/mathjax@2.7.8/unpacked/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<input type="hidden" id="MathJax-js"
+        value="//cdn.jsdelivr.net/npm/mathjax@2.7.8/unpacked/MathJax.js?config=TeX-MML-AM_CHTML">
+</input>
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2022-2024 Louis
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'photoSwipe';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+
+        /*高亮代码块行号*/
+        
+        $('pre code').each(function(){
+            var lines = $(this).text().trim().split('\n').length, widther='';
+            if (lines>99) {
+                widther = 'widther'
+            }
+            var $numbering = $('<ul/>').addClass('pre-numbering ' + widther).attr("unselectable","on");
+            $(this).addClass('has-numbering ' + widther)
+                    .parent()
+                    .append($numbering);
+            for(var i=1;i<=lines;i++){
+                $numbering.append($('<li/>').text(i));
+            }
+        });
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+
+        // PhotoSwipe
+        $('article').each(function(i){
+            $(this).find('img').each(function(){
+                if ($(this).closest('figure').hasClass('article-gallery-img')) {
+                    return;
+                }
+                var alt = this.alt;
+                $(this)
+                    .wrap('<figure class="article-gallery-img" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"></figure>')
+                    .wrap('<a href="' + this.src + '" title="' + alt + '"></a>');
+                $(this).after('<div class="img_alt"><span>' + (alt || '') + '</span></div>');
+            });
+        });
+
+        var pswpElement = document.querySelectorAll('.pswp')[0];
+        if (pswpElement) {
+            var gallerySelector = '.article-gallery, article';
+
+            var initPhotoSwipeFromDOM = function(gallerySelector) {
+
+                // parse slide data (url, title, size ...) from DOM elements
+                // (children of gallerySelector)
+                var parseThumbnailElements = function(el) {
+                    var thumbElements = $(el).find('figure.article-gallery-img').toArray(),
+                        numNodes = thumbElements.length,
+                        items = [],
+                        figureEl,
+                        linkEl,
+                        size,
+                        imgEl,
+                        item;
+
+                    for (var i = 0; i < numNodes; i++) {
+
+                        figureEl = thumbElements[i]; // <figure> element
+
+                        // include only element nodes
+                        if (figureEl.nodeType !== 1) {
+                            continue;
+                        }
+
+                        linkEl = figureEl.children[0]; // <a> element
+                        imgEl = linkEl.children[0]; // <img>
+
+                        size = linkEl.getAttribute('data-size');
+                        size = size && size.split('x');
+
+                        // create slide object
+                        item = {
+                            src: linkEl.getAttribute('href'),
+                            w: size && parseInt(size[0], 10) || imgEl.width,
+                            h: size && parseInt(size[1], 10) || imgEl.height
+                        };
+
+                        if (figureEl.children.length > 1) {
+                            // <figcaption> content
+                            item.title = figureEl.children[1].innerHTML;
+                        }
+
+                        if (linkEl.children.length > 0) {
+                            // <img> thumbnail element, retrieving thumbnail url
+                            item.msrc = linkEl.children[0].getAttribute('src');
+                        }
+
+                        item.el = figureEl; // save link to element for getThumbBoundsFn
+                        items.push(item);
+                    }
+
+                    return items;
+                };
+
+                // find nearest parent element
+                var closest = function closest(el, fn) {
+                    return el && (fn(el) ? el : closest(el.parentNode, fn));
+                };
+
+                // triggers when user clicks on thumbnail
+                var onThumbnailsClick = function(e) {
+                    e = e || window.event;
+
+                    var eTarget = e.target || e.srcElement;
+
+                    // find root element of slide
+                    var clickedListItem = closest(eTarget, function(el) {
+                        return (el.tagName && el.tagName.toUpperCase() === 'FIGURE');
+                    });
+
+                    if (!clickedListItem) {
+                        return;
+                    }
+
+                    if (e.preventDefault) {
+                        e.preventDefault();
+                    } else {
+                        e.returnValue = false;
+                    }
+
+                    // find index of clicked item by looping through all child nodes
+                    // alternatively, you may define index via data- attribute
+                    var clickedGallery = $(clickedListItem).closest(gallerySelector)[0],
+                        childNodes = $(clickedGallery).find('figure.article-gallery-img').toArray(),
+                        numChildNodes = childNodes.length,
+                        nodeIndex = 0,
+                        index;
+
+                    for (var i = 0; i < numChildNodes; i++) {
+                        if (childNodes[i].nodeType !== 1) {
+                            continue;
+                        }
+
+                        if (childNodes[i] === clickedListItem) {
+                            index = nodeIndex;
+                            break;
+                        }
+                        nodeIndex++;
+                    }
+
+
+
+                    if (index >= 0) {
+                        // open PhotoSwipe if valid index found
+                        openPhotoSwipe(index, clickedGallery);
+                    }
+                    return false;
+                };
+
+                // parse picture index and gallery index from URL (#&pid=1&gid=2)
+                var photoswipeParseHash = function() {
+                    var hash = window.location.hash.substring(1),
+                        params = {};
+
+                    if (hash.length < 5) {
+                        return params;
+                    }
+
+                    var vars = hash.split('&');
+                    for (var i = 0; i < vars.length; i++) {
+                        if (!vars[i]) {
+                            continue;
+                        }
+                        var pair = vars[i].split('=');
+                        if (pair.length < 2) {
+                            continue;
+                        }
+                        params[pair[0]] = pair[1];
+                    }
+
+                    if (params.gid) {
+                        params.gid = parseInt(params.gid, 10);
+                    }
+
+                    return params;
+                };
+
+                var openPhotoSwipe = function(index, galleryElement, disableAnimation, fromURL) {
+                    var pswpElement = document.querySelectorAll('.pswp')[0],
+                        gallery,
+                        options,
+                        items;
+
+                    items = parseThumbnailElements(galleryElement);
+
+                    // define options (if needed)
+                    options = {
+
+                        // define gallery index (for URL)
+                        galleryUID: galleryElement.getAttribute('data-pswp-uid'),
+
+                        getThumbBoundsFn: function(index) {
+                            // See Options -> getThumbBoundsFn section of documentation for more info
+                            var thumbnail = items[index].el.getElementsByTagName('img')[0], // find thumbnail
+                                pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
+                                rect = thumbnail.getBoundingClientRect();
+
+                            return {
+                                x: rect.left,
+                                y: rect.top + pageYScroll,
+                                w: rect.width
+                            };
+                        }
+                    };
+
+                    // PhotoSwipe opened from URL
+                    if (fromURL) {
+                        if (options.galleryPIDs) {
+                            // parse real index when custom PIDs are used
+                            // http://photoswipe.com/documentation/faq.html#custom-pid-in-url
+                            for (var j = 0; j < items.length; j++) {
+                                if (items[j].pid == index) {
+                                    options.index = j;
+                                    break;
+                                }
+                            }
+                        } else {
+                            // in URL indexes start from 1
+                            options.index = parseInt(index, 10) - 1;
+                        }
+                    } else {
+                        options.index = parseInt(index, 10);
+                    }
+
+                    // exit if index not found
+                    if (isNaN(options.index)) {
+                        return;
+                    }
+
+                    if (disableAnimation) {
+                        options.showAnimationDuration = 0;
+                    }
+
+                    // Pass data to PhotoSwipe and initialize it
+                    gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+
+                    gallery.listen('imageLoadComplete', function(index, item) {
+                        var linkEl = item.el.children[0];
+                        var img = item.container.children[0];
+                        if (!linkEl.getAttribute('data-size')) {
+                            linkEl.setAttribute('data-size', img.naturalWidth + 'x' + img.naturalHeight);
+                            item.w = img.naturalWidth;
+                            item.h = img.naturalHeight;
+                            gallery.invalidateCurrItems();
+                            gallery.updateSize(true);
+                        }
+                    });
+
+                    gallery.init();
+                };
+
+                // loop through all gallery elements and bind events
+                var galleryElements = document.querySelectorAll(gallerySelector);
+
+                for (var i = 0, l = galleryElements.length; i < l; i++) {
+                    galleryElements[i].setAttribute('data-pswp-uid', i + 1);
+                    galleryElements[i].onclick = onThumbnailsClick;
+                }
+
+                // Parse URL and open gallery if it contains #&pid=3&gid=1
+                var hashData = photoswipeParseHash();
+                if (hashData.pid && hashData.gid) {
+                    openPhotoSwipe(hashData.pid, galleryElements[hashData.gid - 1], true, true);
+                }
+            };
+
+            // execute above function
+            initPhotoSwipeFromDOM(gallerySelector);
+        }
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<style>
+    pre{
+        position: relative;
+        margin-bottom: 24px;
+        border-radius: 10px;
+        border: 1px solid #e2dede;
+        background: #FFF;
+        overflow: hidden;
+    }
+    code.has-numbering{
+        margin-left: 30px;
+    }
+    code.has-numbering.widther{
+        margin-left: 35px;
+    }
+    .pre-numbering{
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        padding: 18px 3px 15px 5px;
+        border-right: 1px solid #C3CCD0;
+        text-align: right;
+        color: #AAA;
+        background-color: #fafafa;
+    }
+    .pre-numbering.widther {
+        width: 35px;
+    }
+</style>
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+    .nav-right:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+        background: url("/img/gj2.jpg");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    
+
+    
+    #post .pjax article :not(pre) > code {
+        color: #24292e;
+        font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+        background-color: rgba(27,31,35,.05);
+        border-radius: 3px;
+        font-size: 85%;
+        margin: 0;
+        padding: .2em .4em;
+    }
+    
+</style>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+         It's a separate element, as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+</html>
